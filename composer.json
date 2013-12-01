@@ -1,0 +1,25 @@
+{
+	"name": "jamesmoss/flywheel",
+	"description": "A lightweight, flat-file, document database",
+	"keywords": ["flat", "file", "db", "document"],
+	"homepage": "http://github.com/jamesmoss/flywheel",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "James Moss",
+			"email": "james@moss.io",
+			"homepage": "http://moss.io"
+		}
+	],
+	"require": {
+		"php": ">=5.3.0"
+	},
+	"require-dev": {
+	    "mikey179/vfsStream": "1.2.0"
+	},
+	"autoload": {
+		"psr-0": {
+			"JamesMoss\\Flywheel\\": ["src/", "test/"]
+		}
+	}
+}
