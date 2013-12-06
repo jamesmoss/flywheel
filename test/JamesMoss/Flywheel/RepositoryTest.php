@@ -24,6 +24,45 @@ class RespositoryTest extends \PHPUnit_Framework_TestCase
         $repo = new Repository($config, $name);
     }
 
+    public function testStoringDocuments()
+    {
+        $config = new Config('/tmp/flywheel');
+        $repo   = new Repository($config, '_pages');
+
+        for($i = 0; $i < 5; $i++) {
+
+            $data = array(
+                'id'   => $i,
+                'slug' => '123',
+                'body' => 'THIS IS BODY TEXT'
+            );
+
+            $document = new Document($i, $data);
+
+            $repo->store($document);
+
+            $name = $i . '_' . sha1($i) . '.json';
+            $this->assertSame(json_encode($data), file_get_contents('/tmp/flywheel/_pages/' . $name));
+        } 
+    }
+
+    public function testDeletingDocuments()
+    {
+        $config = new Config('/tmp/flywheel');
+        $repo   = new Repository($config, '_pages');
+        $id     = 'delete_test';
+        $name   = $id . '_' . sha1($id) . '.json';
+        $path   = '/tmp/flywheel/_pages/' . $name;
+
+        file_put_contents($path, '');
+
+        $this->assertTrue(is_file($path));
+
+        $repo->delete($id);
+
+        $this->assertFalse(is_file($path));
+    }
+
     public function validNameProvider()
     {
         return array(

@@ -13,8 +13,10 @@ class Repository
         $this->path = $config->getPath() . '/' . $name;
 
         // ensure directory exists and we can write there
-        mkdir($this->path);
-        chmod($this->path, 0777);
+        if(!file_exists($this->path)) {
+            mkdir($this->path);
+            chmod($this->path, 0777);
+        } 
     }
 
     public function getName()
@@ -41,6 +43,30 @@ class Repository
         }
 
         return true;
+    }
+
+    public function store(Document $document)
+    {
+        $path = $this->getPath($document->id);
+        $data = json_encode((array)$document);
+
+        return file_put_contents($path, $data);
+    }
+
+    public function delete($id)
+    {
+        $path = $this->getPath($id);
+        unlink($path);
+    }
+
+    public function getPath($id)
+    {
+        return $this->path . '/' . $this->getFilename($id);
+    }
+
+    protected function getFilename($id)
+    {
+        return $id . '_' . sha1($id) . '.json';
     }
 
 
