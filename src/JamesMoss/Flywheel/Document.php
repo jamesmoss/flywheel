@@ -4,10 +4,8 @@ namespace JamesMoss\Flywheel;
 
 class Document
 {
-    public function __construct($id, $data)
+    public function __construct($data)
     {
-        $this->id = $id;
-
         foreach($data as $key => $value) {
             $this->{$key} = $value;
         }

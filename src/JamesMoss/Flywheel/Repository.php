@@ -30,7 +30,7 @@ class Repository
         $documents = array();
         
         foreach ($files as $file) {
-            $documents[] = new Document(file_get_contents($file));
+            $documents[] = new Document(json_decode(file_get_contents($file)));
         }
 
         return $documents;
@@ -48,7 +48,7 @@ class Repository
     public function store(Document $document)
     {
         $path = $this->getPath($document->id);
-        $data = json_encode((array)$document);
+        $data = json_encode((array)$document, JSON_PRETTY_PRINT);
 
         return file_put_contents($path, $data);
     }
@@ -64,7 +64,7 @@ class Repository
         return $this->path . '/' . $this->getFilename($id);
     }
 
-    protected function getFilename($id)
+    public function getFilename($id)
     {
         return $id . '_' . sha1($id) . '.json';
     }
