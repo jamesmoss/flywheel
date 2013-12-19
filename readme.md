@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/jamesmoss/flywheel.png?branch=master)](https://travis-ci.org/jamesmoss/flywheel)
 
-A lightweight, flat-file, document database.
+A lightweight, flat-file, document database for PHP.
 
 Flywheel is opinionated software
 
