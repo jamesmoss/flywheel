@@ -21,6 +21,7 @@ class ConfigTest extends \PHPUnit_Framework_TestCase
     public function testDataLocationWritableCheck()
     {
         $path   = __DIR__ . '/fixtures/datastore/notwritable';
+        chmod($path, 0555);
         $config = new Config($path);
     }
 

@@ -26,7 +26,9 @@ class RespositoryTest extends \PHPUnit_Framework_TestCase
 
     public function testStoringDocuments()
     {
-        mkdir('/tmp/flywheel');
+        if(!is_dir('/tmp/flywheel')) {
+            mkdir('/tmp/flywheel');  
+        }
         $config = new Config('/tmp/flywheel');
         $repo   = new Repository($config, '_pages');
 
