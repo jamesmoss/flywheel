@@ -51,8 +51,9 @@ class Repository
             $document->id = $this->generateID();
         }
 
-        $path = $this->getPath($document->id);
-        $data = json_encode((array)$document, JSON_PRETTY_PRINT);
+        $path    = $this->getPath($document->id);
+        $options = defined('JSON_PRETTY_PRINT') ? JSON_PRETTY_PRINT : null;
+        $data    = json_encode((array)$document, $options);
 
         return file_put_contents($path, $data);
     }
