@@ -1,0 +1,46 @@
+{
+    "name": "Sierra Leone",
+    "nativeName": "Sierra Leone",
+    "tld": [
+        ".sl"
+    ],
+    "cca2": "SL",
+    "ccn3": "694",
+    "cca3": "SLE",
+    "currency": [
+        "SLL"
+    ],
+    "callingCode": [
+        "232"
+    ],
+    "capital": "Freetown",
+    "altSpellings": [
+        "SL",
+        "Republic of Sierra Leone"
+    ],
+    "relevance": "0",
+    "region": "Africa",
+    "subregion": "Western Africa",
+    "language": [
+        "English"
+    ],
+    "languagesCodes": [
+        "en"
+    ],
+    "translations": {
+        "de": "Sierra Leone",
+        "en": "Sierra Leone",
+        "es": "Sierra Leone",
+        "fr": "Sierra Leone",
+        "it": "Sierra Leone",
+        "ja": "\u30b7\u30a8\u30e9\u30ec\u30aa\u30cd",
+        "nl": "Sierra Leone"
+    },
+    "population": 6190280,
+    "latlng": [
+        8.5,
+        -11.5
+    ],
+    "demonym": "Sierra Leonean",
+    "id": "Sierra Leone"
+}

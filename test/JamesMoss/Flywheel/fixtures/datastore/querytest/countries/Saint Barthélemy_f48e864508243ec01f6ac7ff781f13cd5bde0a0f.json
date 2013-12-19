@@ -1,0 +1,48 @@
+{
+    "name": "Saint Barth\u00e9lemy",
+    "nativeName": "Saint-Barth\u00e9lemy",
+    "tld": [
+        ".bl"
+    ],
+    "cca2": "BL",
+    "ccn3": "652",
+    "cca3": "BLM",
+    "currency": [
+        "EUR"
+    ],
+    "callingCode": [
+        "590"
+    ],
+    "capital": "Gustavia",
+    "altSpellings": [
+        "BL",
+        "St. Barthelemy",
+        "Collectivity of Saint Barth\u00e9lemy",
+        "Collectivit\u00e9 de Saint-Barth\u00e9lemy"
+    ],
+    "relevance": "0",
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "language": [
+        "French"
+    ],
+    "languagesCodes": [
+        "fr"
+    ],
+    "translations": {
+        "de": "Saint-Barth\u00e9lemy",
+        "en": "Saint Barth\u00e9lemy",
+        "es": "San Bartolom\u00e9",
+        "fr": "Saint-Barth\u00e9lemy",
+        "it": "Antille Francesi",
+        "ja": "\u30b5\u30f3\u30fb\u30d0\u30eb\u30c6\u30eb\u30df\u30fc",
+        "nl": "Saint Barth\u00e9lemy"
+    },
+    "population": 8938,
+    "latlng": [
+        18.5,
+        -63.41666666
+    ],
+    "demonym": "Saint Barth\u00e9lemy Islander",
+    "id": "Saint Barth\u00e9lemy"
+}

@@ -1,0 +1,58 @@
+{
+    "name": "Bolivia",
+    "nativeName": "Bolivia",
+    "tld": [
+        ".bo"
+    ],
+    "cca2": "BO",
+    "ccn3": "068",
+    "cca3": "BOL",
+    "currency": [
+        "BOB",
+        "BOV"
+    ],
+    "callingCode": [
+        "591"
+    ],
+    "capital": "Sucre",
+    "altSpellings": [
+        "BO",
+        "Buliwya",
+        "Wuliwya",
+        "Plurinational State of Bolivia",
+        "Estado Plurinacional de Bolivia",
+        "Buliwya Mamallaqta",
+        "Wuliwya Suyu",
+        "Tet\u00e3 Vol\u00edvia"
+    ],
+    "relevance": "0",
+    "region": "Americas",
+    "subregion": "South America",
+    "language": [
+        "Spanish",
+        "Quechua",
+        "Aymara",
+        "Guaran\u00ed"
+    ],
+    "languagesCodes": [
+        "es",
+        "ay",
+        "qu"
+    ],
+    "translations": {
+        "de": "Bolivien",
+        "en": "Bolivia",
+        "es": "Bolivia",
+        "fr": "Bolivie",
+        "it": "Bolivia",
+        "ja": "\u30dc\u30ea\u30d3\u30a2\u591a\u6c11\u65cf\u56fd",
+        "nl": "Bolivia"
+    },
+    "population": 10027254,
+    "latlng": [
+        -17,
+        -65
+    ],
+    "demonym": "Bolivian",
+    "id": "Bolivia"
+}

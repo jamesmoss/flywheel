@@ -1,0 +1,49 @@
+{
+    "name": "Tanzania",
+    "nativeName": "Tanzania",
+    "tld": [
+        ".tz"
+    ],
+    "cca2": "TZ",
+    "ccn3": "834",
+    "cca3": "TZA",
+    "currency": [
+        "TZS"
+    ],
+    "callingCode": [
+        "255"
+    ],
+    "capital": "Dodoma",
+    "altSpellings": [
+        "TZ",
+        "United Republic of Tanzania",
+        "Jamhuri ya Muungano wa Tanzania"
+    ],
+    "relevance": "0",
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "language": [
+        "Swahili",
+        "English"
+    ],
+    "languagesCodes": [
+        "sw",
+        "en"
+    ],
+    "translations": {
+        "de": "Tansania",
+        "en": "Tanzania",
+        "es": "Tanzania",
+        "fr": "Tanzanie",
+        "it": "Tanzania",
+        "ja": "\u30bf\u30f3\u30b6\u30cb\u30a2",
+        "nl": "Tanzania"
+    },
+    "population": 44928923,
+    "latlng": [
+        -6,
+        35
+    ],
+    "demonym": "Tanzanian",
+    "id": "Tanzania"
+}

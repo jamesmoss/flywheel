@@ -1,0 +1,67 @@
+{
+    "name": "South Africa",
+    "nativeName": "South Africa",
+    "tld": [
+        ".za"
+    ],
+    "cca2": "ZA",
+    "ccn3": "710",
+    "cca3": "ZAF",
+    "currency": [
+        "ZAR"
+    ],
+    "callingCode": [
+        "27"
+    ],
+    "capital": "Cape Town",
+    "altSpellings": [
+        "ZA",
+        "RSA",
+        "Suid-Afrika",
+        "Republic of South Africa"
+    ],
+    "relevance": "0",
+    "region": "Africa",
+    "subregion": "Southern Africa",
+    "language": [
+        "Afrikaans",
+        "English",
+        "Southern Ndebele",
+        "Northern Sotho",
+        "Southern Sotho",
+        "Swazi",
+        "Tsonga",
+        "Tswana",
+        "Venda",
+        "Xhosa",
+        "Zulu"
+    ],
+    "languagesCodes": [
+        "af",
+        "en",
+        "nr",
+        "st",
+        "ss",
+        "tn",
+        "ts",
+        "ve",
+        "xh",
+        "zu"
+    ],
+    "translations": {
+        "de": "Republik S\u00fcdafrika",
+        "en": "South Africa",
+        "es": "Rep\u00fablica de Sud\u00e1frica",
+        "fr": "Afrique du Sud",
+        "it": "Sud Africa",
+        "ja": "\u5357\u30a2\u30d5\u30ea\u30ab",
+        "nl": "Zuid-Afrika"
+    },
+    "population": 52981991,
+    "latlng": [
+        -29,
+        24
+    ],
+    "demonym": "South African",
+    "id": "South Africa"
+}

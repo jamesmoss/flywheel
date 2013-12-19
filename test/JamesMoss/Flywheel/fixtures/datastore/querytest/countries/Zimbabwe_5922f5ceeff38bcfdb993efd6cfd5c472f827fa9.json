@@ -1,0 +1,63 @@
+{
+    "name": "Zimbabwe",
+    "nativeName": "Zimbabwe",
+    "tld": [
+        ".zw"
+    ],
+    "cca2": "ZW",
+    "ccn3": "716",
+    "cca3": "ZWE",
+    "currency": [
+        "ZWL"
+    ],
+    "callingCode": [
+        "263"
+    ],
+    "capital": "Harare",
+    "altSpellings": [
+        "ZW",
+        "Republic of Zimbabwe"
+    ],
+    "relevance": "0",
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "language": [
+        "Chewa",
+        "Chibarwe",
+        "English",
+        "Kalanga",
+        "Koisan",
+        "Nambya",
+        "Ndau",
+        "Ndebele",
+        "Shangani",
+        "Shona",
+        "Zimbabwean sign language",
+        "Sotho",
+        "Tonga",
+        "Tswana",
+        "Venda",
+        "Xhosa"
+    ],
+    "languagesCodes": [
+        "en",
+        "sn",
+        "nd"
+    ],
+    "translations": {
+        "de": "Simbabwe",
+        "en": "Zimbabwe",
+        "es": "Zimbabue",
+        "fr": "Zimbabwe",
+        "it": "Zimbabwe",
+        "ja": "\u30b8\u30f3\u30d0\u30d6\u30a8",
+        "nl": "Zimbabwe"
+    },
+    "population": 12973808,
+    "latlng": [
+        -20,
+        30
+    ],
+    "demonym": "Zimbabwean",
+    "id": "Zimbabwe"
+}

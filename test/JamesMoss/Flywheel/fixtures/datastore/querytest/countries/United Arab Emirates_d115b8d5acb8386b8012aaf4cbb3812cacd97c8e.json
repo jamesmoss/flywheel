@@ -1,0 +1,46 @@
+{
+    "name": "United Arab Emirates",
+    "nativeName": "Dawlat al-\u02beIm\u0101r\u0101t al-\u02bfArabiyyah al-Mutta\u1e25idah",
+    "tld": [
+        ".ae"
+    ],
+    "cca2": "AE",
+    "ccn3": "784",
+    "cca3": "ARE",
+    "currency": [
+        "AED"
+    ],
+    "callingCode": [
+        "971"
+    ],
+    "capital": "Abu Dhabi",
+    "altSpellings": [
+        "AE",
+        "UAE"
+    ],
+    "relevance": "0",
+    "region": "Asia",
+    "subregion": "Western Asia",
+    "language": [
+        "Arabic"
+    ],
+    "languagesCodes": [
+        "ar"
+    ],
+    "translations": {
+        "de": "Vereinigte Arabische Emirate",
+        "en": "United Arab Emirates",
+        "es": "Emiratos \u00c1rabes Unidos",
+        "fr": "\u00c9mirats Arabes Unis",
+        "it": "Emirati Arabi Uniti",
+        "ja": "\u30a2\u30e9\u30d6\u9996\u9577\u56fd\u9023\u90a6",
+        "nl": "Verenigde Arabische Emiraten"
+    },
+    "population": 8264070,
+    "latlng": [
+        24,
+        54
+    ],
+    "demonym": "Emirian",
+    "id": "United Arab Emirates"
+}

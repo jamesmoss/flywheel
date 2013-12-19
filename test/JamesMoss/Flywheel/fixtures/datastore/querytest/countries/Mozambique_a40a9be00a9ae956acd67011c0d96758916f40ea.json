@@ -1,0 +1,47 @@
+{
+    "name": "Mozambique",
+    "nativeName": "Mo\u00e7ambique",
+    "tld": [
+        ".mz"
+    ],
+    "cca2": "MZ",
+    "ccn3": "508",
+    "cca3": "MOZ",
+    "currency": [
+        "MZN"
+    ],
+    "callingCode": [
+        "258"
+    ],
+    "capital": "Maputo",
+    "altSpellings": [
+        "MZ",
+        "Republic of Mozambique",
+        "Rep\u00fablica de Mo\u00e7ambique"
+    ],
+    "relevance": "0",
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "language": [
+        "Portuguese"
+    ],
+    "languagesCodes": [
+        "pt"
+    ],
+    "translations": {
+        "de": "Mosambik",
+        "en": "Mozambique",
+        "es": "Mozambique",
+        "fr": "Mozambique",
+        "it": "Mozambico",
+        "ja": "\u30e2\u30b6\u30f3\u30d3\u30fc\u30af",
+        "nl": "Mozambique"
+    },
+    "population": 23700715,
+    "latlng": [
+        -18.25,
+        35
+    ],
+    "demonym": "Mozambican",
+    "id": "Mozambique"
+}

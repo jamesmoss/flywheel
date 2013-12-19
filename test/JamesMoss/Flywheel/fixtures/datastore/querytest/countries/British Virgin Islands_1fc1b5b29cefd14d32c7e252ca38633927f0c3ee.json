@@ -1,0 +1,45 @@
+{
+    "name": "British Virgin Islands",
+    "nativeName": "British Virgin Islands",
+    "tld": [
+        ".vg"
+    ],
+    "cca2": "VG",
+    "ccn3": "092",
+    "cca3": "VGB",
+    "currency": [
+        "USD"
+    ],
+    "callingCode": [
+        "1284"
+    ],
+    "capital": "Road Town",
+    "altSpellings": [
+        "VG"
+    ],
+    "relevance": "0.5",
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "language": [
+        "English"
+    ],
+    "languagesCodes": [
+        "en"
+    ],
+    "translations": {
+        "de": "Britische Jungferninseln",
+        "en": "British Virgin Islands",
+        "es": "Islas V\u00edrgenes del Reino Unido",
+        "fr": "\u00celes Vierges britanniques",
+        "it": "Isole Vergini Britanniche",
+        "ja": "\u30a4\u30ae\u30ea\u30b9\u9818\u30f4\u30a1\u30fc\u30b8\u30f3\u8af8\u5cf6",
+        "nl": "Britse Maagdeneilanden"
+    },
+    "population": 29537,
+    "latlng": [
+        18.431383,
+        -64.62305
+    ],
+    "demonym": "Virgin Islander",
+    "id": "British Virgin Islands"
+}

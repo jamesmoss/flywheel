@@ -1,0 +1,44 @@
+{
+    "name": "Timor-Leste",
+    "nativeName": "Timor-Leste",
+    "tld": [
+        ".tl"
+    ],
+    "cca2": "TL",
+    "ccn3": "626",
+    "cca3": "TLS",
+    "currency": [
+        "USD"
+    ],
+    "callingCode": [
+        "670"
+    ],
+    "capital": "Dili",
+    "altSpellings": [
+        "TL",
+        "East Timor",
+        "Democratic Republic of Timor-Leste",
+        "Rep\u00fablica Democr\u00e1tica de Timor-Leste",
+        "Rep\u00fablika Demokr\u00e1tika Tim\u00f3r-Leste"
+    ],
+    "relevance": "0",
+    "region": "Asia",
+    "subregion": "South-Eastern Asia",
+    "language": [
+        "Portuguese",
+        "Tetum"
+    ],
+    "languagesCodes": [
+
+    ],
+    "translations": [
+
+    ],
+    "population": -1,
+    "latlng": [
+        -8.83333333,
+        125.91666666
+    ],
+    "demonym": "East Timorese",
+    "id": "Timor-Leste"
+}

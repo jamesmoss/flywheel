@@ -1,0 +1,47 @@
+{
+    "name": "Libya",
+    "nativeName": "L\u012bby\u0101",
+    "tld": [
+        ".ly"
+    ],
+    "cca2": "LY",
+    "ccn3": "434",
+    "cca3": "LBY",
+    "currency": [
+        "LYD"
+    ],
+    "callingCode": [
+        "218"
+    ],
+    "capital": "Tripoli",
+    "altSpellings": [
+        "LY",
+        "State of Libya",
+        "Dawlat Libya"
+    ],
+    "relevance": "0",
+    "region": "Africa",
+    "subregion": "Northern Africa",
+    "language": [
+        "Arabic"
+    ],
+    "languagesCodes": [
+        "ar"
+    ],
+    "translations": {
+        "de": "Libyen",
+        "en": "Libya",
+        "es": "Libia",
+        "fr": "Libye",
+        "it": "Libia",
+        "ja": "\u30ea\u30d3\u30a2",
+        "nl": "Libi\u00eb"
+    },
+    "population": 6202000,
+    "latlng": [
+        25,
+        17
+    ],
+    "demonym": "Libyan",
+    "id": "Libya"
+}

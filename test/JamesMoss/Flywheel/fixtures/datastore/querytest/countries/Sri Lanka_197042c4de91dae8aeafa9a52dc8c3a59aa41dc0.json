@@ -1,0 +1,49 @@
+{
+    "name": "Sri Lanka",
+    "nativeName": "\u015br\u012b la\u1e43k\u0101va",
+    "tld": [
+        ".lk"
+    ],
+    "cca2": "LK",
+    "ccn3": "144",
+    "cca3": "LKA",
+    "currency": [
+        "LKR"
+    ],
+    "callingCode": [
+        "94"
+    ],
+    "capital": "Colombo",
+    "altSpellings": [
+        "LK",
+        "ila\u1e45kai",
+        "Democratic Socialist Republic of Sri Lanka"
+    ],
+    "relevance": "0",
+    "region": "Asia",
+    "subregion": "Southern Asia",
+    "language": [
+        "Sinhala",
+        "Tamil"
+    ],
+    "languagesCodes": [
+        "si",
+        "ta"
+    ],
+    "translations": {
+        "de": "Sri Lanka",
+        "en": "Sri Lanka",
+        "es": "Sri Lanka",
+        "fr": "Sri Lanka",
+        "it": "Sri Lanka",
+        "ja": "\u30b9\u30ea\u30e9\u30f3\u30ab",
+        "nl": "Sri Lanka"
+    },
+    "population": 20277597,
+    "latlng": [
+        7,
+        81
+    ],
+    "demonym": "Sri Lankan",
+    "id": "Sri Lanka"
+}

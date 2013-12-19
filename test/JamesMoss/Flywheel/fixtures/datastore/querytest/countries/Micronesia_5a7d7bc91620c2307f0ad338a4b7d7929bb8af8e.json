@@ -1,0 +1,46 @@
+{
+    "name": "Micronesia",
+    "nativeName": "Micronesia",
+    "tld": [
+        ".fm"
+    ],
+    "cca2": "FM",
+    "ccn3": "583",
+    "cca3": "FSM",
+    "currency": [
+        "USD"
+    ],
+    "callingCode": [
+        "691"
+    ],
+    "capital": "Palikir",
+    "altSpellings": [
+        "FM",
+        "Federated States of Micronesia"
+    ],
+    "relevance": "0",
+    "region": "Oceania",
+    "subregion": "Micronesia",
+    "language": [
+        "English"
+    ],
+    "languagesCodes": [
+        "en"
+    ],
+    "translations": {
+        "de": "Mikronesien",
+        "en": "Micronesia",
+        "es": "Micronesia",
+        "fr": "Micron\u00e9sie",
+        "it": "Micronesia",
+        "ja": "\u30df\u30af\u30ed\u30cd\u30b7\u30a2\u9023\u90a6",
+        "nl": "Micronesi\u00eb"
+    },
+    "population": -1,
+    "latlng": [
+        6.91666666,
+        158.25
+    ],
+    "demonym": "Micronesian",
+    "id": "Micronesia"
+}

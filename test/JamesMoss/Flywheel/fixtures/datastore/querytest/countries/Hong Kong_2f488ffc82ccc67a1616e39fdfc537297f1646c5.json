@@ -1,0 +1,48 @@
+{
+    "name": "Hong Kong",
+    "nativeName": "Hong Kong",
+    "tld": [
+        ".hk"
+    ],
+    "cca2": "HK",
+    "ccn3": "344",
+    "cca3": "HKG",
+    "currency": [
+        "HKD"
+    ],
+    "callingCode": [
+        "852"
+    ],
+    "capital": "City of Victoria",
+    "altSpellings": [
+        "HK",
+        "\u9999\u6e2f"
+    ],
+    "relevance": "0",
+    "region": "Asia",
+    "subregion": "Eastern Asia",
+    "language": [
+        "English",
+        "Chinese"
+    ],
+    "languagesCodes": [
+        "en",
+        "zh"
+    ],
+    "translations": {
+        "de": "Hong Kong",
+        "en": "Hong Kong",
+        "es": "Hong Kong",
+        "fr": "Hong Kong",
+        "it": "Hong Kong",
+        "ja": "\u9999\u6e2f",
+        "nl": "Hongkong"
+    },
+    "population": 7184000,
+    "latlng": [
+        22.25,
+        114.16666666
+    ],
+    "demonym": "Chinese",
+    "id": "Hong Kong"
+}

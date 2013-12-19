@@ -1,0 +1,45 @@
+{
+    "name": "Montserrat",
+    "nativeName": "Montserrat",
+    "tld": [
+        ".ms"
+    ],
+    "cca2": "MS",
+    "ccn3": "500",
+    "cca3": "MSR",
+    "currency": [
+        "XCD"
+    ],
+    "callingCode": [
+        "1664"
+    ],
+    "capital": "Plymouth",
+    "altSpellings": [
+        "MS"
+    ],
+    "relevance": "0.5",
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "language": [
+        "English"
+    ],
+    "languagesCodes": [
+        "en"
+    ],
+    "translations": {
+        "de": "Montserrat",
+        "en": "Montserrat",
+        "es": "Montserrat",
+        "fr": "Montserrat",
+        "it": "Montserrat",
+        "ja": "\u30e2\u30f3\u30c8\u30bb\u30e9\u30c8",
+        "nl": "Montserrat"
+    },
+    "population": 4922,
+    "latlng": [
+        16.75,
+        -62.2
+    ],
+    "demonym": "Montserratian",
+    "id": "Montserrat"
+}

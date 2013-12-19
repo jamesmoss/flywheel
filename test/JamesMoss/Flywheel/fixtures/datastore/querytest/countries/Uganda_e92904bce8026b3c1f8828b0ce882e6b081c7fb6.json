@@ -1,0 +1,49 @@
+{
+    "name": "Uganda",
+    "nativeName": "Uganda",
+    "tld": [
+        ".ug"
+    ],
+    "cca2": "UG",
+    "ccn3": "800",
+    "cca3": "UGA",
+    "currency": [
+        "UGX"
+    ],
+    "callingCode": [
+        "256"
+    ],
+    "capital": "Kampala",
+    "altSpellings": [
+        "UG",
+        "Republic of Uganda",
+        "Jamhuri ya Uganda"
+    ],
+    "relevance": "0",
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "language": [
+        "English",
+        "Swahili"
+    ],
+    "languagesCodes": [
+        "en",
+        "sw"
+    ],
+    "translations": {
+        "de": "Uganda",
+        "en": "Uganda",
+        "es": "Uganda",
+        "fr": "Uganda",
+        "it": "Uganda",
+        "ja": "\u30a6\u30ac\u30f3\u30c0",
+        "nl": "Oeganda"
+    },
+    "population": 35357000,
+    "latlng": [
+        1,
+        32
+    ],
+    "demonym": "Ugandan",
+    "id": "Uganda"
+}

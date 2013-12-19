@@ -1,0 +1,45 @@
+{
+    "name": "Saint Lucia",
+    "nativeName": "Saint Lucia",
+    "tld": [
+        ".lc"
+    ],
+    "cca2": "LC",
+    "ccn3": "662",
+    "cca3": "LCA",
+    "currency": [
+        "XCD"
+    ],
+    "callingCode": [
+        "1758"
+    ],
+    "capital": "Castries",
+    "altSpellings": [
+        "LC"
+    ],
+    "relevance": "0",
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "language": [
+        "English"
+    ],
+    "languagesCodes": [
+        "en"
+    ],
+    "translations": {
+        "de": "Saint Lucia",
+        "en": "Saint Lucia",
+        "es": "Santa Luc\u00eda",
+        "fr": "Saint-Lucie",
+        "it": "Santa Lucia",
+        "ja": "\u30bb\u30f3\u30c8\u30eb\u30b7\u30a2",
+        "nl": "Saint Lucia"
+    },
+    "population": 166526,
+    "latlng": [
+        13.88333333,
+        -60.96666666
+    ],
+    "demonym": "Saint Lucian",
+    "id": "Saint Lucia"
+}

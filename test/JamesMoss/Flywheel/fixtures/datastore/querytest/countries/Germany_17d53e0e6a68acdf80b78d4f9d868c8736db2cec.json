@@ -1,0 +1,47 @@
+{
+    "name": "Germany",
+    "nativeName": "Deutschland",
+    "tld": [
+        ".de"
+    ],
+    "cca2": "DE",
+    "ccn3": "276",
+    "cca3": "DEU",
+    "currency": [
+        "EUR"
+    ],
+    "callingCode": [
+        "49"
+    ],
+    "capital": "Berlin",
+    "altSpellings": [
+        "DE",
+        "Federal Republic of Germany",
+        "Bundesrepublik Deutschland"
+    ],
+    "relevance": "3",
+    "region": "Europe",
+    "subregion": "Western Europe",
+    "language": [
+        "German"
+    ],
+    "languagesCodes": [
+        "de"
+    ],
+    "translations": {
+        "de": "Deutschland",
+        "en": "Germany",
+        "es": "Alemania",
+        "fr": "Allemagne",
+        "it": "Germania",
+        "ja": "\u30c9\u30a4\u30c4",
+        "nl": "Duitsland"
+    },
+    "population": 80523700,
+    "latlng": [
+        51,
+        9
+    ],
+    "demonym": "German",
+    "id": "Germany"
+}

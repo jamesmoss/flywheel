@@ -1,0 +1,48 @@
+{
+    "name": "Czech Republic",
+    "nativeName": "\u010cesk\u00e1 republika",
+    "tld": [
+        ".cz"
+    ],
+    "cca2": "CZ",
+    "ccn3": "203",
+    "cca3": "CZE",
+    "currency": [
+        "CZK"
+    ],
+    "callingCode": [
+        "420"
+    ],
+    "capital": "Prague",
+    "altSpellings": [
+        "CZ",
+        "\u010cesk\u00e1 republika",
+        "\u010cesko"
+    ],
+    "relevance": "0",
+    "region": "Europe",
+    "subregion": "Eastern Europe",
+    "language": [
+        "Czech"
+    ],
+    "languagesCodes": [
+        "cs",
+        "sk"
+    ],
+    "translations": {
+        "de": "Tschechische Republik",
+        "en": "Czech Republic",
+        "es": "Rep\u00fablica Checa",
+        "fr": "R\u00e9publique Tch\u00e8que",
+        "it": "Repubblica Ceca",
+        "ja": "\u30c1\u30a7\u30b3",
+        "nl": "Tsjechi\u00eb"
+    },
+    "population": 10512900,
+    "latlng": [
+        49.75,
+        15.5
+    ],
+    "demonym": "Czech",
+    "id": "Czech Republic"
+}

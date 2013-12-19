@@ -1,0 +1,47 @@
+{
+    "name": "Syria",
+    "nativeName": "S\u016briy\u0101",
+    "tld": [
+        ".sy"
+    ],
+    "cca2": "SY",
+    "ccn3": "760",
+    "cca3": "SYR",
+    "currency": [
+        "SYP"
+    ],
+    "callingCode": [
+        "963"
+    ],
+    "capital": "Damascus",
+    "altSpellings": [
+        "SY",
+        "Syrian Arab Republic",
+        "Al-Jumh\u016br\u012byah Al-\u02bbArab\u012byah As-S\u016br\u012byah"
+    ],
+    "relevance": "0",
+    "region": "Asia",
+    "subregion": "Western Asia",
+    "language": [
+        "Arabic"
+    ],
+    "languagesCodes": [
+        "ar"
+    ],
+    "translations": {
+        "de": "Syrien",
+        "en": "Syria",
+        "es": "Siria",
+        "fr": "Syrie",
+        "it": "Siria",
+        "ja": "\u30b7\u30ea\u30a2\u30fb\u30a2\u30e9\u30d6\u5171\u548c\u56fd",
+        "nl": "Syri\u00eb"
+    },
+    "population": 21898000,
+    "latlng": [
+        35,
+        38
+    ],
+    "demonym": "Syrian",
+    "id": "Syria"
+}

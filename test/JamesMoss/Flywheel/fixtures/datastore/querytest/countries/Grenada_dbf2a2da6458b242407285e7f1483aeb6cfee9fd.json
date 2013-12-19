@@ -1,0 +1,45 @@
+{
+    "name": "Grenada",
+    "nativeName": "Grenada",
+    "tld": [
+        ".gd"
+    ],
+    "cca2": "GD",
+    "ccn3": "308",
+    "cca3": "GRD",
+    "currency": [
+        "XCD"
+    ],
+    "callingCode": [
+        "1473"
+    ],
+    "capital": "St. George's",
+    "altSpellings": [
+        "GD"
+    ],
+    "relevance": "0",
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "language": [
+        "English"
+    ],
+    "languagesCodes": [
+        "en"
+    ],
+    "translations": {
+        "de": "Grenada",
+        "en": "Grenada",
+        "es": "Grenada",
+        "fr": "Grenade",
+        "it": "Grenada",
+        "ja": "\u30b0\u30ec\u30ca\u30c0",
+        "nl": "Grenada"
+    },
+    "population": 103328,
+    "latlng": [
+        12.11666666,
+        -61.66666666
+    ],
+    "demonym": "Grenadian",
+    "id": "Grenada"
+}

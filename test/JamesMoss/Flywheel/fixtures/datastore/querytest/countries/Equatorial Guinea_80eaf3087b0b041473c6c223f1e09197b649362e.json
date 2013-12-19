@@ -1,0 +1,52 @@
+{
+    "name": "Equatorial Guinea",
+    "nativeName": "Guinea Ecuatorial",
+    "tld": [
+        ".gq"
+    ],
+    "cca2": "GQ",
+    "ccn3": "226",
+    "cca3": "GNQ",
+    "currency": [
+        "XAF"
+    ],
+    "callingCode": [
+        "240"
+    ],
+    "capital": "Malabo",
+    "altSpellings": [
+        "GQ",
+        "Republic of Equatorial Guinea",
+        "Rep\u00fablica de Guinea Ecuatorial",
+        "R\u00e9publique de Guin\u00e9e \u00e9quatoriale",
+        "Rep\u00fablica da Guin\u00e9 Equatorial"
+    ],
+    "relevance": "0",
+    "region": "Africa",
+    "subregion": "Middle Africa",
+    "language": [
+        "Spanish",
+        "French",
+        "Portuguese"
+    ],
+    "languagesCodes": [
+        "es",
+        "fr"
+    ],
+    "translations": {
+        "de": "\u00c4quatorial-Guinea",
+        "en": "Equatorial Guinea",
+        "es": "Guinea Ecuatorial",
+        "fr": "Guin\u00e9e \u00c9quatoriale",
+        "it": "Guinea Equatoriale",
+        "ja": "\u8d64\u9053\u30ae\u30cb\u30a2",
+        "nl": "Equatoriaal-Guinea"
+    },
+    "population": 1622000,
+    "latlng": [
+        2,
+        10
+    ],
+    "demonym": "Equatorial Guinean",
+    "id": "Equatorial Guinea"
+}

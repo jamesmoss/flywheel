@@ -1,0 +1,50 @@
+{
+    "name": "Chad",
+    "nativeName": "Tchad",
+    "tld": [
+        ".td"
+    ],
+    "cca2": "TD",
+    "ccn3": "148",
+    "cca3": "TCD",
+    "currency": [
+        "XAF"
+    ],
+    "callingCode": [
+        "235"
+    ],
+    "capital": "N'Djamena",
+    "altSpellings": [
+        "TD",
+        "Tchad",
+        "Republic of Chad",
+        "R\u00e9publique du Tchad"
+    ],
+    "relevance": "0",
+    "region": "Africa",
+    "subregion": "Middle Africa",
+    "language": [
+        "French",
+        "Arabic"
+    ],
+    "languagesCodes": [
+        "ar",
+        "fr"
+    ],
+    "translations": {
+        "de": "Tschad",
+        "en": "Chad",
+        "es": "chad",
+        "fr": "Tchad",
+        "it": "Ciad",
+        "ja": "\u30c1\u30e3\u30c9",
+        "nl": "Tsjaad"
+    },
+    "population": 12825000,
+    "latlng": [
+        15,
+        19
+    ],
+    "demonym": "Chadian",
+    "id": "Chad"
+}

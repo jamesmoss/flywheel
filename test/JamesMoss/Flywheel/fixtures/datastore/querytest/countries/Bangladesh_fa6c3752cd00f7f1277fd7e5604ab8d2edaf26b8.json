@@ -1,0 +1,47 @@
+{
+    "name": "Bangladesh",
+    "nativeName": "Bangladesh",
+    "tld": [
+        ".bd"
+    ],
+    "cca2": "BD",
+    "ccn3": "050",
+    "cca3": "BGD",
+    "currency": [
+        "BDT"
+    ],
+    "callingCode": [
+        "880"
+    ],
+    "capital": "Dhaka",
+    "altSpellings": [
+        "BD",
+        "People's Republic of Bangladesh",
+        "G\u00f4n\u00f4pr\u00f4jat\u00f4ntri Bangladesh"
+    ],
+    "relevance": "2",
+    "region": "Asia",
+    "subregion": "Southern Asia",
+    "language": [
+        "Bangla"
+    ],
+    "languagesCodes": [
+        "bn"
+    ],
+    "translations": {
+        "de": "Bangladesch",
+        "en": "Bangladesh",
+        "es": "Bangladesh",
+        "fr": "Bangladesh",
+        "it": "Bangladesh",
+        "ja": "\u30d0\u30f3\u30b0\u30e9\u30c7\u30b7\u30e5",
+        "nl": "Bangladesh"
+    },
+    "population": 152518015,
+    "latlng": [
+        24,
+        90
+    ],
+    "demonym": "Bangladeshi",
+    "id": "Bangladesh"
+}

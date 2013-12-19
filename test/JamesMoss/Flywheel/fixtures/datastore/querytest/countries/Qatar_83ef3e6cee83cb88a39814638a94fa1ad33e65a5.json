@@ -1,0 +1,47 @@
+{
+    "name": "Qatar",
+    "nativeName": "Qa\u1e6dar",
+    "tld": [
+        ".qa"
+    ],
+    "cca2": "QA",
+    "ccn3": "634",
+    "cca3": "QAT",
+    "currency": [
+        "QAR"
+    ],
+    "callingCode": [
+        "974"
+    ],
+    "capital": "Doha",
+    "altSpellings": [
+        "QA",
+        "State of Qatar",
+        "Dawlat Qa\u1e6dar"
+    ],
+    "relevance": "0",
+    "region": "Asia",
+    "subregion": "Western Asia",
+    "language": [
+        "Arabic"
+    ],
+    "languagesCodes": [
+        "ar"
+    ],
+    "translations": {
+        "de": "Katar",
+        "en": "Qatar",
+        "es": "Catar",
+        "fr": "Qatar",
+        "it": "Qatar",
+        "ja": "\u30ab\u30bf\u30fc\u30eb",
+        "nl": "Qatar"
+    },
+    "population": 2024707,
+    "latlng": [
+        25.5,
+        51.25
+    ],
+    "demonym": "Qatari",
+    "id": "Qatar"
+}

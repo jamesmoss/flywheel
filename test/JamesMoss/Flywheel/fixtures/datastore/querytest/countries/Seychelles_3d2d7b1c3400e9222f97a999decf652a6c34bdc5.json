@@ -1,0 +1,51 @@
+{
+    "name": "Seychelles",
+    "nativeName": "Seychelles",
+    "tld": [
+        ".sc"
+    ],
+    "cca2": "SC",
+    "ccn3": "690",
+    "cca3": "SYC",
+    "currency": [
+        "SCR"
+    ],
+    "callingCode": [
+        "248"
+    ],
+    "capital": "Victoria",
+    "altSpellings": [
+        "SC",
+        "Republic of Seychelles",
+        "Repiblik Sesel",
+        "R\u00e9publique des Seychelles"
+    ],
+    "relevance": "0.5",
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "language": [
+        "French",
+        "English",
+        "Seychellois Creole"
+    ],
+    "languagesCodes": [
+        "fr",
+        "en"
+    ],
+    "translations": {
+        "de": "Seychellen",
+        "en": "Seychelles",
+        "es": "Seychelles",
+        "fr": "Seychelles",
+        "it": "Seychelles",
+        "ja": "\u30bb\u30fc\u30b7\u30a7\u30eb",
+        "nl": "Seychellen"
+    },
+    "population": 90945,
+    "latlng": [
+        -4.58333333,
+        55.66666666
+    ],
+    "demonym": "Seychellois",
+    "id": "Seychelles"
+}

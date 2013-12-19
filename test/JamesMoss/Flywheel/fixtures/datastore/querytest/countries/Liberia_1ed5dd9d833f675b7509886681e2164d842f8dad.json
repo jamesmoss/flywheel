@@ -1,0 +1,46 @@
+{
+    "name": "Liberia",
+    "nativeName": "Liberia",
+    "tld": [
+        ".lr"
+    ],
+    "cca2": "LR",
+    "ccn3": "430",
+    "cca3": "LBR",
+    "currency": [
+        "LRD"
+    ],
+    "callingCode": [
+        "231"
+    ],
+    "capital": "Monrovia",
+    "altSpellings": [
+        "LR",
+        "Republic of Liberia"
+    ],
+    "relevance": "0",
+    "region": "Africa",
+    "subregion": "Western Africa",
+    "language": [
+        "English"
+    ],
+    "languagesCodes": [
+        "en"
+    ],
+    "translations": {
+        "de": "Liberia",
+        "en": "Liberia",
+        "es": "Liberia",
+        "fr": "Liberia",
+        "it": "Liberia",
+        "ja": "\u30ea\u30d9\u30ea\u30a2",
+        "nl": "Liberia"
+    },
+    "population": 4294000,
+    "latlng": [
+        6.5,
+        -9.5
+    ],
+    "demonym": "Liberian",
+    "id": "Liberia"
+}

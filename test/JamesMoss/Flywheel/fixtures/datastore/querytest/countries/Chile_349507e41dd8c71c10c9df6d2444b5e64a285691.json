@@ -1,0 +1,48 @@
+{
+    "name": "Chile",
+    "nativeName": "Chile",
+    "tld": [
+        ".cl"
+    ],
+    "cca2": "CL",
+    "ccn3": "152",
+    "cca3": "CHL",
+    "currency": [
+        "CLF",
+        "CLP"
+    ],
+    "callingCode": [
+        "56"
+    ],
+    "capital": "Santiago",
+    "altSpellings": [
+        "CL",
+        "Republic of Chile",
+        "Rep\u00fablica de Chile"
+    ],
+    "relevance": "0",
+    "region": "Americas",
+    "subregion": "South America",
+    "language": [
+        "Spanish"
+    ],
+    "languagesCodes": [
+        "es"
+    ],
+    "translations": {
+        "de": "Chile",
+        "en": "Chile",
+        "es": "Chile",
+        "fr": "Chili",
+        "it": "Cile",
+        "ja": "\u30c1\u30ea",
+        "nl": "Chili"
+    },
+    "population": 16634603,
+    "latlng": [
+        -30,
+        -71
+    ],
+    "demonym": "Chilean",
+    "id": "Chile"
+}

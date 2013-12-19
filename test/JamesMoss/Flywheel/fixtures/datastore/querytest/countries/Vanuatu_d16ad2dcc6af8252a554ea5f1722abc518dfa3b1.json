@@ -1,0 +1,52 @@
+{
+    "name": "Vanuatu",
+    "nativeName": "Vanuatu",
+    "tld": [
+        ".vu"
+    ],
+    "cca2": "VU",
+    "ccn3": "548",
+    "cca3": "VUT",
+    "currency": [
+        "VUV"
+    ],
+    "callingCode": [
+        "678"
+    ],
+    "capital": "Port Vila",
+    "altSpellings": [
+        "VU",
+        "Republic of Vanuatu",
+        "Ripablik blong Vanuatu",
+        "R\u00e9publique de Vanuatu"
+    ],
+    "relevance": "0",
+    "region": "Oceania",
+    "subregion": "Melanesia",
+    "language": [
+        "Bislama",
+        "French",
+        "English"
+    ],
+    "languagesCodes": [
+        "bi",
+        "en",
+        "fr"
+    ],
+    "translations": {
+        "de": "Vanuatu",
+        "en": "Vanuatu",
+        "es": "Vanuatu",
+        "fr": "Vanuatu",
+        "it": "Vanuatu",
+        "ja": "\u30d0\u30cc\u30a2\u30c4",
+        "nl": "Vanuatu"
+    },
+    "population": 264652,
+    "latlng": [
+        -16,
+        167
+    ],
+    "demonym": "Ni-Vanuatu",
+    "id": "Vanuatu"
+}

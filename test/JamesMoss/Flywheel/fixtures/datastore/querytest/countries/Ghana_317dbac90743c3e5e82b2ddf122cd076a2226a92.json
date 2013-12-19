@@ -1,0 +1,45 @@
+{
+    "name": "Ghana",
+    "nativeName": "Ghana",
+    "tld": [
+        ".gh"
+    ],
+    "cca2": "GH",
+    "ccn3": "288",
+    "cca3": "GHA",
+    "currency": [
+        "GHS"
+    ],
+    "callingCode": [
+        "233"
+    ],
+    "capital": "Accra",
+    "altSpellings": [
+        "GH"
+    ],
+    "relevance": "0",
+    "region": "Africa",
+    "subregion": "Western Africa",
+    "language": [
+        "English"
+    ],
+    "languagesCodes": [
+        "en"
+    ],
+    "translations": {
+        "de": "Ghana",
+        "en": "Ghana",
+        "es": "Ghana",
+        "fr": "Ghana",
+        "it": "Ghana",
+        "ja": "\u30ac\u30fc\u30ca",
+        "nl": "Ghana"
+    },
+    "population": 24658823,
+    "latlng": [
+        8,
+        -2
+    ],
+    "demonym": "Ghanaian",
+    "id": "Ghana"
+}

@@ -1,0 +1,50 @@
+{
+    "name": "Tajikistan",
+    "nativeName": "\u0422\u043e\u04b7\u0438\u043a\u0438\u0441\u0442\u043e\u043d",
+    "tld": [
+        ".tj"
+    ],
+    "cca2": "TJ",
+    "ccn3": "762",
+    "cca3": "TJK",
+    "currency": [
+        "TJS"
+    ],
+    "callingCode": [
+        "992"
+    ],
+    "capital": "Dushanbe",
+    "altSpellings": [
+        "TJ",
+        "To\u00e7ikiston",
+        "Republic of Tajikistan",
+        "\u04b6\u0443\u043c\u04b3\u0443\u0440\u0438\u0438 \u0422\u043e\u04b7\u0438\u043a\u0438\u0441\u0442\u043e\u043d",
+        "\u00c7umhuriyi To\u00e7ikiston"
+    ],
+    "relevance": "0",
+    "region": "Asia",
+    "subregion": "Central Asia",
+    "language": [
+        "Tajik"
+    ],
+    "languagesCodes": [
+        "tg",
+        "ru"
+    ],
+    "translations": {
+        "de": "Tadschikistan",
+        "en": "Tajikistan",
+        "es": "Tayikist\u00e1n",
+        "fr": "Tadjikistan",
+        "it": "Tagikistan",
+        "ja": "\u30bf\u30b8\u30ad\u30b9\u30bf\u30f3",
+        "nl": "Tadzjikistan"
+    },
+    "population": 8000000,
+    "latlng": [
+        39,
+        71
+    ],
+    "demonym": "Tadzhik",
+    "id": "Tajikistan"
+}

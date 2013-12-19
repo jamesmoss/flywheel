@@ -1,0 +1,46 @@
+{
+    "name": "Guadeloupe",
+    "nativeName": "Guadeloupe",
+    "tld": [
+        ".gp"
+    ],
+    "cca2": "GP",
+    "ccn3": "312",
+    "cca3": "GLP",
+    "currency": [
+        "EUR"
+    ],
+    "callingCode": [
+        "590"
+    ],
+    "capital": "Basse-Terre",
+    "altSpellings": [
+        "GP",
+        "Gwadloup"
+    ],
+    "relevance": "0",
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "language": [
+        "French"
+    ],
+    "languagesCodes": [
+        "fr"
+    ],
+    "translations": {
+        "de": "Guadeloupe",
+        "en": "Guadeloupe",
+        "es": "Guadalupe",
+        "fr": "Guadeloupe",
+        "it": "Guadeloupa",
+        "ja": "\u30b0\u30a2\u30c9\u30eb\u30fc\u30d7",
+        "nl": "Guadeloupe"
+    },
+    "population": 403355,
+    "latlng": [
+        16.25,
+        -61.583333
+    ],
+    "demonym": "Guadeloupian",
+    "id": "Guadeloupe"
+}

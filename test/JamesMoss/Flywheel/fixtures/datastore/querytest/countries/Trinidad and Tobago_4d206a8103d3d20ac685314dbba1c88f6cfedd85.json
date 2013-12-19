@@ -1,0 +1,46 @@
+{
+    "name": "Trinidad and Tobago",
+    "nativeName": "Trinidad and Tobago",
+    "tld": [
+        ".tt"
+    ],
+    "cca2": "TT",
+    "ccn3": "780",
+    "cca3": "TTO",
+    "currency": [
+        "TTD"
+    ],
+    "callingCode": [
+        "1868"
+    ],
+    "capital": "Port of Spain",
+    "altSpellings": [
+        "TT",
+        "Republic of Trinidad and Tobago"
+    ],
+    "relevance": "0",
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "language": [
+        "English"
+    ],
+    "languagesCodes": [
+        "en"
+    ],
+    "translations": {
+        "de": "Trinidad und Tobago",
+        "en": "Trinidad and Tobago",
+        "es": "Trinidad y Tobago",
+        "fr": "Trinit\u00e9 et Tobago",
+        "it": "Trinidad e Tobago",
+        "ja": "\u30c8\u30ea\u30cb\u30c0\u30fc\u30c9\u30fb\u30c8\u30d0\u30b4",
+        "nl": "Trinidad en Tobago"
+    },
+    "population": 1328019,
+    "latlng": [
+        11,
+        -61
+    ],
+    "demonym": "Trinidadian",
+    "id": "Trinidad and Tobago"
+}

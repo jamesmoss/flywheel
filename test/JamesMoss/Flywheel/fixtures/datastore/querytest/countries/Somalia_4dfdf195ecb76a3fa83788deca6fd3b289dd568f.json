@@ -1,0 +1,51 @@
+{
+    "name": "Somalia",
+    "nativeName": "Soomaaliya",
+    "tld": [
+        ".so"
+    ],
+    "cca2": "SO",
+    "ccn3": "706",
+    "cca3": "SOM",
+    "currency": [
+        "SOS"
+    ],
+    "callingCode": [
+        "252"
+    ],
+    "capital": "Mogadishu",
+    "altSpellings": [
+        "SO",
+        "a\u1e63-\u1e62\u016bm\u0101l",
+        "Federal Republic of Somalia",
+        "Jamhuuriyadda Federaalka Soomaaliya",
+        "Jumh\u016briyyat a\u1e63-\u1e62\u016bm\u0101l al-Fider\u0101liyya"
+    ],
+    "relevance": "0",
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "language": [
+        "Somali",
+        "Arabic"
+    ],
+    "languagesCodes": [
+        "so",
+        "ar"
+    ],
+    "translations": {
+        "de": "Somalia",
+        "en": "Somalia",
+        "es": "Somalia",
+        "fr": "Somalie",
+        "it": "Somalia",
+        "ja": "\u30bd\u30de\u30ea\u30a2",
+        "nl": "Somali\u00eb"
+    },
+    "population": 10496000,
+    "latlng": [
+        10,
+        49
+    ],
+    "demonym": "Somali",
+    "id": "Somalia"
+}

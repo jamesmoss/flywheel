@@ -1,0 +1,48 @@
+{
+    "name": "Austria",
+    "nativeName": "\u00d6sterreich",
+    "tld": [
+        ".at"
+    ],
+    "cca2": "AT",
+    "ccn3": "040",
+    "cca3": "AUT",
+    "currency": [
+        "EUR"
+    ],
+    "callingCode": [
+        "43"
+    ],
+    "capital": "Vienna",
+    "altSpellings": [
+        "AT",
+        "\u00d6sterreich",
+        "Osterreich",
+        "Oesterreich"
+    ],
+    "relevance": "0",
+    "region": "Europe",
+    "subregion": "Western Europe",
+    "language": [
+        "German"
+    ],
+    "languagesCodes": [
+        "de"
+    ],
+    "translations": {
+        "de": "\u00d6sterreich",
+        "en": "Austria",
+        "es": "Austria",
+        "fr": "Autriche",
+        "it": "Austria",
+        "ja": "\u30aa\u30fc\u30b9\u30c8\u30ea\u30a2",
+        "nl": "Oostenrijk"
+    },
+    "population": 8501502,
+    "latlng": [
+        47.33333333,
+        13.33333333
+    ],
+    "demonym": "Austrian",
+    "id": "Austria"
+}

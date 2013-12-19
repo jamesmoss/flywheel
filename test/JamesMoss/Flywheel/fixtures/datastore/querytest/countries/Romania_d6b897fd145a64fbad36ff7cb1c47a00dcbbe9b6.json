@@ -1,0 +1,48 @@
+{
+    "name": "Romania",
+    "nativeName": "Rom\u00e2nia",
+    "tld": [
+        ".ro"
+    ],
+    "cca2": "RO",
+    "ccn3": "642",
+    "cca3": "ROU",
+    "currency": [
+        "RON"
+    ],
+    "callingCode": [
+        "40"
+    ],
+    "capital": "Bucharest",
+    "altSpellings": [
+        "RO",
+        "Rumania",
+        "Roumania",
+        "Rom\u00e2nia"
+    ],
+    "relevance": "0",
+    "region": "Europe",
+    "subregion": "Eastern Europe",
+    "language": [
+        "Romanian"
+    ],
+    "languagesCodes": [
+        "ro"
+    ],
+    "translations": {
+        "de": "Rum\u00e4nien",
+        "en": "Romania",
+        "es": "Rumania",
+        "fr": "Roumanie",
+        "it": "Romania",
+        "ja": "\u30eb\u30fc\u30de\u30cb\u30a2",
+        "nl": "Roemeni\u00eb"
+    },
+    "population": 20121641,
+    "latlng": [
+        46,
+        25
+    ],
+    "demonym": "Romanian",
+    "id": "Romania"
+}

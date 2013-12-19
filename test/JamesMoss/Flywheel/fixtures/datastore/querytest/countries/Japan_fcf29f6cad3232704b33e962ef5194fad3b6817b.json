@@ -1,0 +1,47 @@
+{
+    "name": "Japan",
+    "nativeName": "\u65e5\u672c",
+    "tld": [
+        ".jp"
+    ],
+    "cca2": "JP",
+    "ccn3": "392",
+    "cca3": "JPN",
+    "currency": [
+        "JPY"
+    ],
+    "callingCode": [
+        "81"
+    ],
+    "capital": "Tokyo",
+    "altSpellings": [
+        "JP",
+        "Nippon",
+        "Nihon"
+    ],
+    "relevance": "2.5",
+    "region": "Asia",
+    "subregion": "Eastern Asia",
+    "language": [
+        "Japanese"
+    ],
+    "languagesCodes": [
+        "ja"
+    ],
+    "translations": {
+        "de": "Japan",
+        "en": "Japan",
+        "es": "Jap\u00f3n",
+        "fr": "Japon",
+        "it": "Giappone",
+        "ja": "\u65e5\u672c",
+        "nl": "Japan"
+    },
+    "population": 127290000,
+    "latlng": [
+        36,
+        138
+    ],
+    "demonym": "Japanese",
+    "id": "Japan"
+}

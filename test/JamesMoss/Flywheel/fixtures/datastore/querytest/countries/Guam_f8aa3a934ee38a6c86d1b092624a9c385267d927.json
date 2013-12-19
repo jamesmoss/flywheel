@@ -1,0 +1,49 @@
+{
+    "name": "Guam",
+    "nativeName": "Guam",
+    "tld": [
+        ".gu"
+    ],
+    "cca2": "GU",
+    "ccn3": "316",
+    "cca3": "GUM",
+    "currency": [
+        "USD"
+    ],
+    "callingCode": [
+        "1671"
+    ],
+    "capital": "Hag\u00e5t\u00f1a",
+    "altSpellings": [
+        "GU",
+        "Gu\u00e5h\u00e5n"
+    ],
+    "relevance": "0",
+    "region": "Oceania",
+    "subregion": "Micronesia",
+    "language": [
+        "English",
+        "Chamorro"
+    ],
+    "languagesCodes": [
+        "en",
+        "ch",
+        "es"
+    ],
+    "translations": {
+        "de": "Guam",
+        "en": "Guam",
+        "es": "Guam",
+        "fr": "Guam",
+        "it": "Guam",
+        "ja": "\u30b0\u30a2\u30e0",
+        "nl": "Guam"
+    },
+    "population": 159358,
+    "latlng": [
+        13.46666666,
+        144.78333333
+    ],
+    "demonym": "Guamanian",
+    "id": "Guam"
+}

@@ -1,0 +1,49 @@
+{
+    "name": "Kenya",
+    "nativeName": "Kenya",
+    "tld": [
+        ".ke"
+    ],
+    "cca2": "KE",
+    "ccn3": "404",
+    "cca3": "KEN",
+    "currency": [
+        "KES"
+    ],
+    "callingCode": [
+        "254"
+    ],
+    "capital": "Nairobi",
+    "altSpellings": [
+        "KE",
+        "Republic of Kenya",
+        "Jamhuri ya Kenya"
+    ],
+    "relevance": "0",
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "language": [
+        "Swahili",
+        "English"
+    ],
+    "languagesCodes": [
+        "en",
+        "sw"
+    ],
+    "translations": {
+        "de": "Kenia",
+        "en": "Kenya",
+        "es": "Kenia",
+        "fr": "Kenya",
+        "it": "Kenya",
+        "ja": "\u30b1\u30cb\u30a2",
+        "nl": "Kenia"
+    },
+    "population": 44354000,
+    "latlng": [
+        1,
+        38
+    ],
+    "demonym": "Kenyan",
+    "id": "Kenya"
+}

@@ -1,0 +1,42 @@
+{
+    "name": "Philippines",
+    "nativeName": "Pilipinas",
+    "tld": [
+        ".ph"
+    ],
+    "cca2": "PH",
+    "ccn3": "608",
+    "cca3": "PHL",
+    "currency": [
+        "PHP"
+    ],
+    "callingCode": [
+        "63"
+    ],
+    "capital": "Manila",
+    "altSpellings": [
+        "PH",
+        "Republic of the Philippines",
+        "Rep\u00fablika ng Pilipinas"
+    ],
+    "relevance": "1.5",
+    "region": "Asia",
+    "subregion": "South-Eastern Asia",
+    "language": [
+        "Filipino",
+        "English"
+    ],
+    "languagesCodes": [
+
+    ],
+    "translations": [
+
+    ],
+    "population": 98678000,
+    "latlng": [
+        13,
+        122
+    ],
+    "demonym": "Filipino",
+    "id": "Philippines"
+}

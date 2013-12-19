@@ -1,0 +1,47 @@
+{
+    "name": "Bouvet Island",
+    "nativeName": "Bouvet\u00f8ya",
+    "tld": [
+        ".bv"
+    ],
+    "cca2": "BV",
+    "ccn3": "074",
+    "cca3": "BVT",
+    "currency": [
+        "NOK"
+    ],
+    "callingCode": [
+        ""
+    ],
+    "capital": "",
+    "altSpellings": [
+        "BV",
+        "Bouvet\u00f8ya",
+        "Bouvet-\u00f8ya"
+    ],
+    "relevance": "0",
+    "region": "",
+    "subregion": "",
+    "language": [
+        ""
+    ],
+    "languagesCodes": [
+
+    ],
+    "translations": {
+        "de": "Bouvetinsel",
+        "en": "Bouvet Island",
+        "es": "Isla Bouvet",
+        "fr": "\u00cele Bouvet",
+        "it": "Isola Bouvet",
+        "ja": "\u30d6\u30fc\u30d9\u5cf6",
+        "nl": "Bouveteiland"
+    },
+    "population": -1,
+    "latlng": [
+        -54.43333333,
+        3.4
+    ],
+    "demonym": "",
+    "id": "Bouvet Island"
+}

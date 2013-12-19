@@ -1,0 +1,44 @@
+{
+    "name": "Thailand",
+    "nativeName": "\u0e1b\u0e23\u0e30\u0e40\u0e17\u0e28\u0e44\u0e17\u0e22",
+    "tld": [
+        ".th"
+    ],
+    "cca2": "TH",
+    "ccn3": "764",
+    "cca3": "THA",
+    "currency": [
+        "THB"
+    ],
+    "callingCode": [
+        "66"
+    ],
+    "capital": "Bangkok",
+    "altSpellings": [
+        "TH",
+        "Prathet",
+        "Thai",
+        "Kingdom of Thailand",
+        "\u0e23\u0e32\u0e0a\u0e2d\u0e32\u0e13\u0e32\u0e08\u0e31\u0e01\u0e23\u0e44\u0e17\u0e22",
+        "Ratcha Anachak Thai"
+    ],
+    "relevance": "0",
+    "region": "Asia",
+    "subregion": "South-Eastern Asia",
+    "language": [
+        "Thai"
+    ],
+    "languagesCodes": [
+
+    ],
+    "translations": [
+
+    ],
+    "population": 65926261,
+    "latlng": [
+        15,
+        100
+    ],
+    "demonym": "Thai",
+    "id": "Thailand"
+}

@@ -1,0 +1,45 @@
+{
+    "name": "Barbados",
+    "nativeName": "Barbados",
+    "tld": [
+        ".bb"
+    ],
+    "cca2": "BB",
+    "ccn3": "052",
+    "cca3": "BRB",
+    "currency": [
+        "BBD"
+    ],
+    "callingCode": [
+        "1246"
+    ],
+    "capital": "Bridgetown",
+    "altSpellings": [
+        "BB"
+    ],
+    "relevance": "0",
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "language": [
+        "English"
+    ],
+    "languagesCodes": [
+        "en"
+    ],
+    "translations": {
+        "de": "Barbados",
+        "en": "Barbade",
+        "es": "Barbados",
+        "fr": "Barbade",
+        "it": "Barbados",
+        "ja": "\u30d0\u30eb\u30d0\u30c9\u30b9",
+        "nl": "Barbados"
+    },
+    "population": 274200,
+    "latlng": [
+        13.16666666,
+        -59.53333333
+    ],
+    "demonym": "Barbadian",
+    "id": "Barbados"
+}

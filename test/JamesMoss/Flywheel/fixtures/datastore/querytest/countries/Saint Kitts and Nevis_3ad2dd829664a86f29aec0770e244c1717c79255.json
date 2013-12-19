@@ -1,0 +1,46 @@
+{
+    "name": "Saint Kitts and Nevis",
+    "nativeName": "Saint Kitts and Nevis",
+    "tld": [
+        ".kn"
+    ],
+    "cca2": "KN",
+    "ccn3": "659",
+    "cca3": "KNA",
+    "currency": [
+        "XCD"
+    ],
+    "callingCode": [
+        "1869"
+    ],
+    "capital": "Basseterre",
+    "altSpellings": [
+        "KN",
+        "Federation of Saint Christopher and Nevis"
+    ],
+    "relevance": "0",
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "language": [
+        "English"
+    ],
+    "languagesCodes": [
+        "en"
+    ],
+    "translations": {
+        "de": "F\u00f6deration St. Kitts und Nevis",
+        "en": "Saint Kitts and Nevis",
+        "es": "Saint Kitts y Nevis",
+        "fr": "Saint Kitts et Nevis",
+        "it": "Saint Kitts e Nevis",
+        "ja": "\u30bb\u30f3\u30c8\u30af\u30ea\u30b9\u30c8\u30d5\u30a1\u30fc\u30fb\u30cd\u30a4\u30d3\u30b9",
+        "nl": "Saint Kitts en Nevis"
+    },
+    "population": 54000,
+    "latlng": [
+        17.33333333,
+        -62.75
+    ],
+    "demonym": "Kittian and Nevisian",
+    "id": "Saint Kitts and Nevis"
+}

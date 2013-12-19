@@ -1,0 +1,51 @@
+{
+    "name": "Macao",
+    "nativeName": "\u6fb3\u9580",
+    "tld": [
+        ".mo"
+    ],
+    "cca2": "MO",
+    "ccn3": "446",
+    "cca3": "MAC",
+    "currency": [
+        "MOP"
+    ],
+    "callingCode": [
+        "853"
+    ],
+    "capital": "",
+    "altSpellings": [
+        "MO",
+        "\u6fb3\u95e8",
+        "Macao Special Administrative Region of the People's Republic of China",
+        "\u4e2d\u83ef\u4eba\u6c11\u5171\u548c\u570b\u6fb3\u9580\u7279\u5225\u884c\u653f\u5340",
+        "Regi\u00e3o Administrativa Especial de Macau da Rep\u00fablica Popular da China"
+    ],
+    "relevance": "0",
+    "region": "Asia",
+    "subregion": "Eastern Asia",
+    "language": [
+        "Traditional Chinese",
+        "Portuguese"
+    ],
+    "languagesCodes": [
+        "zh",
+        "pt"
+    ],
+    "translations": {
+        "de": "Macao",
+        "en": "Macao",
+        "es": "Macao",
+        "fr": "Macao",
+        "it": "Macao",
+        "ja": "\u30de\u30ab\u30aa",
+        "nl": "Macao"
+    },
+    "population": -1,
+    "latlng": [
+        22.16666666,
+        113.55
+    ],
+    "demonym": "Chinese",
+    "id": "Macao"
+}

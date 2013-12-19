@@ -1,0 +1,47 @@
+{
+    "name": "Slovenia",
+    "nativeName": "Slovenija",
+    "tld": [
+        ".si"
+    ],
+    "cca2": "SI",
+    "ccn3": "705",
+    "cca3": "SVN",
+    "currency": [
+        "EUR"
+    ],
+    "callingCode": [
+        "386"
+    ],
+    "capital": "Ljubljana",
+    "altSpellings": [
+        "SI",
+        "Republic of Slovenia",
+        "Republika Slovenija"
+    ],
+    "relevance": "0",
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "language": [
+        "Slovene"
+    ],
+    "languagesCodes": [
+        "sl"
+    ],
+    "translations": {
+        "de": "Slowenien",
+        "en": "Slovenia",
+        "es": "Eslovenia",
+        "fr": "Slov\u00e9nie",
+        "it": "Slovenia",
+        "ja": "\u30b9\u30ed\u30d9\u30cb\u30a2",
+        "nl": "Sloveni\u00eb"
+    },
+    "population": 2061405,
+    "latlng": [
+        46.11666666,
+        14.81666666
+    ],
+    "demonym": "Slovene",
+    "id": "Slovenia"
+}

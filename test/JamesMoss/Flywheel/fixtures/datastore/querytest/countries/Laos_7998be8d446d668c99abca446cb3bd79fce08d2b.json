@@ -1,0 +1,42 @@
+{
+    "name": "Laos",
+    "nativeName": "\u0eaa\u0e9b\u0e9b\u0ea5\u0eb2\u0ea7",
+    "tld": [
+        ".la"
+    ],
+    "cca2": "LA",
+    "ccn3": "418",
+    "cca3": "LAO",
+    "currency": [
+        "LAK"
+    ],
+    "callingCode": [
+        "856"
+    ],
+    "capital": "Vientiane",
+    "altSpellings": [
+        "LA",
+        "Lao",
+        "Lao People's Democratic Republic",
+        "Sathalanalat Paxathipatai Paxaxon Lao"
+    ],
+    "relevance": "0",
+    "region": "Asia",
+    "subregion": "South-Eastern Asia",
+    "language": [
+        "Lao"
+    ],
+    "languagesCodes": [
+
+    ],
+    "translations": [
+
+    ],
+    "population": 6580800,
+    "latlng": [
+        18,
+        105
+    ],
+    "demonym": "Laotian",
+    "id": "Laos"
+}

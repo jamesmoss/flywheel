@@ -1,0 +1,47 @@
+{
+    "name": "Moldova",
+    "nativeName": "Moldova",
+    "tld": [
+        ".md"
+    ],
+    "cca2": "MD",
+    "ccn3": "498",
+    "cca3": "MDA",
+    "currency": [
+        "MDL"
+    ],
+    "callingCode": [
+        "373"
+    ],
+    "capital": "Chi\u0219in\u0103u",
+    "altSpellings": [
+        "MD",
+        "Republic of Moldova",
+        "Republica Moldova"
+    ],
+    "relevance": "0",
+    "region": "Europe",
+    "subregion": "Eastern Europe",
+    "language": [
+        "Moldovan"
+    ],
+    "languagesCodes": [
+        "ro"
+    ],
+    "translations": {
+        "de": "Moldawie",
+        "en": "Moldova",
+        "es": "Moldavia",
+        "fr": "Moldavie",
+        "it": "Moldavia",
+        "ja": "\u30e2\u30eb\u30c9\u30d0\u5171\u548c\u56fd",
+        "nl": "Moldavi\u00eb"
+    },
+    "population": 3559500,
+    "latlng": [
+        47,
+        29
+    ],
+    "demonym": "Moldovan",
+    "id": "Moldova"
+}

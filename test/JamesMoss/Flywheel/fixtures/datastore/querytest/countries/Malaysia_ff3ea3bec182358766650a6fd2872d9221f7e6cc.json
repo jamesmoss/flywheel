@@ -1,0 +1,39 @@
+{
+    "name": "Malaysia",
+    "nativeName": "Malaysia",
+    "tld": [
+        ".my"
+    ],
+    "cca2": "MY",
+    "ccn3": "458",
+    "cca3": "MYS",
+    "currency": [
+        "MYR"
+    ],
+    "callingCode": [
+        "60"
+    ],
+    "capital": "Kuala Lumpur",
+    "altSpellings": [
+        "MY"
+    ],
+    "relevance": "0",
+    "region": "Asia",
+    "subregion": "South-Eastern Asia",
+    "language": [
+        "Malaysian"
+    ],
+    "languagesCodes": [
+
+    ],
+    "translations": [
+
+    ],
+    "population": 29793600,
+    "latlng": [
+        2.5,
+        112.5
+    ],
+    "demonym": "Malaysian",
+    "id": "Malaysia"
+}

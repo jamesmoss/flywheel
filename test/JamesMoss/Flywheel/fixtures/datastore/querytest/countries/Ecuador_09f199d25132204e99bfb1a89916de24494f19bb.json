@@ -1,0 +1,47 @@
+{
+    "name": "Ecuador",
+    "nativeName": "Ecuador",
+    "tld": [
+        ".ec"
+    ],
+    "cca2": "EC",
+    "ccn3": "218",
+    "cca3": "ECU",
+    "currency": [
+        "USD"
+    ],
+    "callingCode": [
+        "593"
+    ],
+    "capital": "Quito",
+    "altSpellings": [
+        "EC",
+        "Republic of Ecuador",
+        "Rep\u00fablica del Ecuador"
+    ],
+    "relevance": "0",
+    "region": "Americas",
+    "subregion": "South America",
+    "language": [
+        "Spanish"
+    ],
+    "languagesCodes": [
+        "es"
+    ],
+    "translations": {
+        "de": "Ecuador",
+        "en": "Ecuador",
+        "es": "Ecuador",
+        "fr": "\u00c9quateur",
+        "it": "Ecuador",
+        "ja": "\u30a8\u30af\u30a2\u30c9\u30eb",
+        "nl": "Ecuador"
+    },
+    "population": 15617900,
+    "latlng": [
+        -2,
+        -77.5
+    ],
+    "demonym": "Ecuadorean",
+    "id": "Ecuador"
+}

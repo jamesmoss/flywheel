@@ -1,0 +1,47 @@
+{
+    "name": "Bahrain",
+    "nativeName": "al-Ba\u1e25rayn",
+    "tld": [
+        ".bh"
+    ],
+    "cca2": "BH",
+    "ccn3": "048",
+    "cca3": "BHR",
+    "currency": [
+        "BHD"
+    ],
+    "callingCode": [
+        "973"
+    ],
+    "capital": "Manama",
+    "altSpellings": [
+        "BH",
+        "Kingdom of Bahrain",
+        "Mamlakat al-Ba\u1e25rayn"
+    ],
+    "relevance": "0",
+    "region": "Asia",
+    "subregion": "Western Asia",
+    "language": [
+        "Arabic"
+    ],
+    "languagesCodes": [
+        "ar"
+    ],
+    "translations": {
+        "de": "Bahrain",
+        "en": "Bahrain",
+        "es": "Bahrein",
+        "fr": "Bahre\u00efn",
+        "it": "Bahrein",
+        "ja": "\u30d0\u30fc\u30ec\u30fc\u30f3",
+        "nl": "Bahrein"
+    },
+    "population": 1234571,
+    "latlng": [
+        26,
+        50.55
+    ],
+    "demonym": "Bahraini",
+    "id": "Bahrain"
+}

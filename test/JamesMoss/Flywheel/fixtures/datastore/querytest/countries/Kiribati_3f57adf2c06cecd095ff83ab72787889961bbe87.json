@@ -1,0 +1,48 @@
+{
+    "name": "Kiribati",
+    "nativeName": "Kiribati",
+    "tld": [
+        ".ki"
+    ],
+    "cca2": "KI",
+    "ccn3": "296",
+    "cca3": "KIR",
+    "currency": [
+        "AUD"
+    ],
+    "callingCode": [
+        "686"
+    ],
+    "capital": "South Tarawa",
+    "altSpellings": [
+        "KI",
+        "Republic of Kiribati",
+        "Ribaberiki Kiribati"
+    ],
+    "relevance": "0",
+    "region": "Oceania",
+    "subregion": "Micronesia",
+    "language": [
+        "English",
+        "Gilbertese"
+    ],
+    "languagesCodes": [
+        "en"
+    ],
+    "translations": {
+        "de": "Kiribati",
+        "en": "Kiribati",
+        "es": "Kiribati",
+        "fr": "Kiribati",
+        "it": "Kiribati",
+        "ja": "\u30ad\u30ea\u30d0\u30b9",
+        "nl": "Kiribati"
+    },
+    "population": 106461,
+    "latlng": [
+        1.41666666,
+        173
+    ],
+    "demonym": "I-Kiribati",
+    "id": "Kiribati"
+}

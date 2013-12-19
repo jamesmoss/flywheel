@@ -1,0 +1,49 @@
+{
+    "name": "Papua New Guinea",
+    "nativeName": "Papua Niugini",
+    "tld": [
+        ".pg"
+    ],
+    "cca2": "PG",
+    "ccn3": "598",
+    "cca3": "PNG",
+    "currency": [
+        "PGK"
+    ],
+    "callingCode": [
+        "675"
+    ],
+    "capital": "Port Moresby",
+    "altSpellings": [
+        "PG",
+        "Independent State of Papua New Guinea",
+        "Independen Stet bilong Papua Niugini"
+    ],
+    "relevance": "0",
+    "region": "Oceania",
+    "subregion": "Melanesia",
+    "language": [
+        "Hiri Motu",
+        "Tok Pisin",
+        "English"
+    ],
+    "languagesCodes": [
+        "en"
+    ],
+    "translations": {
+        "de": "Papua-Neuguinea",
+        "en": "Papua New Guinea",
+        "es": "Pap\u00faa Nueva Guinea",
+        "fr": "Papouasie Nouvelle-Guin\u00e9e",
+        "it": "Papua Nuova Guinea",
+        "ja": "\u30d1\u30d7\u30a2\u30cb\u30e5\u30fc\u30ae\u30cb\u30a2",
+        "nl": "Papoea-Nieuw-Guinea"
+    },
+    "population": 7059653,
+    "latlng": [
+        -6,
+        147
+    ],
+    "demonym": "Papua New Guinean",
+    "id": "Papua New Guinea"
+}

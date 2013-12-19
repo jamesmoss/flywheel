@@ -1,0 +1,45 @@
+{
+    "name": "United States Virgin Islands",
+    "nativeName": "United States Virgin Islands",
+    "tld": [
+        ".vi"
+    ],
+    "cca2": "VI",
+    "ccn3": "850",
+    "cca3": "VIR",
+    "currency": [
+        "USD"
+    ],
+    "callingCode": [
+        "1340"
+    ],
+    "capital": "Charlotte Amalie",
+    "altSpellings": [
+        "VI"
+    ],
+    "relevance": "0.5",
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "language": [
+        "English"
+    ],
+    "languagesCodes": [
+        "en"
+    ],
+    "translations": {
+        "de": "Amerikanische Jungferninseln",
+        "en": "Virgin Islands of the United States",
+        "es": "Islas V\u00edrgenes de los Estados Unidos",
+        "fr": "\u00celes Vierges am\u00e9ricaines",
+        "it": "Isole Vergini americane",
+        "ja": "\u30a2\u30e1\u30ea\u30ab\u9818\u30f4\u30a1\u30fc\u30b8\u30f3\u8af8\u5cf6",
+        "nl": "Amerikaanse Maagdeneilanden"
+    },
+    "population": 106405,
+    "latlng": [
+        18.35,
+        -64.933333
+    ],
+    "demonym": "Virgin Islander",
+    "id": "United States Virgin Islands"
+}

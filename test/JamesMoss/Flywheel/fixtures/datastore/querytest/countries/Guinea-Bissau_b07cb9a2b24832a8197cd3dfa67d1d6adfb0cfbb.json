@@ -1,0 +1,47 @@
+{
+    "name": "Guinea-Bissau",
+    "nativeName": "Guin\u00e9-Bissau",
+    "tld": [
+        ".gw"
+    ],
+    "cca2": "GW",
+    "ccn3": "624",
+    "cca3": "GNB",
+    "currency": [
+        "XOF"
+    ],
+    "callingCode": [
+        "245"
+    ],
+    "capital": "Bissau",
+    "altSpellings": [
+        "GW",
+        "Republic of Guinea-Bissau",
+        "Rep\u00fablica da Guin\u00e9-Bissau"
+    ],
+    "relevance": "0",
+    "region": "Africa",
+    "subregion": "Western Africa",
+    "language": [
+        "Portuguese"
+    ],
+    "languagesCodes": [
+        "pt"
+    ],
+    "translations": {
+        "de": "Guinea-Bissau",
+        "en": "Guinea-Bissau",
+        "es": "Guinea-Bis\u00e1u",
+        "fr": "Guin\u00e9e-Bissau",
+        "it": "Guinea-Bissau",
+        "ja": "\u30ae\u30cb\u30a2\u30d3\u30b5\u30a6",
+        "nl": "Guinee-Bissau"
+    },
+    "population": 1704000,
+    "latlng": [
+        12,
+        -15
+    ],
+    "demonym": "Guinea-Bissauan",
+    "id": "Guinea-Bissau"
+}

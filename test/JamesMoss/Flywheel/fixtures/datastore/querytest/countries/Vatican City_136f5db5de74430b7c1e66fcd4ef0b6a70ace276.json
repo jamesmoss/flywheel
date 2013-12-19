@@ -1,0 +1,49 @@
+{
+    "name": "Vatican City",
+    "nativeName": "Vaticano",
+    "tld": [
+        ".va"
+    ],
+    "cca2": "VA",
+    "ccn3": "336",
+    "cca3": "VAT",
+    "currency": [
+        "EUR"
+    ],
+    "callingCode": [
+        "39066",
+        "379"
+    ],
+    "capital": "Vatican City",
+    "altSpellings": [
+        "VA",
+        "Vatican City State",
+        "Stato della Citt\u00e0 del Vaticano"
+    ],
+    "relevance": "0.5",
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "language": [
+        "Italian"
+    ],
+    "languagesCodes": [
+        "it",
+        "la"
+    ],
+    "translations": {
+        "de": "Vatikan",
+        "en": "Vatican City",
+        "es": "Ciudad del Vaticano",
+        "fr": "Cit\u00e9 du Vatican",
+        "it": "Citt\u00e0 del Vaticano",
+        "ja": "\u30d0\u30c1\u30ab\u30f3\u5e02\u56fd",
+        "nl": "Vaticaanstad"
+    },
+    "population": 800,
+    "latlng": [
+        41.9,
+        12.45
+    ],
+    "demonym": "Italian",
+    "id": "Vatican City"
+}

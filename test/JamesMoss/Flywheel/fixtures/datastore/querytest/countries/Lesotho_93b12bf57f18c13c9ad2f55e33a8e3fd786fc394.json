@@ -1,0 +1,50 @@
+{
+    "name": "Lesotho",
+    "nativeName": "Lesotho",
+    "tld": [
+        ".ls"
+    ],
+    "cca2": "LS",
+    "ccn3": "426",
+    "cca3": "LSO",
+    "currency": [
+        "LSL",
+        "ZAR"
+    ],
+    "callingCode": [
+        "266"
+    ],
+    "capital": "Maseru",
+    "altSpellings": [
+        "LS",
+        "Kingdom of Lesotho",
+        "Muso oa Lesotho"
+    ],
+    "relevance": "0",
+    "region": "Africa",
+    "subregion": "Southern Africa",
+    "language": [
+        "Sesotho",
+        "English"
+    ],
+    "languagesCodes": [
+        "en",
+        "st"
+    ],
+    "translations": {
+        "de": "Lesotho",
+        "en": "Lesotho",
+        "es": "Lesotho",
+        "fr": "Lesotho",
+        "it": "Lesotho",
+        "ja": "\u30ec\u30bd\u30c8",
+        "nl": "Lesotho"
+    },
+    "population": 2074000,
+    "latlng": [
+        -29.5,
+        28.5
+    ],
+    "demonym": "Mosotho",
+    "id": "Lesotho"
+}

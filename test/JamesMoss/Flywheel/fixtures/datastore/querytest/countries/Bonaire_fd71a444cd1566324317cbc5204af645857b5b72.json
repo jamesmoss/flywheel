@@ -1,0 +1,41 @@
+{
+    "name": "Bonaire",
+    "nativeName": "Bonaire",
+    "tld": [
+        ".an",
+        ".nl"
+    ],
+    "cca2": "BQ",
+    "ccn3": "535",
+    "cca3": "BES",
+    "currency": [
+        "USD"
+    ],
+    "callingCode": [
+        "5997"
+    ],
+    "capital": "Kralendijk",
+    "altSpellings": [
+        "BQ",
+        "Boneiru"
+    ],
+    "relevance": "0",
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "language": [
+        "Dutch"
+    ],
+    "languagesCodes": [
+
+    ],
+    "translations": [
+
+    ],
+    "population": -1,
+    "latlng": [
+        12.15,
+        -68.266667
+    ],
+    "demonym": "Dutch",
+    "id": "Bonaire"
+}

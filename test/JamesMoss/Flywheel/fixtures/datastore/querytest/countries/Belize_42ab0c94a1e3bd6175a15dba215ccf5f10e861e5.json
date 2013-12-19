@@ -1,0 +1,46 @@
+{
+    "name": "Belize",
+    "nativeName": "Belize",
+    "tld": [
+        ".bz"
+    ],
+    "cca2": "BZ",
+    "ccn3": "084",
+    "cca3": "BLZ",
+    "currency": [
+        "BZD"
+    ],
+    "callingCode": [
+        "501"
+    ],
+    "capital": "Belmopan",
+    "altSpellings": [
+        "BZ"
+    ],
+    "relevance": "0",
+    "region": "Americas",
+    "subregion": "Central America",
+    "language": [
+        "English"
+    ],
+    "languagesCodes": [
+        "en",
+        "es"
+    ],
+    "translations": {
+        "de": "Belize",
+        "en": "Belize",
+        "es": "Belice",
+        "fr": "Belice",
+        "it": "Belize",
+        "ja": "\u30d9\u30ea\u30fc\u30ba",
+        "nl": "Belize"
+    },
+    "population": 312971,
+    "latlng": [
+        17.25,
+        -88.75
+    ],
+    "demonym": "Belizean",
+    "id": "Belize"
+}

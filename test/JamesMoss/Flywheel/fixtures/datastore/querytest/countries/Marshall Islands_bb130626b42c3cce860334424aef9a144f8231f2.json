@@ -1,0 +1,49 @@
+{
+    "name": "Marshall Islands",
+    "nativeName": "M\u0327aje\u013c",
+    "tld": [
+        ".mh"
+    ],
+    "cca2": "MH",
+    "ccn3": "584",
+    "cca3": "MHL",
+    "currency": [
+        "USD"
+    ],
+    "callingCode": [
+        "692"
+    ],
+    "capital": "Majuro",
+    "altSpellings": [
+        "MH",
+        "Republic of the Marshall Islands",
+        "Aolep\u0101n Aor\u014dkin M\u0327aje\u013c"
+    ],
+    "relevance": "0.5",
+    "region": "Oceania",
+    "subregion": "Micronesia",
+    "language": [
+        "Marshallese",
+        "English"
+    ],
+    "languagesCodes": [
+        "en",
+        "mh"
+    ],
+    "translations": {
+        "de": "Marshallinseln",
+        "en": "Marshall Islands",
+        "es": "Islas Marshall",
+        "fr": "\u00celes Marshall",
+        "it": "Isole Marshall",
+        "ja": "\u30de\u30fc\u30b7\u30e3\u30eb\u8af8\u5cf6",
+        "nl": "Marshalleilanden"
+    },
+    "population": 56086,
+    "latlng": [
+        9,
+        168
+    ],
+    "demonym": "Marshallese",
+    "id": "Marshall Islands"
+}

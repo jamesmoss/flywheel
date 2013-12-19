@@ -1,0 +1,39 @@
+{
+    "name": "South Sudan",
+    "nativeName": "South Sudan",
+    "tld": [
+        ".ss"
+    ],
+    "cca2": "SS",
+    "ccn3": "728",
+    "cca3": "SSD",
+    "currency": [
+        "SSP"
+    ],
+    "callingCode": [
+        "211"
+    ],
+    "capital": "Juba",
+    "altSpellings": [
+        "SS"
+    ],
+    "relevance": "0",
+    "region": "Africa",
+    "subregion": "Middle Africa",
+    "language": [
+        "English"
+    ],
+    "languagesCodes": [
+
+    ],
+    "translations": [
+
+    ],
+    "population": 11296000,
+    "latlng": [
+        7,
+        30
+    ],
+    "demonym": "South Sudanese",
+    "id": "South Sudan"
+}

@@ -1,0 +1,44 @@
+{
+    "name": "Cocos (Keeling) Islands",
+    "nativeName": "Cocos (Keeling) Islands",
+    "tld": [
+        ".cc"
+    ],
+    "cca2": "CC",
+    "ccn3": "166",
+    "cca3": "CCK",
+    "currency": [
+        "AUD"
+    ],
+    "callingCode": [
+        "61"
+    ],
+    "capital": "West Island",
+    "altSpellings": [
+        "CC",
+        "Territory of the Cocos (Keeling) Islands",
+        "Keeling Islands"
+    ],
+    "relevance": "0",
+    "region": "Oceania",
+    "subregion": [
+        "Australia",
+        "New Zealand"
+    ],
+    "language": [
+        "English"
+    ],
+    "languagesCodes": [
+
+    ],
+    "translations": [
+
+    ],
+    "population": 550,
+    "latlng": [
+        -12.5,
+        96.83333333
+    ],
+    "demonym": "Cocos Islander",
+    "id": "Cocos (Keeling) Islands"
+}

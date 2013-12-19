@@ -1,0 +1,51 @@
+{
+    "name": "Kyrgyzstan",
+    "nativeName": "\u041a\u044b\u0440\u0433\u044b\u0437\u0441\u0442\u0430\u043d",
+    "tld": [
+        ".kg"
+    ],
+    "cca2": "KG",
+    "ccn3": "417",
+    "cca3": "KGZ",
+    "currency": [
+        "KGS"
+    ],
+    "callingCode": [
+        "996"
+    ],
+    "capital": "Bishkek",
+    "altSpellings": [
+        "KG",
+        "\u041a\u0438\u0440\u0433\u0438\u0437\u0438\u044f",
+        "Kyrgyz Republic",
+        "\u041a\u044b\u0440\u0433\u044b\u0437 \u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430\u0441\u044b",
+        "Kyrgyz Respublikasy"
+    ],
+    "relevance": "0",
+    "region": "Asia",
+    "subregion": "Central Asia",
+    "language": [
+        "Kyrgyz",
+        "Russian"
+    ],
+    "languagesCodes": [
+        "ky",
+        "ru"
+    ],
+    "translations": {
+        "de": "Kirgisistan",
+        "en": "Kyrgyzstan",
+        "es": "Kirguizist\u00e1n",
+        "fr": "Kirghizistan",
+        "it": "Kirghizistan",
+        "ja": "\u30ad\u30eb\u30ae\u30b9",
+        "nl": "Kirgizi\u00eb"
+    },
+    "population": 5551900,
+    "latlng": [
+        41,
+        75
+    ],
+    "demonym": "Kirghiz",
+    "id": "Kyrgyzstan"
+}

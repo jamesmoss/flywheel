@@ -1,0 +1,48 @@
+{
+    "name": "Iceland",
+    "nativeName": "\u00cdsland",
+    "tld": [
+        ".is"
+    ],
+    "cca2": "IS",
+    "ccn3": "352",
+    "cca3": "ISL",
+    "currency": [
+        "ISK"
+    ],
+    "callingCode": [
+        "354"
+    ],
+    "capital": "Reykjavik",
+    "altSpellings": [
+        "IS",
+        "Island",
+        "Republic of Iceland",
+        "L\u00fd\u00f0veldi\u00f0 \u00cdsland"
+    ],
+    "relevance": "0",
+    "region": "Europe",
+    "subregion": "Northern Europe",
+    "language": [
+        "Icelandic"
+    ],
+    "languagesCodes": [
+        "is"
+    ],
+    "translations": {
+        "de": "Island",
+        "en": "Iceland",
+        "es": "Islandia",
+        "fr": "Islande",
+        "it": "Islanda",
+        "ja": "\u30a2\u30a4\u30b9\u30e9\u30f3\u30c9",
+        "nl": "IJsland"
+    },
+    "population": 325010,
+    "latlng": [
+        65,
+        -18
+    ],
+    "demonym": "Icelander",
+    "id": "Iceland"
+}

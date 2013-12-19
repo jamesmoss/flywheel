@@ -15,7 +15,8 @@
 		"php": ">=5.3.0"
 	},
 	"require-dev": {
-	    "mikey179/vfsStream": "1.2.0"
+	    "mikey179/vfsStream": "1.2.0",
+	    "mockery/mockery": "dev-master@dev"
 	},
 	"autoload": {
 		"psr-0": {

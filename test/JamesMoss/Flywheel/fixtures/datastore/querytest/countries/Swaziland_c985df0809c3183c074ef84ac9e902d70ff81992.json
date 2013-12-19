@@ -1,0 +1,52 @@
+{
+    "name": "Swaziland",
+    "nativeName": "Swaziland",
+    "tld": [
+        ".sz"
+    ],
+    "cca2": "SZ",
+    "ccn3": "748",
+    "cca3": "SWZ",
+    "currency": [
+        "SZL"
+    ],
+    "callingCode": [
+        "268"
+    ],
+    "capital": "Lobamba",
+    "altSpellings": [
+        "SZ",
+        "weSwatini",
+        "Swatini",
+        "Ngwane",
+        "Kingdom of Swaziland",
+        "Umbuso waseSwatini"
+    ],
+    "relevance": "0",
+    "region": "Africa",
+    "subregion": "Southern Africa",
+    "language": [
+        "Swazi",
+        "English"
+    ],
+    "languagesCodes": [
+        "en",
+        "ss"
+    ],
+    "translations": {
+        "de": "Swasiland",
+        "en": "Swaziland",
+        "es": "Suazilandia",
+        "fr": "Swaziland",
+        "it": "Swaziland",
+        "ja": "\u30b9\u30ef\u30b8\u30e9\u30f3\u30c9",
+        "nl": "Swaziland"
+    },
+    "population": 1250000,
+    "latlng": [
+        -26.5,
+        31.5
+    ],
+    "demonym": "Swazi",
+    "id": "Swaziland"
+}

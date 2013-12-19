@@ -1,0 +1,47 @@
+{
+    "name": "Costa Rica",
+    "nativeName": "Costa Rica",
+    "tld": [
+        ".cr"
+    ],
+    "cca2": "CR",
+    "ccn3": "188",
+    "cca3": "CRI",
+    "currency": [
+        "CRC"
+    ],
+    "callingCode": [
+        "506"
+    ],
+    "capital": "San Jos\u00e9",
+    "altSpellings": [
+        "CR",
+        "Republic of Costa Rica",
+        "Rep\u00fablica de Costa Rica"
+    ],
+    "relevance": "0",
+    "region": "Americas",
+    "subregion": "Central America",
+    "language": [
+        "Spanish"
+    ],
+    "languagesCodes": [
+        "es"
+    ],
+    "translations": {
+        "de": "Costa Rica",
+        "en": "Costa Rica",
+        "es": "Costa Rica",
+        "fr": "Costa Rica",
+        "it": "Costa Rica",
+        "ja": "\u30b3\u30b9\u30bf\u30ea\u30ab",
+        "nl": "Costa Rica"
+    },
+    "population": 4667096,
+    "latlng": [
+        10,
+        -84
+    ],
+    "demonym": "Costa Rican",
+    "id": "Costa Rica"
+}

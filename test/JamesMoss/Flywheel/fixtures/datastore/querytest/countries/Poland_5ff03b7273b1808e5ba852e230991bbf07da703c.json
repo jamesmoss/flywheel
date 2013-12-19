@@ -1,0 +1,47 @@
+{
+    "name": "Poland",
+    "nativeName": "Polska",
+    "tld": [
+        ".pl"
+    ],
+    "cca2": "PL",
+    "ccn3": "616",
+    "cca3": "POL",
+    "currency": [
+        "PLN"
+    ],
+    "callingCode": [
+        "48"
+    ],
+    "capital": "Warsaw",
+    "altSpellings": [
+        "PL",
+        "Republic of Poland",
+        "Rzeczpospolita Polska"
+    ],
+    "relevance": "1.25",
+    "region": "Europe",
+    "subregion": "Eastern Europe",
+    "language": [
+        "Polish"
+    ],
+    "languagesCodes": [
+        "pl"
+    ],
+    "translations": {
+        "de": "Polen",
+        "en": "Poland",
+        "es": "Polonia",
+        "fr": "Pologne",
+        "it": "Polonia",
+        "ja": "\u30dd\u30fc\u30e9\u30f3\u30c9",
+        "nl": "Polen"
+    },
+    "population": 38533299,
+    "latlng": [
+        52,
+        20
+    ],
+    "demonym": "Polish",
+    "id": "Poland"
+}

@@ -1,0 +1,49 @@
+{
+    "name": "Central African Republic",
+    "nativeName": "K\u00f6d\u00f6r\u00f6s\u00ease t\u00ee B\u00eaafr\u00eeka",
+    "tld": [
+        ".cf"
+    ],
+    "cca2": "CF",
+    "ccn3": "140",
+    "cca3": "CAF",
+    "currency": [
+        "XAF"
+    ],
+    "callingCode": [
+        "236"
+    ],
+    "capital": "Bangui",
+    "altSpellings": [
+        "CF",
+        "Central African Republic",
+        "R\u00e9publique centrafricaine"
+    ],
+    "relevance": "0",
+    "region": "Africa",
+    "subregion": "Middle Africa",
+    "language": [
+        "Sango",
+        "French"
+    ],
+    "languagesCodes": [
+        "fr",
+        "sg"
+    ],
+    "translations": {
+        "de": "Zentralafrikanische Republik",
+        "en": "Central African Republic",
+        "es": "Rep\u00fablica Centroafricana",
+        "fr": "R\u00e9publique Centrafricaine",
+        "it": "Repubblica Centrafricana",
+        "ja": "\u4e2d\u592e\u30a2\u30d5\u30ea\u30ab\u5171\u548c\u56fd",
+        "nl": "Centraal-Afrikaanse Republiek"
+    },
+    "population": 4616000,
+    "latlng": [
+        7,
+        21
+    ],
+    "demonym": "Central African",
+    "id": "Central African Republic"
+}

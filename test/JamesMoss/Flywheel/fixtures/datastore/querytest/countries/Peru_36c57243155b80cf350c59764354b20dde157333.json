@@ -1,0 +1,49 @@
+{
+    "name": "Peru",
+    "nativeName": "Per\u00fa",
+    "tld": [
+        ".pe"
+    ],
+    "cca2": "PE",
+    "ccn3": "604",
+    "cca3": "PER",
+    "currency": [
+        "PEN"
+    ],
+    "callingCode": [
+        "51"
+    ],
+    "capital": "Lima",
+    "altSpellings": [
+        "PE",
+        "Republic of Peru",
+        " Rep\u00fablica del Per\u00fa"
+    ],
+    "relevance": "0",
+    "region": "Americas",
+    "subregion": "South America",
+    "language": [
+        "Spanish",
+        "Quechua",
+        "Aymara"
+    ],
+    "languagesCodes": [
+        "es"
+    ],
+    "translations": {
+        "de": "Peru",
+        "en": "Peru",
+        "es": "Per\u00fa",
+        "fr": "P\u00e9rou",
+        "it": "Per\u00f9",
+        "ja": "\u30da\u30eb\u30fc",
+        "nl": "Peru"
+    },
+    "population": 30475144,
+    "latlng": [
+        -10,
+        -76
+    ],
+    "demonym": "Peruvian",
+    "id": "Peru"
+}

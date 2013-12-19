@@ -47,6 +47,10 @@ class Repository
 
     public function store(Document $document)
     {
+        if(!isset($document->id)) {
+            $document->id = $this->generateID();
+        }
+
         $path = $this->getPath($document->id);
         $data = json_encode((array)$document, JSON_PRETTY_PRINT);
 
@@ -67,6 +71,15 @@ class Repository
     public function getFilename($id)
     {
         return $id . '_' . sha1($id) . '.json';
+    }
+
+    protected function generateID()
+    {
+        //openssl_random_pseudo_bytes
+        $num = str_replace(' ', '', microtime());
+        $id  = gmp_strval(gmp_init($num, 10), 62);
+
+        return $id;
     }
 
 

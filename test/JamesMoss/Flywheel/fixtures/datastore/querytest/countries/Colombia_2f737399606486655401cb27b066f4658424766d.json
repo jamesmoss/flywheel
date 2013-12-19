@@ -1,0 +1,47 @@
+{
+    "name": "Colombia",
+    "nativeName": "Colombia",
+    "tld": [
+        ".co"
+    ],
+    "cca2": "CO",
+    "ccn3": "170",
+    "cca3": "COL",
+    "currency": [
+        "COP"
+    ],
+    "callingCode": [
+        "57"
+    ],
+    "capital": "Bogot\u00e1",
+    "altSpellings": [
+        "CO",
+        "Republic of Colombia",
+        "Rep\u00fablica de Colombia"
+    ],
+    "relevance": "0",
+    "region": "Americas",
+    "subregion": "South America",
+    "language": [
+        "Spanish"
+    ],
+    "languagesCodes": [
+        "es"
+    ],
+    "translations": {
+        "de": "Kolumbien",
+        "en": "Colombia",
+        "es": "Colombia",
+        "fr": "Colombie",
+        "it": "Colombia",
+        "ja": "\u30b3\u30ed\u30f3\u30d3\u30a2",
+        "nl": "Colombia"
+    },
+    "population": 47330000,
+    "latlng": [
+        4,
+        -72
+    ],
+    "demonym": "Colombian",
+    "id": "Colombia"
+}

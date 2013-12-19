@@ -1,0 +1,42 @@
+{
+    "name": "Australia",
+    "nativeName": "Australia",
+    "tld": [
+        ".au"
+    ],
+    "cca2": "AU",
+    "ccn3": "036",
+    "cca3": "AUS",
+    "currency": [
+        "AUD"
+    ],
+    "callingCode": [
+        "61"
+    ],
+    "capital": "Canberra",
+    "altSpellings": [
+        "AU"
+    ],
+    "relevance": "1.5",
+    "region": "Oceania",
+    "subregion": [
+        "Australia",
+        "New Zealand"
+    ],
+    "language": [
+        "English"
+    ],
+    "languagesCodes": [
+
+    ],
+    "translations": [
+
+    ],
+    "population": 23254142,
+    "latlng": [
+        -27,
+        133
+    ],
+    "demonym": "Australian",
+    "id": "Australia"
+}

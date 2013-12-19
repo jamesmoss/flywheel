@@ -1,0 +1,51 @@
+{
+    "name": "China",
+    "nativeName": "\u4e2d\u56fd",
+    "tld": [
+        ".cn"
+    ],
+    "cca2": "CN",
+    "ccn3": "156",
+    "cca3": "CHN",
+    "currency": [
+        "CNY"
+    ],
+    "callingCode": [
+        "86"
+    ],
+    "capital": "Beijing",
+    "altSpellings": [
+        "CN",
+        "Zh\u014dnggu\u00f3",
+        "Zhongguo",
+        "Zhonghua",
+        "People's Republic of China",
+        "\u4e2d\u534e\u4eba\u6c11\u5171\u548c\u56fd",
+        "Zh\u014dnghu\u00e1 R\u00e9nm\u00edn G\u00f2ngh\u00e9gu\u00f3"
+    ],
+    "relevance": "0",
+    "region": "Asia",
+    "subregion": "Eastern Asia",
+    "language": [
+        "Standard Chinese"
+    ],
+    "languagesCodes": [
+        "zh"
+    ],
+    "translations": {
+        "de": "China",
+        "en": "China",
+        "es": "China",
+        "fr": "Chine",
+        "it": "Cina",
+        "ja": "\u4e2d\u56fd",
+        "nl": "China"
+    },
+    "population": 1361170000,
+    "latlng": [
+        35,
+        105
+    ],
+    "demonym": "Chinese",
+    "id": "China"
+}

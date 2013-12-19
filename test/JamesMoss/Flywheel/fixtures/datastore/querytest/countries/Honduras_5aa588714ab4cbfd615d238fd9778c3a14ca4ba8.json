@@ -1,0 +1,47 @@
+{
+    "name": "Honduras",
+    "nativeName": "Honduras",
+    "tld": [
+        ".hn"
+    ],
+    "cca2": "HN",
+    "ccn3": "340",
+    "cca3": "HND",
+    "currency": [
+        "HNL"
+    ],
+    "callingCode": [
+        "504"
+    ],
+    "capital": "Tegucigalpa",
+    "altSpellings": [
+        "HN",
+        "Republic of Honduras",
+        "Rep\u00fablica de Honduras"
+    ],
+    "relevance": "0",
+    "region": "Americas",
+    "subregion": "Central America",
+    "language": [
+        "Spanish"
+    ],
+    "languagesCodes": [
+        "es"
+    ],
+    "translations": {
+        "de": "Honduras",
+        "en": "Honduras",
+        "es": "Honduras",
+        "fr": "Honduras",
+        "it": "Honduras",
+        "ja": "\u30db\u30f3\u30b8\u30e5\u30e9\u30b9",
+        "nl": "Honduras"
+    },
+    "population": 8555072,
+    "latlng": [
+        15,
+        -86.5
+    ],
+    "demonym": "Honduran",
+    "id": "Honduras"
+}

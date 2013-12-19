@@ -1,0 +1,47 @@
+{
+    "name": "San Marino",
+    "nativeName": "San Marino",
+    "tld": [
+        ".sm"
+    ],
+    "cca2": "SM",
+    "ccn3": "674",
+    "cca3": "SMR",
+    "currency": [
+        "EUR"
+    ],
+    "callingCode": [
+        "378"
+    ],
+    "capital": "City of San Marino",
+    "altSpellings": [
+        "SM",
+        "Republic of San Marino",
+        "Repubblica di San Marino"
+    ],
+    "relevance": "0",
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "language": [
+        "Italian"
+    ],
+    "languagesCodes": [
+        "it"
+    ],
+    "translations": {
+        "de": "San Marino",
+        "en": "San Marino",
+        "es": "San Marino",
+        "fr": "Saint-Marin",
+        "it": "San Marino",
+        "ja": "\u30b5\u30f3\u30de\u30ea\u30ce",
+        "nl": "San Marino"
+    },
+    "population": 32509,
+    "latlng": [
+        43.76666666,
+        12.41666666
+    ],
+    "demonym": "Sammarinese",
+    "id": "San Marino"
+}

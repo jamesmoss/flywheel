@@ -1,0 +1,47 @@
+{
+    "name": "Monaco",
+    "nativeName": "Monaco",
+    "tld": [
+        ".mc"
+    ],
+    "cca2": "MC",
+    "ccn3": "492",
+    "cca3": "MCO",
+    "currency": [
+        "EUR"
+    ],
+    "callingCode": [
+        "377"
+    ],
+    "capital": "Monaco",
+    "altSpellings": [
+        "MC",
+        "Principality of Monaco",
+        "Principaut\u00e9 de Monaco"
+    ],
+    "relevance": "0",
+    "region": "Europe",
+    "subregion": "Western Europe",
+    "language": [
+        "French"
+    ],
+    "languagesCodes": [
+        "fr"
+    ],
+    "translations": {
+        "de": "Monaco",
+        "en": "Monaco",
+        "es": "M\u00f3naco",
+        "fr": "Monaco",
+        "it": "Principato di Monaco",
+        "ja": "\u30e2\u30ca\u30b3",
+        "nl": "Monaco"
+    },
+    "population": 36136,
+    "latlng": [
+        43.73333333,
+        7.4
+    ],
+    "demonym": "Monegasque",
+    "id": "Monaco"
+}

@@ -1,0 +1,45 @@
+{
+    "name": "Cayman Islands",
+    "nativeName": "Cayman Islands",
+    "tld": [
+        ".ky"
+    ],
+    "cca2": "KY",
+    "ccn3": "136",
+    "cca3": "CYM",
+    "currency": [
+        "KYD"
+    ],
+    "callingCode": [
+        "1345"
+    ],
+    "capital": "George Town",
+    "altSpellings": [
+        "KY"
+    ],
+    "relevance": "0.5",
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "language": [
+        "English"
+    ],
+    "languagesCodes": [
+        "en"
+    ],
+    "translations": {
+        "de": "Kaimaninseln",
+        "en": "Cayman Islands",
+        "es": "Islas Caim\u00e1n",
+        "fr": "\u00celes Ca\u00efmans",
+        "it": "Isole Cayman",
+        "ja": "\u30b1\u30a4\u30de\u30f3\u8af8\u5cf6",
+        "nl": "Caymaneilanden"
+    },
+    "population": 55456,
+    "latlng": [
+        19.5,
+        -80.5
+    ],
+    "demonym": "Caymanian",
+    "id": "Cayman Islands"
+}

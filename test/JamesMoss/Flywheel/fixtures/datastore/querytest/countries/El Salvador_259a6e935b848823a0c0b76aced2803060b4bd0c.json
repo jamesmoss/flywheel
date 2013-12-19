@@ -1,0 +1,48 @@
+{
+    "name": "El Salvador",
+    "nativeName": "El Salvador",
+    "tld": [
+        ".sv"
+    ],
+    "cca2": "SV",
+    "ccn3": "222",
+    "cca3": "SLV",
+    "currency": [
+        "SVC",
+        "USD"
+    ],
+    "callingCode": [
+        "503"
+    ],
+    "capital": "San Salvador",
+    "altSpellings": [
+        "SV",
+        "Republic of El Salvador",
+        "Rep\u00fablica de El Salvador"
+    ],
+    "relevance": "0",
+    "region": "Americas",
+    "subregion": "Central America",
+    "language": [
+        "Castilian"
+    ],
+    "languagesCodes": [
+        "es"
+    ],
+    "translations": {
+        "de": "El Salvador",
+        "en": "El Salvador",
+        "es": "El Salvador",
+        "fr": "Salvador",
+        "it": "El Salvador",
+        "ja": "\u30a8\u30eb\u30b5\u30eb\u30d0\u30c9\u30eb",
+        "nl": "El Salvador"
+    },
+    "population": 6340000,
+    "latlng": [
+        13.83333333,
+        -88.91666666
+    ],
+    "demonym": "Salvadoran",
+    "id": "El Salvador"
+}

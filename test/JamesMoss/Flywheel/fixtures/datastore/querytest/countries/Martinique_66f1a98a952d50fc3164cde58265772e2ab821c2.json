@@ -1,0 +1,45 @@
+{
+    "name": "Martinique",
+    "nativeName": "Martinique",
+    "tld": [
+        ".mq"
+    ],
+    "cca2": "MQ",
+    "ccn3": "474",
+    "cca3": "MTQ",
+    "currency": [
+        "EUR"
+    ],
+    "callingCode": [
+        "596"
+    ],
+    "capital": "Fort-de-France",
+    "altSpellings": [
+        "MQ"
+    ],
+    "relevance": "0",
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "language": [
+        "French"
+    ],
+    "languagesCodes": [
+        "fr"
+    ],
+    "translations": {
+        "de": "Martinique",
+        "en": "Martinique",
+        "es": "Martinica",
+        "fr": "Martinique",
+        "it": "Martinica",
+        "ja": "\u30de\u30eb\u30c6\u30a3\u30cb\u30fc\u30af",
+        "nl": "Martinique"
+    },
+    "population": 394173,
+    "latlng": [
+        14.666667,
+        -61
+    ],
+    "demonym": "French",
+    "id": "Martinique"
+}

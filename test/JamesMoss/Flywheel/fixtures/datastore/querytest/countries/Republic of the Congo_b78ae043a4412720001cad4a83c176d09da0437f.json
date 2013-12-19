@@ -1,0 +1,47 @@
+{
+    "name": "Republic of the Congo",
+    "nativeName": "R\u00e9publique du Congo",
+    "tld": [
+        ".cg"
+    ],
+    "cca2": "CG",
+    "ccn3": "178",
+    "cca3": "COG",
+    "currency": [
+        "XAF"
+    ],
+    "callingCode": [
+        "242"
+    ],
+    "capital": "Brazzaville",
+    "altSpellings": [
+        "CG",
+        "Congo-Brazzaville"
+    ],
+    "relevance": "0",
+    "region": "Africa",
+    "subregion": "Middle Africa",
+    "language": [
+        "French"
+    ],
+    "languagesCodes": [
+        "fr",
+        "ln"
+    ],
+    "translations": {
+        "de": "Kongo",
+        "en": "Congo",
+        "es": "Congo",
+        "fr": "Congo",
+        "it": "Congo",
+        "ja": "\u30b3\u30f3\u30b4\u5171\u548c\u56fd",
+        "nl": "Congo [Republiek]"
+    },
+    "population": 4448000,
+    "latlng": [
+        -1,
+        15
+    ],
+    "demonym": "Congolese",
+    "id": "Republic of the Congo"
+}

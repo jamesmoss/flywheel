@@ -1,0 +1,48 @@
+{
+    "name": "Mexico",
+    "nativeName": "M\u00e9xico",
+    "tld": [
+        ".mx"
+    ],
+    "cca2": "MX",
+    "ccn3": "484",
+    "cca3": "MEX",
+    "currency": [
+        "MXN"
+    ],
+    "callingCode": [
+        "52"
+    ],
+    "capital": "Mexico City",
+    "altSpellings": [
+        "MX",
+        "Mexicanos",
+        "United Mexican States",
+        "Estados Unidos Mexicanos"
+    ],
+    "relevance": "1.5",
+    "region": "Americas",
+    "subregion": "Central America",
+    "language": [
+        "Spanish"
+    ],
+    "languagesCodes": [
+        "es"
+    ],
+    "translations": {
+        "de": "Mexiko",
+        "en": "Mexico",
+        "es": "M\u00e9xico",
+        "fr": "Mexique",
+        "it": "Messico",
+        "ja": "\u30e1\u30ad\u30b7\u30b3",
+        "nl": "Mexico"
+    },
+    "population": 118395054,
+    "latlng": [
+        23,
+        -102
+    ],
+    "demonym": "Mexican",
+    "id": "Mexico"
+}

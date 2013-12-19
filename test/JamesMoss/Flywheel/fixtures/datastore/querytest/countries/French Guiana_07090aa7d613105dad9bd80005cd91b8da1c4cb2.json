@@ -1,0 +1,47 @@
+{
+    "name": "French Guiana",
+    "nativeName": "Guyane fran\u00e7aise",
+    "tld": [
+        ".gf"
+    ],
+    "cca2": "GF",
+    "ccn3": "254",
+    "cca3": "GUF",
+    "currency": [
+        "EUR"
+    ],
+    "callingCode": [
+        "594"
+    ],
+    "capital": "Cayenne",
+    "altSpellings": [
+        "GF",
+        "Guiana",
+        "Guyane"
+    ],
+    "relevance": "0",
+    "region": "Americas",
+    "subregion": "South America",
+    "language": [
+        "French"
+    ],
+    "languagesCodes": [
+        "fr"
+    ],
+    "translations": {
+        "de": "Franz\u00f6sisch Guyana",
+        "en": "French Guiana",
+        "es": "Guayana Francesa",
+        "fr": "Guayane",
+        "it": "Guyana francese",
+        "ja": "\u30d5\u30e9\u30f3\u30b9\u9818\u30ae\u30a2\u30ca",
+        "nl": "Frans-Guyana"
+    },
+    "population": 229040,
+    "latlng": [
+        4,
+        -53
+    ],
+    "demonym": "",
+    "id": "French Guiana"
+}

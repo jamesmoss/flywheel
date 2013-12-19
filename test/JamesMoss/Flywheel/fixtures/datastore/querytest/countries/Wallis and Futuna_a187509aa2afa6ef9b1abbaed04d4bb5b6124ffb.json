@@ -1,0 +1,47 @@
+{
+    "name": "Wallis and Futuna",
+    "nativeName": "Wallis et Futuna",
+    "tld": [
+        ".wf"
+    ],
+    "cca2": "WF",
+    "ccn3": "876",
+    "cca3": "WLF",
+    "currency": [
+        "XPF"
+    ],
+    "callingCode": [
+        "681"
+    ],
+    "capital": "Mata-Utu",
+    "altSpellings": [
+        "WF",
+        "Territory of the Wallis and Futuna Islands",
+        "Territoire des \u00eeles Wallis et Futuna"
+    ],
+    "relevance": "0.5",
+    "region": "Oceania",
+    "subregion": "Polynesia",
+    "language": [
+        "French"
+    ],
+    "languagesCodes": [
+        "fr"
+    ],
+    "translations": {
+        "de": "Wallis und Futuna",
+        "en": "Wallis and Futuna",
+        "es": "Wallis y Futuna",
+        "fr": "Wallis-et-Futuna",
+        "it": "Wallis e Futuna",
+        "ja": "\u30a6\u30a9\u30ea\u30b9\u30fb\u30d5\u30c4\u30ca",
+        "nl": "Wallis en Futuna"
+    },
+    "population": 13135,
+    "latlng": [
+        -13.3,
+        -176.2
+    ],
+    "demonym": "Wallis and Futuna Islander",
+    "id": "Wallis and Futuna"
+}

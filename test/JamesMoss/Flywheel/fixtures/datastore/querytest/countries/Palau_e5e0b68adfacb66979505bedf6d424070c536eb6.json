@@ -1,0 +1,48 @@
+{
+    "name": "Palau",
+    "nativeName": "Palau",
+    "tld": [
+        ".pw"
+    ],
+    "cca2": "PW",
+    "ccn3": "585",
+    "cca3": "PLW",
+    "currency": [
+        "USD"
+    ],
+    "callingCode": [
+        "680"
+    ],
+    "capital": "Ngerulmud",
+    "altSpellings": [
+        "PW",
+        "Republic of Palau",
+        "Beluu er a Belau"
+    ],
+    "relevance": "0.5",
+    "region": "Oceania",
+    "subregion": "Micronesia",
+    "language": [
+        "English",
+        "Palauan"
+    ],
+    "languagesCodes": [
+        "en"
+    ],
+    "translations": {
+        "de": "Palau",
+        "en": "Palau",
+        "es": "Palau",
+        "fr": "Palaos",
+        "it": "Palau",
+        "ja": "\u30d1\u30e9\u30aa",
+        "nl": "Palau"
+    },
+    "population": 20901,
+    "latlng": [
+        7.5,
+        134.5
+    ],
+    "demonym": "Palauan",
+    "id": "Palau"
+}

@@ -1,0 +1,53 @@
+{
+    "name": "Djibouti",
+    "nativeName": "Djibouti",
+    "tld": [
+        ".dj"
+    ],
+    "cca2": "DJ",
+    "ccn3": "262",
+    "cca3": "DJI",
+    "currency": [
+        "DJF"
+    ],
+    "callingCode": [
+        "253"
+    ],
+    "capital": "Djibouti",
+    "altSpellings": [
+        "DJ",
+        "Jabuuti",
+        "Gabuuti",
+        "Republic of Djibouti",
+        "R\u00e9publique de Djibouti",
+        "Gabuutih Ummuuno",
+        "Jamhuuriyadda Jabuuti"
+    ],
+    "relevance": "0",
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "language": [
+        "French",
+        "Arabic"
+    ],
+    "languagesCodes": [
+        "ar",
+        "fr"
+    ],
+    "translations": {
+        "de": "Dschibuti",
+        "en": "Djibouti",
+        "es": "Yibuti",
+        "fr": "Djibouti",
+        "it": "Gibuti",
+        "ja": "\u30b8\u30d6\u30c1",
+        "nl": "Djibouti"
+    },
+    "population": 864618,
+    "latlng": [
+        11.5,
+        43
+    ],
+    "demonym": "Djibouti",
+    "id": "Djibouti"
+}

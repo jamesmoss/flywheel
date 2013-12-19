@@ -1,0 +1,46 @@
+{
+    "name": "Burkina Faso",
+    "nativeName": "Burkina Faso",
+    "tld": [
+        ".bf"
+    ],
+    "cca2": "BF",
+    "ccn3": "854",
+    "cca3": "BFA",
+    "currency": [
+        "XOF"
+    ],
+    "callingCode": [
+        "226"
+    ],
+    "capital": "Ouagadougou",
+    "altSpellings": [
+        "BF"
+    ],
+    "relevance": "0",
+    "region": "Africa",
+    "subregion": "Western Africa",
+    "language": [
+        "French"
+    ],
+    "languagesCodes": [
+        "fr",
+        "ff"
+    ],
+    "translations": {
+        "de": "Burkina Faso",
+        "en": "Burkina Faso",
+        "es": "Burkina Faso",
+        "fr": "Burkina Faso",
+        "it": "Burkina Faso",
+        "ja": "\u30d6\u30eb\u30ad\u30ca\u30d5\u30a1\u30bd",
+        "nl": "Burkina Faso"
+    },
+    "population": 17322796,
+    "latlng": [
+        13,
+        -2
+    ],
+    "demonym": "Burkinabe",
+    "id": "Burkina Faso"
+}

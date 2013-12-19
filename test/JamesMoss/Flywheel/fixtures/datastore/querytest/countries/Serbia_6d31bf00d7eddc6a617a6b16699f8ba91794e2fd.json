@@ -1,0 +1,49 @@
+{
+    "name": "Serbia",
+    "nativeName": "\u0421\u0440\u0431\u0438\u0458\u0430",
+    "tld": [
+        ".rs"
+    ],
+    "cca2": "RS",
+    "ccn3": "688",
+    "cca3": "SRB",
+    "currency": [
+        "RSD"
+    ],
+    "callingCode": [
+        "381"
+    ],
+    "capital": "Belgrade",
+    "altSpellings": [
+        "RS",
+        "Srbija",
+        "Republic of Serbia",
+        "\u0420\u0435\u043f\u0443\u0431\u043b\u0438\u043a\u0430 \u0421\u0440\u0431\u0438\u0458\u0430",
+        "Republika Srbija"
+    ],
+    "relevance": "0",
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "language": [
+        "Serbian"
+    ],
+    "languagesCodes": [
+        "sr"
+    ],
+    "translations": {
+        "de": "Serbien",
+        "en": "Serbia",
+        "es": "Serbia",
+        "fr": "Serbie",
+        "it": "Serbia",
+        "ja": "\u30bb\u30eb\u30d3\u30a2",
+        "nl": "Servi\u00eb"
+    },
+    "population": 7181505,
+    "latlng": [
+        44,
+        21
+    ],
+    "demonym": "Serbian",
+    "id": "Serbia"
+}

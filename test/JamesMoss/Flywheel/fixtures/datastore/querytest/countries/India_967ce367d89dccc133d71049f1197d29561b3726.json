@@ -1,0 +1,50 @@
+{
+    "name": "India",
+    "nativeName": "\u092d\u093e\u0930\u0924",
+    "tld": [
+        ".in"
+    ],
+    "cca2": "IN",
+    "ccn3": "356",
+    "cca3": "IND",
+    "currency": [
+        "INR"
+    ],
+    "callingCode": [
+        "91"
+    ],
+    "capital": "New Delhi",
+    "altSpellings": [
+        "IN",
+        "Bh\u0101rat",
+        "Republic of India",
+        "Bharat Ganrajya"
+    ],
+    "relevance": "3",
+    "region": "Asia",
+    "subregion": "Southern Asia",
+    "language": [
+        "Hindi",
+        "English"
+    ],
+    "languagesCodes": [
+        "hi",
+        "en"
+    ],
+    "translations": {
+        "de": "Indien",
+        "en": "India",
+        "es": "India",
+        "fr": "Inde",
+        "it": "India",
+        "ja": "\u30a4\u30f3\u30c9",
+        "nl": "India"
+    },
+    "population": 1236670000,
+    "latlng": [
+        20,
+        77
+    ],
+    "demonym": "Indian",
+    "id": "India"
+}

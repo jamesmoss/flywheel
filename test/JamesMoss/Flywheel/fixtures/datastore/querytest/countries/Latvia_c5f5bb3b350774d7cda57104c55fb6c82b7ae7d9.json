@@ -1,0 +1,47 @@
+{
+    "name": "Latvia",
+    "nativeName": "Latvija",
+    "tld": [
+        ".lv"
+    ],
+    "cca2": "LV",
+    "ccn3": "428",
+    "cca3": "LVA",
+    "currency": [
+        "LVL"
+    ],
+    "callingCode": [
+        "371"
+    ],
+    "capital": "Riga",
+    "altSpellings": [
+        "LV",
+        "Republic of Latvia",
+        "Latvijas Republika"
+    ],
+    "relevance": "0",
+    "region": "Europe",
+    "subregion": "Northern Europe",
+    "language": [
+        "Latvian"
+    ],
+    "languagesCodes": [
+        "lv"
+    ],
+    "translations": {
+        "de": "Lettland",
+        "en": "Latvia",
+        "es": "Letonia",
+        "fr": "Lettonie",
+        "it": "Lettonia",
+        "ja": "\u30e9\u30c8\u30d3\u30a2",
+        "nl": "Letland"
+    },
+    "population": 2014000,
+    "latlng": [
+        57,
+        25
+    ],
+    "demonym": "Latvian",
+    "id": "Latvia"
+}

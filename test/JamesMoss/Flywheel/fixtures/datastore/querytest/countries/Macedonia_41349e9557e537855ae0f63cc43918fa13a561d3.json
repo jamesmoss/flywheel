@@ -1,0 +1,47 @@
+{
+    "name": "Macedonia",
+    "nativeName": "\u041c\u0430\u043a\u0435\u0434\u043e\u043d\u0438\u0458\u0430",
+    "tld": [
+        ".mk"
+    ],
+    "cca2": "MK",
+    "ccn3": "807",
+    "cca3": "MKD",
+    "currency": [
+        "MKD"
+    ],
+    "callingCode": [
+        "389"
+    ],
+    "capital": "Skopje",
+    "altSpellings": [
+        "MK",
+        "Republic of Macedonia",
+        "\u0420\u0435\u043f\u0443\u0431\u043b\u0438\u043a\u0430 \u041c\u0430\u043a\u0435\u0434\u043e\u043d\u0438\u0458\u0430"
+    ],
+    "relevance": "0",
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "language": [
+        "Macedonian"
+    ],
+    "languagesCodes": [
+        "mk"
+    ],
+    "translations": {
+        "de": "Mazedonien",
+        "en": "Macedonia",
+        "es": "Macedonia",
+        "fr": "Mac\u00e9doine",
+        "it": "Macedonia",
+        "ja": "\u30de\u30b1\u30c9\u30cb\u30a2\u65e7\u30e6\u30fc\u30b4\u30b9\u30e9\u30d3\u30a2\u5171\u548c\u56fd",
+        "nl": "Macedoni\u00eb [FYROM]"
+    },
+    "population": -1,
+    "latlng": [
+        41.83333333,
+        22
+    ],
+    "demonym": "Macedonian",
+    "id": "Macedonia"
+}

@@ -1,0 +1,48 @@
+{
+    "name": "Mauritania",
+    "nativeName": "M\u016br\u012bt\u0101ny\u0101",
+    "tld": [
+        ".mr"
+    ],
+    "cca2": "MR",
+    "ccn3": "478",
+    "cca3": "MRT",
+    "currency": [
+        "MRO"
+    ],
+    "callingCode": [
+        "222"
+    ],
+    "capital": "Nouakchott",
+    "altSpellings": [
+        "MR",
+        "Islamic Republic of Mauritania",
+        "al-Jumh\u016briyyah al-\u02beIsl\u0101miyyah al-M\u016br\u012bt\u0101niyyah"
+    ],
+    "relevance": "0",
+    "region": "Africa",
+    "subregion": "Western Africa",
+    "language": [
+        "Arabic"
+    ],
+    "languagesCodes": [
+        "ar",
+        "fr"
+    ],
+    "translations": {
+        "de": "Mauretanien",
+        "en": "Mauritania",
+        "es": "Mauritania",
+        "fr": "Mauritanie",
+        "it": "Mauritania",
+        "ja": "\u30e2\u30fc\u30ea\u30bf\u30cb\u30a2",
+        "nl": "Mauritani\u00eb"
+    },
+    "population": 3461041,
+    "latlng": [
+        20,
+        -12
+    ],
+    "demonym": "Mauritanian",
+    "id": "Mauritania"
+}

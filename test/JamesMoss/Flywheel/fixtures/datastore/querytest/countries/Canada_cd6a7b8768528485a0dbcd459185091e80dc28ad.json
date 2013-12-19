@@ -1,0 +1,47 @@
+{
+    "name": "Canada",
+    "nativeName": "Canada",
+    "tld": [
+        ".ca"
+    ],
+    "cca2": "CA",
+    "ccn3": "124",
+    "cca3": "CAN",
+    "currency": [
+        "CAD"
+    ],
+    "callingCode": [
+        "1"
+    ],
+    "capital": "Ottawa",
+    "altSpellings": [
+        "CA"
+    ],
+    "relevance": "2",
+    "region": "Americas",
+    "subregion": "Northern America",
+    "language": [
+        "English",
+        "French"
+    ],
+    "languagesCodes": [
+        "en",
+        "fr"
+    ],
+    "translations": {
+        "de": "Kanada",
+        "en": "Canada",
+        "es": "Canad\u00e1",
+        "fr": "Canada",
+        "it": "Canada",
+        "ja": "\u30ab\u30ca\u30c0",
+        "nl": "Canada"
+    },
+    "population": 35158304,
+    "latlng": [
+        60,
+        -95
+    ],
+    "demonym": "Canadian",
+    "id": "Canada"
+}

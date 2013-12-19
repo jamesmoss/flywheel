@@ -1,0 +1,51 @@
+{
+    "name": "Bosnia and Herzegovina",
+    "nativeName": "Bosna i Hercegovina",
+    "tld": [
+        ".ba"
+    ],
+    "cca2": "BA",
+    "ccn3": "070",
+    "cca3": "BIH",
+    "currency": [
+        "BAM"
+    ],
+    "callingCode": [
+        "387"
+    ],
+    "capital": "Sarajevo",
+    "altSpellings": [
+        "BA",
+        "Bosnia-Herzegovina",
+        "\u0411\u043e\u0441\u043d\u0430 \u0438 \u0425\u0435\u0440\u0446\u0435\u0433\u043e\u0432\u0438\u043d\u0430"
+    ],
+    "relevance": "0",
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "language": [
+        "Bosnian",
+        "Croatian",
+        "Serbian"
+    ],
+    "languagesCodes": [
+        "bs",
+        "hr",
+        "sr"
+    ],
+    "translations": {
+        "de": "Bosnien und Herzegowina",
+        "en": "Bosnia and Herzegovina",
+        "es": "Bosnia y Herzegovina",
+        "fr": "Bosnie et Herz\u00e9govine",
+        "it": "Bosnia ed Erzegovina",
+        "ja": "\u30dc\u30b9\u30cb\u30a2\u30fb\u30d8\u30eb\u30c4\u30a7\u30b4\u30d3\u30ca",
+        "nl": "Bosni\u00eb en Herzegovina"
+    },
+    "population": 3791622,
+    "latlng": [
+        44,
+        18
+    ],
+    "demonym": "Bosnian, Herzegovinian",
+    "id": "Bosnia and Herzegovina"
+}

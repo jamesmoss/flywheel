@@ -1,0 +1,56 @@
+{
+    "name": "Kazakhstan",
+    "nativeName": "\u049a\u0430\u0437\u0430\u049b\u0441\u0442\u0430\u043d",
+    "tld": [
+        ".kz",
+        ".\u049b\u0430\u0437"
+    ],
+    "cca2": "KZ",
+    "ccn3": "398",
+    "cca3": "KAZ",
+    "currency": [
+        "KZT"
+    ],
+    "callingCode": [
+        "76",
+        "77"
+    ],
+    "capital": "Astana",
+    "altSpellings": [
+        "KZ",
+        "Qazaqstan",
+        "\u041a\u0430\u0437\u0430\u0445\u0441\u0442\u0430\u043d",
+        "Republic of Kazakhstan",
+        "\u049a\u0430\u0437\u0430\u049b\u0441\u0442\u0430\u043d \u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430\u0441\u044b",
+        "Qazaqstan Respubl\u00efkas\u0131",
+        "\u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430 \u041a\u0430\u0437\u0430\u0445\u0441\u0442\u0430\u043d",
+        "Respublika Kazakhstan"
+    ],
+    "relevance": "0",
+    "region": "Asia",
+    "subregion": "Central Asia",
+    "language": [
+        "Kazakh",
+        "Russian"
+    ],
+    "languagesCodes": [
+        "kk",
+        "ru"
+    ],
+    "translations": {
+        "de": "Kasachstan",
+        "en": "Kazakhstan",
+        "es": "Kazajist\u00e1n",
+        "fr": "Kazakhstan",
+        "it": "Kazakistan",
+        "ja": "\u30ab\u30b6\u30d5\u30b9\u30bf\u30f3",
+        "nl": "Kazachstan"
+    },
+    "population": 17099000,
+    "latlng": [
+        48,
+        68
+    ],
+    "demonym": "Kazakhstani",
+    "id": "Kazakhstan"
+}

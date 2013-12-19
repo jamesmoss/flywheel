@@ -1,0 +1,45 @@
+{
+    "name": "Saint Helena",
+    "nativeName": "Saint Helena",
+    "tld": [
+        ".sh"
+    ],
+    "cca2": "SH",
+    "ccn3": "654",
+    "cca3": "SHN",
+    "currency": [
+        "SHP"
+    ],
+    "callingCode": [
+        "290"
+    ],
+    "capital": "Jamestown",
+    "altSpellings": [
+        "SH"
+    ],
+    "relevance": "0",
+    "region": "Africa",
+    "subregion": "Western Africa",
+    "language": [
+        "English"
+    ],
+    "languagesCodes": [
+        "en"
+    ],
+    "translations": {
+        "de": "Sankt Helena",
+        "en": "Saint Helena",
+        "es": "Santa Helena",
+        "fr": "Sainte-H\u00e9l\u00e8ne",
+        "it": "Sant'Elena",
+        "ja": "\u30bb\u30f3\u30c8\u30d8\u30ec\u30ca\u30fb\u30a2\u30bb\u30f3\u30b7\u30e7\u30f3\u304a\u3088\u3073\u30c8\u30ea\u30b9\u30bf\u30f3\u30c0\u30af\u30fc\u30cb\u30e3",
+        "nl": "Sint-Helena"
+    },
+    "population": -1,
+    "latlng": [
+        -15.95,
+        -5.7
+    ],
+    "demonym": "Saint Helenian",
+    "id": "Saint Helena"
+}

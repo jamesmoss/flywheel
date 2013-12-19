@@ -1,0 +1,50 @@
+{
+    "name": "Ireland",
+    "nativeName": "\u00c9ire",
+    "tld": [
+        ".ie"
+    ],
+    "cca2": "IE",
+    "ccn3": "372",
+    "cca3": "IRL",
+    "currency": [
+        "EUR"
+    ],
+    "callingCode": [
+        "353"
+    ],
+    "capital": "Dublin",
+    "altSpellings": [
+        "IE",
+        "\u00c9ire",
+        "Republic of Ireland",
+        "Poblacht na h\u00c9ireann"
+    ],
+    "relevance": "1.2",
+    "region": "Europe",
+    "subregion": "Northern Europe",
+    "language": [
+        "Irish",
+        "English"
+    ],
+    "languagesCodes": [
+        "en",
+        "ga"
+    ],
+    "translations": {
+        "de": "Irland",
+        "en": "Ireland",
+        "es": "Irlanda",
+        "fr": "Irlande",
+        "it": "Irlanda",
+        "ja": "\u30a2\u30a4\u30eb\u30e9\u30f3\u30c9",
+        "nl": "Ierland"
+    },
+    "population": -1,
+    "latlng": [
+        53,
+        -8
+    ],
+    "demonym": "Irish",
+    "id": "Ireland"
+}

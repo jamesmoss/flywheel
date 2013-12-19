@@ -1,0 +1,53 @@
+{
+    "name": "Luxembourg",
+    "nativeName": "Luxembourg",
+    "tld": [
+        ".lu"
+    ],
+    "cca2": "LU",
+    "ccn3": "442",
+    "cca3": "LUX",
+    "currency": [
+        "EUR"
+    ],
+    "callingCode": [
+        "352"
+    ],
+    "capital": "Luxembourg",
+    "altSpellings": [
+        "LU",
+        "Grand Duchy of Luxembourg",
+        "Grand-Duch\u00e9 de Luxembourg",
+        "Gro\u00dfherzogtum Luxemburg",
+        "Groussherzogtum L\u00ebtzebuerg"
+    ],
+    "relevance": "0",
+    "region": "Europe",
+    "subregion": "Western Europe",
+    "language": [
+        "French",
+        "German",
+        "Luxembourgish"
+    ],
+    "languagesCodes": [
+        "fr",
+        "de",
+        "lb"
+    ],
+    "translations": {
+        "de": "Luxemburg",
+        "en": "Luxembourg",
+        "es": "Luxemburgo",
+        "fr": "Luxembourg",
+        "it": "Lussemburgo",
+        "ja": "\u30eb\u30af\u30bb\u30f3\u30d6\u30eb\u30af",
+        "nl": "Luxemburg"
+    },
+    "population": 537000,
+    "latlng": [
+        49.75,
+        6.16666666
+    ],
+    "demonym": "Luxembourger",
+    "id": "Luxembourg"
+}

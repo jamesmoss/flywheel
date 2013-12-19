@@ -1,0 +1,46 @@
+{
+    "name": "Gambia",
+    "nativeName": "Gambia",
+    "tld": [
+        ".gm"
+    ],
+    "cca2": "GM",
+    "ccn3": "270",
+    "cca3": "GMB",
+    "currency": [
+        "GMD"
+    ],
+    "callingCode": [
+        "220"
+    ],
+    "capital": "Banjul",
+    "altSpellings": [
+        "GM",
+        "Republic of the Gambia"
+    ],
+    "relevance": "0",
+    "region": "Africa",
+    "subregion": "Western Africa",
+    "language": [
+        "English"
+    ],
+    "languagesCodes": [
+        "en"
+    ],
+    "translations": {
+        "de": "Gambia",
+        "en": "Gambia",
+        "es": "Gambia",
+        "fr": "Gambie",
+        "it": "Gambia",
+        "ja": "\u30ac\u30f3\u30d3\u30a2",
+        "nl": "Gambia"
+    },
+    "population": -1,
+    "latlng": [
+        13.46666666,
+        -16.56666666
+    ],
+    "demonym": "Gambian",
+    "id": "Gambia"
+}

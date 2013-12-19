@@ -1,0 +1,47 @@
+{
+    "name": "Mali",
+    "nativeName": "Mali",
+    "tld": [
+        ".ml"
+    ],
+    "cca2": "ML",
+    "ccn3": "466",
+    "cca3": "MLI",
+    "currency": [
+        "XOF"
+    ],
+    "callingCode": [
+        "223"
+    ],
+    "capital": "Bamako",
+    "altSpellings": [
+        "ML",
+        "Republic of Mali",
+        "R\u00e9publique du Mali"
+    ],
+    "relevance": "0",
+    "region": "Africa",
+    "subregion": "Western Africa",
+    "language": [
+        "French"
+    ],
+    "languagesCodes": [
+        "fr"
+    ],
+    "translations": {
+        "de": "Mali",
+        "en": "Mali",
+        "es": "Mali",
+        "fr": "Mali",
+        "it": "Mali",
+        "ja": "\u30de\u30ea",
+        "nl": "Mali"
+    },
+    "population": 15302000,
+    "latlng": [
+        17,
+        -4
+    ],
+    "demonym": "Malian",
+    "id": "Mali"
+}

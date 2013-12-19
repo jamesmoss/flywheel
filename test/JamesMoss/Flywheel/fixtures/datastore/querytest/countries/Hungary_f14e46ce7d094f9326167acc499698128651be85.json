@@ -1,0 +1,45 @@
+{
+    "name": "Hungary",
+    "nativeName": "Magyarorsz\u00e1g",
+    "tld": [
+        ".hu"
+    ],
+    "cca2": "HU",
+    "ccn3": "348",
+    "cca3": "HUN",
+    "currency": [
+        "HUF"
+    ],
+    "callingCode": [
+        "36"
+    ],
+    "capital": "Budapest",
+    "altSpellings": [
+        "HU"
+    ],
+    "relevance": "0",
+    "region": "Europe",
+    "subregion": "Eastern Europe",
+    "language": [
+        "Hungarian"
+    ],
+    "languagesCodes": [
+        "hu"
+    ],
+    "translations": {
+        "de": "Ungarn",
+        "en": "Hungary",
+        "es": "Hungr\u00eda",
+        "fr": "Hongrie",
+        "it": "Ungheria",
+        "ja": "\u30cf\u30f3\u30ac\u30ea\u30fc",
+        "nl": "Hongarije"
+    },
+    "population": 9906000,
+    "latlng": [
+        47,
+        20
+    ],
+    "demonym": "Hungarian",
+    "id": "Hungary"
+}

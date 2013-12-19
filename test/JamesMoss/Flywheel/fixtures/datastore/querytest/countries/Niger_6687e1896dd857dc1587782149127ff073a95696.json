@@ -1,0 +1,48 @@
+{
+    "name": "Niger",
+    "nativeName": "Niger",
+    "tld": [
+        ".ne"
+    ],
+    "cca2": "NE",
+    "ccn3": "562",
+    "cca3": "NER",
+    "currency": [
+        "XOF"
+    ],
+    "callingCode": [
+        "227"
+    ],
+    "capital": "Niamey",
+    "altSpellings": [
+        "NE",
+        "Nijar",
+        "Republic of Niger",
+        "R\u00e9publique du Niger"
+    ],
+    "relevance": "0",
+    "region": "Africa",
+    "subregion": "Western Africa",
+    "language": [
+        "French"
+    ],
+    "languagesCodes": [
+        "fr"
+    ],
+    "translations": {
+        "de": "Niger",
+        "en": "Niger",
+        "es": "N\u00edger",
+        "fr": "Niger",
+        "it": "Niger",
+        "ja": "\u30cb\u30b8\u30a7\u30fc\u30eb",
+        "nl": "Niger"
+    },
+    "population": 17129076,
+    "latlng": [
+        16,
+        8
+    ],
+    "demonym": "Nigerian",
+    "id": "Niger"
+}

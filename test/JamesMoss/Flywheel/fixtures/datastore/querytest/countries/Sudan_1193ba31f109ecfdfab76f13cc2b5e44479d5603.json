@@ -1,0 +1,49 @@
+{
+    "name": "Sudan",
+    "nativeName": "as-S\u016bd\u0101n",
+    "tld": [
+        ".sd"
+    ],
+    "cca2": "SD",
+    "ccn3": "729",
+    "cca3": "SDN",
+    "currency": [
+        "SDG"
+    ],
+    "callingCode": [
+        "249"
+    ],
+    "capital": "Khartoum",
+    "altSpellings": [
+        "SD",
+        "Republic of the Sudan",
+        "Jumh\u016br\u012byat as-S\u016bd\u0101n"
+    ],
+    "relevance": "0",
+    "region": "Africa",
+    "subregion": "Northern Africa",
+    "language": [
+        "Arabic",
+        "English"
+    ],
+    "languagesCodes": [
+        "ar",
+        "en"
+    ],
+    "translations": {
+        "de": "Sudan",
+        "en": "Sudan",
+        "es": "Sud\u00e1n",
+        "fr": "Soudan",
+        "it": "Sudan",
+        "ja": "\u30b9\u30fc\u30c0\u30f3",
+        "nl": "Soedan"
+    },
+    "population": 37964000,
+    "latlng": [
+        15,
+        30
+    ],
+    "demonym": "Sudanese",
+    "id": "Sudan"
+}

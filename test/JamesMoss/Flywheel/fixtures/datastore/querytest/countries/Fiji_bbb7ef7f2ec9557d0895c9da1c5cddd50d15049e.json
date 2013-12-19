@@ -1,0 +1,54 @@
+{
+    "name": "Fiji",
+    "nativeName": "Fiji",
+    "tld": [
+        ".fj"
+    ],
+    "cca2": "FJ",
+    "ccn3": "242",
+    "cca3": "FJI",
+    "currency": [
+        "FJD"
+    ],
+    "callingCode": [
+        "679"
+    ],
+    "capital": "Suva",
+    "altSpellings": [
+        "FJ",
+        "Viti",
+        "Republic of Fiji",
+        "Matanitu ko Viti",
+        "Fij\u012b Ga\u1e47ar\u0101jya"
+    ],
+    "relevance": "0",
+    "region": "Oceania",
+    "subregion": "Melanesia",
+    "language": [
+        "English",
+        "Fijian",
+        "Fiji Hindi"
+    ],
+    "languagesCodes": [
+        "en",
+        "fj",
+        "hi",
+        "ur"
+    ],
+    "translations": {
+        "de": "Fidschi",
+        "en": "Fiji",
+        "es": "Fiyi",
+        "fr": "Fidji",
+        "it": "Figi",
+        "ja": "\u30d5\u30a3\u30b8\u30fc",
+        "nl": "Fiji"
+    },
+    "population": 858038,
+    "latlng": [
+        -18,
+        175
+    ],
+    "demonym": "Fijian",
+    "id": "Fiji"
+}

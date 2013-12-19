@@ -1,0 +1,46 @@
+{
+    "name": "Georgia",
+    "nativeName": "\u10e1\u10d0\u10e5\u10d0\u10e0\u10d7\u10d5\u10d4\u10da\u10dd",
+    "tld": [
+        ".ge"
+    ],
+    "cca2": "GE",
+    "ccn3": "268",
+    "cca3": "GEO",
+    "currency": [
+        "GEL"
+    ],
+    "callingCode": [
+        "995"
+    ],
+    "capital": "Tbilisi",
+    "altSpellings": [
+        "GE",
+        "Sakartvelo"
+    ],
+    "relevance": "0",
+    "region": "Asia",
+    "subregion": "Western Asia",
+    "language": [
+        "Georgian"
+    ],
+    "languagesCodes": [
+        "ka"
+    ],
+    "translations": {
+        "de": "Georgien",
+        "en": "Georgia",
+        "es": "Georgia",
+        "fr": "G\u00e9orgie",
+        "it": "Georgia",
+        "ja": "\u30b0\u30eb\u30b8\u30a2",
+        "nl": "Georgi\u00eb"
+    },
+    "population": -1,
+    "latlng": [
+        42,
+        43.5
+    ],
+    "demonym": "Georgian",
+    "id": "Georgia"
+}

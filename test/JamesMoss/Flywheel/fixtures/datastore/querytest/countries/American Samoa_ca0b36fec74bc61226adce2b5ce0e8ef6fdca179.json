@@ -1,0 +1,50 @@
+{
+    "name": "American Samoa",
+    "nativeName": "American Samoa",
+    "tld": [
+        ".as"
+    ],
+    "cca2": "AS",
+    "ccn3": "016",
+    "cca3": "ASM",
+    "currency": [
+        "USD"
+    ],
+    "callingCode": [
+        "1684"
+    ],
+    "capital": "Pago Pago",
+    "altSpellings": [
+        "AS",
+        "Amerika S\u0101moa",
+        "Amelika S\u0101moa",
+        "S\u0101moa Amelika"
+    ],
+    "relevance": "0.5",
+    "region": "Oceania",
+    "subregion": "Polynesia",
+    "language": [
+        "English",
+        "Samoan"
+    ],
+    "languagesCodes": [
+        "en",
+        "sm"
+    ],
+    "translations": {
+        "de": "Amerikanisch-Samoa",
+        "en": "American Samoa",
+        "es": "Samoa Americana",
+        "fr": "Samoa am\u00e9ricaines",
+        "it": "Samoa Americane",
+        "ja": "\u30a2\u30e1\u30ea\u30ab\u9818\u30b5\u30e2\u30a2",
+        "nl": "Amerikaans Samoa"
+    },
+    "population": 55519,
+    "latlng": [
+        -14.33333333,
+        -170
+    ],
+    "demonym": "American Samoan",
+    "id": "American Samoa"
+}

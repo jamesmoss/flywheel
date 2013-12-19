@@ -1,0 +1,45 @@
+{
+    "name": "New Caledonia",
+    "nativeName": "Nouvelle-Cal\u00e9donie",
+    "tld": [
+        ".nc"
+    ],
+    "cca2": "NC",
+    "ccn3": "540",
+    "cca3": "NCL",
+    "currency": [
+        "XPF"
+    ],
+    "callingCode": [
+        "687"
+    ],
+    "capital": "Noum\u00e9a",
+    "altSpellings": [
+        "NC"
+    ],
+    "relevance": "0.5",
+    "region": "Oceania",
+    "subregion": "Melanesia",
+    "language": [
+        "French"
+    ],
+    "languagesCodes": [
+        "fr"
+    ],
+    "translations": {
+        "de": "Neukaledonien",
+        "en": "New Caledonia",
+        "es": "Nueva Caledonia",
+        "fr": "Nouvelle-Cal\u00e9donie",
+        "it": "Nuova Caledonia",
+        "ja": "\u30cb\u30e5\u30fc\u30ab\u30ec\u30c9\u30cb\u30a2",
+        "nl": "Nieuw-Caledoni\u00eb"
+    },
+    "population": 258958,
+    "latlng": [
+        -21.5,
+        165.5
+    ],
+    "demonym": "New Caledonian",
+    "id": "New Caledonia"
+}

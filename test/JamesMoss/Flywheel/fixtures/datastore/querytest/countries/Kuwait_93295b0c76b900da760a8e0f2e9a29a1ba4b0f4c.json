@@ -1,0 +1,47 @@
+{
+    "name": "Kuwait",
+    "nativeName": "al-Kuwayt",
+    "tld": [
+        ".kw"
+    ],
+    "cca2": "KW",
+    "ccn3": "414",
+    "cca3": "KWT",
+    "currency": [
+        "KWD"
+    ],
+    "callingCode": [
+        "965"
+    ],
+    "capital": "Kuwait City",
+    "altSpellings": [
+        "KW",
+        "State of Kuwait",
+        "Dawlat al-Kuwait"
+    ],
+    "relevance": "0",
+    "region": "Asia",
+    "subregion": "Western Asia",
+    "language": [
+        "Arabic"
+    ],
+    "languagesCodes": [
+        "ar"
+    ],
+    "translations": {
+        "de": "Kuwait",
+        "en": "Kuwait",
+        "es": "Kuwait",
+        "fr": "Kowe\u00eft",
+        "it": "Kuwait",
+        "ja": "\u30af\u30a6\u30a7\u30fc\u30c8",
+        "nl": "Koeweit"
+    },
+    "population": 3582054,
+    "latlng": [
+        29.5,
+        45.75
+    ],
+    "demonym": "Kuwaiti",
+    "id": "Kuwait"
+}

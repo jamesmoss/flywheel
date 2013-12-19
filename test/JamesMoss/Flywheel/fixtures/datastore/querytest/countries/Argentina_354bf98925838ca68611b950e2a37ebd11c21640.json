@@ -1,0 +1,48 @@
+{
+    "name": "Argentina",
+    "nativeName": "Argentina",
+    "tld": [
+        ".ar"
+    ],
+    "cca2": "AR",
+    "ccn3": "032",
+    "cca3": "ARG",
+    "currency": [
+        "ARS"
+    ],
+    "callingCode": [
+        "54"
+    ],
+    "capital": "Buenos Aires",
+    "altSpellings": [
+        "AR",
+        "Argentine Republic",
+        "Rep\u00fablica Argentina"
+    ],
+    "relevance": "0",
+    "region": "Americas",
+    "subregion": "South America",
+    "language": [
+        "Spanish"
+    ],
+    "languagesCodes": [
+        "es",
+        "gn"
+    ],
+    "translations": {
+        "de": "Argentinien",
+        "en": "Argentina",
+        "es": "Argentina",
+        "fr": "Argentine",
+        "it": "Argentina",
+        "ja": "\u30a2\u30eb\u30bc\u30f3\u30c1\u30f3",
+        "nl": "Argentini\u00eb"
+    },
+    "population": 40117096,
+    "latlng": [
+        -34,
+        -64
+    ],
+    "demonym": "Argentinean",
+    "id": "Argentina"
+}

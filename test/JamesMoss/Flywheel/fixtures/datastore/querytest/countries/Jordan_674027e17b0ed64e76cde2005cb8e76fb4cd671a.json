@@ -1,0 +1,47 @@
+{
+    "name": "Jordan",
+    "nativeName": "al-Urdun",
+    "tld": [
+        ".jo"
+    ],
+    "cca2": "JO",
+    "ccn3": "400",
+    "cca3": "JOR",
+    "currency": [
+        "JOD"
+    ],
+    "callingCode": [
+        "962"
+    ],
+    "capital": "Amman",
+    "altSpellings": [
+        "JO",
+        "Hashemite Kingdom of Jordan",
+        "al-Mamlakah al-Urdun\u012byah al-H\u0101shim\u012byah"
+    ],
+    "relevance": "0",
+    "region": "Asia",
+    "subregion": "Western Asia",
+    "language": [
+        "Arabic"
+    ],
+    "languagesCodes": [
+        "ar"
+    ],
+    "translations": {
+        "de": "Jordanien",
+        "en": "Jordan",
+        "es": "Jordania",
+        "fr": "Jordanie",
+        "it": "Giordania",
+        "ja": "\u30e8\u30eb\u30c0\u30f3",
+        "nl": "Jordani\u00eb"
+    },
+    "population": 6512600,
+    "latlng": [
+        31,
+        36
+    ],
+    "demonym": "Jordanian",
+    "id": "Jordan"
+}

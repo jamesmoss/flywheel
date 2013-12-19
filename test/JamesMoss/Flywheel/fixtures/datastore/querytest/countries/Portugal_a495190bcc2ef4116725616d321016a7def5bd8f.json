@@ -1,0 +1,48 @@
+{
+    "name": "Portugal",
+    "nativeName": "Portugal",
+    "tld": [
+        ".pt"
+    ],
+    "cca2": "PT",
+    "ccn3": "620",
+    "cca3": "PRT",
+    "currency": [
+        "EUR"
+    ],
+    "callingCode": [
+        "351"
+    ],
+    "capital": "Lisbon",
+    "altSpellings": [
+        "PT",
+        "Portuguesa",
+        "Portuguese Republic",
+        "Rep\u00fablica Portuguesa"
+    ],
+    "relevance": "1.5",
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "language": [
+        "Portuguese"
+    ],
+    "languagesCodes": [
+        "pt"
+    ],
+    "translations": {
+        "de": "Portugal",
+        "en": "Portugal",
+        "es": "Portugal",
+        "fr": "Portugal",
+        "it": "Portogallo",
+        "ja": "\u30dd\u30eb\u30c8\u30ac\u30eb",
+        "nl": "Portugal"
+    },
+    "population": 10562178,
+    "latlng": [
+        39.5,
+        -8
+    ],
+    "demonym": "Portuguese",
+    "id": "Portugal"
+}

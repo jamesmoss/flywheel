@@ -1,0 +1,48 @@
+{
+    "name": "Nigeria",
+    "nativeName": "Nigeria",
+    "tld": [
+        ".ng"
+    ],
+    "cca2": "NG",
+    "ccn3": "566",
+    "cca3": "NGA",
+    "currency": [
+        "NGN"
+    ],
+    "callingCode": [
+        "234"
+    ],
+    "capital": "Abuja",
+    "altSpellings": [
+        "NG",
+        "Nijeriya",
+        "Na\u00edj\u00edr\u00ed\u00e0",
+        "Federal Republic of Nigeria"
+    ],
+    "relevance": "1.5",
+    "region": "Africa",
+    "subregion": "Western Africa",
+    "language": [
+        "English"
+    ],
+    "languagesCodes": [
+        "en"
+    ],
+    "translations": {
+        "de": "Nigeria",
+        "en": "Nigeria",
+        "es": "Nigeria",
+        "fr": "Nig\u00e9ria",
+        "it": "Nigeria",
+        "ja": "\u30ca\u30a4\u30b8\u30a7\u30ea\u30a2",
+        "nl": "Nigeria"
+    },
+    "population": 173615000,
+    "latlng": [
+        10,
+        8
+    ],
+    "demonym": "Nigerian",
+    "id": "Nigeria"
+}

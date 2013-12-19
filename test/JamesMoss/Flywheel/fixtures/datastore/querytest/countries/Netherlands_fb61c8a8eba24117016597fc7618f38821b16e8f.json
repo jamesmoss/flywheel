@@ -1,0 +1,47 @@
+{
+    "name": "Netherlands",
+    "nativeName": "Nederland",
+    "tld": [
+        ".nl"
+    ],
+    "cca2": "NL",
+    "ccn3": "528",
+    "cca3": "NLD",
+    "currency": [
+        "EUR"
+    ],
+    "callingCode": [
+        "31"
+    ],
+    "capital": "Amsterdam",
+    "altSpellings": [
+        "NL",
+        "Holland",
+        "Nederland"
+    ],
+    "relevance": "1.5",
+    "region": "Europe",
+    "subregion": "Western Europe",
+    "language": [
+        "Dutch"
+    ],
+    "languagesCodes": [
+        "nl"
+    ],
+    "translations": {
+        "de": "Niederlande",
+        "en": "Netherlands",
+        "es": "Pa\u00edses Bajos",
+        "fr": "Pays-Bas",
+        "it": "Paesi Bassi",
+        "ja": "\u30aa\u30e9\u30f3\u30c0",
+        "nl": "Nederland"
+    },
+    "population": 16807300,
+    "latlng": [
+        52.5,
+        5.75
+    ],
+    "demonym": "Dutch",
+    "id": "Netherlands"
+}

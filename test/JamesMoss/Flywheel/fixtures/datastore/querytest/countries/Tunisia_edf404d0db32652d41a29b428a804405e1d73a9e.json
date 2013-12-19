@@ -1,0 +1,48 @@
+{
+    "name": "Tunisia",
+    "nativeName": "T\u016bnis",
+    "tld": [
+        ".tn"
+    ],
+    "cca2": "TN",
+    "ccn3": "788",
+    "cca3": "TUN",
+    "currency": [
+        "TND"
+    ],
+    "callingCode": [
+        "216"
+    ],
+    "capital": "Tunis",
+    "altSpellings": [
+        "TN",
+        "Republic of Tunisia",
+        "al-Jumh\u016briyyah at-T\u016bnisiyyah"
+    ],
+    "relevance": "0",
+    "region": "Africa",
+    "subregion": "Northern Africa",
+    "language": [
+        "Arabic"
+    ],
+    "languagesCodes": [
+        "ar",
+        "fr"
+    ],
+    "translations": {
+        "de": "Tunesien",
+        "en": "Tunisia",
+        "es": "T\u00fanez",
+        "fr": "Tunisie",
+        "it": "Tunisia",
+        "ja": "\u30c1\u30e5\u30cb\u30b8\u30a2",
+        "nl": "Tunesi\u00eb"
+    },
+    "population": 10833431,
+    "latlng": [
+        34,
+        9
+    ],
+    "demonym": "Tunisian",
+    "id": "Tunisia"
+}

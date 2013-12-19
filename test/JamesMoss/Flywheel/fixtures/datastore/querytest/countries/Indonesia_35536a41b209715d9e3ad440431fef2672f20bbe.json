@@ -1,0 +1,41 @@
+{
+    "name": "Indonesia",
+    "nativeName": "Indonesia",
+    "tld": [
+        ".id"
+    ],
+    "cca2": "ID",
+    "ccn3": "360",
+    "cca3": "IDN",
+    "currency": [
+        "IDR"
+    ],
+    "callingCode": [
+        "62"
+    ],
+    "capital": "Jakarta",
+    "altSpellings": [
+        "ID",
+        "Republic of Indonesia",
+        "Republik Indonesia"
+    ],
+    "relevance": "2",
+    "region": "Asia",
+    "subregion": "South-Eastern Asia",
+    "language": [
+        "Indonesian"
+    ],
+    "languagesCodes": [
+
+    ],
+    "translations": [
+
+    ],
+    "population": 237641326,
+    "latlng": [
+        -5,
+        120
+    ],
+    "demonym": "Indonesian",
+    "id": "Indonesia"
+}

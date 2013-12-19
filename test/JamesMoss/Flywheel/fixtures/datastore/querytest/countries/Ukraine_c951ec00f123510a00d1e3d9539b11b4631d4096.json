@@ -1,0 +1,46 @@
+{
+    "name": "Ukraine",
+    "nativeName": "\u0423\u043a\u0440\u0430\u0457\u043d\u0430",
+    "tld": [
+        ".ua"
+    ],
+    "cca2": "UA",
+    "ccn3": "804",
+    "cca3": "UKR",
+    "currency": [
+        "UAH"
+    ],
+    "callingCode": [
+        "380"
+    ],
+    "capital": "Kiev",
+    "altSpellings": [
+        "UA",
+        "Ukrayina"
+    ],
+    "relevance": "0",
+    "region": "Europe",
+    "subregion": "Eastern Europe",
+    "language": [
+        "Ukrainian"
+    ],
+    "languagesCodes": [
+        "uk"
+    ],
+    "translations": {
+        "de": "Ukraine",
+        "en": "Ukraine",
+        "es": "Ucrania",
+        "fr": "Ukraine",
+        "it": "Ucraina",
+        "ja": "\u30a6\u30af\u30e9\u30a4\u30ca",
+        "nl": "Oekra\u00efne"
+    },
+    "population": 45461627,
+    "latlng": [
+        49,
+        32
+    ],
+    "demonym": "Ukrainian",
+    "id": "Ukraine"
+}

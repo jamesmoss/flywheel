@@ -1,0 +1,48 @@
+{
+    "name": "Togo",
+    "nativeName": "Togo",
+    "tld": [
+        ".tg"
+    ],
+    "cca2": "TG",
+    "ccn3": "768",
+    "cca3": "TGO",
+    "currency": [
+        "XOF"
+    ],
+    "callingCode": [
+        "228"
+    ],
+    "capital": "Lom\u00e9",
+    "altSpellings": [
+        "TG",
+        "Togolese",
+        "Togolese Republic",
+        "R\u00e9publique Togolaise"
+    ],
+    "relevance": "0",
+    "region": "Africa",
+    "subregion": "Western Africa",
+    "language": [
+        "French"
+    ],
+    "languagesCodes": [
+        "fr"
+    ],
+    "translations": {
+        "de": "Togo",
+        "en": "Togo",
+        "es": "Togo",
+        "fr": "Togo",
+        "it": "Togo",
+        "ja": "\u30c8\u30fc\u30b4",
+        "nl": "Togo"
+    },
+    "population": 6191155,
+    "latlng": [
+        8,
+        1.16666666
+    ],
+    "demonym": "Togolese",
+    "id": "Togo"
+}

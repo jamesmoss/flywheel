@@ -1,0 +1,49 @@
+{
+    "name": "Samoa",
+    "nativeName": "Samoa",
+    "tld": [
+        ".ws"
+    ],
+    "cca2": "WS",
+    "ccn3": "882",
+    "cca3": "WSM",
+    "currency": [
+        "WST"
+    ],
+    "callingCode": [
+        "685"
+    ],
+    "capital": "Apia",
+    "altSpellings": [
+        "WS",
+        "Independent State of Samoa",
+        "Malo Sa\u02bboloto Tuto\u02bbatasi o S\u0101moa"
+    ],
+    "relevance": "0",
+    "region": "Oceania",
+    "subregion": "Polynesia",
+    "language": [
+        "Samoan",
+        "English"
+    ],
+    "languagesCodes": [
+        "sm",
+        "en"
+    ],
+    "translations": {
+        "de": "Samoa",
+        "en": "Samoa",
+        "es": "Samoa",
+        "fr": "Samoa",
+        "it": "Samoa",
+        "ja": "\u30b5\u30e2\u30a2",
+        "nl": "Samoa"
+    },
+    "population": 187820,
+    "latlng": [
+        -13.58333333,
+        -172.33333333
+    ],
+    "demonym": "Samoan",
+    "id": "Samoa"
+}

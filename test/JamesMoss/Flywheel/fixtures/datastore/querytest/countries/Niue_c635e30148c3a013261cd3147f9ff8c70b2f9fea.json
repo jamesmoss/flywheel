@@ -1,0 +1,46 @@
+{
+    "name": "Niue",
+    "nativeName": "Niu\u0113",
+    "tld": [
+        ".nu"
+    ],
+    "cca2": "NU",
+    "ccn3": "570",
+    "cca3": "NIU",
+    "currency": [
+        "NZD"
+    ],
+    "callingCode": [
+        "683"
+    ],
+    "capital": "Alofi",
+    "altSpellings": [
+        "NU"
+    ],
+    "relevance": "0.5",
+    "region": "Oceania",
+    "subregion": "Polynesia",
+    "language": [
+        "Niuean",
+        "English"
+    ],
+    "languagesCodes": [
+        "en"
+    ],
+    "translations": {
+        "de": "Niue",
+        "en": "Niue",
+        "es": "Niue",
+        "fr": "Niue",
+        "it": "Niue",
+        "ja": "\u30cb\u30a6\u30a8",
+        "nl": "Niue"
+    },
+    "population": 1613,
+    "latlng": [
+        -19.03333333,
+        -169.86666666
+    ],
+    "demonym": "Niuean",
+    "id": "Niue"
+}

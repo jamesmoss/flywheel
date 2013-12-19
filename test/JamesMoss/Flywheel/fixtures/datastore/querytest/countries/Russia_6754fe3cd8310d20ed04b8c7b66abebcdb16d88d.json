@@ -1,0 +1,49 @@
+{
+    "name": "Russia",
+    "nativeName": "\u0420\u043e\u0441\u0441\u0438\u044f",
+    "tld": [
+        ".ru"
+    ],
+    "cca2": "RU",
+    "ccn3": "643",
+    "cca3": "RUS",
+    "currency": [
+        "RUB"
+    ],
+    "callingCode": [
+        "7"
+    ],
+    "capital": "Moscow",
+    "altSpellings": [
+        "RU",
+        "Rossiya",
+        "Russian Federation",
+        "\u0420\u043e\u0441\u0441\u0438\u0439\u0441\u043a\u0430\u044f \u0424\u0435\u0434\u0435\u0440\u0430\u0446\u0438\u044f",
+        "Rossiyskaya Federatsiya"
+    ],
+    "relevance": "2.5",
+    "region": "Europe",
+    "subregion": "Eastern Europe",
+    "language": [
+        "Russian"
+    ],
+    "languagesCodes": [
+        "ru"
+    ],
+    "translations": {
+        "de": "Russland",
+        "en": "Russia",
+        "es": "Rusia",
+        "fr": "Russie",
+        "it": "Russia",
+        "ja": "\u30ed\u30b7\u30a2\u9023\u90a6",
+        "nl": "Rusland"
+    },
+    "population": 143500000,
+    "latlng": [
+        60,
+        100
+    ],
+    "demonym": "Russian",
+    "id": "Russia"
+}

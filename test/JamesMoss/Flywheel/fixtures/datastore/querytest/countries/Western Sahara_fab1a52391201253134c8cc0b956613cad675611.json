@@ -1,0 +1,50 @@
+{
+    "name": "Western Sahara",
+    "nativeName": "A\u1e63-\u1e62a\u1e25r\u0101\u2019 al-\u0120arbiyya",
+    "tld": [
+        ".eh"
+    ],
+    "cca2": "EH",
+    "ccn3": "732",
+    "cca3": "ESH",
+    "currency": [
+        "MAD",
+        "DZD",
+        "MRO"
+    ],
+    "callingCode": [
+        "212"
+    ],
+    "capital": "El Aai\u00fan",
+    "altSpellings": [
+        "EH",
+        "Tane\u1e93roft Tutrimt"
+    ],
+    "relevance": "0",
+    "region": "Africa",
+    "subregion": "Northern Africa",
+    "language": [
+        "Berber",
+        "Hassaniya"
+    ],
+    "languagesCodes": [
+        "es",
+        "fr"
+    ],
+    "translations": {
+        "de": "Westsahara",
+        "en": "Western Sahara",
+        "es": "Sahara Occidental",
+        "fr": "Sahara Occidental",
+        "it": "Sahara Occidentale",
+        "ja": "\u897f\u30b5\u30cf\u30e9",
+        "nl": "Westelijke Sahara"
+    },
+    "population": 567000,
+    "latlng": [
+        24.5,
+        -13
+    ],
+    "demonym": "Sahrawi",
+    "id": "Western Sahara"
+}

@@ -1,0 +1,47 @@
+{
+    "name": "Algeria",
+    "nativeName": "al-Jaz\u0101\u02bcir",
+    "tld": [
+        ".dz"
+    ],
+    "cca2": "DZ",
+    "ccn3": "012",
+    "cca3": "DZA",
+    "currency": [
+        "DZD"
+    ],
+    "callingCode": [
+        "213"
+    ],
+    "capital": "Algiers",
+    "altSpellings": [
+        "DZ",
+        "Dzayer",
+        "Alg\u00e9rie"
+    ],
+    "relevance": "0",
+    "region": "Africa",
+    "subregion": "Northern Africa",
+    "language": [
+        "Arabic"
+    ],
+    "languagesCodes": [
+        "ar"
+    ],
+    "translations": {
+        "de": "Algerien",
+        "en": "Algeria",
+        "es": "Argelia",
+        "fr": "Alg\u00e9rie",
+        "it": "Algeria",
+        "ja": "\u30a2\u30eb\u30b8\u30a7\u30ea\u30a2",
+        "nl": "Algerije"
+    },
+    "population": 37900000,
+    "latlng": [
+        28,
+        3
+    ],
+    "demonym": "Algerian",
+    "id": "Algeria"
+}

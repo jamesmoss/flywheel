@@ -1,0 +1,52 @@
+{
+    "name": "Democratic Republic of the Congo",
+    "nativeName": "R\u00e9publique d\u00e9mocratique du Congo",
+    "tld": [
+        ".cd"
+    ],
+    "cca2": "CD",
+    "ccn3": "180",
+    "cca3": "COD",
+    "currency": [
+        "CDF"
+    ],
+    "callingCode": [
+        "243"
+    ],
+    "capital": "Kinshasa",
+    "altSpellings": [
+        "CD",
+        "DR Congo",
+        "Congo-Kinshasa",
+        "DRC"
+    ],
+    "relevance": "0",
+    "region": "Africa",
+    "subregion": "Middle Africa",
+    "language": [
+        "French"
+    ],
+    "languagesCodes": [
+        "fr",
+        "ln",
+        "kg",
+        "sw",
+        "lu"
+    ],
+    "translations": {
+        "de": "Kongo (Dem. Rep.)",
+        "en": "Congo (Dem. Rep.)",
+        "es": "Congo (Rep. Dem.)",
+        "fr": "Congo (Rep. Dem.)",
+        "it": "Congo (Rep. Dem.)",
+        "ja": "\u30b3\u30f3\u30b4\u6c11\u4e3b\u5171\u548c\u56fd",
+        "nl": "Congo [DRC]"
+    },
+    "population": 67514000,
+    "latlng": [
+        0,
+        25
+    ],
+    "demonym": "Congolese",
+    "id": "Democratic Republic of the Congo"
+}

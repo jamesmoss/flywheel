@@ -1,0 +1,42 @@
+{
+    "name": "Myanmar",
+    "nativeName": "Myanma",
+    "tld": [
+        ".mm"
+    ],
+    "cca2": "MM",
+    "ccn3": "104",
+    "cca3": "MMR",
+    "currency": [
+        "MMK"
+    ],
+    "callingCode": [
+        "95"
+    ],
+    "capital": "Naypyidaw",
+    "altSpellings": [
+        "MM",
+        "Burma",
+        "Republic of the Union of Myanmar",
+        "Pyidaunzu Thanm\u0103da My\u0103ma Nainngandaw"
+    ],
+    "relevance": "0",
+    "region": "Asia",
+    "subregion": "South-Eastern Asia",
+    "language": [
+        "Burmese"
+    ],
+    "languagesCodes": [
+
+    ],
+    "translations": [
+
+    ],
+    "population": -1,
+    "latlng": [
+        22,
+        98
+    ],
+    "demonym": "Myanmarian",
+    "id": "Myanmar"
+}

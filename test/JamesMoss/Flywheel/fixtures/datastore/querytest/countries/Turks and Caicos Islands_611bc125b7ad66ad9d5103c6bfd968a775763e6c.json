@@ -1,0 +1,45 @@
+{
+    "name": "Turks and Caicos Islands",
+    "nativeName": "Turks and Caicos Islands",
+    "tld": [
+        ".tc"
+    ],
+    "cca2": "TC",
+    "ccn3": "796",
+    "cca3": "TCA",
+    "currency": [
+        "USD"
+    ],
+    "callingCode": [
+        "1649"
+    ],
+    "capital": "Cockburn Town",
+    "altSpellings": [
+        "TC"
+    ],
+    "relevance": "0.5",
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "language": [
+        "English"
+    ],
+    "languagesCodes": [
+        "en"
+    ],
+    "translations": {
+        "de": "Turks- und Caicosinseln",
+        "en": "Turks and Caicos Islands",
+        "es": "Islas Turks y Caicos",
+        "fr": "\u00celes Turques-et-Ca\u00efques",
+        "it": "Isole Turks e Caicos",
+        "ja": "\u30bf\u30fc\u30af\u30b9\u30fb\u30ab\u30a4\u30b3\u30b9\u8af8\u5cf6",
+        "nl": "Turks- en Caicoseilanden"
+    },
+    "population": 31458,
+    "latlng": [
+        21.75,
+        -71.58333333
+    ],
+    "demonym": "Turks and Caicos Islander",
+    "id": "Turks and Caicos Islands"
+}

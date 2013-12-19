@@ -1,0 +1,49 @@
+{
+    "name": "Montenegro",
+    "nativeName": "\u0426\u0440\u043d\u0430 \u0413\u043e\u0440\u0430",
+    "tld": [
+        ".me"
+    ],
+    "cca2": "ME",
+    "ccn3": "499",
+    "cca3": "MNE",
+    "currency": [
+        "EUR"
+    ],
+    "callingCode": [
+        "382"
+    ],
+    "capital": "Podgorica",
+    "altSpellings": [
+        "ME",
+        "Crna Gora"
+    ],
+    "relevance": "0",
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "language": [
+        "Montenegrin"
+    ],
+    "languagesCodes": [
+        "sr",
+        "bs",
+        "sq",
+        "hr"
+    ],
+    "translations": {
+        "de": "Montenegro",
+        "en": "Crna Gora",
+        "es": "Montenegro",
+        "fr": "Mont\u00e9n\u00e9gro",
+        "it": "Montenegro",
+        "ja": "\u30e2\u30f3\u30c6\u30cd\u30b0\u30ed",
+        "nl": "Montenegro"
+    },
+    "population": 620029,
+    "latlng": [
+        42.5,
+        19.3
+    ],
+    "demonym": "Montenegrin",
+    "id": "Montenegro"
+}

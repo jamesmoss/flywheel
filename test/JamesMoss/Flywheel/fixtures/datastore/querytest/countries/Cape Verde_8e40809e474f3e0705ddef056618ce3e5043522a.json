@@ -1,0 +1,47 @@
+{
+    "name": "Cape Verde",
+    "nativeName": "Cabo Verde",
+    "tld": [
+        ".cv"
+    ],
+    "cca2": "CV",
+    "ccn3": "132",
+    "cca3": "CPV",
+    "currency": [
+        "CVE"
+    ],
+    "callingCode": [
+        "238"
+    ],
+    "capital": "Praia",
+    "altSpellings": [
+        "CV",
+        "Republic of Cabo Verde",
+        "Rep\u00fablica de Cabo Verde"
+    ],
+    "relevance": "0",
+    "region": "Africa",
+    "subregion": "Western Africa",
+    "language": [
+        "Portuguese"
+    ],
+    "languagesCodes": [
+        "pt"
+    ],
+    "translations": {
+        "de": "Kap Verde",
+        "en": "Cape Verde",
+        "es": "Cabo Verde",
+        "fr": "Cap Vert",
+        "it": "Capo Verde",
+        "ja": "\u30ab\u30fc\u30dc\u30d9\u30eb\u30c7",
+        "nl": "Kaapverdi\u00eb"
+    },
+    "population": 491875,
+    "latlng": [
+        16,
+        -24
+    ],
+    "demonym": "Cape Verdian",
+    "id": "Cape Verde"
+}

@@ -1,0 +1,57 @@
+{
+    "name": "Belgium",
+    "nativeName": "Belgi\u00eb",
+    "tld": [
+        ".be"
+    ],
+    "cca2": "BE",
+    "ccn3": "056",
+    "cca3": "BEL",
+    "currency": [
+        "EUR"
+    ],
+    "callingCode": [
+        "32"
+    ],
+    "capital": "Brussels",
+    "altSpellings": [
+        "BE",
+        "Belgi\u00eb",
+        "Belgie",
+        "Belgien",
+        "Belgique",
+        "Kingdom of Belgium",
+        "Koninkrijk Belgi\u00eb",
+        "Royaume de Belgique",
+        "K\u00f6nigreich Belgien"
+    ],
+    "relevance": "1.5",
+    "region": "Europe",
+    "subregion": "Western Europe",
+    "language": [
+        "Dutch",
+        "French",
+        "German"
+    ],
+    "languagesCodes": [
+        "nl",
+        "fr",
+        "de"
+    ],
+    "translations": {
+        "de": "Belgien",
+        "en": "Belgium",
+        "es": "B\u00e9lgica",
+        "fr": "Belgique",
+        "it": "Belgio",
+        "ja": "\u30d9\u30eb\u30ae\u30fc",
+        "nl": "Belgi\u00eb"
+    },
+    "population": 11175653,
+    "latlng": [
+        50.83333333,
+        4
+    ],
+    "demonym": "Belgian",
+    "id": "Belgium"
+}

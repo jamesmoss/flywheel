@@ -1,0 +1,50 @@
+{
+    "name": "Isle of Man",
+    "nativeName": "Isle of Man",
+    "tld": [
+        ".im"
+    ],
+    "cca2": "IM",
+    "ccn3": "833",
+    "cca3": "IMN",
+    "currency": [
+        "GBP"
+    ],
+    "callingCode": [
+        "44"
+    ],
+    "capital": "Douglas",
+    "altSpellings": [
+        "IM",
+        "Ellan Vannin",
+        "Mann",
+        "Mannin"
+    ],
+    "relevance": "0.5",
+    "region": "Europe",
+    "subregion": "Northern Europe",
+    "language": [
+        "English",
+        "Manx"
+    ],
+    "languagesCodes": [
+        "en",
+        "gv"
+    ],
+    "translations": {
+        "de": "Insel Man",
+        "en": "Isle of Man",
+        "es": "Isla de Man",
+        "fr": "\u00cele de Man",
+        "it": "Isola di Man",
+        "ja": "\u30de\u30f3\u5cf6",
+        "nl": "Isle of Man"
+    },
+    "population": 84497,
+    "latlng": [
+        54.25,
+        -4.5
+    ],
+    "demonym": "Manx",
+    "id": "Isle of Man"
+}

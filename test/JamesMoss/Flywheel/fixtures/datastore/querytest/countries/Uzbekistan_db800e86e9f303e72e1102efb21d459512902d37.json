@@ -1,0 +1,49 @@
+{
+    "name": "Uzbekistan",
+    "nativeName": "O\u2018zbekiston",
+    "tld": [
+        ".uz"
+    ],
+    "cca2": "UZ",
+    "ccn3": "860",
+    "cca3": "UZB",
+    "currency": [
+        "UZS"
+    ],
+    "callingCode": [
+        "998"
+    ],
+    "capital": "Tashkent",
+    "altSpellings": [
+        "UZ",
+        "Republic of Uzbekistan",
+        "O\u2018zbekiston Respublikasi",
+        "\u040e\u0437\u0431\u0435\u043a\u0438\u0441\u0442\u043e\u043d \u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430\u0441\u0438"
+    ],
+    "relevance": "0",
+    "region": "Asia",
+    "subregion": "Central Asia",
+    "language": [
+        "Uzbek"
+    ],
+    "languagesCodes": [
+        "uz",
+        "ru"
+    ],
+    "translations": {
+        "de": "Usbekistan",
+        "en": "Uzbekistan",
+        "es": "Uzbekist\u00e1n",
+        "fr": "Ouzb\u00e9kistan",
+        "it": "Uzbekistan",
+        "ja": "\u30a6\u30ba\u30d9\u30ad\u30b9\u30bf\u30f3",
+        "nl": "Oezbekistan"
+    },
+    "population": 30183400,
+    "latlng": [
+        41,
+        64
+    ],
+    "demonym": "Uzbekistani",
+    "id": "Uzbekistan"
+}

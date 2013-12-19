@@ -1,0 +1,47 @@
+{
+    "name": "Saudi Arabia",
+    "nativeName": "as-Su\u2018\u016bdiyyah",
+    "tld": [
+        ".sa"
+    ],
+    "cca2": "SA",
+    "ccn3": "682",
+    "cca3": "SAU",
+    "currency": [
+        "SAR"
+    ],
+    "callingCode": [
+        "966"
+    ],
+    "capital": "Riyadh",
+    "altSpellings": [
+        "SA",
+        "Kingdom of Saudi Arabia",
+        "Al-Mamlakah al-\u2018Arabiyyah as-Su\u2018\u016bdiyyah"
+    ],
+    "relevance": "0",
+    "region": "Asia",
+    "subregion": "Western Asia",
+    "language": [
+        "Arabic"
+    ],
+    "languagesCodes": [
+        "ar"
+    ],
+    "translations": {
+        "de": "Saudi-Arabien",
+        "en": "Saudi Arabia",
+        "es": "Arabia Saud\u00ed",
+        "fr": "Arabie Saoudite",
+        "it": "Arabia Saudita",
+        "ja": "\u30b5\u30a6\u30b8\u30a2\u30e9\u30d3\u30a2",
+        "nl": "Saoedi-Arabi\u00eb"
+    },
+    "population": 29994272,
+    "latlng": [
+        25,
+        45
+    ],
+    "demonym": "Saudi Arabian",
+    "id": "Saudi Arabia"
+}

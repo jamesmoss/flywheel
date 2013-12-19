@@ -1,0 +1,46 @@
+{
+    "name": "Pitcairn Islands",
+    "nativeName": "Pitcairn Islands",
+    "tld": [
+        ".pn"
+    ],
+    "cca2": "PN",
+    "ccn3": "612",
+    "cca3": "PCN",
+    "currency": [
+        "NZD"
+    ],
+    "callingCode": [
+        "64"
+    ],
+    "capital": "Adamstown",
+    "altSpellings": [
+        "PN",
+        "Pitcairn Henderson Ducie and Oeno Islands"
+    ],
+    "relevance": "0.5",
+    "region": "Oceania",
+    "subregion": "Polynesia",
+    "language": [
+        "English"
+    ],
+    "languagesCodes": [
+        "en"
+    ],
+    "translations": {
+        "de": "Pitcairn",
+        "en": "Pitcairn",
+        "es": "Islas Pitcairn",
+        "fr": "\u00celes Pitcairn",
+        "it": "Isole Pitcairn",
+        "ja": "\u30d4\u30c8\u30b1\u30a2\u30f3",
+        "nl": "Pitcairneilanden"
+    },
+    "population": 56,
+    "latlng": [
+        -25.06666666,
+        -130.1
+    ],
+    "demonym": "Pitcairn Islander",
+    "id": "Pitcairn Islands"
+}

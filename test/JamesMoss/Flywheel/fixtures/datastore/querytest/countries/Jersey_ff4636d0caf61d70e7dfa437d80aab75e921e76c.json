@@ -1,0 +1,50 @@
+{
+    "name": "Jersey",
+    "nativeName": "Jersey",
+    "tld": [
+        ".je"
+    ],
+    "cca2": "JE",
+    "ccn3": "832",
+    "cca3": "JEY",
+    "currency": [
+        "GBP"
+    ],
+    "callingCode": [
+        "44"
+    ],
+    "capital": "Saint Helier",
+    "altSpellings": [
+        "JE",
+        "Bailiwick of Jersey",
+        "Bailliage de Jersey",
+        "Bailliage d\u00e9 J\u00e8rri"
+    ],
+    "relevance": "0.5",
+    "region": "Europe",
+    "subregion": "Northern Europe",
+    "language": [
+        "English",
+        "French"
+    ],
+    "languagesCodes": [
+        "en",
+        "fr"
+    ],
+    "translations": {
+        "de": "Jersey",
+        "en": "Jersey",
+        "es": "Jersey",
+        "fr": "Jersey",
+        "it": "Isola di Jersey",
+        "ja": "\u30b8\u30e3\u30fc\u30b8\u30fc",
+        "nl": "Jersey"
+    },
+    "population": 97857,
+    "latlng": [
+        49.25,
+        -2.16666666
+    ],
+    "demonym": "Channel Islander",
+    "id": "Jersey"
+}

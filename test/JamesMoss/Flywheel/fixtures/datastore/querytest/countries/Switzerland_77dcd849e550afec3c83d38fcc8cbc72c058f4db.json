@@ -1,0 +1,57 @@
+{
+    "name": "Switzerland",
+    "nativeName": "Schweiz",
+    "tld": [
+        ".ch"
+    ],
+    "cca2": "CH",
+    "ccn3": "756",
+    "cca3": "CHE",
+    "currency": [
+        "CHE",
+        "CHF",
+        "CHW"
+    ],
+    "callingCode": [
+        "41"
+    ],
+    "capital": "Bern",
+    "altSpellings": [
+        "CH",
+        "Swiss Confederation",
+        "Schweiz",
+        "Suisse",
+        "Svizzera",
+        "Svizra"
+    ],
+    "relevance": "1.5",
+    "region": "Europe",
+    "subregion": "Western Europe",
+    "language": [
+        "German",
+        "French",
+        "Italian",
+        "Romansh"
+    ],
+    "languagesCodes": [
+        "de",
+        "fr",
+        "it"
+    ],
+    "translations": {
+        "de": "Schweiz",
+        "en": "Switzerland",
+        "es": "Suiza",
+        "fr": "Suisse",
+        "it": "Svizzera",
+        "ja": "\u30b9\u30a4\u30b9",
+        "nl": "Zwitserland"
+    },
+    "population": 8085300,
+    "latlng": [
+        47,
+        8
+    ],
+    "demonym": "Swiss",
+    "id": "Switzerland"
+}

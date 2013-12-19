@@ -1,0 +1,48 @@
+{
+    "name": "Dominica",
+    "nativeName": "Dominica",
+    "tld": [
+        ".dm"
+    ],
+    "cca2": "DM",
+    "ccn3": "212",
+    "cca3": "DMA",
+    "currency": [
+        "XCD"
+    ],
+    "callingCode": [
+        "1767"
+    ],
+    "capital": "Roseau",
+    "altSpellings": [
+        "DM",
+        "Dominique",
+        "Wai\u2018tu kubuli",
+        "Commonwealth of Dominica"
+    ],
+    "relevance": "0.5",
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "language": [
+        "English"
+    ],
+    "languagesCodes": [
+        "en"
+    ],
+    "translations": {
+        "de": "Dominica",
+        "en": "Dominica",
+        "es": "Dominica",
+        "fr": "Dominique",
+        "it": "Dominica",
+        "ja": "\u30c9\u30df\u30cb\u30ab\u56fd",
+        "nl": "Dominica"
+    },
+    "population": 71293,
+    "latlng": [
+        15.41666666,
+        -61.33333333
+    ],
+    "demonym": "Dominican",
+    "id": "Dominica"
+}

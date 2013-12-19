@@ -1,0 +1,52 @@
+{
+    "name": "Comoros",
+    "nativeName": "Komori",
+    "tld": [
+        ".km"
+    ],
+    "cca2": "KM",
+    "ccn3": "174",
+    "cca3": "COM",
+    "currency": [
+        "KMF"
+    ],
+    "callingCode": [
+        "269"
+    ],
+    "capital": "Moroni",
+    "altSpellings": [
+        "KM",
+        "Union of the Comoros",
+        "Union des Comores",
+        "Udzima wa Komori",
+        "al-Itti\u1e25\u0101d al-Qumur\u012b"
+    ],
+    "relevance": "0",
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "language": [
+        "Comorian",
+        "Arabic",
+        "French"
+    ],
+    "languagesCodes": [
+        "ar",
+        "fr"
+    ],
+    "translations": {
+        "de": "Union der Komoren",
+        "en": "Comoros",
+        "es": "Comoras",
+        "fr": "Comores",
+        "it": "Comore",
+        "ja": "\u30b3\u30e2\u30ed",
+        "nl": "Comoren"
+    },
+    "population": 724300,
+    "latlng": [
+        -12.16666666,
+        44.25
+    ],
+    "demonym": "Comoran",
+    "id": "Comoros"
+}

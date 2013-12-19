@@ -1,0 +1,47 @@
+{
+    "name": "Tonga",
+    "nativeName": "Tonga",
+    "tld": [
+        ".to"
+    ],
+    "cca2": "TO",
+    "ccn3": "776",
+    "cca3": "TON",
+    "currency": [
+        "TOP"
+    ],
+    "callingCode": [
+        "676"
+    ],
+    "capital": "Nuku'alofa",
+    "altSpellings": [
+        "TO"
+    ],
+    "relevance": "0",
+    "region": "Oceania",
+    "subregion": "Polynesia",
+    "language": [
+        "Tongan",
+        "English"
+    ],
+    "languagesCodes": [
+        "en",
+        "to"
+    ],
+    "translations": {
+        "de": "Tonga",
+        "en": "Tonga",
+        "es": "Tonga",
+        "fr": "Tonga",
+        "it": "Tonga",
+        "ja": "\u30c8\u30f3\u30ac",
+        "nl": "Tonga"
+    },
+    "population": 103036,
+    "latlng": [
+        -20,
+        -175
+    ],
+    "demonym": "Tongan",
+    "id": "Tonga"
+}

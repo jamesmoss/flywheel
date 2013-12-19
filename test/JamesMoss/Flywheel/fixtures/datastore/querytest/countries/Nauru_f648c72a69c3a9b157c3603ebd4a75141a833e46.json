@@ -1,0 +1,51 @@
+{
+    "name": "Nauru",
+    "nativeName": "Nauru",
+    "tld": [
+        ".nr"
+    ],
+    "cca2": "NR",
+    "ccn3": "520",
+    "cca3": "NRU",
+    "currency": [
+        "AUD"
+    ],
+    "callingCode": [
+        "674"
+    ],
+    "capital": "Yaren",
+    "altSpellings": [
+        "NR",
+        "Naoero",
+        "Pleasant Island",
+        "Republic of Nauru",
+        "Ripublik Naoero"
+    ],
+    "relevance": "0.5",
+    "region": "Oceania",
+    "subregion": "Micronesia",
+    "language": [
+        "Nauruan",
+        "English"
+    ],
+    "languagesCodes": [
+        "en",
+        "na"
+    ],
+    "translations": {
+        "de": "Nauru",
+        "en": "Nauru",
+        "es": "Nauru",
+        "fr": "Nauru",
+        "it": "Nauru",
+        "ja": "\u30ca\u30a6\u30eb",
+        "nl": "Nauru"
+    },
+    "population": 9945,
+    "latlng": [
+        -0.53333333,
+        166.91666666
+    ],
+    "demonym": "Nauruan",
+    "id": "Nauru"
+}

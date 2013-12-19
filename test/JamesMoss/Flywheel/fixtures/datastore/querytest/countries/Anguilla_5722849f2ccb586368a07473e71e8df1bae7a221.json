@@ -1,0 +1,45 @@
+{
+    "name": "Anguilla",
+    "nativeName": "Anguilla",
+    "tld": [
+        ".ai"
+    ],
+    "cca2": "AI",
+    "ccn3": "660",
+    "cca3": "AIA",
+    "currency": [
+        "XCD"
+    ],
+    "callingCode": [
+        "1264"
+    ],
+    "capital": "The Valley",
+    "altSpellings": [
+        "AI"
+    ],
+    "relevance": "0.5",
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "language": [
+        "English"
+    ],
+    "languagesCodes": [
+        "en"
+    ],
+    "translations": {
+        "de": "Anguilla",
+        "en": "Anguilla",
+        "es": "Anguilla",
+        "fr": "Anguilla",
+        "it": "Anguilla",
+        "ja": "\u30a2\u30f3\u30ae\u30e9",
+        "nl": "Anguilla"
+    },
+    "population": 13452,
+    "latlng": [
+        18.25,
+        -63.16666666
+    ],
+    "demonym": "Anguillian",
+    "id": "Anguilla"
+}

@@ -1,0 +1,45 @@
+{
+    "name": "Singapore",
+    "nativeName": "Singapore",
+    "tld": [
+        ".sg"
+    ],
+    "cca2": "SG",
+    "ccn3": "702",
+    "cca3": "SGP",
+    "currency": [
+        "SGD"
+    ],
+    "callingCode": [
+        "65"
+    ],
+    "capital": "Singapore",
+    "altSpellings": [
+        "SG",
+        "Singapura",
+        "Republik Singapura",
+        "\u65b0\u52a0\u5761\u5171\u548c\u56fd"
+    ],
+    "relevance": "0",
+    "region": "Asia",
+    "subregion": "South-Eastern Asia",
+    "language": [
+        "English",
+        "Malay",
+        "Mandarin",
+        "Tamil"
+    ],
+    "languagesCodes": [
+
+    ],
+    "translations": [
+
+    ],
+    "population": 5399200,
+    "latlng": [
+        1.36666666,
+        103.8
+    ],
+    "demonym": "Singaporean",
+    "id": "Singapore"
+}

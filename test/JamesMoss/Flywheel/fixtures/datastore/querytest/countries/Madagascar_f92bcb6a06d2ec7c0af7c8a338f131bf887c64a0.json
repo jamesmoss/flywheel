@@ -1,0 +1,50 @@
+{
+    "name": "Madagascar",
+    "nativeName": "Madagasikara",
+    "tld": [
+        ".mg"
+    ],
+    "cca2": "MG",
+    "ccn3": "450",
+    "cca3": "MDG",
+    "currency": [
+        "MGA"
+    ],
+    "callingCode": [
+        "261"
+    ],
+    "capital": "Antananarivo",
+    "altSpellings": [
+        "MG",
+        "Republic of Madagascar",
+        "Repoblikan'i Madagasikara",
+        "R\u00e9publique de Madagascar"
+    ],
+    "relevance": "0",
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "language": [
+        "Malagasy",
+        "French"
+    ],
+    "languagesCodes": [
+        "fr",
+        "mg"
+    ],
+    "translations": {
+        "de": "Madagaskar",
+        "en": "Madagascar",
+        "es": "Madagascar",
+        "fr": "Madagascar",
+        "it": "Madagascar",
+        "ja": "\u30de\u30c0\u30ac\u30b9\u30ab\u30eb",
+        "nl": "Madagaskar"
+    },
+    "population": 20696070,
+    "latlng": [
+        -20,
+        47
+    ],
+    "demonym": "Malagasy",
+    "id": "Madagascar"
+}

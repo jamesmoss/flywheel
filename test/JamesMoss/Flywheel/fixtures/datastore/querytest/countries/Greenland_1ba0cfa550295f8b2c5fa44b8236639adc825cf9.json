@@ -1,0 +1,46 @@
+{
+    "name": "Greenland",
+    "nativeName": "Kalaallit Nunaat",
+    "tld": [
+        ".gl"
+    ],
+    "cca2": "GL",
+    "ccn3": "304",
+    "cca3": "GRL",
+    "currency": [
+        "DKK"
+    ],
+    "callingCode": [
+        "299"
+    ],
+    "capital": "Nuuk",
+    "altSpellings": [
+        "GL",
+        "Gr\u00f8nland"
+    ],
+    "relevance": "0.5",
+    "region": "Americas",
+    "subregion": "Northern America",
+    "language": [
+        "Greenlandic"
+    ],
+    "languagesCodes": [
+        "kl"
+    ],
+    "translations": {
+        "de": "Gr\u00f6nland",
+        "en": "Greenland",
+        "es": "Groenlandia",
+        "fr": "Groenland",
+        "it": "Groenlandia",
+        "ja": "\u30b0\u30ea\u30fc\u30f3\u30e9\u30f3\u30c9",
+        "nl": "Groenland"
+    },
+    "population": 56370,
+    "latlng": [
+        72,
+        -40
+    ],
+    "demonym": "Greenlandic",
+    "id": "Greenland"
+}

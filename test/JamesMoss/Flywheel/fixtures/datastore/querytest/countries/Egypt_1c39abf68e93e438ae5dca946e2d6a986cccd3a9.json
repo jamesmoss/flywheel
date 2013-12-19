@@ -1,0 +1,46 @@
+{
+    "name": "Egypt",
+    "nativeName": "Mi\u1e63r",
+    "tld": [
+        ".eg"
+    ],
+    "cca2": "EG",
+    "ccn3": "818",
+    "cca3": "EGY",
+    "currency": [
+        "EGP"
+    ],
+    "callingCode": [
+        "20"
+    ],
+    "capital": "Cairo",
+    "altSpellings": [
+        "EG",
+        "Arab Republic of Egypt"
+    ],
+    "relevance": "1.5",
+    "region": "Africa",
+    "subregion": "Northern Africa",
+    "language": [
+        "Egyptian Arabic"
+    ],
+    "languagesCodes": [
+        "ar"
+    ],
+    "translations": {
+        "de": "\u00c4gypten",
+        "en": "Egypt",
+        "es": "Egipto",
+        "fr": "\u00c9gypte",
+        "it": "Egitto",
+        "ja": "\u30a8\u30b8\u30d7\u30c8",
+        "nl": "Egypte"
+    },
+    "population": 83661000,
+    "latlng": [
+        27,
+        30
+    ],
+    "demonym": "Egyptian",
+    "id": "Egypt"
+}

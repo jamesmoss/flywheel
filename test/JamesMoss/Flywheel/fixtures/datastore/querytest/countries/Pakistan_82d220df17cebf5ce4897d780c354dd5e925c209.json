@@ -1,0 +1,50 @@
+{
+    "name": "Pakistan",
+    "nativeName": "Pakistan",
+    "tld": [
+        ".pk"
+    ],
+    "cca2": "PK",
+    "ccn3": "586",
+    "cca3": "PAK",
+    "currency": [
+        "PKR"
+    ],
+    "callingCode": [
+        "92"
+    ],
+    "capital": "Islamabad",
+    "altSpellings": [
+        "PK",
+        "P\u0101kist\u0101n",
+        "Islamic Republic of Pakistan",
+        "Isl\u0101m\u012b Jumh\u016briya'eh P\u0101kist\u0101n"
+    ],
+    "relevance": "2",
+    "region": "Asia",
+    "subregion": "Southern Asia",
+    "language": [
+        "English",
+        "Urdu"
+    ],
+    "languagesCodes": [
+        "en",
+        "ur"
+    ],
+    "translations": {
+        "de": "Pakistan",
+        "en": "Pakistan",
+        "es": "Pakist\u00e1n",
+        "fr": "Paquistan",
+        "it": "Pakistan",
+        "ja": "\u30d1\u30ad\u30b9\u30bf\u30f3",
+        "nl": "Pakistan"
+    },
+    "population": 184845000,
+    "latlng": [
+        30,
+        70
+    ],
+    "demonym": "Pakistani",
+    "id": "Pakistan"
+}

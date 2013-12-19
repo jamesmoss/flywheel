@@ -1,0 +1,53 @@
+{
+    "name": "Belarus",
+    "nativeName": "\u0411\u0435\u043b\u0430\u0440\u0443\u0301\u0441\u044c",
+    "tld": [
+        ".by"
+    ],
+    "cca2": "BY",
+    "ccn3": "112",
+    "cca3": "BLR",
+    "currency": [
+        "BYR"
+    ],
+    "callingCode": [
+        "375"
+    ],
+    "capital": "Minsk",
+    "altSpellings": [
+        "BY",
+        "Bielaru\u015b",
+        "Republic of Belarus",
+        "\u0411\u0435\u043b\u043e\u0440\u0443\u0441\u0441\u0438\u044f",
+        "\u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430 \u0411\u0435\u043b\u0430\u0440\u0443\u0441\u044c",
+        "Belorussiya",
+        "Respublika Belarus\u2019"
+    ],
+    "relevance": "0",
+    "region": "Europe",
+    "subregion": "Eastern Europe",
+    "language": [
+        "Belarusian",
+        "Russian"
+    ],
+    "languagesCodes": [
+        "be",
+        "ru"
+    ],
+    "translations": {
+        "de": "Wei\u00dfrussland",
+        "en": "Belarus",
+        "es": "Bielorrusia",
+        "fr": "Bi\u00e9lorussie",
+        "it": "Bielorussia",
+        "ja": "\u30d9\u30e9\u30eb\u30fc\u30b7",
+        "nl": "Wit-Rusland"
+    },
+    "population": 9465500,
+    "latlng": [
+        53,
+        28
+    ],
+    "demonym": "Belarusian",
+    "id": "Belarus"
+}

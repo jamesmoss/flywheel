@@ -1,0 +1,48 @@
+{
+    "name": "Faroe Islands",
+    "nativeName": "F\u00f8royar",
+    "tld": [
+        ".fo"
+    ],
+    "cca2": "FO",
+    "ccn3": "234",
+    "cca3": "FRO",
+    "currency": [
+        "DKK"
+    ],
+    "callingCode": [
+        "298"
+    ],
+    "capital": "T\u00f3rshavn",
+    "altSpellings": [
+        "FO",
+        "F\u00f8royar",
+        "F\u00e6r\u00f8erne"
+    ],
+    "relevance": "0.5",
+    "region": "Europe",
+    "subregion": "Northern Europe",
+    "language": [
+        "Faroese",
+        "Danish"
+    ],
+    "languagesCodes": [
+        "fo"
+    ],
+    "translations": {
+        "de": "F\u00e4r\u00f6er-Inseln",
+        "en": "Faroe Islands",
+        "es": "Islas Faroe",
+        "fr": "\u00celes F\u00e9ro\u00e9",
+        "it": "Isole Far Oer",
+        "ja": "\u30d5\u30a7\u30ed\u30fc\u8af8\u5cf6",
+        "nl": "Faer\u00f6er"
+    },
+    "population": 48509,
+    "latlng": [
+        62,
+        -7
+    ],
+    "demonym": "Faroese",
+    "id": "Faroe Islands"
+}

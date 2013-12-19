@@ -1,0 +1,40 @@
+{
+    "name": "Sint Maarten",
+    "nativeName": "Sint Maarten",
+    "tld": [
+        ".sx"
+    ],
+    "cca2": "SX",
+    "ccn3": "534",
+    "cca3": "SXM",
+    "currency": [
+        "ANG"
+    ],
+    "callingCode": [
+        "1721"
+    ],
+    "capital": "Philipsburg",
+    "altSpellings": [
+        "SX"
+    ],
+    "relevance": "0",
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "language": [
+        "Dutch",
+        "English"
+    ],
+    "languagesCodes": [
+
+    ],
+    "translations": [
+
+    ],
+    "population": 37429,
+    "latlng": [
+        18.033333,
+        -63.05
+    ],
+    "demonym": "Dutch",
+    "id": "Sint Maarten"
+}

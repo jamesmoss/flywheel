@@ -1,0 +1,47 @@
+{
+    "name": "Mayotte",
+    "nativeName": "Mayotte",
+    "tld": [
+        ".yt"
+    ],
+    "cca2": "YT",
+    "ccn3": "175",
+    "cca3": "MYT",
+    "currency": [
+        "EUR"
+    ],
+    "callingCode": [
+        "262"
+    ],
+    "capital": "Mamoudzou",
+    "altSpellings": [
+        "YT",
+        "Department of Mayotte",
+        "D\u00e9partement de Mayotte"
+    ],
+    "relevance": "0",
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "language": [
+        "French"
+    ],
+    "languagesCodes": [
+        "fr"
+    ],
+    "translations": {
+        "de": "Mayotte",
+        "en": "Mayotte",
+        "es": "Mayotte",
+        "fr": "Mayotte",
+        "it": "Mayotte",
+        "ja": "\u30de\u30e8\u30c3\u30c8",
+        "nl": "Mayotte"
+    },
+    "population": 212600,
+    "latlng": [
+        -12.83333333,
+        45.16666666
+    ],
+    "demonym": "French",
+    "id": "Mayotte"
+}

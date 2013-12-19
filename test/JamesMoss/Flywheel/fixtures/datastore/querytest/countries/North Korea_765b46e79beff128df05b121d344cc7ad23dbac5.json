@@ -1,0 +1,48 @@
+{
+    "name": "North Korea",
+    "nativeName": "\ubd81\ud55c",
+    "tld": [
+        ".kp"
+    ],
+    "cca2": "KP",
+    "ccn3": "408",
+    "cca3": "PRK",
+    "currency": [
+        "KPW"
+    ],
+    "callingCode": [
+        "850"
+    ],
+    "capital": "Pyongyang",
+    "altSpellings": [
+        "KP",
+        "Democratic People's Republic of Korea",
+        "\uc870\uc120\ubbfc\uc8fc\uc8fc\uc758\uc778\ubbfc\uacf5\ud654\uad6d",
+        "Chos\u014fn Minjuju\u016di Inmin Konghwaguk"
+    ],
+    "relevance": "0",
+    "region": "Asia",
+    "subregion": "Eastern Asia",
+    "language": [
+        "Korean"
+    ],
+    "languagesCodes": [
+        "ko"
+    ],
+    "translations": {
+        "de": "Nordkorea",
+        "en": "Korea (North)",
+        "es": "Corea del Norte",
+        "fr": "Cor\u00e9e du Nord",
+        "it": "Corea del Nord",
+        "ja": "\u671d\u9bae\u6c11\u4e3b\u4e3b\u7fa9\u4eba\u6c11\u5171\u548c\u56fd",
+        "nl": "Noord-Korea"
+    },
+    "population": 24895000,
+    "latlng": [
+        40,
+        127
+    ],
+    "demonym": "North Korean",
+    "id": "North Korea"
+}

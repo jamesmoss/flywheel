@@ -1,0 +1,45 @@
+{
+    "name": "Guatemala",
+    "nativeName": "Guatemala",
+    "tld": [
+        ".gt"
+    ],
+    "cca2": "GT",
+    "ccn3": "320",
+    "cca3": "GTM",
+    "currency": [
+        "GTQ"
+    ],
+    "callingCode": [
+        "502"
+    ],
+    "capital": "Guatemala City",
+    "altSpellings": [
+        "GT"
+    ],
+    "relevance": "0",
+    "region": "Americas",
+    "subregion": "Central America",
+    "language": [
+        "Spanish"
+    ],
+    "languagesCodes": [
+        "es"
+    ],
+    "translations": {
+        "de": "Guatemala",
+        "en": "Guatemala",
+        "es": "Guatemala",
+        "fr": "Guatemala",
+        "it": "Guatemala",
+        "ja": "\u30b0\u30a2\u30c6\u30de\u30e9",
+        "nl": "Guatemala"
+    },
+    "population": 15438384,
+    "latlng": [
+        15.5,
+        -90.25
+    ],
+    "demonym": "Guatemalan",
+    "id": "Guatemala"
+}

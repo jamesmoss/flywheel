@@ -1,0 +1,47 @@
+{
+    "name": "Bulgaria",
+    "nativeName": "\u0411\u044a\u043b\u0433\u0430\u0440\u0438\u044f",
+    "tld": [
+        ".bg"
+    ],
+    "cca2": "BG",
+    "ccn3": "100",
+    "cca3": "BGR",
+    "currency": [
+        "BGN"
+    ],
+    "callingCode": [
+        "359"
+    ],
+    "capital": "Sofia",
+    "altSpellings": [
+        "BG",
+        "Republic of Bulgaria",
+        "\u0420\u0435\u043f\u0443\u0431\u043b\u0438\u043a\u0430 \u0411\u044a\u043b\u0433\u0430\u0440\u0438\u044f"
+    ],
+    "relevance": "0",
+    "region": "Europe",
+    "subregion": "Eastern Europe",
+    "language": [
+        "Bulgarian"
+    ],
+    "languagesCodes": [
+        "bg"
+    ],
+    "translations": {
+        "de": "Bulgarien",
+        "en": "Bulgaria",
+        "es": "Bulgaria",
+        "fr": "Bulgarie",
+        "it": "Bulgaria",
+        "ja": "\u30d6\u30eb\u30ac\u30ea\u30a2",
+        "nl": "Bulgarije"
+    },
+    "population": 7282041,
+    "latlng": [
+        43,
+        25
+    ],
+    "demonym": "Bulgarian",
+    "id": "Bulgaria"
+}

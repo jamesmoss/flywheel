@@ -1,0 +1,47 @@
+{
+    "name": "Oman",
+    "nativeName": "\u02bbUm\u0101n",
+    "tld": [
+        ".om"
+    ],
+    "cca2": "OM",
+    "ccn3": "512",
+    "cca3": "OMN",
+    "currency": [
+        "OMR"
+    ],
+    "callingCode": [
+        "968"
+    ],
+    "capital": "Muscat",
+    "altSpellings": [
+        "OM",
+        "Sultanate of Oman",
+        "Sal\u1e6danat \u02bbUm\u0101n"
+    ],
+    "relevance": "0",
+    "region": "Asia",
+    "subregion": "Western Asia",
+    "language": [
+        "Arabic"
+    ],
+    "languagesCodes": [
+        "ar"
+    ],
+    "translations": {
+        "de": "Oman",
+        "en": "Oman",
+        "es": "Om\u00e1n",
+        "fr": "Oman",
+        "it": "oman",
+        "ja": "\u30aa\u30de\u30fc\u30f3",
+        "nl": "Oman"
+    },
+    "population": 3929000,
+    "latlng": [
+        21,
+        57
+    ],
+    "demonym": "Omani",
+    "id": "Oman"
+}

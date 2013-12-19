@@ -1,0 +1,46 @@
+{
+    "name": "South Korea",
+    "nativeName": "\ub300\ud55c\ubbfc\uad6d",
+    "tld": [
+        ".kr"
+    ],
+    "cca2": "KR",
+    "ccn3": "410",
+    "cca3": "KOR",
+    "currency": [
+        "KRW"
+    ],
+    "callingCode": [
+        "82"
+    ],
+    "capital": "Seoul",
+    "altSpellings": [
+        "KR",
+        "Republic of Korea"
+    ],
+    "relevance": "1.5",
+    "region": "Asia",
+    "subregion": "Eastern Asia",
+    "language": [
+        "Korean"
+    ],
+    "languagesCodes": [
+        "ko"
+    ],
+    "translations": {
+        "de": "S\u00fcdkorea",
+        "en": "Korea (South)",
+        "es": "Corea del Sur",
+        "fr": "Cor\u00e9e du Sud",
+        "it": "Corea del Sud",
+        "ja": "\u5927\u97d3\u6c11\u56fd",
+        "nl": "Zuid-Korea"
+    },
+    "population": 50219669,
+    "latlng": [
+        37,
+        127.5
+    ],
+    "demonym": "South Korean",
+    "id": "South Korea"
+}

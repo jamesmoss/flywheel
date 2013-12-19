@@ -1,0 +1,45 @@
+{
+    "name": "Mongolia",
+    "nativeName": "\u041c\u043e\u043d\u0433\u043e\u043b \u0443\u043b\u0441",
+    "tld": [
+        ".mn"
+    ],
+    "cca2": "MN",
+    "ccn3": "496",
+    "cca3": "MNG",
+    "currency": [
+        "MNT"
+    ],
+    "callingCode": [
+        "976"
+    ],
+    "capital": "Ulan Bator",
+    "altSpellings": [
+        "MN"
+    ],
+    "relevance": "0",
+    "region": "Asia",
+    "subregion": "Eastern Asia",
+    "language": [
+        "Mongolian"
+    ],
+    "languagesCodes": [
+        "mn"
+    ],
+    "translations": {
+        "de": "Mongolei",
+        "en": "Mongolia",
+        "es": "Mongolia",
+        "fr": "Mongolie",
+        "it": "Mongolia",
+        "ja": "\u30e2\u30f3\u30b4\u30eb",
+        "nl": "Mongoli\u00eb"
+    },
+    "population": 2754685,
+    "latlng": [
+        46,
+        105
+    ],
+    "demonym": "Mongolian",
+    "id": "Mongolia"
+}

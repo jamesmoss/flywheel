@@ -1,0 +1,49 @@
+{
+    "name": "Suriname",
+    "nativeName": "Suriname",
+    "tld": [
+        ".sr"
+    ],
+    "cca2": "SR",
+    "ccn3": "740",
+    "cca3": "SUR",
+    "currency": [
+        "SRD"
+    ],
+    "callingCode": [
+        "597"
+    ],
+    "capital": "Paramaribo",
+    "altSpellings": [
+        "SR",
+        "Sarnam",
+        "Sranangron",
+        "Republic of Suriname",
+        "Republiek Suriname"
+    ],
+    "relevance": "0",
+    "region": "Americas",
+    "subregion": "South America",
+    "language": [
+        "Dutch"
+    ],
+    "languagesCodes": [
+        "nl"
+    ],
+    "translations": {
+        "de": "Suriname",
+        "en": "Suriname",
+        "es": "Surinam",
+        "fr": "Surinam",
+        "it": "Suriname",
+        "ja": "\u30b9\u30ea\u30ca\u30e0",
+        "nl": "Suriname"
+    },
+    "population": 534189,
+    "latlng": [
+        4,
+        -56
+    ],
+    "demonym": "Surinamer",
+    "id": "Suriname"
+}

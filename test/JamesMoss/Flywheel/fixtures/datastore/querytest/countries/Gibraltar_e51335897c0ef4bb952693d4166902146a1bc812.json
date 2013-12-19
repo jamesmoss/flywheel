@@ -1,0 +1,45 @@
+{
+    "name": "Gibraltar",
+    "nativeName": "Gibraltar",
+    "tld": [
+        ".gi"
+    ],
+    "cca2": "GI",
+    "ccn3": "292",
+    "cca3": "GIB",
+    "currency": [
+        "GIP"
+    ],
+    "callingCode": [
+        "350"
+    ],
+    "capital": "Gibraltar",
+    "altSpellings": [
+        "GI"
+    ],
+    "relevance": "0.5",
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "language": [
+        "English"
+    ],
+    "languagesCodes": [
+        "en"
+    ],
+    "translations": {
+        "de": "Gibraltar",
+        "en": "Gibraltar",
+        "es": "Gibraltar",
+        "fr": "Gibraltar",
+        "it": "Gibilterra",
+        "ja": "\u30b8\u30d6\u30e9\u30eb\u30bf\u30eb",
+        "nl": "Gibraltar"
+    },
+    "population": 29752,
+    "latlng": [
+        36.13333333,
+        -5.35
+    ],
+    "demonym": "Gibraltar",
+    "id": "Gibraltar"
+}

@@ -1,0 +1,46 @@
+{
+    "name": "South Georgia",
+    "nativeName": "South Georgia",
+    "tld": [
+        ".gs"
+    ],
+    "cca2": "GS",
+    "ccn3": "239",
+    "cca3": "SGS",
+    "currency": [
+        "GBP"
+    ],
+    "callingCode": [
+        "500"
+    ],
+    "capital": "King Edward Point",
+    "altSpellings": [
+        "GS",
+        "South Georgia and the South Sandwich Islands"
+    ],
+    "relevance": "0",
+    "region": "Americas",
+    "subregion": "South America",
+    "language": [
+        "English"
+    ],
+    "languagesCodes": [
+        "en"
+    ],
+    "translations": {
+        "de": "S\u00fcdgeorgien und die S\u00fcdlichen Sandwichinseln",
+        "en": "South Georgia and the South Sandwich Islands",
+        "es": "Islas Georgias del Sur y Sandwich del Sur",
+        "fr": "G\u00e9orgie du Sud et les \u00celes Sandwich du Sud",
+        "it": "Georgia del Sud e Isole Sandwich Meridionali",
+        "ja": "\u30b5\u30a6\u30b9\u30b8\u30e7\u30fc\u30b8\u30a2\u30fb\u30b5\u30a6\u30b9\u30b5\u30f3\u30c9\u30a6\u30a3\u30c3\u30c1\u8af8\u5cf6",
+        "nl": "Zuid-Georgia en Zuidelijke Sandwicheilanden"
+    },
+    "population": -1,
+    "latlng": [
+        -54.5,
+        -37
+    ],
+    "demonym": "South Georgia and the South Sandwich Islander",
+    "id": "South Georgia"
+}

@@ -1,0 +1,48 @@
+{
+    "name": "Morocco",
+    "nativeName": "al-Ma\u0121rib",
+    "tld": [
+        ".ma"
+    ],
+    "cca2": "MA",
+    "ccn3": "504",
+    "cca3": "MAR",
+    "currency": [
+        "MAD"
+    ],
+    "callingCode": [
+        "212"
+    ],
+    "capital": "Rabat",
+    "altSpellings": [
+        "MA",
+        "Kingdom of Morocco",
+        "Al-Mamlakah al-Ma\u0121ribiyah"
+    ],
+    "relevance": "0",
+    "region": "Africa",
+    "subregion": "Northern Africa",
+    "language": [
+        "Arabic",
+        "Tamazight"
+    ],
+    "languagesCodes": [
+        "ar"
+    ],
+    "translations": {
+        "de": "Marokko",
+        "en": "Morocco",
+        "es": "Marruecos",
+        "fr": "Maroc",
+        "it": "Marocco",
+        "ja": "\u30e2\u30ed\u30c3\u30b3",
+        "nl": "Marokko"
+    },
+    "population": 33087700,
+    "latlng": [
+        32,
+        -5
+    ],
+    "demonym": "Moroccan",
+    "id": "Morocco"
+}

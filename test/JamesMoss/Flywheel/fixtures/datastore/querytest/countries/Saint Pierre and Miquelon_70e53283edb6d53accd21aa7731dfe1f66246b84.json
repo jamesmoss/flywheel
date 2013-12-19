@@ -1,0 +1,46 @@
+{
+    "name": "Saint Pierre and Miquelon",
+    "nativeName": "Saint-Pierre-et-Miquelon",
+    "tld": [
+        ".pm"
+    ],
+    "cca2": "PM",
+    "ccn3": "666",
+    "cca3": "SPM",
+    "currency": [
+        "EUR"
+    ],
+    "callingCode": [
+        "508"
+    ],
+    "capital": "Saint-Pierre",
+    "altSpellings": [
+        "PM",
+        "Collectivit\u00e9 territoriale de Saint-Pierre-et-Miquelon"
+    ],
+    "relevance": "0",
+    "region": "Americas",
+    "subregion": "Northern America",
+    "language": [
+        "French"
+    ],
+    "languagesCodes": [
+        "fr"
+    ],
+    "translations": {
+        "de": "Saint-Pierre und Miquelon",
+        "en": "Saint Pierre and Miquelon",
+        "es": "San Pedro y Miquel\u00f3n",
+        "fr": "Saint-Pierre-et-Miquelon",
+        "it": "Saint-Pierre e Miquelon",
+        "ja": "\u30b5\u30f3\u30d4\u30a8\u30fc\u30eb\u5cf6\u30fb\u30df\u30af\u30ed\u30f3\u5cf6",
+        "nl": "Saint Pierre en Miquelon"
+    },
+    "population": 6081,
+    "latlng": [
+        46.83333333,
+        -56.33333333
+    ],
+    "demonym": "French",
+    "id": "Saint Pierre and Miquelon"
+}

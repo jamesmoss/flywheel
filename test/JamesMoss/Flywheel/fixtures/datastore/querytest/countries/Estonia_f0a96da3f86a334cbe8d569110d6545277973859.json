@@ -1,0 +1,48 @@
+{
+    "name": "Estonia",
+    "nativeName": "Eesti",
+    "tld": [
+        ".ee"
+    ],
+    "cca2": "EE",
+    "ccn3": "233",
+    "cca3": "EST",
+    "currency": [
+        "EUR"
+    ],
+    "callingCode": [
+        "372"
+    ],
+    "capital": "Tallinn",
+    "altSpellings": [
+        "EE",
+        "Eesti",
+        "Republic of Estonia",
+        "Eesti Vabariik"
+    ],
+    "relevance": "0",
+    "region": "Europe",
+    "subregion": "Northern Europe",
+    "language": [
+        "Estonian"
+    ],
+    "languagesCodes": [
+        "et"
+    ],
+    "translations": {
+        "de": "Estland",
+        "en": "Estonia",
+        "es": "Estonia",
+        "fr": "Estonie",
+        "it": "Estonia",
+        "ja": "\u30a8\u30b9\u30c8\u30cb\u30a2",
+        "nl": "Estland"
+    },
+    "population": 1286540,
+    "latlng": [
+        59,
+        26
+    ],
+    "demonym": "Estonian",
+    "id": "Estonia"
+}

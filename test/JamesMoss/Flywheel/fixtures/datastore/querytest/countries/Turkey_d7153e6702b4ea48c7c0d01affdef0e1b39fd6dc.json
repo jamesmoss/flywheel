@@ -1,0 +1,48 @@
+{
+    "name": "Turkey",
+    "nativeName": "T\u00fcrkiye",
+    "tld": [
+        ".tr"
+    ],
+    "cca2": "TR",
+    "ccn3": "792",
+    "cca3": "TUR",
+    "currency": [
+        "TRY"
+    ],
+    "callingCode": [
+        "90"
+    ],
+    "capital": "Ankara",
+    "altSpellings": [
+        "TR",
+        "Turkiye",
+        "Republic of Turkey",
+        "T\u00fcrkiye Cumhuriyeti"
+    ],
+    "relevance": "0",
+    "region": "Asia",
+    "subregion": "Western Asia",
+    "language": [
+        "Turkish"
+    ],
+    "languagesCodes": [
+        "tr"
+    ],
+    "translations": {
+        "de": "T\u00fcrkei",
+        "en": "Turkey",
+        "es": "Turqu\u00eda",
+        "fr": "Turquie",
+        "it": "Turchia",
+        "ja": "\u30c8\u30eb\u30b3",
+        "nl": "Turkije"
+    },
+    "population": 75627384,
+    "latlng": [
+        39,
+        35
+    ],
+    "demonym": "Turkish",
+    "id": "Turkey"
+}

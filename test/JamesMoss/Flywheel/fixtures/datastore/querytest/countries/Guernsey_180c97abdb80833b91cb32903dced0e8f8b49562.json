@@ -1,0 +1,49 @@
+{
+    "name": "Guernsey",
+    "nativeName": "Guernsey",
+    "tld": [
+        ".gg"
+    ],
+    "cca2": "GG",
+    "ccn3": "831",
+    "cca3": "GGY",
+    "currency": [
+        "GBP"
+    ],
+    "callingCode": [
+        "44"
+    ],
+    "capital": "St. Peter Port",
+    "altSpellings": [
+        "GG",
+        "Bailiwick of Guernsey",
+        "Bailliage de Guernesey"
+    ],
+    "relevance": "0.5",
+    "region": "Europe",
+    "subregion": "Northern Europe",
+    "language": [
+        "English",
+        "French"
+    ],
+    "languagesCodes": [
+        "en",
+        "fr"
+    ],
+    "translations": {
+        "de": "Guernsey und Alderney",
+        "en": "Guernsey and Alderney",
+        "es": "Guernsey y Alderney",
+        "fr": "Guernesey et Aurigny",
+        "it": "Guernsey e Alderney",
+        "ja": "\u30ac\u30fc\u30f3\u30b8\u30fc",
+        "nl": "Guernsey"
+    },
+    "population": 62431,
+    "latlng": [
+        49.46666666,
+        -2.58333333
+    ],
+    "demonym": "Channel Islander",
+    "id": "Guernsey"
+}

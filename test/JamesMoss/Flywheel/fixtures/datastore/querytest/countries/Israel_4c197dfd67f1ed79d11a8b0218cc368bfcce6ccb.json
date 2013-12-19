@@ -1,0 +1,49 @@
+{
+    "name": "Israel",
+    "nativeName": "Yisr\u0101'el",
+    "tld": [
+        ".il"
+    ],
+    "cca2": "IL",
+    "ccn3": "376",
+    "cca3": "ISR",
+    "currency": [
+        "ILS"
+    ],
+    "callingCode": [
+        "972"
+    ],
+    "capital": "Jerusalem",
+    "altSpellings": [
+        "IL",
+        "State of Israel",
+        "Med\u012bnat Yisr\u0101'el"
+    ],
+    "relevance": "0",
+    "region": "Asia",
+    "subregion": "Western Asia",
+    "language": [
+        "Hebrew",
+        "Arabic"
+    ],
+    "languagesCodes": [
+        "he",
+        "ar"
+    ],
+    "translations": {
+        "de": "Israel",
+        "en": "Israel",
+        "es": "Israel",
+        "fr": "Isra\u00ebl",
+        "it": "Israele",
+        "ja": "\u30a4\u30b9\u30e9\u30a8\u30eb",
+        "nl": "Isra\u00ebl"
+    },
+    "population": 8092700,
+    "latlng": [
+        31.5,
+        34.75
+    ],
+    "demonym": "Israeli",
+    "id": "Israel"
+}

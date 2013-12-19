@@ -1,0 +1,51 @@
+{
+    "name": "Haiti",
+    "nativeName": "Ha\u00efti",
+    "tld": [
+        ".ht"
+    ],
+    "cca2": "HT",
+    "ccn3": "332",
+    "cca3": "HTI",
+    "currency": [
+        "HTG",
+        "USD"
+    ],
+    "callingCode": [
+        "509"
+    ],
+    "capital": "Port-au-Prince",
+    "altSpellings": [
+        "HT",
+        "Republic of Haiti",
+        "R\u00e9publique d'Ha\u00efti",
+        "Repiblik Ayiti"
+    ],
+    "relevance": "0",
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "language": [
+        "French",
+        "Haitian Creole"
+    ],
+    "languagesCodes": [
+        "fr",
+        "ht"
+    ],
+    "translations": {
+        "de": "Haiti",
+        "en": "Haiti",
+        "es": "Haiti",
+        "fr": "Ha\u00efti",
+        "it": "Haiti",
+        "ja": "\u30cf\u30a4\u30c1",
+        "nl": "Ha\u00efti"
+    },
+    "population": 10413211,
+    "latlng": [
+        19,
+        -72.41666666
+    ],
+    "demonym": "Haitian",
+    "id": "Haiti"
+}

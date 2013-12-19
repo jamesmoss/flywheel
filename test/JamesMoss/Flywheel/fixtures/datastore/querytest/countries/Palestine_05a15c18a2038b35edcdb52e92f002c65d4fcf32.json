@@ -1,0 +1,49 @@
+{
+    "name": "Palestine",
+    "nativeName": "Filas\u1e6din",
+    "tld": [
+        ".ps"
+    ],
+    "cca2": "PS",
+    "ccn3": "275",
+    "cca3": "PSE",
+    "currency": [
+        "ILS"
+    ],
+    "callingCode": [
+        "970"
+    ],
+    "capital": "Ramallah",
+    "altSpellings": [
+        "PS",
+        "State of Palestine",
+        "Dawlat Filas\u1e6din"
+    ],
+    "relevance": "0",
+    "region": "Asia",
+    "subregion": "Western Asia",
+    "language": [
+        "Arabic"
+    ],
+    "languagesCodes": [
+        "ar",
+        "he",
+        "en"
+    ],
+    "translations": {
+        "de": "Pal\u00e4stina",
+        "en": "Palestine",
+        "es": "Palestina",
+        "fr": "Palestina",
+        "it": "Palestina",
+        "ja": "\u30d1\u30ec\u30b9\u30c1\u30ca",
+        "nl": "Palestijnse gebieden"
+    },
+    "population": -1,
+    "latlng": [
+        31.9,
+        35.2
+    ],
+    "demonym": "Palestinian",
+    "id": "Palestine"
+}

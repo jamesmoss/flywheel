@@ -1,0 +1,46 @@
+{
+    "name": "Iran",
+    "nativeName": "Ir\u0101n",
+    "tld": [
+        ".ir"
+    ],
+    "cca2": "IR",
+    "ccn3": "364",
+    "cca3": "IRN",
+    "currency": [
+        "IRR"
+    ],
+    "callingCode": [
+        "98"
+    ],
+    "capital": "Tehran",
+    "altSpellings": [
+        "IR",
+        "Islamic Republic of Iran",
+        "Jomhuri-ye Esl\u0101mi-ye Ir\u0101n"
+    ],
+    "relevance": "0",
+    "region": "Asia",
+    "subregion": "Southern Asia",
+    "language": [
+        "Persian"
+    ],
+    "languagesCodes": [
+        "fa"
+    ],
+    "translations": {
+        "de": "Iran",
+        "en": "Iran",
+        "es": "Iran",
+        "fr": "Iran",
+        "ja": "\u30a4\u30e9\u30f3\u30fb\u30a4\u30b9\u30e9\u30e0\u5171\u548c\u56fd",
+        "nl": "Iran"
+    },
+    "population": 77068000,
+    "latlng": [
+        32,
+        53
+    ],
+    "demonym": "Iranian",
+    "id": "Iran"
+}

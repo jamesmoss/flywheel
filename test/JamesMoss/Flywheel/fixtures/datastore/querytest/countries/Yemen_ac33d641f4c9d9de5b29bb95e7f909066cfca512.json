@@ -1,0 +1,47 @@
+{
+    "name": "Yemen",
+    "nativeName": "al-Yaman",
+    "tld": [
+        ".ye"
+    ],
+    "cca2": "YE",
+    "ccn3": "887",
+    "cca3": "YEM",
+    "currency": [
+        "YER"
+    ],
+    "callingCode": [
+        "967"
+    ],
+    "capital": "Sana'a",
+    "altSpellings": [
+        "YE",
+        "Yemeni Republic",
+        "al-Jumh\u016briyyah al-Yamaniyyah"
+    ],
+    "relevance": "0",
+    "region": "Asia",
+    "subregion": "Western Asia",
+    "language": [
+        "Arabic"
+    ],
+    "languagesCodes": [
+        "ar"
+    ],
+    "translations": {
+        "de": "Jemen",
+        "en": "Yemen",
+        "es": "Yemen",
+        "fr": "Y\u00e9men",
+        "it": "Yemen",
+        "ja": "\u30a4\u30a8\u30e1\u30f3",
+        "nl": "Jemen"
+    },
+    "population": 24527000,
+    "latlng": [
+        15,
+        48
+    ],
+    "demonym": "Yemeni",
+    "id": "Yemen"
+}

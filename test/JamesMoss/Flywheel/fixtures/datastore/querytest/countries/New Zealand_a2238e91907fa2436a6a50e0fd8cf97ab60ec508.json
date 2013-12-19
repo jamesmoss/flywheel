@@ -1,0 +1,45 @@
+{
+    "name": "New Zealand",
+    "nativeName": "New Zealand",
+    "tld": [
+        ".nz"
+    ],
+    "cca2": "NZ",
+    "ccn3": "554",
+    "cca3": "NZL",
+    "currency": [
+        "NZD"
+    ],
+    "callingCode": [
+        "64"
+    ],
+    "capital": "Wellington",
+    "altSpellings": [
+        "NZ",
+        "Aotearoa"
+    ],
+    "relevance": "0",
+    "region": "Oceania",
+    "subregion": [
+        "Australia",
+        "New Zealand"
+    ],
+    "language": [
+        "English",
+        "M\u0101ori",
+        "New Zealand Sign Language"
+    ],
+    "languagesCodes": [
+
+    ],
+    "translations": [
+
+    ],
+    "population": 4478810,
+    "latlng": [
+        -41,
+        174
+    ],
+    "demonym": "New Zealander",
+    "id": "New Zealand"
+}

@@ -1,0 +1,50 @@
+{
+    "name": "Burundi",
+    "nativeName": "Burundi",
+    "tld": [
+        ".bi"
+    ],
+    "cca2": "BI",
+    "ccn3": "108",
+    "cca3": "BDI",
+    "currency": [
+        "BIF"
+    ],
+    "callingCode": [
+        "257"
+    ],
+    "capital": "Bujumbura",
+    "altSpellings": [
+        "BI",
+        "Republic of Burundi",
+        "Republika y'Uburundi",
+        "R\u00e9publique du Burundi"
+    ],
+    "relevance": "0",
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "language": [
+        "Kirundi",
+        "French"
+    ],
+    "languagesCodes": [
+        "fr",
+        "rn"
+    ],
+    "translations": {
+        "de": "Burundi",
+        "en": "Burundi",
+        "es": "Burundi",
+        "fr": "Burundi",
+        "it": "Burundi",
+        "ja": "\u30d6\u30eb\u30f3\u30b8",
+        "nl": "Burundi"
+    },
+    "population": 10163000,
+    "latlng": [
+        -3.5,
+        30
+    ],
+    "demonym": "Burundian",
+    "id": "Burundi"
+}

@@ -1,0 +1,48 @@
+{
+    "name": "\u00c5land Islands",
+    "nativeName": "\u00c5land",
+    "tld": [
+        ".ax"
+    ],
+    "cca2": "AX",
+    "ccn3": "248",
+    "cca3": "ALA",
+    "currency": [
+        "EUR"
+    ],
+    "callingCode": [
+        "358"
+    ],
+    "capital": "Mariehamn",
+    "altSpellings": [
+        "AX",
+        "Aaland",
+        "Aland",
+        "Ahvenanmaa"
+    ],
+    "relevance": "0",
+    "region": "Europe",
+    "subregion": "Northern Europe",
+    "language": [
+        "Swedish"
+    ],
+    "languagesCodes": [
+        "sv"
+    ],
+    "translations": {
+        "de": "\u00c5land",
+        "en": "\u00c5land Islands",
+        "es": "Alandia",
+        "fr": "Aland",
+        "it": "Isole Aland",
+        "ja": "\u30aa\u30fc\u30e9\u30f3\u30c9\u8af8\u5cf6",
+        "nl": "\u00c5landeilanden"
+    },
+    "population": 28502,
+    "latlng": [
+        60.116667,
+        19.9
+    ],
+    "demonym": "\u00c5landish",
+    "id": "\u00c5land Islands"
+}

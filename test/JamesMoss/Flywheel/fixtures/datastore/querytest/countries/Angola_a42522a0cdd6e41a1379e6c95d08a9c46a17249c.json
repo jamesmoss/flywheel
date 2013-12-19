@@ -1,0 +1,47 @@
+{
+    "name": "Angola",
+    "nativeName": "Angola",
+    "tld": [
+        ".ao"
+    ],
+    "cca2": "AO",
+    "ccn3": "024",
+    "cca3": "AGO",
+    "currency": [
+        "AOA"
+    ],
+    "callingCode": [
+        "244"
+    ],
+    "capital": "Luanda",
+    "altSpellings": [
+        "AO",
+        "Rep\u00fablica de Angola",
+        "\u0281\u025bpublika de an'\u0261\u0254la"
+    ],
+    "relevance": "0",
+    "region": "Africa",
+    "subregion": "Middle Africa",
+    "language": [
+        "Portuguese"
+    ],
+    "languagesCodes": [
+        "pt"
+    ],
+    "translations": {
+        "de": "Angola",
+        "en": "Angola",
+        "es": "Angola",
+        "fr": "Angola",
+        "it": "Angola",
+        "ja": "\u30a2\u30f3\u30b4\u30e9",
+        "nl": "Angola"
+    },
+    "population": 20609294,
+    "latlng": [
+        -12.5,
+        18.5
+    ],
+    "demonym": "Angolan",
+    "id": "Angola"
+}

@@ -1,0 +1,50 @@
+{
+    "name": "Northern Mariana Islands",
+    "nativeName": "Northern Mariana Islands",
+    "tld": [
+        ".mp"
+    ],
+    "cca2": "MP",
+    "ccn3": "580",
+    "cca3": "MNP",
+    "currency": [
+        "USD"
+    ],
+    "callingCode": [
+        "1670"
+    ],
+    "capital": "Saipan",
+    "altSpellings": [
+        "MP",
+        "Commonwealth of the Northern Mariana Islands",
+        "Sankattan Siha Na Islas Mari\u00e5nas"
+    ],
+    "relevance": "0.5",
+    "region": "Oceania",
+    "subregion": "Micronesia",
+    "language": [
+        "English",
+        "Chamorro",
+        "Carolinian"
+    ],
+    "languagesCodes": [
+        "en",
+        "ch"
+    ],
+    "translations": {
+        "de": "N\u00f6rdliche Marianen",
+        "en": "Northern Mariana Islands",
+        "es": "Islas Marianas del Norte",
+        "fr": "\u00celes Mariannes du Nord",
+        "it": "Isole Marianne Settentrionali",
+        "ja": "\u5317\u30de\u30ea\u30a2\u30ca\u8af8\u5cf6",
+        "nl": "Noordelijke Marianeneilanden"
+    },
+    "population": 53883,
+    "latlng": [
+        15.2,
+        145.75
+    ],
+    "demonym": "American",
+    "id": "Northern Mariana Islands"
+}

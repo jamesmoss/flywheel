@@ -1,0 +1,46 @@
+{
+    "name": "Zambia",
+    "nativeName": "Zambia",
+    "tld": [
+        ".zm"
+    ],
+    "cca2": "ZM",
+    "ccn3": "894",
+    "cca3": "ZMB",
+    "currency": [
+        "ZMK"
+    ],
+    "callingCode": [
+        "260"
+    ],
+    "capital": "Lusaka",
+    "altSpellings": [
+        "ZM",
+        "Republic of Zambia"
+    ],
+    "relevance": "0",
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "language": [
+        "English"
+    ],
+    "languagesCodes": [
+        "en"
+    ],
+    "translations": {
+        "de": "Sambia",
+        "en": "Zambia",
+        "es": "Zambia",
+        "fr": "Zambie",
+        "it": "Zambia",
+        "ja": "\u30b6\u30f3\u30d3\u30a2",
+        "nl": "Zambia"
+    },
+    "population": 13092666,
+    "latlng": [
+        -15,
+        30
+    ],
+    "demonym": "Zambian",
+    "id": "Zambia"
+}

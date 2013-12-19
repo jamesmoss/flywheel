@@ -1,0 +1,49 @@
+{
+    "name": "United States",
+    "nativeName": "United States",
+    "tld": [
+        ".us"
+    ],
+    "cca2": "US",
+    "ccn3": "840",
+    "cca3": "USA",
+    "currency": [
+        "USD",
+        "USN",
+        "USS"
+    ],
+    "callingCode": [
+        "1"
+    ],
+    "capital": "Washington D.C.",
+    "altSpellings": [
+        "US",
+        "USA",
+        "United States of America"
+    ],
+    "relevance": "3.5",
+    "region": "Americas",
+    "subregion": "Northern America",
+    "language": [
+        "English"
+    ],
+    "languagesCodes": [
+        "en"
+    ],
+    "translations": {
+        "de": "Vereinigte Staaten von Amerika",
+        "en": "United States of America",
+        "es": "Estados Unidos",
+        "fr": "\u00c9tats-Unis",
+        "it": "Stati Uniti D'America",
+        "ja": "\u30a2\u30e1\u30ea\u30ab\u5408\u8846\u56fd",
+        "nl": "Verenigde Staten"
+    },
+    "population": 317101000,
+    "latlng": [
+        38,
+        -97
+    ],
+    "demonym": "American",
+    "id": "United States"
+}

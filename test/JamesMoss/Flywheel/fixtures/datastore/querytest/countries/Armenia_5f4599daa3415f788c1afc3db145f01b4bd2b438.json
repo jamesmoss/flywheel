@@ -1,0 +1,49 @@
+{
+    "name": "Armenia",
+    "nativeName": "\u0540\u0561\u0575\u0561\u057d\u057f\u0561\u0576",
+    "tld": [
+        ".am"
+    ],
+    "cca2": "AM",
+    "ccn3": "051",
+    "cca3": "ARM",
+    "currency": [
+        "AMD"
+    ],
+    "callingCode": [
+        "374"
+    ],
+    "capital": "Yerevan",
+    "altSpellings": [
+        "AM",
+        "Hayastan",
+        "Republic of Armenia",
+        "\u0540\u0561\u0575\u0561\u057d\u057f\u0561\u0576\u056b \u0540\u0561\u0576\u0580\u0561\u057a\u0565\u057f\u0578\u0582\u0569\u0575\u0578\u0582\u0576"
+    ],
+    "relevance": "0",
+    "region": "Asia",
+    "subregion": "Western Asia",
+    "language": [
+        "Armenian"
+    ],
+    "languagesCodes": [
+        "hy",
+        "ru"
+    ],
+    "translations": {
+        "de": "Armenien",
+        "en": "Armenia",
+        "es": "Armenia",
+        "fr": "Arm\u00e9nie",
+        "it": "Armenia",
+        "ja": "\u30a2\u30eb\u30e1\u30cb\u30a2",
+        "nl": "Armeni\u00eb"
+    },
+    "population": 3024100,
+    "latlng": [
+        40,
+        45
+    ],
+    "demonym": "Armenian",
+    "id": "Armenia"
+}

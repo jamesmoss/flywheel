@@ -1,0 +1,46 @@
+{
+    "name": "Bahamas",
+    "nativeName": "Bahamas",
+    "tld": [
+        ".bs"
+    ],
+    "cca2": "BS",
+    "ccn3": "044",
+    "cca3": "BHS",
+    "currency": [
+        "BSD"
+    ],
+    "callingCode": [
+        "1242"
+    ],
+    "capital": "Nassau",
+    "altSpellings": [
+        "BS",
+        "Commonwealth of the Bahamas"
+    ],
+    "relevance": "0",
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "language": [
+        "English"
+    ],
+    "languagesCodes": [
+        "en"
+    ],
+    "translations": {
+        "de": "Bahamas",
+        "en": "Bahamas",
+        "es": "Bahamas",
+        "fr": "Bahamas",
+        "it": "Bahamas",
+        "ja": "\u30d0\u30cf\u30de",
+        "nl": "Bahama\u2019s"
+    },
+    "population": -1,
+    "latlng": [
+        24.25,
+        -76
+    ],
+    "demonym": "Bahamian",
+    "id": "Bahamas"
+}

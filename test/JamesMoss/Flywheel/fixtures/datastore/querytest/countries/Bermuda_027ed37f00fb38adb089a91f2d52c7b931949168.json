@@ -1,0 +1,48 @@
+{
+    "name": "Bermuda",
+    "nativeName": "Bermuda",
+    "tld": [
+        ".bm"
+    ],
+    "cca2": "BM",
+    "ccn3": "060",
+    "cca3": "BMU",
+    "currency": [
+        "BMD"
+    ],
+    "callingCode": [
+        "1441"
+    ],
+    "capital": "Hamilton",
+    "altSpellings": [
+        "BM",
+        "The Islands of Bermuda",
+        "The Bermudas",
+        "Somers Isles"
+    ],
+    "relevance": "0.5",
+    "region": "Americas",
+    "subregion": "Northern America",
+    "language": [
+        "English"
+    ],
+    "languagesCodes": [
+        "en"
+    ],
+    "translations": {
+        "de": "Bermuda",
+        "en": "Bermuda",
+        "es": "Bermudas",
+        "fr": "Bermudes",
+        "it": "Bermuda",
+        "ja": "\u30d0\u30df\u30e5\u30fc\u30c0",
+        "nl": "Bermuda"
+    },
+    "population": 64237,
+    "latlng": [
+        32.33333333,
+        -64.75
+    ],
+    "demonym": "Bermudian",
+    "id": "Bermuda"
+}

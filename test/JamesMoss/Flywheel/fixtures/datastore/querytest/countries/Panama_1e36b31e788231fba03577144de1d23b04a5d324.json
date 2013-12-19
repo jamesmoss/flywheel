@@ -1,0 +1,48 @@
+{
+    "name": "Panama",
+    "nativeName": "Panam\u00e1",
+    "tld": [
+        ".pa"
+    ],
+    "cca2": "PA",
+    "ccn3": "591",
+    "cca3": "PAN",
+    "currency": [
+        "PAB",
+        "USD"
+    ],
+    "callingCode": [
+        "507"
+    ],
+    "capital": "Panama City",
+    "altSpellings": [
+        "PA",
+        "Republic of Panama",
+        "Rep\u00fablica de Panam\u00e1"
+    ],
+    "relevance": "0",
+    "region": "Americas",
+    "subregion": "Central America",
+    "language": [
+        "Spanish"
+    ],
+    "languagesCodes": [
+        "es"
+    ],
+    "translations": {
+        "de": "Panama",
+        "en": "Panama",
+        "es": "Panam\u00e1",
+        "fr": "Panama",
+        "it": "Panama",
+        "ja": "\u30d1\u30ca\u30de",
+        "nl": "Panama"
+    },
+    "population": 3405813,
+    "latlng": [
+        9,
+        -80
+    ],
+    "demonym": "Panamanian",
+    "id": "Panama"
+}

@@ -72,27 +72,37 @@ class Query
                 );
             }
 
-            $documents = $this->multiSort($documents, $sorts);
+            $documents = $this->sort($documents, $sorts);
         }
 
         $totalCount = count($documents);
 
         if($this->limit) {
             list($count, $offset) = $this->limit;
-            $documents = array_splice($documents, $offset, $offset+$count);
+            $documents = array_slice($documents, $offset, $count);
         }
 
         return $documents; 
     }
 
-    public function multiSort($array, $args) {
+    protected function sort($array, $args) {
         $c = count($args);
 
         usort($array, function($a, $b) use($args, $c) {
             $i   = 0;     
             $cmp = 0;
             while($cmp == 0 && $i < $c) {
-                $cmp = strcmp($a->{$args[ $i ][0] }, $b->{ $args[ $i ][0] });
+                $valueA = $a->{$args[$i][0]};
+                $valueB = $b->{$args[$i][0]};
+
+                if(is_string($valueA)) {
+                    $cmp = strcmp($valueA, $valueB);
+                } else if(is_bool($valueA)) {
+                    $cmp = $valueA - $valueB;
+                } else {
+                    $cmp = ($valueA == $valueB) ? 0 : ($valueA > $valueB) ? -1 : 1; 
+                }
+                
                 if($args[$i][1] === SORT_DESC) {
                     $cmp *= -1;
                 }
@@ -100,10 +110,8 @@ class Query
             }
 
             return $cmp;
-
         });
 
         return $array;
-
     }
 }

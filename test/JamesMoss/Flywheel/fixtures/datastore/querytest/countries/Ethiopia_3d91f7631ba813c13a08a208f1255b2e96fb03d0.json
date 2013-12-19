@@ -1,0 +1,48 @@
+{
+    "name": "Ethiopia",
+    "nativeName": "\u12a2\u1275\u12ee\u1335\u12eb",
+    "tld": [
+        ".et"
+    ],
+    "cca2": "ET",
+    "ccn3": "231",
+    "cca3": "ETH",
+    "currency": [
+        "ETB"
+    ],
+    "callingCode": [
+        "251"
+    ],
+    "capital": "Addis Ababa",
+    "altSpellings": [
+        "ET",
+        "\u02be\u012aty\u014d\u1e57\u1e57y\u0101",
+        "Federal Democratic Republic of Ethiopia",
+        "\u12e8\u12a2\u1275\u12ee\u1335\u12eb \u134c\u12f4\u122b\u120b\u12ca \u12f2\u121e\u12ad\u122b\u1232\u12eb\u12ca \u122a\u1350\u1265\u120a\u12ad"
+    ],
+    "relevance": "0",
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "language": [
+        "Amharic"
+    ],
+    "languagesCodes": [
+        "am"
+    ],
+    "translations": {
+        "de": "\u00c4thiopien",
+        "en": "Ethiopia",
+        "es": "Etiop\u00eda",
+        "fr": "\u00c9thiopie",
+        "it": "Etiopia",
+        "ja": "\u30a8\u30c1\u30aa\u30d4\u30a2",
+        "nl": "Ethiopi\u00eb"
+    },
+    "population": 86613986,
+    "latlng": [
+        8,
+        38
+    ],
+    "demonym": "Ethiopian",
+    "id": "Ethiopia"
+}

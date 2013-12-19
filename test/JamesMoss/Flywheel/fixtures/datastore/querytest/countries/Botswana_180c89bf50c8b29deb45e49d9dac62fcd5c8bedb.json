@@ -1,0 +1,49 @@
+{
+    "name": "Botswana",
+    "nativeName": "Botswana",
+    "tld": [
+        ".bw"
+    ],
+    "cca2": "BW",
+    "ccn3": "072",
+    "cca3": "BWA",
+    "currency": [
+        "BWP"
+    ],
+    "callingCode": [
+        "267"
+    ],
+    "capital": "Gaborone",
+    "altSpellings": [
+        "BW",
+        "Republic of Botswana",
+        "Lefatshe la Botswana"
+    ],
+    "relevance": "0",
+    "region": "Africa",
+    "subregion": "Southern Africa",
+    "language": [
+        "English",
+        "Setswana"
+    ],
+    "languagesCodes": [
+        "en",
+        "tn"
+    ],
+    "translations": {
+        "de": "Botswana",
+        "en": "Botswana",
+        "es": "Botswana",
+        "fr": "Botswana",
+        "it": "Botswana",
+        "ja": "\u30dc\u30c4\u30ef\u30ca",
+        "nl": "Botswana"
+    },
+    "population": 2024904,
+    "latlng": [
+        -22,
+        24
+    ],
+    "demonym": "Motswana",
+    "id": "Botswana"
+}

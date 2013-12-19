@@ -1,0 +1,46 @@
+{
+    "name": "Heard Island and McDonald Islands",
+    "nativeName": "Heard Island and McDonald Islands",
+    "tld": [
+        ".hm",
+        ".aq"
+    ],
+    "cca2": "HM",
+    "ccn3": "334",
+    "cca3": "HMD",
+    "currency": [
+        "AUD"
+    ],
+    "callingCode": [
+        ""
+    ],
+    "capital": "",
+    "altSpellings": [
+        "HM"
+    ],
+    "relevance": "0",
+    "region": "",
+    "subregion": "",
+    "language": [
+        ""
+    ],
+    "languagesCodes": [
+        "en"
+    ],
+    "translations": {
+        "de": "Heard und die McDonaldinseln",
+        "en": "Heard and McDonald Islands",
+        "es": "Islas Heard y McDonald",
+        "fr": "\u00celes Heard-et-MacDonal",
+        "it": "Isole Heard e McDonald",
+        "ja": "\u30cf\u30fc\u30c9\u5cf6\u3068\u30de\u30af\u30c9\u30ca\u30eb\u30c9\u8af8\u5cf6",
+        "nl": "Heard- en McDonaldeilanden"
+    },
+    "population": -1,
+    "latlng": [
+        -53.1,
+        72.51666666
+    ],
+    "demonym": "Heard and McDonald Islander",
+    "id": "Heard Island and McDonald Islands"
+}

@@ -1,0 +1,55 @@
+{
+    "name": "Eritrea",
+    "nativeName": "\u12a4\u122d\u1275\u122b",
+    "tld": [
+        ".er"
+    ],
+    "cca2": "ER",
+    "ccn3": "232",
+    "cca3": "ERI",
+    "currency": [
+        "ERN"
+    ],
+    "callingCode": [
+        "291"
+    ],
+    "capital": "Asmara",
+    "altSpellings": [
+        "ER",
+        "State of Eritrea",
+        "\u1203\u1308\u1228 \u12a4\u122d\u1275\u122b",
+        "Dawlat Iritriy\u00e1",
+        "\u02beErtr\u0101",
+        "Iritriy\u0101",
+        ""
+    ],
+    "relevance": "0",
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "language": [
+        "Tigrinya",
+        "Arabic",
+        "English"
+    ],
+    "languagesCodes": [
+        "en",
+        "ar",
+        "ti"
+    ],
+    "translations": {
+        "de": "Eritrea",
+        "en": "Eritrea",
+        "es": "Eritrea",
+        "fr": "\u00c9rythr\u00e9e",
+        "it": "Eritrea",
+        "ja": "\u30a8\u30ea\u30c8\u30ea\u30a2",
+        "nl": "Eritrea"
+    },
+    "population": 6333000,
+    "latlng": [
+        15,
+        39
+    ],
+    "demonym": "Eritrean",
+    "id": "Eritrea"
+}

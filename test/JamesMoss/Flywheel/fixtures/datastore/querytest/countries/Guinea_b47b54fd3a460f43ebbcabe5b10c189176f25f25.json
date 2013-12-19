@@ -1,0 +1,48 @@
+{
+    "name": "Guinea",
+    "nativeName": "Guin\u00e9e",
+    "tld": [
+        ".gn"
+    ],
+    "cca2": "GN",
+    "ccn3": "324",
+    "cca3": "GIN",
+    "currency": [
+        "GNF"
+    ],
+    "callingCode": [
+        "224"
+    ],
+    "capital": "Conakry",
+    "altSpellings": [
+        "GN",
+        "Republic of Guinea",
+        "R\u00e9publique de Guin\u00e9e"
+    ],
+    "relevance": "0",
+    "region": "Africa",
+    "subregion": "Western Africa",
+    "language": [
+        "French"
+    ],
+    "languagesCodes": [
+        "fr",
+        "ff"
+    ],
+    "translations": {
+        "de": "Guinea",
+        "en": "Guinea",
+        "es": "Guinea",
+        "fr": "Guin\u00e9e",
+        "it": "Guinea",
+        "ja": "\u30ae\u30cb\u30a2",
+        "nl": "Guinee"
+    },
+    "population": 10824200,
+    "latlng": [
+        11,
+        -10
+    ],
+    "demonym": "Guinean",
+    "id": "Guinea"
+}

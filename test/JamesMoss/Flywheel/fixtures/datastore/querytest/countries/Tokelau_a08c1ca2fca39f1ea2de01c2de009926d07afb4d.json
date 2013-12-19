@@ -1,0 +1,47 @@
+{
+    "name": "Tokelau",
+    "nativeName": "Tokelau",
+    "tld": [
+        ".tk"
+    ],
+    "cca2": "TK",
+    "ccn3": "772",
+    "cca3": "TKL",
+    "currency": [
+        "NZD"
+    ],
+    "callingCode": [
+        "690"
+    ],
+    "capital": "Fakaofo",
+    "altSpellings": [
+        "TK"
+    ],
+    "relevance": "0.5",
+    "region": "Oceania",
+    "subregion": "Polynesia",
+    "language": [
+        "Tokelauan",
+        "English",
+        "Samoan"
+    ],
+    "languagesCodes": [
+        "en"
+    ],
+    "translations": {
+        "de": "Tokelau",
+        "en": "Tokelau",
+        "es": "Islas Tokelau",
+        "fr": "\u00celes Tokelau",
+        "it": "Isole Tokelau",
+        "ja": "\u30c8\u30b1\u30e9\u30a6",
+        "nl": "Tokelau"
+    },
+    "population": 1411,
+    "latlng": [
+        -9,
+        -172
+    ],
+    "demonym": "Tokelauan",
+    "id": "Tokelau"
+}

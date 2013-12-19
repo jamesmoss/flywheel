@@ -1,0 +1,48 @@
+{
+    "name": "French Polynesia",
+    "nativeName": "Polyn\u00e9sie fran\u00e7aise",
+    "tld": [
+        ".pf"
+    ],
+    "cca2": "PF",
+    "ccn3": "258",
+    "cca3": "PYF",
+    "currency": [
+        "XPF"
+    ],
+    "callingCode": [
+        "689"
+    ],
+    "capital": "Papeet\u0113",
+    "altSpellings": [
+        "PF",
+        "Polyn\u00e9sie fran\u00e7aise",
+        "French Polynesia",
+        "P\u014dr\u012bnetia Far\u0101ni"
+    ],
+    "relevance": "0",
+    "region": "Oceania",
+    "subregion": "Polynesia",
+    "language": [
+        "French"
+    ],
+    "languagesCodes": [
+        "fr"
+    ],
+    "translations": {
+        "de": "Franz\u00f6sisch-Polynesien",
+        "en": "French Polynesia",
+        "es": "Polinesia Francesa",
+        "fr": "Polyn\u00e9sie Fran\u00e7aise",
+        "it": "Polinesia Francese",
+        "ja": "\u30d5\u30e9\u30f3\u30b9\u9818\u30dd\u30ea\u30cd\u30b7\u30a2",
+        "nl": "Frans-Polynesi\u00eb"
+    },
+    "population": 268270,
+    "latlng": [
+        -15,
+        -140
+    ],
+    "demonym": "French Polynesian",
+    "id": "French Polynesia"
+}

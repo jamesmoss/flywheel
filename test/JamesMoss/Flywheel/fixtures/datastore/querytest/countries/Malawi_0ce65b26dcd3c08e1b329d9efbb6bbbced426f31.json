@@ -1,0 +1,48 @@
+{
+    "name": "Malawi",
+    "nativeName": "Malawi",
+    "tld": [
+        ".mw"
+    ],
+    "cca2": "MW",
+    "ccn3": "454",
+    "cca3": "MWI",
+    "currency": [
+        "MWK"
+    ],
+    "callingCode": [
+        "265"
+    ],
+    "capital": "Lilongwe",
+    "altSpellings": [
+        "MW",
+        "Republic of Malawi"
+    ],
+    "relevance": "0",
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "language": [
+        "Chichewa",
+        "English"
+    ],
+    "languagesCodes": [
+        "en",
+        "ny"
+    ],
+    "translations": {
+        "de": "Malawi",
+        "en": "Malawi",
+        "es": "Malawi",
+        "fr": "Malawi",
+        "it": "Malawi",
+        "ja": "\u30de\u30e9\u30a6\u30a4",
+        "nl": "Malawi"
+    },
+    "population": 16363000,
+    "latlng": [
+        -13.5,
+        34
+    ],
+    "demonym": "Malawian",
+    "id": "Malawi"
+}

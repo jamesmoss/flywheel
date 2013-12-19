@@ -1,0 +1,45 @@
+{
+    "name": "Saint Vincent and the Grenadines",
+    "nativeName": "Saint Vincent and the Grenadines",
+    "tld": [
+        ".vc"
+    ],
+    "cca2": "VC",
+    "ccn3": "670",
+    "cca3": "VCT",
+    "currency": [
+        "XCD"
+    ],
+    "callingCode": [
+        "1784"
+    ],
+    "capital": "Kingstown",
+    "altSpellings": [
+        "VC"
+    ],
+    "relevance": "0",
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "language": [
+        "English"
+    ],
+    "languagesCodes": [
+        "en"
+    ],
+    "translations": {
+        "de": "Saint Vincent und die Grenadinen",
+        "en": "Saint Vincent and the Grenadines",
+        "es": "San Vicente y Granadinas",
+        "fr": "Saint-Vincent-et-les-Grenadines",
+        "it": "Saint Vincent e Grenadine",
+        "ja": "\u30bb\u30f3\u30c8\u30d3\u30f3\u30bb\u30f3\u30c8\u304a\u3088\u3073\u30b0\u30ec\u30ca\u30c7\u30a3\u30fc\u30f3\u8af8\u5cf6",
+        "nl": "Saint Vincent en de Grenadines"
+    },
+    "population": 109000,
+    "latlng": [
+        13.25,
+        -61.2
+    ],
+    "demonym": "Saint Vincentian",
+    "id": "Saint Vincent and the Grenadines"
+}

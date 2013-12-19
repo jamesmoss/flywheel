@@ -1,0 +1,45 @@
+{
+    "name": "Solomon Islands",
+    "nativeName": "Solomon Islands",
+    "tld": [
+        ".sb"
+    ],
+    "cca2": "SB",
+    "ccn3": "090",
+    "cca3": "SLB",
+    "currency": [
+        "SDB"
+    ],
+    "callingCode": [
+        "677"
+    ],
+    "capital": "Honiara",
+    "altSpellings": [
+        "SB"
+    ],
+    "relevance": "0",
+    "region": "Oceania",
+    "subregion": "Melanesia",
+    "language": [
+        "English"
+    ],
+    "languagesCodes": [
+        "en"
+    ],
+    "translations": {
+        "de": "Salomonen",
+        "en": "Solomon Islands",
+        "es": "Islas Salom\u00f3n",
+        "fr": "\u00celes Salomon",
+        "it": "Isole Salomone",
+        "ja": "\u30bd\u30ed\u30e2\u30f3\u8af8\u5cf6",
+        "nl": "Salomonseilanden"
+    },
+    "population": 561000,
+    "latlng": [
+        -8,
+        159
+    ],
+    "demonym": "Solomon Islander",
+    "id": "Solomon Islands"
+}

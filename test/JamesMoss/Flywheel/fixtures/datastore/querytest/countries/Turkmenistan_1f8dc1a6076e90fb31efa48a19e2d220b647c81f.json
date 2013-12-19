@@ -1,0 +1,46 @@
+{
+    "name": "Turkmenistan",
+    "nativeName": "T\u00fcrkmenistan",
+    "tld": [
+        ".tm"
+    ],
+    "cca2": "TM",
+    "ccn3": "795",
+    "cca3": "TKM",
+    "currency": [
+        "TMT"
+    ],
+    "callingCode": [
+        "993"
+    ],
+    "capital": "Ashgabat",
+    "altSpellings": [
+        "TM"
+    ],
+    "relevance": "0",
+    "region": "Asia",
+    "subregion": "Central Asia",
+    "language": [
+        "Turkmen"
+    ],
+    "languagesCodes": [
+        "tk",
+        "ru"
+    ],
+    "translations": {
+        "de": "Turkmenistan",
+        "en": "Turkmenistan",
+        "es": "Turkmenist\u00e1n",
+        "fr": "Turkm\u00e9nistan",
+        "it": "Turkmenistan",
+        "ja": "\u30c8\u30eb\u30af\u30e1\u30cb\u30b9\u30bf\u30f3",
+        "nl": "Turkmenistan"
+    },
+    "population": 5240000,
+    "latlng": [
+        40,
+        60
+    ],
+    "demonym": "Turkmen",
+    "id": "Turkmenistan"
+}

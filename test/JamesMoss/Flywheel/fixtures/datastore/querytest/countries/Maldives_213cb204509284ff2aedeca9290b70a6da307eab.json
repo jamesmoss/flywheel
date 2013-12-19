@@ -1,0 +1,48 @@
+{
+    "name": "Maldives",
+    "nativeName": "Maldives",
+    "tld": [
+        ".mv"
+    ],
+    "cca2": "MV",
+    "ccn3": "462",
+    "cca3": "MDV",
+    "currency": [
+        "MVR"
+    ],
+    "callingCode": [
+        "960"
+    ],
+    "capital": "Mal\u00e9",
+    "altSpellings": [
+        "MV",
+        "Maldive Islands",
+        "Republic of the Maldives",
+        "Dhivehi Raajjeyge Jumhooriyya"
+    ],
+    "relevance": "0",
+    "region": "Asia",
+    "subregion": "Southern Asia",
+    "language": [
+        "Maldivian"
+    ],
+    "languagesCodes": [
+        "dv"
+    ],
+    "translations": {
+        "de": "Malediven",
+        "en": "Maldives",
+        "es": "Maldivas",
+        "fr": "Maldives",
+        "it": "Maldive",
+        "ja": "\u30e2\u30eb\u30c7\u30a3\u30d6",
+        "nl": "Maldiven"
+    },
+    "population": 317280,
+    "latlng": [
+        3.25,
+        73
+    ],
+    "demonym": "Maldivan",
+    "id": "Maldives"
+}

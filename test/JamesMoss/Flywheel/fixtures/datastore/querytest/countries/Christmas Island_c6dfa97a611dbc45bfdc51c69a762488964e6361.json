@@ -1,0 +1,43 @@
+{
+    "name": "Christmas Island",
+    "nativeName": "Christmas Island",
+    "tld": [
+        ".cx"
+    ],
+    "cca2": "CX",
+    "ccn3": "162",
+    "cca3": "CXR",
+    "currency": [
+        "AUD"
+    ],
+    "callingCode": [
+        "61"
+    ],
+    "capital": "Flying Fish Cove",
+    "altSpellings": [
+        "CX",
+        "Territory of Christmas Island"
+    ],
+    "relevance": "0.5",
+    "region": "Oceania",
+    "subregion": [
+        "Australia",
+        "New Zealand"
+    ],
+    "language": [
+        "English"
+    ],
+    "languagesCodes": [
+
+    ],
+    "translations": [
+
+    ],
+    "population": 2072,
+    "latlng": [
+        -10.5,
+        105.66666666
+    ],
+    "demonym": "Christmas Island",
+    "id": "Christmas Island"
+}

@@ -1,0 +1,45 @@
+{
+    "name": "Antarctica",
+    "nativeName": "",
+    "tld": [
+        ".aq"
+    ],
+    "cca2": "AQ",
+    "ccn3": "010",
+    "cca3": "ATA",
+    "currency": [
+        ""
+    ],
+    "callingCode": [
+        ""
+    ],
+    "capital": "",
+    "altSpellings": [
+        "AQ"
+    ],
+    "relevance": "0",
+    "region": "",
+    "subregion": "",
+    "language": [
+        ""
+    ],
+    "languagesCodes": [
+
+    ],
+    "translations": {
+        "de": "Antarktis",
+        "en": "Antarctica",
+        "es": "Ant\u00e1rtida",
+        "fr": "Antarctique",
+        "it": "Antartide",
+        "ja": "\u5357\u6975",
+        "nl": "Antarctica"
+    },
+    "population": -1,
+    "latlng": [
+        -90,
+        0
+    ],
+    "demonym": "",
+    "id": "Antarctica"
+}

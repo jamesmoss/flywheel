@@ -1,0 +1,45 @@
+{
+    "name": "Jamaica",
+    "nativeName": "Jamaica",
+    "tld": [
+        ".jm"
+    ],
+    "cca2": "JM",
+    "ccn3": "388",
+    "cca3": "JAM",
+    "currency": [
+        "JMD"
+    ],
+    "callingCode": [
+        "1876"
+    ],
+    "capital": "Kingston",
+    "altSpellings": [
+        "JM"
+    ],
+    "relevance": "0",
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "language": [
+        "Jamaican English"
+    ],
+    "languagesCodes": [
+        "en"
+    ],
+    "translations": {
+        "de": "Jamaika",
+        "en": "Jamaica",
+        "es": "Jamaica",
+        "fr": "Jama\u00efque",
+        "it": "Giamaica",
+        "ja": "\u30b8\u30e3\u30de\u30a4\u30ab",
+        "nl": "Jamaica"
+    },
+    "population": 2711476,
+    "latlng": [
+        18.25,
+        -77.5
+    ],
+    "demonym": "Jamaican",
+    "id": "Jamaica"
+}

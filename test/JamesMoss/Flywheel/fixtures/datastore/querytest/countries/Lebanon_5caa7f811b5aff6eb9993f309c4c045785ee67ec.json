@@ -1,0 +1,49 @@
+{
+    "name": "Lebanon",
+    "nativeName": "Libn\u0101n",
+    "tld": [
+        ".lb"
+    ],
+    "cca2": "LB",
+    "ccn3": "422",
+    "cca3": "LBN",
+    "currency": [
+        "LBP"
+    ],
+    "callingCode": [
+        "961"
+    ],
+    "capital": "Beirut",
+    "altSpellings": [
+        "LB",
+        "Lebanese Republic",
+        "Al-Jumh\u016br\u012byah Al-Libn\u0101n\u012byah"
+    ],
+    "relevance": "0",
+    "region": "Asia",
+    "subregion": "Western Asia",
+    "language": [
+        "Arabic",
+        "French"
+    ],
+    "languagesCodes": [
+        "ar",
+        "fr"
+    ],
+    "translations": {
+        "de": "Libanon",
+        "en": "Lebanon",
+        "es": "L\u00edbano",
+        "fr": "Liban",
+        "it": "Libano",
+        "ja": "\u30ec\u30d0\u30ce\u30f3",
+        "nl": "Libanon"
+    },
+    "population": 4822000,
+    "latlng": [
+        33.83333333,
+        35.83333333
+    ],
+    "demonym": "Lebanese",
+    "id": "Lebanon"
+}

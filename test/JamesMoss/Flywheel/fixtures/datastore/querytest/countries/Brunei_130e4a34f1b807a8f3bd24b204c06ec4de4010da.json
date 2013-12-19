@@ -1,0 +1,41 @@
+{
+    "name": "Brunei",
+    "nativeName": "Negara Brunei Darussalam",
+    "tld": [
+        ".bn"
+    ],
+    "cca2": "BN",
+    "ccn3": "096",
+    "cca3": "BRN",
+    "currency": [
+        "BND"
+    ],
+    "callingCode": [
+        "673"
+    ],
+    "capital": "Bandar Seri Begawan",
+    "altSpellings": [
+        "BN",
+        "Nation of Brunei",
+        " the Abode of Peace"
+    ],
+    "relevance": "0",
+    "region": "Asia",
+    "subregion": "South-Eastern Asia",
+    "language": [
+        "Malay"
+    ],
+    "languagesCodes": [
+
+    ],
+    "translations": [
+
+    ],
+    "population": 393162,
+    "latlng": [
+        4.5,
+        114.66666666
+    ],
+    "demonym": "Bruneian",
+    "id": "Brunei"
+}

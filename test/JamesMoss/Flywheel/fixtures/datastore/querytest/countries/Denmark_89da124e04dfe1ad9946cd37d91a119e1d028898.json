@@ -1,0 +1,48 @@
+{
+    "name": "Denmark",
+    "nativeName": "Danmark",
+    "tld": [
+        ".dk"
+    ],
+    "cca2": "DK",
+    "ccn3": "208",
+    "cca3": "DNK",
+    "currency": [
+        "DKK"
+    ],
+    "callingCode": [
+        "45"
+    ],
+    "capital": "Copenhagen",
+    "altSpellings": [
+        "DK",
+        "Danmark",
+        "Kingdom of Denmark",
+        "Kongeriget Danmark"
+    ],
+    "relevance": "1.5",
+    "region": "Europe",
+    "subregion": "Northern Europe",
+    "language": [
+        "Danish"
+    ],
+    "languagesCodes": [
+        "da"
+    ],
+    "translations": {
+        "de": "D\u00e4nemark",
+        "en": "Denmark",
+        "es": "Dinamarca",
+        "fr": "Danemark",
+        "it": "Danimarca",
+        "ja": "\u30c7\u30f3\u30de\u30fc\u30af",
+        "nl": "Denemarken"
+    },
+    "population": 5623501,
+    "latlng": [
+        56,
+        10
+    ],
+    "demonym": "Danish",
+    "id": "Denmark"
+}

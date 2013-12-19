@@ -1,0 +1,50 @@
+{
+    "name": "Paraguay",
+    "nativeName": "Paraguay",
+    "tld": [
+        ".py"
+    ],
+    "cca2": "PY",
+    "ccn3": "600",
+    "cca3": "PRY",
+    "currency": [
+        "PYG"
+    ],
+    "callingCode": [
+        "595"
+    ],
+    "capital": "Asunci\u00f3n",
+    "altSpellings": [
+        "PY",
+        "Republic of Paraguay",
+        "Rep\u00fablica del Paraguay",
+        "Tet\u00e3 Paragu\u00e1i"
+    ],
+    "relevance": "0",
+    "region": "Americas",
+    "subregion": "South America",
+    "language": [
+        "Spanish",
+        "Guaran\u00ed"
+    ],
+    "languagesCodes": [
+        "es",
+        "gn"
+    ],
+    "translations": {
+        "de": "Paraguay",
+        "en": "Paraguay",
+        "es": "Paraguay",
+        "fr": "Paraguay",
+        "it": "Paraguay",
+        "ja": "\u30d1\u30e9\u30b0\u30a2\u30a4",
+        "nl": "Paraguay"
+    },
+    "population": 6783374,
+    "latlng": [
+        -23,
+        -58
+    ],
+    "demonym": "Paraguayan",
+    "id": "Paraguay"
+}

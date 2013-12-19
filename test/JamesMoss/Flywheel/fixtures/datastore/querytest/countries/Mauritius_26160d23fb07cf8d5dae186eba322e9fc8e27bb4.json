@@ -1,0 +1,47 @@
+{
+    "name": "Mauritius",
+    "nativeName": "Maurice",
+    "tld": [
+        ".mu"
+    ],
+    "cca2": "MU",
+    "ccn3": "480",
+    "cca3": "MUS",
+    "currency": [
+        "MUR"
+    ],
+    "callingCode": [
+        "230"
+    ],
+    "capital": "Port Louis",
+    "altSpellings": [
+        "MU",
+        "Republic of Mauritius",
+        "R\u00e9publique de Maurice"
+    ],
+    "relevance": "0",
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "language": [
+        "French"
+    ],
+    "languagesCodes": [
+        "en"
+    ],
+    "translations": {
+        "de": "Mauritius",
+        "en": "Mauritius",
+        "es": "Mauricio",
+        "fr": "\u00cele Maurice",
+        "it": "Mauritius",
+        "ja": "\u30e2\u30fc\u30ea\u30b7\u30e3\u30b9",
+        "nl": "Mauritius"
+    },
+    "population": 1257900,
+    "latlng": [
+        -20.28333333,
+        57.55
+    ],
+    "demonym": "Mauritian",
+    "id": "Mauritius"
+}

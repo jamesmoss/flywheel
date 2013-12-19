@@ -1,0 +1,49 @@
+{
+    "name": "Malta",
+    "nativeName": "Malta",
+    "tld": [
+        ".mt"
+    ],
+    "cca2": "MT",
+    "ccn3": "470",
+    "cca3": "MLT",
+    "currency": [
+        "EUR"
+    ],
+    "callingCode": [
+        "356"
+    ],
+    "capital": "Valletta",
+    "altSpellings": [
+        "MT",
+        "Republic of Malta",
+        "Repubblika ta' Malta"
+    ],
+    "relevance": "0",
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "language": [
+        "Maltese",
+        "English"
+    ],
+    "languagesCodes": [
+        "mt",
+        "en"
+    ],
+    "translations": {
+        "de": "Malta",
+        "en": "Malta",
+        "es": "Malta",
+        "fr": "Malte",
+        "it": "Malta",
+        "ja": "\u30de\u30eb\u30bf",
+        "nl": "Malta"
+    },
+    "population": 416055,
+    "latlng": [
+        35.83333333,
+        14.58333333
+    ],
+    "demonym": "Maltese",
+    "id": "Malta"
+}

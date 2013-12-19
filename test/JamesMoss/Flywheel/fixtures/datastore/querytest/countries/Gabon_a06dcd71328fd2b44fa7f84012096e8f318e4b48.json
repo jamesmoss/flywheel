@@ -1,0 +1,47 @@
+{
+    "name": "Gabon",
+    "nativeName": "Gabon",
+    "tld": [
+        ".ga"
+    ],
+    "cca2": "GA",
+    "ccn3": "266",
+    "cca3": "GAB",
+    "currency": [
+        "XAF"
+    ],
+    "callingCode": [
+        "241"
+    ],
+    "capital": "Libreville",
+    "altSpellings": [
+        "GA",
+        "Gabonese Republic",
+        "R\u00e9publique Gabonaise"
+    ],
+    "relevance": "0",
+    "region": "Africa",
+    "subregion": "Middle Africa",
+    "language": [
+        "French"
+    ],
+    "languagesCodes": [
+        "fr"
+    ],
+    "translations": {
+        "de": "Gabun",
+        "en": "Gabon",
+        "es": "Gab\u00f3n",
+        "fr": "Gabon",
+        "it": "Gabon",
+        "ja": "\u30ac\u30dc\u30f3",
+        "nl": "Gabon"
+    },
+    "population": 1672000,
+    "latlng": [
+        -1,
+        11.75
+    ],
+    "demonym": "Gabonese",
+    "id": "Gabon"
+}

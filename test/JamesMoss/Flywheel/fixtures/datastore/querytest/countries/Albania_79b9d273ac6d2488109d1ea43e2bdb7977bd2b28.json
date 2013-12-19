@@ -1,0 +1,48 @@
+{
+    "name": "Albania",
+    "nativeName": "Shqip\u00ebria",
+    "tld": [
+        ".al"
+    ],
+    "cca2": "AL",
+    "ccn3": "008",
+    "cca3": "ALB",
+    "currency": [
+        "ALL"
+    ],
+    "callingCode": [
+        "355"
+    ],
+    "capital": "Tirana",
+    "altSpellings": [
+        "AL",
+        "Shqip\u00ebri",
+        "Shqip\u00ebria",
+        "Shqipnia"
+    ],
+    "relevance": "0",
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "language": [
+        "Albanian"
+    ],
+    "languagesCodes": [
+        "sq"
+    ],
+    "translations": {
+        "de": "Albanien",
+        "en": "Albania",
+        "es": "Albania",
+        "fr": "Albanie",
+        "it": "Albania",
+        "ja": "\u30a2\u30eb\u30d0\u30cb\u30a2",
+        "nl": "Albani\u00eb"
+    },
+    "population": 2821977,
+    "latlng": [
+        41,
+        20
+    ],
+    "demonym": "Albanian",
+    "id": "Albania"
+}

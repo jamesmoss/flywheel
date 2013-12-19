@@ -1,0 +1,49 @@
+{
+    "name": "Afghanistan",
+    "nativeName": "Af\u0121\u0101nist\u0101n",
+    "tld": [
+        ".af"
+    ],
+    "cca2": "AF",
+    "ccn3": "004",
+    "cca3": "AFG",
+    "currency": [
+        "AFN"
+    ],
+    "callingCode": [
+        "93"
+    ],
+    "capital": "Kabul",
+    "altSpellings": [
+        "AF",
+        "Af\u0121\u0101nist\u0101n"
+    ],
+    "relevance": "0",
+    "region": "Asia",
+    "subregion": "Southern Asia",
+    "language": [
+        "Pashto",
+        "Dari"
+    ],
+    "languagesCodes": [
+        "ps",
+        "uz",
+        "tk"
+    ],
+    "translations": {
+        "de": "Afghanistan",
+        "en": "Afghanistan",
+        "es": "Afganist\u00e1n",
+        "fr": "Afganist\u00e1n",
+        "it": "Afghanistan",
+        "ja": "\u30a2\u30d5\u30ac\u30cb\u30b9\u30bf\u30f3",
+        "nl": "Afghanistan"
+    },
+    "population": 25500100,
+    "latlng": [
+        33,
+        65
+    ],
+    "demonym": "Afghan",
+    "id": "Afghanistan"
+}

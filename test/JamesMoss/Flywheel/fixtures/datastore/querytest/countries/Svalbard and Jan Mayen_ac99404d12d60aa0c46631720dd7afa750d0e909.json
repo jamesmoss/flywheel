@@ -1,0 +1,46 @@
+{
+    "name": "Svalbard and Jan Mayen",
+    "nativeName": "Svalbard og Jan Mayen",
+    "tld": [
+        ".sj"
+    ],
+    "cca2": "SJ",
+    "ccn3": "744",
+    "cca3": "SJM",
+    "currency": [
+        "NOK"
+    ],
+    "callingCode": [
+        "4779"
+    ],
+    "capital": "Longyearbyen",
+    "altSpellings": [
+        "SJ",
+        "Svalbard and Jan Mayen Islands"
+    ],
+    "relevance": "0.5",
+    "region": "Europe",
+    "subregion": "Northern Europe",
+    "language": [
+        "Norwegian"
+    ],
+    "languagesCodes": [
+        "no"
+    ],
+    "translations": {
+        "de": "Svalbard und Jan Mayen",
+        "en": "Svalbard and Jan Mayen",
+        "es": "Islas Svalbard y Jan Mayen",
+        "fr": "\u00celes Svalbard et Jan Mayen",
+        "it": "Svalbard e Jan Mayen",
+        "ja": "\u30b9\u30f4\u30a1\u30fc\u30eb\u30d0\u30eb\u8af8\u5cf6\u304a\u3088\u3073\u30e4\u30f3\u30de\u30a4\u30a8\u30f3\u5cf6",
+        "nl": "Svalbard en Jan Mayen"
+    },
+    "population": 2655,
+    "latlng": [
+        78,
+        20
+    ],
+    "demonym": "Norwegian",
+    "id": "Svalbard and Jan Mayen"
+}

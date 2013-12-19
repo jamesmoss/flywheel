@@ -1,0 +1,47 @@
+{
+    "name": "Spain",
+    "nativeName": "Espa\u00f1a",
+    "tld": [
+        ".es"
+    ],
+    "cca2": "ES",
+    "ccn3": "724",
+    "cca3": "ESP",
+    "currency": [
+        "EUR"
+    ],
+    "callingCode": [
+        "34"
+    ],
+    "capital": "Madrid",
+    "altSpellings": [
+        "ES",
+        "Kingdom of Spain",
+        "Reino de Espa\u00f1a"
+    ],
+    "relevance": "2",
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "language": [
+        "Spanish"
+    ],
+    "languagesCodes": [
+        "es"
+    ],
+    "translations": {
+        "de": "Spanien",
+        "en": "Spain",
+        "es": "Espa\u00f1a",
+        "fr": "Espagne",
+        "it": "Spagna",
+        "ja": "\u30b9\u30da\u30a4\u30f3",
+        "nl": "Spanje"
+    },
+    "population": 46704314,
+    "latlng": [
+        40,
+        -4
+    ],
+    "demonym": "Spanish",
+    "id": "Spain"
+}

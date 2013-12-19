@@ -1,0 +1,47 @@
+{
+    "name": "Benin",
+    "nativeName": "B\u00e9nin",
+    "tld": [
+        ".bj"
+    ],
+    "cca2": "BJ",
+    "ccn3": "204",
+    "cca3": "BEN",
+    "currency": [
+        "XOF"
+    ],
+    "callingCode": [
+        "229"
+    ],
+    "capital": "Porto-Novo",
+    "altSpellings": [
+        "BJ",
+        "Republic of Benin",
+        "R\u00e9publique du B\u00e9nin"
+    ],
+    "relevance": "0",
+    "region": "Africa",
+    "subregion": "Western Africa",
+    "language": [
+        "French"
+    ],
+    "languagesCodes": [
+        "fr"
+    ],
+    "translations": {
+        "de": "Benin",
+        "en": "Benin",
+        "es": "Ben\u00edn",
+        "fr": "B\u00e9nin",
+        "it": "Benin",
+        "ja": "\u30d9\u30ca\u30f3",
+        "nl": "Benin"
+    },
+    "population": 10323000,
+    "latlng": [
+        9.5,
+        2.25
+    ],
+    "demonym": "Beninese",
+    "id": "Benin"
+}

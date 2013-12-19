@@ -1,0 +1,41 @@
+{
+    "name": "Vietnam",
+    "nativeName": "Vi\u1ec7t Nam",
+    "tld": [
+        ".vn"
+    ],
+    "cca2": "VN",
+    "ccn3": "704",
+    "cca3": "VNM",
+    "currency": [
+        "VND"
+    ],
+    "callingCode": [
+        "84"
+    ],
+    "capital": "Hanoi",
+    "altSpellings": [
+        "VN",
+        "Socialist Republic of Vietnam",
+        "C\u1ed9ng h\u00f2a X\u00e3 h\u1ed9i ch\u1ee7 ngh\u0129a Vi\u1ec7t Nam"
+    ],
+    "relevance": "1.5",
+    "region": "Asia",
+    "subregion": "South-Eastern Asia",
+    "language": [
+        "Vietnamese"
+    ],
+    "languagesCodes": [
+
+    ],
+    "translations": [
+
+    ],
+    "population": 90388000,
+    "latlng": [
+        16.16666666,
+        107.83333333
+    ],
+    "demonym": "Vietnamese",
+    "id": "Vietnam"
+}

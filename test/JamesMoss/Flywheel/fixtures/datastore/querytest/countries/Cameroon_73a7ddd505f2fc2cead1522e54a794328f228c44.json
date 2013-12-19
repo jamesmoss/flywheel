@@ -1,0 +1,49 @@
+{
+    "name": "Cameroon",
+    "nativeName": "Cameroon",
+    "tld": [
+        ".cm"
+    ],
+    "cca2": "CM",
+    "ccn3": "120",
+    "cca3": "CMR",
+    "currency": [
+        "XAF"
+    ],
+    "callingCode": [
+        "237"
+    ],
+    "capital": "Yaound\u00e9",
+    "altSpellings": [
+        "CM",
+        "Republic of Cameroon",
+        "R\u00e9publique du Cameroun"
+    ],
+    "relevance": "0",
+    "region": "Africa",
+    "subregion": "Middle Africa",
+    "language": [
+        "French",
+        "English"
+    ],
+    "languagesCodes": [
+        "en",
+        "fr"
+    ],
+    "translations": {
+        "de": "Kamerun",
+        "en": "Cameroon",
+        "es": "Camer\u00fan",
+        "fr": "Cameroun",
+        "it": "Camerun",
+        "ja": "\u30ab\u30e1\u30eb\u30fc\u30f3",
+        "nl": "Kameroen"
+    },
+    "population": 20386799,
+    "latlng": [
+        6,
+        12
+    ],
+    "demonym": "Cameroonian",
+    "id": "Cameroon"
+}

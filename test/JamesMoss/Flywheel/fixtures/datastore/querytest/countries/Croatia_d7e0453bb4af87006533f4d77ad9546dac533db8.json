@@ -1,0 +1,48 @@
+{
+    "name": "Croatia",
+    "nativeName": "Hrvatska",
+    "tld": [
+        ".hr"
+    ],
+    "cca2": "HR",
+    "ccn3": "191",
+    "cca3": "HRV",
+    "currency": [
+        "HRK"
+    ],
+    "callingCode": [
+        "385"
+    ],
+    "capital": "Zagreb",
+    "altSpellings": [
+        "HR",
+        "Hrvatska",
+        "Republic of Croatia",
+        "Republika Hrvatska"
+    ],
+    "relevance": "0",
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "language": [
+        "Croatian"
+    ],
+    "languagesCodes": [
+        "hr"
+    ],
+    "translations": {
+        "de": "Kroatien",
+        "en": "Croatia",
+        "es": "Croacia",
+        "fr": "Croatie",
+        "it": "Croazia",
+        "ja": "\u30af\u30ed\u30a2\u30c1\u30a2",
+        "nl": "Kroati\u00eb"
+    },
+    "population": 4290612,
+    "latlng": [
+        45.16666666,
+        15.5
+    ],
+    "demonym": "Croatian",
+    "id": "Croatia"
+}

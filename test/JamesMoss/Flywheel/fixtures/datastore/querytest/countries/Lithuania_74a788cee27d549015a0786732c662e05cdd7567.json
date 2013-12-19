@@ -1,0 +1,47 @@
+{
+    "name": "Lithuania",
+    "nativeName": "Lietuva",
+    "tld": [
+        ".lt"
+    ],
+    "cca2": "LT",
+    "ccn3": "440",
+    "cca3": "LTU",
+    "currency": [
+        "LTL"
+    ],
+    "callingCode": [
+        "370"
+    ],
+    "capital": "Vilnius",
+    "altSpellings": [
+        "LT",
+        "Republic of Lithuania",
+        "Lietuvos Respublika"
+    ],
+    "relevance": "0",
+    "region": "Europe",
+    "subregion": "Northern Europe",
+    "language": [
+        "Lithuanian"
+    ],
+    "languagesCodes": [
+        "lt"
+    ],
+    "translations": {
+        "de": "Litauen",
+        "en": "Lithuania",
+        "es": "Lituania",
+        "fr": "Lituanie",
+        "it": "Lituania",
+        "ja": "\u30ea\u30c8\u30a2\u30cb\u30a2",
+        "nl": "Litouwen"
+    },
+    "population": 2950684,
+    "latlng": [
+        56,
+        24
+    ],
+    "demonym": "Lithuanian",
+    "id": "Lithuania"
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Rwanda",
+    "nativeName": "Rwanda",
+    "tld": [
+        ".rw"
+    ],
+    "cca2": "RW",
+    "ccn3": "646",
+    "cca3": "RWA",
+    "currency": [
+        "RWF"
+    ],
+    "callingCode": [
+        "250"
+    ],
+    "capital": "Kigali",
+    "altSpellings": [
+        "RW",
+        "Republic of Rwanda",
+        "Repubulika y'u Rwanda",
+        "R\u00e9publique du Rwanda"
+    ],
+    "relevance": "0",
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "language": [
+        "Kinyarwanda",
+        "French",
+        "English"
+    ],
+    "languagesCodes": [
+        "rw",
+        "en",
+        "fr"
+    ],
+    "translations": {
+        "de": "Ruanda",
+        "en": "Rwanda",
+        "es": "Ruanda",
+        "fr": "Rwanda",
+        "it": "Ruanda",
+        "ja": "\u30eb\u30ef\u30f3\u30c0",
+        "nl": "Rwanda"
+    },
+    "population": 10537222,
+    "latlng": [
+        -2,
+        30
+    ],
+    "demonym": "Rwandan",
+    "id": "Rwanda"
+}

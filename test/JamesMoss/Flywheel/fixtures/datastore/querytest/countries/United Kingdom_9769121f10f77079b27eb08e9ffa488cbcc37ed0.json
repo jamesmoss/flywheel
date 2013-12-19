@@ -1,0 +1,47 @@
+{
+    "name": "United Kingdom",
+    "nativeName": "United Kingdom",
+    "tld": [
+        ".uk"
+    ],
+    "cca2": "GB",
+    "ccn3": "826",
+    "cca3": "GBR",
+    "currency": [
+        "GBP"
+    ],
+    "callingCode": [
+        "44"
+    ],
+    "capital": "London",
+    "altSpellings": [
+        "GB",
+        "UK",
+        "Great Britain"
+    ],
+    "relevance": "2.5",
+    "region": "Europe",
+    "subregion": "Northern Europe",
+    "language": [
+        "English"
+    ],
+    "languagesCodes": [
+        "en"
+    ],
+    "translations": {
+        "de": "Vereinigtes K\u00f6nigreich",
+        "en": "United Kingdom",
+        "es": "Reino Unido",
+        "fr": "Royaume-Uni",
+        "it": "Regno Unito",
+        "ja": "\u30a4\u30ae\u30ea\u30b9",
+        "nl": "Verenigd Koninkrijk"
+    },
+    "population": 63705000,
+    "latlng": [
+        54,
+        -2
+    ],
+    "demonym": "British",
+    "id": "United Kingdom"
+}

@@ -1,0 +1,47 @@
+{
+    "name": "France",
+    "nativeName": "France",
+    "tld": [
+        ".fr"
+    ],
+    "cca2": "FR",
+    "ccn3": "250",
+    "cca3": "FRA",
+    "currency": [
+        "EUR"
+    ],
+    "callingCode": [
+        "33"
+    ],
+    "capital": "Paris",
+    "altSpellings": [
+        "FR",
+        "French Republic",
+        "R\u00e9publique fran\u00e7aise"
+    ],
+    "relevance": "2.5",
+    "region": "Europe",
+    "subregion": "Western Europe",
+    "language": [
+        "French"
+    ],
+    "languagesCodes": [
+        "fr"
+    ],
+    "translations": {
+        "de": "Frankreich",
+        "en": "France",
+        "es": "Francia",
+        "fr": "France",
+        "it": "Francia",
+        "ja": "\u30d5\u30e9\u30f3\u30b9",
+        "nl": "Frankrijk"
+    },
+    "population": 65806000,
+    "latlng": [
+        46,
+        2
+    ],
+    "demonym": "French",
+    "id": "France"
+}

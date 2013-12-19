@@ -1,0 +1,48 @@
+{
+    "name": "Brazil",
+    "nativeName": "Brasil",
+    "tld": [
+        ".br"
+    ],
+    "cca2": "BR",
+    "ccn3": "076",
+    "cca3": "BRA",
+    "currency": [
+        "BRL"
+    ],
+    "callingCode": [
+        "55"
+    ],
+    "capital": "Bras\u00edlia",
+    "altSpellings": [
+        "BR",
+        "Brasil",
+        "Federative Republic of Brazil",
+        "Rep\u00fablica Federativa do Brasil"
+    ],
+    "relevance": "2",
+    "region": "Americas",
+    "subregion": "South America",
+    "language": [
+        "Portuguese"
+    ],
+    "languagesCodes": [
+        "pt"
+    ],
+    "translations": {
+        "de": "Brasilien",
+        "en": "Brazil",
+        "es": "Brasil",
+        "fr": "Br\u00e9sil",
+        "it": "Brasile",
+        "ja": "\u30d6\u30e9\u30b8\u30eb",
+        "nl": "Brazili\u00eb"
+    },
+    "population": 201032714,
+    "latlng": [
+        -10,
+        -55
+    ],
+    "demonym": "Brazilian",
+    "id": "Brazil"
+}

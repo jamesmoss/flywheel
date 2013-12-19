@@ -1,0 +1,40 @@
+{
+    "name": "Cambodia",
+    "nativeName": "K\u00e2mp\u016dch\u00e9a",
+    "tld": [
+        ".kh"
+    ],
+    "cca2": "KH",
+    "ccn3": "116",
+    "cca3": "KHM",
+    "currency": [
+        "KHR"
+    ],
+    "callingCode": [
+        "855"
+    ],
+    "capital": "Phnom Penh",
+    "altSpellings": [
+        "KH",
+        "Kingdom of Cambodia"
+    ],
+    "relevance": "0",
+    "region": "Asia",
+    "subregion": "South-Eastern Asia",
+    "language": [
+        "Khmer"
+    ],
+    "languagesCodes": [
+
+    ],
+    "translations": [
+
+    ],
+    "population": 15135000,
+    "latlng": [
+        13,
+        105
+    ],
+    "demonym": "Cambodian",
+    "id": "Cambodia"
+}

@@ -1,0 +1,46 @@
+{
+    "name": "R\u00e9union",
+    "nativeName": "La R\u00e9union",
+    "tld": [
+        ".re"
+    ],
+    "cca2": "RE",
+    "ccn3": "638",
+    "cca3": "REU",
+    "currency": [
+        "EUR"
+    ],
+    "callingCode": [
+        "262"
+    ],
+    "capital": "Saint-Denis",
+    "altSpellings": [
+        "RE",
+        "Reunion"
+    ],
+    "relevance": "0",
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "language": [
+        "French"
+    ],
+    "languagesCodes": [
+        "fr"
+    ],
+    "translations": {
+        "de": "R\u00e9union",
+        "en": "R\u00e9union",
+        "es": "Reuni\u00f3n",
+        "fr": "R\u00e9union",
+        "it": "Riunione",
+        "ja": "\u30ec\u30e6\u30cb\u30aa\u30f3",
+        "nl": "R\u00e9union"
+    },
+    "population": 821136,
+    "latlng": [
+        -21.15,
+        55.5
+    ],
+    "demonym": "French",
+    "id": "R\u00e9union"
+}

@@ -1,0 +1,44 @@
+{
+    "name": "Republic of Kosovo",
+    "nativeName": "Republika e Kosov\u00ebs",
+    "tld": [
+        ""
+    ],
+    "cca2": "XK",
+    "ccn3": "780",
+    "cca3": "KOS",
+    "currency": [
+        "EUR"
+    ],
+    "callingCode": [
+        "377",
+        "381",
+        "386"
+    ],
+    "capital": "Pristina",
+    "altSpellings": [
+        "XK",
+        "\u0420\u0435\u043f\u0443\u0431\u043b\u0438\u043a\u0430 \u041a\u043e\u0441\u043e\u0432\u043e"
+    ],
+    "relevance": "0",
+    "region": "Europe",
+    "subregion": "Eastern Europe",
+    "language": [
+        "Albanian",
+        "Serbian"
+    ],
+    "languagesCodes": [
+        "sq",
+        "sr"
+    ],
+    "translations": [
+
+    ],
+    "population": 1733842,
+    "latlng": [
+        42.666667,
+        21.166667
+    ],
+    "demonym": "Kosovar",
+    "id": "Republic of Kosovo"
+}

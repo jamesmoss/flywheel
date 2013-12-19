@@ -1,0 +1,47 @@
+{
+    "name": "Slovakia",
+    "nativeName": "Slovensko",
+    "tld": [
+        ".sk"
+    ],
+    "cca2": "SK",
+    "ccn3": "703",
+    "cca3": "SVK",
+    "currency": [
+        "EUR"
+    ],
+    "callingCode": [
+        "421"
+    ],
+    "capital": "Bratislava",
+    "altSpellings": [
+        "SK",
+        "Slovak Republic",
+        "Slovensk\u00e1 republika"
+    ],
+    "relevance": "0",
+    "region": "Europe",
+    "subregion": "Eastern Europe",
+    "language": [
+        "Slovak"
+    ],
+    "languagesCodes": [
+        "sk"
+    ],
+    "translations": {
+        "de": "Slowakei",
+        "en": "Slovakia",
+        "es": "Rep\u00fablica Eslovaca",
+        "fr": "Slovaquie",
+        "it": "Slovacchia",
+        "ja": "\u30b9\u30ed\u30d0\u30ad\u30a2",
+        "nl": "Slowakije"
+    },
+    "population": 5412008,
+    "latlng": [
+        48.66666666,
+        19.5
+    ],
+    "demonym": "Slovak",
+    "id": "Slovakia"
+}

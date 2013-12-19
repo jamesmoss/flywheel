@@ -1,0 +1,47 @@
+{
+    "name": "Liechtenstein",
+    "nativeName": "Liechtenstein",
+    "tld": [
+        ".li"
+    ],
+    "cca2": "LI",
+    "ccn3": "438",
+    "cca3": "LIE",
+    "currency": [
+        "CHF"
+    ],
+    "callingCode": [
+        "423"
+    ],
+    "capital": "Vaduz",
+    "altSpellings": [
+        "LI",
+        "Principality of Liechtenstein",
+        "F\u00fcrstentum Liechtenstein"
+    ],
+    "relevance": "0",
+    "region": "Europe",
+    "subregion": "Western Europe",
+    "language": [
+        "German"
+    ],
+    "languagesCodes": [
+        "de"
+    ],
+    "translations": {
+        "de": "Liechtenstein",
+        "en": "Liechtenstein",
+        "es": "Liechtenstein",
+        "fr": "Liechtenstein",
+        "it": "Liechtenstein",
+        "ja": "\u30ea\u30d2\u30c6\u30f3\u30b7\u30e5\u30bf\u30a4\u30f3",
+        "nl": "Liechtenstein"
+    },
+    "population": 36842,
+    "latlng": [
+        47.26666666,
+        9.53333333
+    ],
+    "demonym": "Liechtensteiner",
+    "id": "Liechtenstein"
+}

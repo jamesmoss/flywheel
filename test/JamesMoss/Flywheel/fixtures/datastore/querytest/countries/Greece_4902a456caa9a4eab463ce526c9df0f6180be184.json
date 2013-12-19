@@ -1,0 +1,48 @@
+{
+    "name": "Greece",
+    "nativeName": "\u0395\u03bb\u03bb\u03ac\u03b4\u03b1",
+    "tld": [
+        ".gr"
+    ],
+    "cca2": "GR",
+    "ccn3": "300",
+    "cca3": "GRC",
+    "currency": [
+        "EUR"
+    ],
+    "callingCode": [
+        "30"
+    ],
+    "capital": "Athens",
+    "altSpellings": [
+        "GR",
+        "Ell\u00e1da",
+        "Hellenic Republic",
+        "\u0395\u03bb\u03bb\u03b7\u03bd\u03b9\u03ba\u03ae \u0394\u03b7\u03bc\u03bf\u03ba\u03c1\u03b1\u03c4\u03af\u03b1"
+    ],
+    "relevance": "1.5",
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "language": [
+        "Greek"
+    ],
+    "languagesCodes": [
+        "el"
+    ],
+    "translations": {
+        "de": "Griechenland",
+        "en": "Greece",
+        "es": "Grecia",
+        "fr": "Gr\u00e8ce",
+        "it": "Grecia",
+        "ja": "\u30ae\u30ea\u30b7\u30e3",
+        "nl": "Griekenland"
+    },
+    "population": 10815197,
+    "latlng": [
+        39,
+        22
+    ],
+    "demonym": "Greek",
+    "id": "Greece"
+}

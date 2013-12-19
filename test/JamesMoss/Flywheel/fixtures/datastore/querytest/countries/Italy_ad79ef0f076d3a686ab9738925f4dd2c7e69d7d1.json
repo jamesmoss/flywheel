@@ -1,0 +1,47 @@
+{
+    "name": "Italy",
+    "nativeName": "Italia",
+    "tld": [
+        ".it"
+    ],
+    "cca2": "IT",
+    "ccn3": "380",
+    "cca3": "ITA",
+    "currency": [
+        "EUR"
+    ],
+    "callingCode": [
+        "39"
+    ],
+    "capital": "Rome",
+    "altSpellings": [
+        "IT",
+        "Italian Republic",
+        "Repubblica italiana"
+    ],
+    "relevance": "2",
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "language": [
+        "Italian"
+    ],
+    "languagesCodes": [
+        "it"
+    ],
+    "translations": {
+        "de": "Italien",
+        "en": "Italy",
+        "es": "Italia",
+        "fr": "Italie",
+        "it": "Italia",
+        "ja": "\u30a4\u30bf\u30ea\u30a2",
+        "nl": "Itali\u00eb"
+    },
+    "population": 59829079,
+    "latlng": [
+        42.83333333,
+        12.83333333
+    ],
+    "demonym": "Italian",
+    "id": "Italy"
+}

@@ -1,0 +1,46 @@
+{
+    "name": "Tuvalu",
+    "nativeName": "Tuvalu",
+    "tld": [
+        ".tv"
+    ],
+    "cca2": "TV",
+    "ccn3": "798",
+    "cca3": "TUV",
+    "currency": [
+        "AUD"
+    ],
+    "callingCode": [
+        "688"
+    ],
+    "capital": "Funafuti",
+    "altSpellings": [
+        "TV"
+    ],
+    "relevance": "0.5",
+    "region": "Oceania",
+    "subregion": "Polynesia",
+    "language": [
+        "Tuvaluan",
+        "English"
+    ],
+    "languagesCodes": [
+        "en"
+    ],
+    "translations": {
+        "de": "Tuvalu",
+        "en": "Tuvalu",
+        "es": "Tuvalu",
+        "fr": "Tuvalu",
+        "it": "Tuvalu",
+        "ja": "\u30c4\u30d0\u30eb",
+        "nl": "Tuvalu"
+    },
+    "population": 11323,
+    "latlng": [
+        -8,
+        178
+    ],
+    "demonym": "Tuvaluan",
+    "id": "Tuvalu"
+}

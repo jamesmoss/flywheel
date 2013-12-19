@@ -1,0 +1,47 @@
+{
+    "name": "Nepal",
+    "nativeName": "\u0928\u092a\u0932",
+    "tld": [
+        ".np"
+    ],
+    "cca2": "NP",
+    "ccn3": "524",
+    "cca3": "NPL",
+    "currency": [
+        "NPR"
+    ],
+    "callingCode": [
+        "977"
+    ],
+    "capital": "Kathmandu",
+    "altSpellings": [
+        "NP",
+        "Federal Democratic Republic of Nepal",
+        "Lokt\u0101ntrik Ganatantra Nep\u0101l"
+    ],
+    "relevance": "0",
+    "region": "Asia",
+    "subregion": "Southern Asia",
+    "language": [
+        "Nepali"
+    ],
+    "languagesCodes": [
+        "ne"
+    ],
+    "translations": {
+        "de": "N\u00e9pal",
+        "en": "Nepal",
+        "es": "Nepal",
+        "fr": "Nepal",
+        "it": "Nepal",
+        "ja": "\u30cd\u30d1\u30fc\u30eb",
+        "nl": "Nepal"
+    },
+    "population": 26494504,
+    "latlng": [
+        28,
+        84
+    ],
+    "demonym": "Nepalese",
+    "id": "Nepal"
+}

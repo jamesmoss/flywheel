@@ -1,0 +1,48 @@
+{
+    "name": "Cuba",
+    "nativeName": "Cuba",
+    "tld": [
+        ".cu"
+    ],
+    "cca2": "CU",
+    "ccn3": "192",
+    "cca3": "CUB",
+    "currency": [
+        "CUC",
+        "CUP"
+    ],
+    "callingCode": [
+        "53"
+    ],
+    "capital": "Havana",
+    "altSpellings": [
+        "CU",
+        "Republic of Cuba",
+        "Rep\u00fablica de Cuba"
+    ],
+    "relevance": "0",
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "language": [
+        "Spanish"
+    ],
+    "languagesCodes": [
+        "es"
+    ],
+    "translations": {
+        "de": "Kuba",
+        "en": "Cuba",
+        "es": "Cuba",
+        "fr": "Cuba",
+        "it": "Cuba",
+        "ja": "\u30ad\u30e5\u30fc\u30d0",
+        "nl": "Cuba"
+    },
+    "population": 11167325,
+    "latlng": [
+        21.5,
+        -80
+    ],
+    "demonym": "Cuban",
+    "id": "Cuba"
+}

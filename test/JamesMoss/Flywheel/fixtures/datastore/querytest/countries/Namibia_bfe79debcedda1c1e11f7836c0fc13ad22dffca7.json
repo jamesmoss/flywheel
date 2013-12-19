@@ -1,0 +1,49 @@
+{
+    "name": "Namibia",
+    "nativeName": "Namibia",
+    "tld": [
+        ".na"
+    ],
+    "cca2": "NA",
+    "ccn3": "516",
+    "cca3": "NAM",
+    "currency": [
+        "NAD",
+        "ZAR"
+    ],
+    "callingCode": [
+        "264"
+    ],
+    "capital": "Windhoek",
+    "altSpellings": [
+        "NA",
+        "Namibi\u00eb",
+        "Republic of Namibia"
+    ],
+    "relevance": "0",
+    "region": "Africa",
+    "subregion": "Southern Africa",
+    "language": [
+        "English"
+    ],
+    "languagesCodes": [
+        "en",
+        "af"
+    ],
+    "translations": {
+        "de": "Namibia",
+        "en": "Namibia",
+        "es": "Namibia",
+        "fr": "Namibie",
+        "it": "Namibia",
+        "ja": "\u30ca\u30df\u30d3\u30a2",
+        "nl": "Namibi\u00eb"
+    },
+    "population": 2113077,
+    "latlng": [
+        -22,
+        17
+    ],
+    "demonym": "Namibian",
+    "id": "Namibia"
+}

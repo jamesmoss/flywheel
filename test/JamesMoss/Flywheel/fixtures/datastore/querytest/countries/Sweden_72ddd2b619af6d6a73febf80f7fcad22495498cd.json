@@ -1,0 +1,47 @@
+{
+    "name": "Sweden",
+    "nativeName": "Sverige",
+    "tld": [
+        ".se"
+    ],
+    "cca2": "SE",
+    "ccn3": "752",
+    "cca3": "SWE",
+    "currency": [
+        "SEK"
+    ],
+    "callingCode": [
+        "46"
+    ],
+    "capital": "Stockholm",
+    "altSpellings": [
+        "SE",
+        "Kingdom of Sweden",
+        "Konungariket Sverige"
+    ],
+    "relevance": "1.5",
+    "region": "Europe",
+    "subregion": "Northern Europe",
+    "language": [
+        "Swedish"
+    ],
+    "languagesCodes": [
+        "sv"
+    ],
+    "translations": {
+        "de": "Schweden",
+        "en": "Sweden",
+        "es": "Suecia",
+        "fr": "Su\u00e8de",
+        "it": "Svezia",
+        "ja": "\u30b9\u30a6\u30a7\u30fc\u30c7\u30f3",
+        "nl": "Zweden"
+    },
+    "population": 9625444,
+    "latlng": [
+        62,
+        15
+    ],
+    "demonym": "Swedish",
+    "id": "Sweden"
+}

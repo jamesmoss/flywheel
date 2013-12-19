@@ -1,0 +1,46 @@
+{
+    "name": "Aruba",
+    "nativeName": "Aruba",
+    "tld": [
+        ".aw"
+    ],
+    "cca2": "AW",
+    "ccn3": "533",
+    "cca3": "ABW",
+    "currency": [
+        "AWG"
+    ],
+    "callingCode": [
+        "297"
+    ],
+    "capital": "Oranjestad",
+    "altSpellings": [
+        "AW"
+    ],
+    "relevance": "0.5",
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "language": [
+        "Dutch",
+        "Papiamento"
+    ],
+    "languagesCodes": [
+        "nl"
+    ],
+    "translations": {
+        "de": "Aruba",
+        "en": "Aruba",
+        "es": "Aruba",
+        "fr": "Aruba",
+        "it": "Aruba",
+        "ja": "\u30a2\u30eb\u30d0",
+        "nl": "Aruba"
+    },
+    "population": 101484,
+    "latlng": [
+        12.5,
+        -69.96666666
+    ],
+    "demonym": "Aruban",
+    "id": "Aruba"
+}

@@ -1,0 +1,48 @@
+{
+    "name": "Uruguay",
+    "nativeName": "Uruguay",
+    "tld": [
+        ".uy"
+    ],
+    "cca2": "UY",
+    "ccn3": "858",
+    "cca3": "URY",
+    "currency": [
+        "UYI",
+        "UYU"
+    ],
+    "callingCode": [
+        "598"
+    ],
+    "capital": "Montevideo",
+    "altSpellings": [
+        "UY",
+        "Oriental Republic of Uruguay",
+        "Rep\u00fablica Oriental del Uruguay"
+    ],
+    "relevance": "0",
+    "region": "Americas",
+    "subregion": "South America",
+    "language": [
+        "Spanish"
+    ],
+    "languagesCodes": [
+        "es"
+    ],
+    "translations": {
+        "de": "Uruguay",
+        "en": "Uruguay",
+        "es": "Uruguay",
+        "fr": "Uruguay",
+        "it": "Uruguay",
+        "ja": "\u30a6\u30eb\u30b0\u30a2\u30a4",
+        "nl": "Uruguay"
+    },
+    "population": 3286314,
+    "latlng": [
+        -33,
+        -56
+    ],
+    "demonym": "Uruguayan",
+    "id": "Uruguay"
+}

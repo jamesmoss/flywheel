@@ -1,0 +1,47 @@
+{
+    "name": "Dominican Republic",
+    "nativeName": "Rep\u00fablica Dominicana",
+    "tld": [
+        ".do"
+    ],
+    "cca2": "DO",
+    "ccn3": "214",
+    "cca3": "DOM",
+    "currency": [
+        "DOP"
+    ],
+    "callingCode": [
+        "1809",
+        "1829",
+        "1849"
+    ],
+    "capital": "Santo Domingo",
+    "altSpellings": [
+        "DO"
+    ],
+    "relevance": "0",
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "language": [
+        "Spanish"
+    ],
+    "languagesCodes": [
+        "es"
+    ],
+    "translations": {
+        "de": "Dominikanische Republik",
+        "en": "Dominican Republic",
+        "es": "Rep\u00fablica Dominicana",
+        "fr": "R\u00e9publique Dominicaine",
+        "it": "Repubblica Dominicana",
+        "ja": "\u30c9\u30df\u30cb\u30ab\u5171\u548c\u56fd",
+        "nl": "Dominicaanse Republiek"
+    },
+    "population": 9445281,
+    "latlng": [
+        19,
+        -70.66666666
+    ],
+    "demonym": "Dominican",
+    "id": "Dominican Republic"
+}

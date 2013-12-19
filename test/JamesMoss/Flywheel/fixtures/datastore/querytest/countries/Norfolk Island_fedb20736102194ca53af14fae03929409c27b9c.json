@@ -1,0 +1,45 @@
+{
+    "name": "Norfolk Island",
+    "nativeName": "Norfolk Island",
+    "tld": [
+        ".nf"
+    ],
+    "cca2": "NF",
+    "ccn3": "574",
+    "cca3": "NFK",
+    "currency": [
+        "AUD"
+    ],
+    "callingCode": [
+        "672"
+    ],
+    "capital": "Kingston",
+    "altSpellings": [
+        "NF",
+        "Territory of Norfolk Island",
+        "Teratri of Norf'k Ailen"
+    ],
+    "relevance": "0.5",
+    "region": "Oceania",
+    "subregion": [
+        "Australia",
+        "New Zealand"
+    ],
+    "language": [
+        "English",
+        "Norfuk"
+    ],
+    "languagesCodes": [
+
+    ],
+    "translations": [
+
+    ],
+    "population": 2302,
+    "latlng": [
+        -29.03333333,
+        167.95
+    ],
+    "demonym": "Norfolk Islander",
+    "id": "Norfolk Island"
+}

@@ -1,0 +1,46 @@
+{
+    "name": "Guyana",
+    "nativeName": "Guyana",
+    "tld": [
+        ".gy"
+    ],
+    "cca2": "GY",
+    "ccn3": "328",
+    "cca3": "GUY",
+    "currency": [
+        "GYD"
+    ],
+    "callingCode": [
+        "592"
+    ],
+    "capital": "Georgetown",
+    "altSpellings": [
+        "GY",
+        "Co-operative Republic of Guyana"
+    ],
+    "relevance": "0",
+    "region": "Americas",
+    "subregion": "South America",
+    "language": [
+        "English"
+    ],
+    "languagesCodes": [
+        "en"
+    ],
+    "translations": {
+        "de": "Guyana",
+        "en": "Guyana",
+        "es": "Guyana",
+        "fr": "Guyane",
+        "it": "Guyana",
+        "ja": "\u30ac\u30a4\u30a2\u30ca",
+        "nl": "Guyana"
+    },
+    "population": 784894,
+    "latlng": [
+        5,
+        -59
+    ],
+    "demonym": "Guyanese",
+    "id": "Guyana"
+}

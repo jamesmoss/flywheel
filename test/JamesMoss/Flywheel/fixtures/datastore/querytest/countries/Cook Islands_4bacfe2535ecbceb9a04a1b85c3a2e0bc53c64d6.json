@@ -1,0 +1,47 @@
+{
+    "name": "Cook Islands",
+    "nativeName": "Cook Islands",
+    "tld": [
+        ".ck"
+    ],
+    "cca2": "CK",
+    "ccn3": "184",
+    "cca3": "COK",
+    "currency": [
+        "NZD"
+    ],
+    "callingCode": [
+        "682"
+    ],
+    "capital": "Avarua",
+    "altSpellings": [
+        "CK",
+        "K\u016bki '\u0100irani"
+    ],
+    "relevance": "0.5",
+    "region": "Oceania",
+    "subregion": "Polynesia",
+    "language": [
+        "English",
+        "Cook Islands M\u0101ori"
+    ],
+    "languagesCodes": [
+        "en"
+    ],
+    "translations": {
+        "de": "Cookinseln",
+        "en": "Cook Islands",
+        "es": "Islas Cook",
+        "fr": "\u00celes Cook",
+        "it": "Isole Cook",
+        "ja": "\u30af\u30c3\u30af\u8af8\u5cf6",
+        "nl": "Cookeilanden"
+    },
+    "population": 14974,
+    "latlng": [
+        -21.23333333,
+        -159.76666666
+    ],
+    "demonym": "Cook Islander",
+    "id": "Cook Islands"
+}

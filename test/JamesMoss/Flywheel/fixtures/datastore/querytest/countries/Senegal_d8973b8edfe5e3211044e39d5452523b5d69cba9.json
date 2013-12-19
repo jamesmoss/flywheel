@@ -1,0 +1,47 @@
+{
+    "name": "Senegal",
+    "nativeName": "S\u00e9n\u00e9gal",
+    "tld": [
+        ".sn"
+    ],
+    "cca2": "SN",
+    "ccn3": "686",
+    "cca3": "SEN",
+    "currency": [
+        "XOF"
+    ],
+    "callingCode": [
+        "221"
+    ],
+    "capital": "Dakar",
+    "altSpellings": [
+        "SN",
+        "Republic of Senegal",
+        "R\u00e9publique du S\u00e9n\u00e9gal"
+    ],
+    "relevance": "0",
+    "region": "Africa",
+    "subregion": "Western Africa",
+    "language": [
+        "French"
+    ],
+    "languagesCodes": [
+        "fr"
+    ],
+    "translations": {
+        "de": "Senegal",
+        "en": "Senegal",
+        "es": "Senegal",
+        "fr": "S\u00e9n\u00e9gal",
+        "it": "Senegal",
+        "ja": "\u30bb\u30cd\u30ac\u30eb",
+        "nl": "Senegal"
+    },
+    "population": 13567338,
+    "latlng": [
+        14,
+        -14
+    ],
+    "demonym": "Senegalese",
+    "id": "Senegal"
+}

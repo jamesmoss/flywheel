@@ -1,0 +1,47 @@
+{
+    "name": "Nicaragua",
+    "nativeName": "Nicaragua",
+    "tld": [
+        ".ni"
+    ],
+    "cca2": "NI",
+    "ccn3": "558",
+    "cca3": "NIC",
+    "currency": [
+        "NIO"
+    ],
+    "callingCode": [
+        "505"
+    ],
+    "capital": "Managua",
+    "altSpellings": [
+        "NI",
+        "Republic of Nicaragua",
+        "Rep\u00fablica de Nicaragua"
+    ],
+    "relevance": "0",
+    "region": "Americas",
+    "subregion": "Central America",
+    "language": [
+        "Spanish"
+    ],
+    "languagesCodes": [
+        "es"
+    ],
+    "translations": {
+        "de": "Nicaragua",
+        "en": "Nicaragua",
+        "es": "Nicaragua",
+        "fr": "Nicaragua",
+        "it": "Nicaragua",
+        "ja": "\u30cb\u30ab\u30e9\u30b0\u30a2",
+        "nl": "Nicaragua"
+    },
+    "population": 6071045,
+    "latlng": [
+        13,
+        -85
+    ],
+    "demonym": "Nicaraguan",
+    "id": "Nicaragua"
+}

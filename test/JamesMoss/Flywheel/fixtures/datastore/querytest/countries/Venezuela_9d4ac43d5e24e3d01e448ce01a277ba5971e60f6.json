@@ -1,0 +1,47 @@
+{
+    "name": "Venezuela",
+    "nativeName": "Venezuela",
+    "tld": [
+        ".ve"
+    ],
+    "cca2": "VE",
+    "ccn3": "862",
+    "cca3": "VEN",
+    "currency": [
+        "VEF"
+    ],
+    "callingCode": [
+        "58"
+    ],
+    "capital": "Caracas",
+    "altSpellings": [
+        "VE",
+        "Bolivarian Republic of Venezuela",
+        "Rep\u00fablica Bolivariana de Venezuela"
+    ],
+    "relevance": "0",
+    "region": "Americas",
+    "subregion": "South America",
+    "language": [
+        "Spanish"
+    ],
+    "languagesCodes": [
+        "es"
+    ],
+    "translations": {
+        "de": "Venezuela",
+        "en": "Venezuela",
+        "es": "Venezuela",
+        "fr": "Venezuela",
+        "it": "Venezuela",
+        "ja": "\u30d9\u30cd\u30ba\u30a8\u30e9\u30fb\u30dc\u30ea\u30d0\u30eb\u5171\u548c\u56fd",
+        "nl": "Venezuela"
+    },
+    "population": 28946101,
+    "latlng": [
+        8,
+        -66
+    ],
+    "demonym": "Venezuelan",
+    "id": "Venezuela"
+}

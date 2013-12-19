@@ -1,0 +1,48 @@
+{
+    "name": "Azerbaijan",
+    "nativeName": "Az\u0259rbaycan",
+    "tld": [
+        ".az"
+    ],
+    "cca2": "AZ",
+    "ccn3": "031",
+    "cca3": "AZE",
+    "currency": [
+        "AZN"
+    ],
+    "callingCode": [
+        "994"
+    ],
+    "capital": "Baku",
+    "altSpellings": [
+        "AZ",
+        "Republic of Azerbaijan",
+        "Az\u0259rbaycan Respublikas\u0131"
+    ],
+    "relevance": "0",
+    "region": "Asia",
+    "subregion": "Western Asia",
+    "language": [
+        "Azerbaijani"
+    ],
+    "languagesCodes": [
+        "az",
+        "hy"
+    ],
+    "translations": {
+        "de": "Aserbaidschan",
+        "en": "Azerbaijan",
+        "es": "Azerbaiy\u00e1n",
+        "fr": "Azerba\u00efdjan",
+        "it": "Azerbaijan",
+        "ja": "\u30a2\u30bc\u30eb\u30d0\u30a4\u30b8\u30e3\u30f3",
+        "nl": "Azerbeidzjan"
+    },
+    "population": 9235100,
+    "latlng": [
+        40.5,
+        47.5
+    ],
+    "demonym": "Azerbaijani",
+    "id": "Azerbaijan"
+}

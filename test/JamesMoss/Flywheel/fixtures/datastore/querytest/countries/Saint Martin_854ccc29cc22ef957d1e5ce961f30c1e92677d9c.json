@@ -1,0 +1,51 @@
+{
+    "name": "Saint Martin",
+    "nativeName": "Saint-Martin",
+    "tld": [
+        ".mf",
+        ".fr",
+        ".gp"
+    ],
+    "cca2": "MF",
+    "ccn3": "663",
+    "cca3": "MAF",
+    "currency": [
+        "EUR"
+    ],
+    "callingCode": [
+        "590"
+    ],
+    "capital": "Marigot",
+    "altSpellings": [
+        "MF",
+        "Collectivity of Saint Martin",
+        "Collectivit\u00e9 de Saint-Martin"
+    ],
+    "relevance": "0",
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "language": [
+        "French"
+    ],
+    "languagesCodes": [
+        "en",
+        "fr",
+        "nl"
+    ],
+    "translations": {
+        "de": "Saint Martin",
+        "en": "Saint Martin",
+        "es": "Saint Martin",
+        "fr": "Saint-Martin",
+        "it": "Saint Martin",
+        "ja": "\u30b5\u30f3\u30fb\u30de\u30eb\u30bf\u30f3\uff08\u30d5\u30e9\u30f3\u30b9\u9818\uff09",
+        "nl": "Saint-Martin"
+    },
+    "population": -1,
+    "latlng": [
+        18.08333333,
+        -63.95
+    ],
+    "demonym": "Saint Martin Islander",
+    "id": "Saint Martin"
+}
