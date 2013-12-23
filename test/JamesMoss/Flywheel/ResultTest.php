@@ -53,7 +53,7 @@ class ResultTest extends \PHPUnit_Framework_TestCase
     {
         $result = $this->getTestResult();
 
-        $this->assertSame(1234, $result->getTotal());
+        $this->assertSame(1234, $result->total());
     }
 
     protected function getTestResult()

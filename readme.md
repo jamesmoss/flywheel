@@ -4,7 +4,7 @@
 
 A lightweight, flat-file, document database for PHP.
 
-Flywheel is opinionated software
+Flywheel is opinionated software. The following is assumed:
 
 - Simple data structures are best.
 - You're not going to be storing tens of thousands of documents.
@@ -28,7 +28,54 @@ You can use this lib without Composer but you'll need to provide your own PSR-0 
 
 ## Use
 
-// TODO
+```
+$config = new \Flywheel\Config('path/to/writable/directory');
+$repo = new \Flywheel\Repository($config, 'posts');
+
+// Storing a new document
+$post = new \Flywheel\Document(array(
+    'title'     => 'An introduction to flywheel',
+    'dateAdded' => new \DateTime('2013-10-10'),
+    'body'      => 'A lightweight, flat-file, document database for PHP...',
+    'wordCount' => 7,
+));
+
+$id = $repo->store($document);
+
+echo $id; // Czk6SPu4X
+
+$repo->add($document);
+$repo->update($document);
+
+// Retrieving documents
+$posts = $repo->query()
+    ->where('dateAdded', '>', new \DateTime('2013-11-18'))
+    ->orderBy('wordCount DESC')
+    ->limit(10, 5)
+    ->execute();
+
+echo count($posts); // 5 the number of documents returned in this result
+echo $posts->total() // 33 the number of documents if no limit was applied. Useful for pagination.
+
+foreach($posts as $post) {
+    echo $post->title;
+}
+
+// updating documents
+
+
+```
+
+## Todo
+
+- Indexing
+- Caching
+- One-to-one and many-to-one joins.
+- Events system.
+- Atomic updates.
+- Result helper methods.
+- Option to rehydrate dates as datetime objects?
+- Serialisation formats? JSON, PHP serialized, PHP raw?
     
 ## Running tests
 

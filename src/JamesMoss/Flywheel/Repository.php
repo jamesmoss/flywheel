@@ -24,6 +24,11 @@ class Repository
         return $this->name;
     }
 
+    public function query()
+    {
+        return new Query($this);
+    }
+
     public function findAll()
     {
         $files     = glob($this->path . '/*.json') or array();

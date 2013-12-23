@@ -34,6 +34,7 @@ class Query
 
     public function where($field, $operator, $value)
     {
+        // todo, validate tese args
         $this->where = array($field, $operator, $value);
 
         return $this;

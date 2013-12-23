@@ -18,7 +18,7 @@ class Result implements \IteratorAggregate, \ArrayAccess, \Countable
         return count($this->documents);
     }
 
-    public function getTotal()
+    public function total()
     {
         return $this->total;
     }
