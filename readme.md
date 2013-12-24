@@ -4,6 +4,22 @@
 
 A lightweight, flat-file, document database for PHP.
 
+Often MySQL can be overkill for a small site or blog installation. Although it's present by as standard
+on many hosting packages it still requires several manual steps including configuration, user and databases 
+creation etc.
+
+Additionally, content stored in MySQL databases is impossible (or at least very 
+difficult) to track using version control software. This makes sharing a site or app 
+between a team difficult, requiring everybody to have access to a master database or
+their own copy. There's also complications when apps are setup on staging servers
+and changes that users make must be reflected in a developer's local copy.
+You've probably come up against this issue in the past and it's all a bit of a mess.
+
+Flywheel hopes to enable a new breed of PHP apps and libraries by giving developers access
+to a datastore that acts in a similar way to a traditional database but has no
+external dependencies. Documents (essentially associative arrays), can be saved and retrieved,
+sorted and limited.
+
 Flywheel is opinionated software. The following is assumed:
 
 - Simple data structures are best.

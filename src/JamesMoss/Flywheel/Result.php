@@ -47,4 +47,40 @@ class Result implements \IteratorAggregate, \ArrayAccess, \Countable
     {
         return isset($this->documents[$offset]) ? $this->documents[$offset] : null;
     }
+
+    public function first()
+    {
+        return isset($this->documents[0]) ? $this->documents[0] : false;
+    }
+
+    public function value()
+    {
+        $first = (array)$this->first();
+        reset($first);
+        $index = key($first);
+
+        return $first[$index];
+    }
+
+    public function pick($field)
+    {
+        $result = array();
+
+        foreach($this->documents as $document) {
+            $result[] = $document->{$field};
+        }
+
+        return $result;
+    }
+
+    public function hash($keyField, $valueField)
+    {
+        $result = array();
+
+        foreach($this->documents as $document) {
+            $result[$document->{$keyField}] = $document->{$valueField};
+        }
+
+        return $result;
+    }
 }
