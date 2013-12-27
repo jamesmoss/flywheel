@@ -44,7 +44,7 @@ You can use this lib without Composer but you'll need to provide your own PSR-0 
 
 ## Use
 
-```
+```php
 $config = new \Flywheel\Config('path/to/writable/directory');
 $repo = new \Flywheel\Repository($config, 'posts');
 
@@ -91,7 +91,7 @@ foreach($posts as $post) {
 - Atomic updates.
 - Result helper methods.
 - Option to rehydrate dates as datetime objects?
-- Serialisation formats? JSON, PHP serialized, PHP raw?
+- Serialisation formats? JSON, YAML, PHP serialized, PHP raw?
     
 ## Running tests
 

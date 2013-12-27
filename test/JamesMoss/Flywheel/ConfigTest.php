@@ -32,4 +32,13 @@ class ConfigTest extends \PHPUnit_Framework_TestCase
 
         $this->assertSame($path, $config->getPath());
     }
+
+    public function testSettingOptions()
+    {
+        $path   = __DIR__ . '/fixtures/datastore/writable';
+        $config = new Config($path, array('bob' => true));
+
+        $this->assertTrue($config->getOption('bob'));
+        $this->assertNull($config->getOption('nonexistant'));
+    }
 }
