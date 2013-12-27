@@ -45,6 +45,15 @@ class Query
         return $this;
     }
 
+    /**
+     * Sets the fields to order the results by. They should be in the
+     * the format 'fieldname ASC|DESC'. e.g 'dateAdded DESC'.
+     *
+     * @param  mixed $fields An array comprising strings in the above format
+     *                       (or a single string)
+     *
+     * @return Query         The same instance of this class.
+     */
     public function orderBy($fields)
     {
         $this->orderBy = (array)$fields;
@@ -52,6 +61,15 @@ class Query
         return $this;
     }
 
+    /**
+     * Sets the predicates for this query,
+     *
+     * @param  string $field    The name of the field to match.
+     * @param  string $operator An operator from the allowed list.
+     * @param  string $value    The value to compare against.
+     *
+     * @return Query           The same instance of this class.
+     */
     public function where($field, $operator, $value)
     {
         // todo, validate these args
@@ -60,6 +78,11 @@ class Query
         return $this;
     }
 
+    /**
+     * Runs the query.
+     *
+     * @return Result The documents returned from this query.
+     */
     public function execute()
     {
         $documents = $this->repo->findAll();
@@ -106,7 +129,15 @@ class Query
         return $documents; 
     }
 
-    protected function sort($array, $args) {
+    /**
+     * Sorts an array of documents by multiple fields if needed.
+     *
+     * @param  array $array An array of Documents.
+     * @param  array $args  The fields to sort by.
+     *
+     * @return array        The sorted array of documents.
+     */
+    protected function sort(array $array, array $args) {
         $c = count($args);
 
         usort($array, function($a, $b) use($args, $c) {
