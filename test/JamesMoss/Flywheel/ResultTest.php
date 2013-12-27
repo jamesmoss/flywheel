@@ -81,15 +81,22 @@ class ResultTest extends \PHPUnit_Framework_TestCase
     public function testValue()
     {
         $result = $this->getTestResult();
-        $doc    = $result->value();
+        $doc    = $result->value('id');
         $this->assertSame(6, $doc);
     }
 
     public function testValueNoResults()
     {
         $result = $this->getEmptyTestResult();
-        $doc    = $result->value();
+        $doc    = $result->value('age');
 
+        $this->assertFalse($doc);
+    }
+
+    public function testValueKeyDoesntExist()
+    {
+        $result = $this->getTestResult();
+        $doc    = $result->value('height');
         $this->assertFalse($doc);
     }
 

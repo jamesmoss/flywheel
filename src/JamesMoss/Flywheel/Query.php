@@ -2,6 +2,12 @@
 
 namespace JamesMoss\Flywheel;
 
+/**
+ * Query
+ *
+ * Builds an executes a query whichs searches and sorts documents from a 
+ * repository.
+ */
 class Query
 {
     protected $repo;
@@ -13,11 +19,25 @@ class Query
         '>', '>=', '<', '<=', '==', '===',
     );
 
+    /**
+     * Constructor
+     *
+     * @param Repository $repository The repo this query will run against.
+     */
     public function __construct(Repository $repository)
     {
         $this->repo = $repository;
     }
 
+    /**
+     * Set a limit on the number of documents returned. An offset from 0 can
+     * also be specified.
+     *
+     * @param  int $count  The number of documents to return.
+     * @param  int $offset The offset from which to return.
+     *
+     * @return Query       The same instance of this class.
+     */
     public function limit($count, $offset)
     {
         $this->limit = array((int)$count, (int)$offset);
