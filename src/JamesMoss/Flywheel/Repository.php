@@ -26,7 +26,9 @@ class Repository
 
     public function query()
     {
-        return new Query($this);
+        $className = '\\JamesMoss\\FlyWheel\\Query';
+        
+        return new $className($this);
     }
 
     public function findAll()
