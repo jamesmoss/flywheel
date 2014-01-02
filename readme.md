@@ -50,18 +50,19 @@ $repo = new \Flywheel\Repository($config, 'posts');
 
 // Storing a new document
 $post = new \Flywheel\Document(array(
-    'title'     => 'An introduction to flywheel',
+    'title'     => 'An introduction to Flywheel',
     'dateAdded' => new \DateTime('2013-10-10'),
     'body'      => 'A lightweight, flat-file, document database for PHP...',
     'wordCount' => 7,
 ));
 
-$id = $repo->store($document);
+echo $post->title; // An introduction to Flywheel
+echo $post->wordCount; // 7
+
+$id = $repo->store($post);
 
 echo $id; // Czk6SPu4X
-
-$repo->add($document);
-$repo->update($document);
+echo $post->id; // Czk6SPu4X
 
 // Retrieving documents
 $posts = $repo->query()
@@ -77,25 +78,35 @@ foreach($posts as $post) {
     echo $post->title;
 }
 
-// updating documents
+// Updating documents
+$post->title = 'How to update documents';
 
+// Updates the document (only if it already exists)
+$repo->update($post); 
+
+// Updates the document (if it doesnt exist, it gets inserted)
+$repo->replace($post); 
+
+
+// Deleting documents - you can pass a document or it's ID.
+$repo->delete($post);
+$repo->delete('Czk6SPu4X');
 
 ```
 
 ## Todo
 
 - Indexing
-- Caching
-- One-to-one and many-to-one joins.
+- Simple one-to-one and many-to-one joins.
 - Events system.
 - Atomic updates.
-- Result helper methods.
 - Option to rehydrate dates as datetime objects?
-- Serialisation formats? JSON, YAML, PHP serialized, PHP raw?
+- More serialisation formats? JSON, YAML, PHP serialized, PHP raw?
+- More mocks in unit tests.
     
 ## Running tests
 
-There is 100% test coverage at the moment. If you'd like to run the tests yourself, use the following:
+There is good test coverage at the moment. If you'd like to run the tests yourself, use the following:
 
     $ composer update
     $ phpunit
