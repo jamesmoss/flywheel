@@ -46,6 +46,17 @@ class Repository
     }
 
     /**
+     * Returns the filesystem path of this repository.
+     *
+     * @return string The path where documents are stored.
+     */
+    public function getPath()
+    {
+        return $this->path;
+    }
+
+
+    /**
      * A factory method that initialises and returns an instance of a Query
      * object (or a class that extends it such as CachedQuery).
      *
