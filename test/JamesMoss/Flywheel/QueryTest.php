@@ -8,7 +8,7 @@ class QueryTest extends \PHPUnit_Framework_TestCase
     {
         $path   = __DIR__ . '/fixtures/datastore/querytest';
         $config = new Config($path . '/');
-        $repo   = new Repository($config, 'countries');
+        $repo   = new Repository('countries', $config);
         $query  = new Query($repo);
         
 
@@ -20,7 +20,7 @@ class QueryTest extends \PHPUnit_Framework_TestCase
     {
         $path   = __DIR__ . '/fixtures/datastore/querytest';
         $config = new Config($path . '/');
-        $repo   = new Repository($config, 'countries');
+        $repo   = new Repository('countries', $config);
         $query  = new Query($repo);
         
         $query->orderBy('capital DESC');

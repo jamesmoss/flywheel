@@ -15,10 +15,10 @@ class Repository
     /**
      * Constructor
      *
-     * @param Config $config The config to use for this repo
      * @param string $name   The name of the repository. Must match /[A-Za-z0-9_-]{1,63}+/
+     * @param Config $config The config to use for this repo
      */
-    public function __construct(Config $config, $name)
+    public function __construct($name, Config $config)
     {
         // Setup class properties
         $this->name = $name;

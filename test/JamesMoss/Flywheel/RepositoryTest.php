@@ -10,7 +10,7 @@ class RespositoryTest extends \PHPUnit_Framework_TestCase
     public function testValidRepoName($name)
     {
         $config = new Config('/tmp');
-        $repo = new Repository($config, $name);
+        $repo = new Repository($name, $config);
         $this->assertSame($name, $repo->getName());
     }
 
@@ -21,7 +21,7 @@ class RespositoryTest extends \PHPUnit_Framework_TestCase
     public function testInvalidRepoName($name)
     {
         $config = new Config('/tmp');
-        $repo = new Repository($config, $name);
+        $repo = new Repository($name, $config);
     }
 
     public function testStoringDocuments()
@@ -30,7 +30,7 @@ class RespositoryTest extends \PHPUnit_Framework_TestCase
             mkdir('/tmp/flywheel');  
         }
         $config = new Config('/tmp/flywheel');
-        $repo   = new Repository($config, '_pages');
+        $repo   = new Repository('_pages', $config);
 
         for($i = 0; $i < 5; $i++) {
 
@@ -52,7 +52,7 @@ class RespositoryTest extends \PHPUnit_Framework_TestCase
     public function testDeletingDocuments()
     {
         $config = new Config('/tmp/flywheel');
-        $repo   = new Repository($config, '_pages');
+        $repo   = new Repository('_pages', $config);
         $id     = 'delete_test';
         $name   = $id . '_' . sha1($id) . '.json';
         $path   = '/tmp/flywheel/_pages/' . $name;

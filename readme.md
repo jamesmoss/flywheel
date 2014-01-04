@@ -46,7 +46,7 @@ You can use this lib without Composer but you'll need to provide your own PSR-0 
 
 ```php
 $config = new \Flywheel\Config('path/to/writable/directory');
-$repo = new \Flywheel\Repository($config, 'posts');
+$repo = new \Flywheel\Repository('posts', $config);
 
 // Storing a new document
 $post = new \Flywheel\Document(array(
