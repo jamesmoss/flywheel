@@ -24,6 +24,14 @@ class RespositoryTest extends \PHPUnit_Framework_TestCase
         $repo = new Repository($name, $config);
     }
 
+    public function testGettingQueryObject()
+    {
+        $config = new Config('/tmp');
+        $repo   = new Repository('flywheeltest', $config);
+
+        $this->assertInstanceOf('JamesMoss\\Flywheel\\Query', $repo->query());
+    }
+
     public function testStoringDocuments()
     {
         if(!is_dir('/tmp/flywheel')) {

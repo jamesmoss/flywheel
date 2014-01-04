@@ -45,11 +45,11 @@ You can use this lib without Composer but you'll need to provide your own PSR-0 
 ## Use
 
 ```php
-$config = new \Flywheel\Config('path/to/writable/directory');
-$repo = new \Flywheel\Repository('posts', $config);
+$config = new \JamesMoss\Flywheel\Config('path/to/writable/directory');
+$repo = new \JamesMoss\Flywheel\Repository('posts', $config);
 
 // Storing a new document
-$post = new \Flywheel\Document(array(
+$post = new \JamesMoss\Flywheel\Document(array(
     'title'     => 'An introduction to Flywheel',
     'dateAdded' => new \DateTime('2013-10-10'),
     'body'      => 'A lightweight, flat-file, document database for PHP...',

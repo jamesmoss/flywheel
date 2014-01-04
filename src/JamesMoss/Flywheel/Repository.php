@@ -64,7 +64,7 @@ class Repository
      */
     public function query()
     {
-        $className = '\\JamesMoss\\FlyWheel\\Query';
+        $className = '\\JamesMoss\\Flywheel\\Query';
 
         return new $className($this);
     }
