@@ -12,11 +12,13 @@
 		}
 	],
 	"require": {
-		"php": ">=5.3.0"
+		"php": ">=5.3.2",
+		"ext-gmp": "*"
 	},
 	"require-dev": {
 	    "mikey179/vfsStream": "1.2.0",
-	    "mockery/mockery": "dev-master@dev"
+	    "mockery/mockery": "dev-master@dev",
+	    "phpunit/phpunit": "3.7.*"
 	},
 	"autoload": {
 		"psr-0": {
