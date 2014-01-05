@@ -80,7 +80,10 @@ class Repository
         $documents = array();
         
         foreach ($files as $file) {
-            $documents[] = new Document((array)json_decode(file_get_contents($file)));
+            $data = json_decode(file_get_contents($file));
+            if (null !== $data) {
+                $documents[] = new Document((array)$data);
+            }
         }
 
         return $documents;
