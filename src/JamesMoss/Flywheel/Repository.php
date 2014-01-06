@@ -170,7 +170,7 @@ class Repository
     protected function generateId()
     {
         //openssl_random_pseudo_bytes
-        $num = str_replace(' ', '', microtime());
+        $num = str_replace(array(' ', '.'), '', microtime());
         $id  = gmp_strval(gmp_init($num, 10), 62);
 
         return $id;
