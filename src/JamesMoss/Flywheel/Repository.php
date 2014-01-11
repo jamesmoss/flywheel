@@ -73,7 +73,7 @@ class Repository
      */
     public function findAll()
     {
-        $files     = glob($this->path . '/*.json') or array();
+        $files     = glob($this->path . '/*.json');
         $documents = array();
         
         foreach ($files as $file) {
