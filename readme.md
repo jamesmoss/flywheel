@@ -108,7 +108,7 @@ $repo->delete('Czk6SPu4X');
 
 There is good test coverage at the moment. If you'd like to run the tests yourself, use the following:
 
-    $ composer update
+    $ composer install
     $ phpunit
 
 ## Contributing
