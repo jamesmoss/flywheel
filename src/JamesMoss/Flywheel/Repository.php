@@ -57,16 +57,13 @@ class Repository
 
 
     /**
-     * A factory method that initialises and returns an instance of a Query
-     * object (or a class that extends it such as CachedQuery).
+     * A factory method that initialises and returns an instance of a Query object.
      *
      * @return Query A new Query class for this repo.
      */
     public function query()
     {
-        $className = '\\JamesMoss\\Flywheel\\Query';
-
-        return new $className($this);
+        return new Query($this);
     }
 
     /**
