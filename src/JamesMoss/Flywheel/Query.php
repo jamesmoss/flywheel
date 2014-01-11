@@ -126,7 +126,7 @@ class Query
             $documents = array_slice($documents, $offset, $count);
         }
 
-        return $documents; 
+        return new Result($documents, $totalCount); 
     }
 
     /**

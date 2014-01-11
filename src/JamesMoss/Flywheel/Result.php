@@ -97,7 +97,17 @@ class Result implements \IteratorAggregate, \ArrayAccess, \Countable
      */
     public function first()
     {
-        return isset($this->documents[0]) ? $this->documents[0] : false;
+        return !empty($this->documents) ? $this->documents[0] : false;
+    }
+
+    /**
+     * Gets the last document from the results.
+     *
+     * @return mixed The last document, or false if the result is empty.
+     */
+    public function last()
+    {
+        return !empty($this->documents) ? $this->documents[count($this->documents) - 1] : false;
     }
 
     /**

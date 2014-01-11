@@ -70,6 +70,16 @@ class ResultTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals($testDoc, $doc);
     }
 
+    public function testLast()
+    {
+        $result = $this->getTestResult();
+        $doc    = $result->last();
+        $testDoc = new Document(array('id' => 1, 'name' => 'Katie Smith', 'age' => 21));
+
+        $this->assertEquals($testDoc, $doc);
+
+    }
+
     public function testFirstNoResults()
     {
         $result = new Result(array(), 0);
