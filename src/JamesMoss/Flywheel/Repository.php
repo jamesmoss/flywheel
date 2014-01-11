@@ -22,7 +22,7 @@ class Repository
     {
         // Setup class properties
         $this->name = $name;
-        $this->path = $config->getPath() . '/' . $name;
+        $this->path = $config->getPath() . DIRECTORY_SEPARATOR . $name;
 
         // Ensure the repo name is valid
         $this->validateName($this->name);
@@ -73,7 +73,7 @@ class Repository
      */
     public function findAll()
     {
-        $files     = glob($this->path . '/*.json');
+        $files     = glob($this->path . DIRECTORY_SEPARATOR . '*.json');
         $documents = array();
         
         foreach ($files as $file) {
@@ -146,7 +146,7 @@ class Repository
      */
     public function getPathForDocument($id)
     {
-        return $this->path . '/' . $this->getFilename($id);
+        return $this->path . DIRECTORY_SEPARATOR . $this->getFilename($id);
     }
 
     /**

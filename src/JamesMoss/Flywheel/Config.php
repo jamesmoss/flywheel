@@ -21,7 +21,7 @@ class Config
      */
     public function __construct($path, array $options = array())
     {
-        $path = rtrim($path, '/');
+        $path = rtrim($path, DIRECTORY_SEPARATOR);
 
         if(!is_dir($path)) {
             throw new \RuntimeException(sprintf('`%s` is not a directory.', $path));
