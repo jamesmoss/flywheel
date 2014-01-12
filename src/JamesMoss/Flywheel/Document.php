@@ -19,12 +19,12 @@ class Document
     /**
      * Constructor
      *
-     * @param array $data An associative array, each key/value pair will be 
+     * @param array $data An associative array, each key/value pair will be
      *                    turned into properties on this object.
      */
     public function __construct(array $data = array())
     {
-        foreach($data as $key => $value) {
+        foreach ($data as $key => $value) {
             $this->{$key} = $value;
         }
     }

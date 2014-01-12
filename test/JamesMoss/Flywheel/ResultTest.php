@@ -16,7 +16,7 @@ class ResultTest extends \PHPUnit_Framework_TestCase
         $result = $this->getTestResult();
 
         $i = 0;
-        foreach($result as $v) {
+        foreach ($result as $v) {
             $i += $v->id;
         }
         $this->assertSame(26, $i);

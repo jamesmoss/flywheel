@@ -15,7 +15,7 @@ class Config
     /**
      * Constructor
      *
-     * @param string $path    The full path to a writeable directory, with or 
+     * @param string $path    The full path to a writeable directory, with or
      *                        without a trailing slash.
      * @param array  $options Any other configuration options.
      */
@@ -23,11 +23,11 @@ class Config
     {
         $path = rtrim($path, DIRECTORY_SEPARATOR);
 
-        if(!is_dir($path)) {
+        if (!is_dir($path)) {
             throw new \RuntimeException(sprintf('`%s` is not a directory.', $path));
         }
 
-        if(!is_writable($path)) {
+        if (!is_writable($path)) {
             throw new \RuntimeException(sprintf('`%s` is not writable.', $path));
         }
 
@@ -48,9 +48,9 @@ class Config
     /**
      * Gets a specific option from the config
      *
-     * @param  string $name The name of the option to return.
+     * @param string $name The name of the option to return.
      *
-     * @return mixed       The value of the option if it exists or null if it doesnt.
+     * @return mixed The value of the option if it exists or null if it doesnt.
      */
     public function getOption($name)
     {

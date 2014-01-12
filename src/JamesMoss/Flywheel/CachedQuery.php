@@ -27,7 +27,7 @@ class CachedQuery extends Query
         $result = apc_fetch($key, $success);
 
         // If the result isn't in the cache then we run the real query
-        if(!$success) {
+        if (!$success) {
             $result = parent::execute();
             apc_store($key, $result);
         }
@@ -39,7 +39,7 @@ class CachedQuery extends Query
      * Gets a hash based on the files in the repo directory. If the contents
      * of a file changes, or other files are added/deleted the hash will change.
      * Uses filematime() for speed when checking for file changes (rather than
-     * using crc32 or md5 etc) 
+     * using crc32 or md5 etc)
      *
      * @return string A 128bit hash in hexadecimal format.
      */
@@ -49,13 +49,13 @@ class CachedQuery extends Query
         $files = scandir($path);
         $hash  = '';
 
-        foreach($files as $file) {
-            if($file == '..' || $file == '.') {
+        foreach ($files as $file) {
+            if ($file == '..' || $file == '.') {
                 continue;
             }
 
             $hash.= $file . '|';
-            $hash.= (string)filemtime($path . '/' . $file) . '|';
+            $hash.= (string) filemtime($path . '/' . $file) . '|';
         }
 
         $hash = md5($hash);
@@ -72,9 +72,9 @@ class CachedQuery extends Query
     {
         $parts = array(
             $this->repo->getName(),
-            serialize((array)$this->limit),
-            serialize((array)$this->orderBy),
-            serialize((array)$this->where),
+            serialize((array) $this->limit),
+            serialize((array) $this->orderBy),
+            serialize((array) $this->where),
         );
 
         return md5(implode('|', $parts));

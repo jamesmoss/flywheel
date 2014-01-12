@@ -18,10 +18,10 @@ class Result implements \IteratorAggregate, \ArrayAccess, \Countable
     /**
      * Constructor
      *
-     * @param array $documents An array of Documents
-     * @param integer $total   If this result only represents a small slice of 
-     *                         the total (when using limit), this parameter 
-     *                         represents the total number of documents.
+     * @param array   $documents An array of Documents
+     * @param integer $total     If this result only represents a small slice of
+     *                           the total (when using limit), this parameter
+     *                           represents the total number of documents.
      */
     public function __construct($documents, $total)
     {
@@ -114,13 +114,13 @@ class Result implements \IteratorAggregate, \ArrayAccess, \Countable
      * Get the  value specified by $key of the first object in the result.
      *
      * @return mixed The value, or false if there are no documents or the key
-     *                   doesnt exist.
+     *               doesnt exist.
      */
     public function value($key)
     {
         $first = $this->first();
 
-        if(!$first) {
+        if (!$first) {
             return false;
         }
 
@@ -132,17 +132,17 @@ class Result implements \IteratorAggregate, \ArrayAccess, \Countable
      * document. If the property doesnt exist on the document then it won't
      * be in the returned array.
      *
-     * @param  string $field The name of the field to pick.
+     * @param string $field The name of the field to pick.
      *
-     * @return array        The array of values, one from each document.
+     * @return array The array of values, one from each document.
      */
     public function pick($field)
     {
         $result = array();
 
-        foreach($this->documents as $document) {
-            if(isset($document->{$field})) {
-                $result[] = $document->{$field}; 
+        foreach ($this->documents as $document) {
+            if (isset($document->{$field})) {
+                $result[] = $document->{$field};
             }
         }
 
@@ -153,16 +153,16 @@ class Result implements \IteratorAggregate, \ArrayAccess, \Countable
      * Returns an assoiative array (a hash), where for each document the
      * value of one property is the key, and another property is the value.
      *
-     * @param  string $keyField   The name of the property to use for the key.
-     * @param  string $valueField Name of the property to use for the value.
+     * @param string $keyField   The name of the property to use for the key.
+     * @param string $valueField Name of the property to use for the value.
      *
-     * @return array             An associative array.
+     * @return array An associative array.
      */
     public function hash($keyField, $valueField)
     {
         $result = array();
 
-        foreach($this->documents as $document) {
+        foreach ($this->documents as $document) {
             $result[$document->{$keyField}] = $document->{$valueField};
         }
 

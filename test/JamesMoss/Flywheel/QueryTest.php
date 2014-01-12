@@ -10,7 +10,6 @@ class QueryTest extends \PHPUnit_Framework_TestCase
         $config = new Config($path . '/');
         $repo   = new Repository('countries', $config);
         $query  = new Query($repo);
-        
 
         $query->where('cca2', '==', 'GB');
         $result = $query->execute();
@@ -25,7 +24,7 @@ class QueryTest extends \PHPUnit_Framework_TestCase
         $config = new Config($path . '/');
         $repo   = new Repository('countries', $config);
         $query  = new Query($repo);
-        
+
         $query->orderBy('capital DESC');
 
         $result = $query->execute();
