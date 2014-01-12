@@ -103,6 +103,7 @@ $repo->delete('Czk6SPu4X');
 - Option to rehydrate dates as datetime objects?
 - More serialisation formats? JSON, YAML, PHP serialized, PHP raw?
 - More mocks in unit tests.
+- Abstract the filesystem, something like Flysystem ?
     
 ## Running tests
 
