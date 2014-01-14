@@ -39,4 +39,14 @@ class ConfigTest extends \PHPUnit_Framework_TestCase
         $this->assertTrue($config->getOption('bob'));
         $this->assertNull($config->getOption('nonexistant'));
     }
+
+    public function testSettingFormatter()
+    {
+        $path   = __DIR__ . '/fixtures/datastore/writable';
+        $config = new Config($path . '/', array(
+            'formatter' => new Formatter\YAML,
+        ));
+
+        $this->assertInstanceOf('JamesMoss\\Flywheel\\Formatter\\YAML', $config->getOption('formatter'));
+    }
 }
