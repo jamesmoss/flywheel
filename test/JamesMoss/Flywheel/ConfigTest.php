@@ -2,8 +2,6 @@
 
 namespace JamesMoss\Flywheel;
 
-use org\bovigo\vfs\vfsStream;
-
 class ConfigTest extends \PHPUnit_Framework_TestCase
 {
     /**

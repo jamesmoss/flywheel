@@ -6,7 +6,7 @@ namespace JamesMoss\Flywheel;
  * Repository
  *
  * Analageous to a table in a traditional RDBMS, a repository is a siloed
- * collection where documents live. 
+ * collection where documents live.
  */
 class Repository
 {
@@ -22,18 +22,17 @@ class Repository
     {
         // Setup class properties
         $this->name = $name;
-        $this->path = $config->getPath() . '/' . $name;
+        $this->path = $config->getPath() . DIRECTORY_SEPARATOR . $name;
 
         // Ensure the repo name is valid
         $this->validateName($this->name);
 
         // Ensure directory exists and we can write there
-        if(!file_exists($this->path)) {
+        if (!file_exists($this->path)) {
             mkdir($this->path);
             chmod($this->path, 0777);
-        } 
+        }
     }
-
 
     /**
      * Returns the name of this repository
@@ -55,18 +54,14 @@ class Repository
         return $this->path;
     }
 
-
     /**
-     * A factory method that initialises and returns an instance of a Query
-     * object (or a class that extends it such as CachedQuery).
+     * A factory method that initialises and returns an instance of a Query object.
      *
      * @return Query A new Query class for this repo.
      */
     public function query()
     {
-        $className = '\\JamesMoss\\Flywheel\\Query';
-
-        return new $className($this);
+        return new Query($this);
     }
 
     /**
@@ -76,13 +71,13 @@ class Repository
      */
     public function findAll()
     {
-        $files     = glob($this->path . '/*.json') or array();
+        $files     = glob($this->path . DIRECTORY_SEPARATOR . '*.json');
         $documents = array();
-        
+
         foreach ($files as $file) {
             $data = json_decode(file_get_contents($file));
             if (null !== $data) {
-                $documents[] = new Document((array)$data);
+                $documents[] = new Document((array) $data);
             }
         }
 
@@ -93,13 +88,13 @@ class Repository
      * Validates the name of the repo to ensure it can be stored in the
      * filesystem.
      *
-     * @param  string $name The name to validate against
+     * @param string $name The name to validate against
      *
-     * @return bool       Returns true if valid. Throws an exception if not.
+     * @return bool Returns true if valid. Throws an exception if not.
      */
     protected function validateName($name)
     {
-        if(!preg_match('/^[0-9A-Za-z\_\-]{1,63}$/', $name)) {
+        if (!preg_match('/^[0-9A-Za-z\_\-]{1,63}$/', $name)) {
             throw new \Exception(sprintf('`%s` is not a valid repository name.', $name));
         }
 
@@ -109,19 +104,19 @@ class Repository
     /**
      * Store a Document in the repository.
      *
-     * @param  Document $document The document to store
+     * @param Document $document The document to store
      *
-     * @return bool             True if stored, otherwise false
+     * @return bool True if stored, otherwise false
      */
     public function store(Document $document)
     {
-        if(!isset($document->id)) {
+        if (!isset($document->id)) {
             $document->id = $this->generateId();
         }
 
         $path    = $this->getPathForDocument($document->id);
         $options = defined('JSON_PRETTY_PRINT') ? JSON_PRETTY_PRINT : null;
-        $data    = json_encode((array)$document, $options);
+        $data    = json_encode((array) $document, $options);
 
         return file_put_contents($path, $data);
     }
@@ -129,9 +124,9 @@ class Repository
     /**
      * Delete a document from the repository using its ID.
      *
-     * @param  string $id The ID of the document to delete
+     * @param string $id The ID of the document to delete
      *
-     * @return boolean     True or deleted, false if not.
+     * @return boolean True or deleted, false if not.
      */
     public function delete($id)
     {
@@ -143,21 +138,21 @@ class Repository
     /**
      * Get the filesystem path for a document based on it's ID.
      *
-     * @param  string $id The ID of the document.
+     * @param string $id The ID of the document.
      *
-     * @return string     The full filesystem path of the document.
+     * @return string The full filesystem path of the document.
      */
     public function getPathForDocument($id)
     {
-        return $this->path . '/' . $this->getFilename($id);
+        return $this->path . DIRECTORY_SEPARATOR . $this->getFilename($id);
     }
 
     /**
      * Gets just the filename for a document based on it's ID.
      *
-     * @param  string $id The ID of the document.
+     * @param string $id The ID of the document.
      *
-     * @return string     The filename of the document, including extension.
+     * @return string The filename of the document, including extension.
      */
     public function getFilename($id)
     {
@@ -178,6 +173,5 @@ class Repository
 
         return $id;
     }
-
 
 }

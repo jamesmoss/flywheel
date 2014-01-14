@@ -10,10 +10,12 @@ class QueryTest extends \PHPUnit_Framework_TestCase
         $config = new Config($path . '/');
         $repo   = new Repository('countries', $config);
         $query  = new Query($repo);
-        
 
         $query->where('cca2', '==', 'GB');
-        $query->execute();
+        $result = $query->execute();
+        $this->assertInstanceOf('\\JamesMoss\\Flywheel\\Result', $result);
+        $this->assertEquals(1, count($result));
+        $this->assertEquals(1, $result->total());
     }
 
     public function testOrdering()
@@ -22,10 +24,12 @@ class QueryTest extends \PHPUnit_Framework_TestCase
         $config = new Config($path . '/');
         $repo   = new Repository('countries', $config);
         $query  = new Query($repo);
-        
+
         $query->orderBy('capital DESC');
 
-        $query->execute();
+        $result = $query->execute();
+        $this->assertEquals('Croatia', $result->first()->id);
+        $this->assertEquals('Heard Island and McDonald Islands', $result[$result->count() -1]->id);
     }
 
     public function testBadData()
