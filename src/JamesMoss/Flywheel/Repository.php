@@ -31,7 +31,7 @@ class Repository
         if(!file_exists($this->path)) {
             mkdir($this->path);
             chmod($this->path, 0777);
-        } 
+        }
     }
 
 
@@ -80,7 +80,11 @@ class Repository
         $documents = array();
         
         foreach ($files as $file) {
-            $data = json_decode(file_get_contents($file));
+            $fp   = fopen($file, 'r');
+            $json = fread($fp, filesize($file));
+            fclose($fp);
+            $data = json_decode($json);
+
             if (null !== $data) {
                 $documents[] = new Document((array)$data);
             }
@@ -123,7 +127,15 @@ class Repository
         $options = defined('JSON_PRETTY_PRINT') ? JSON_PRETTY_PRINT : null;
         $data    = json_encode((array)$document, $options);
 
-        return file_put_contents($path, $data);
+        $fp = fopen($path, 'w');
+        if(!flock($fp, LOCK_EX)) {
+            return false;
+        }
+        $result = fwrite($fp, $data);
+        flock($fp, LOCK_UN);
+        fclose($fp);
+
+        return $result;
     }
 
     /**

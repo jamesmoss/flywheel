@@ -74,6 +74,21 @@ class RespositoryTest extends \PHPUnit_Framework_TestCase
         $this->assertFalse(is_file($path));
     }
 
+    public function testLockingOnWrite()
+    {
+        $config = new Config('/tmp/flywheel');
+        $repo   = new Repository('_pages', $config);
+        $id     = 'lock_test';
+        $name   = $id . '_' . sha1($id) . '.json';
+        $path   = '/tmp/flywheel/_pages/' . $name;
+
+        $document
+
+        file_put_contents($path, '{"id": "lock_test"}');
+
+        $this->assertFalse(is_file($path));
+    }
+
     public function validNameProvider()
     {
         return array(
