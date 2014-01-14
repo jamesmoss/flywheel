@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "72ea96512a51e70ec267d4842879dbde",
+    "hash": "bdbb03139f04448916de7e6ef596af7e",
     "packages": [
 
     ],
@@ -44,12 +44,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/padraic/mockery.git",
-                "reference": "adfba47a81584bb486cda9923c95a96edfcfb168"
+                "reference": "ab2c696982fa47bb21d3bff1cd97b6b657d6f4f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/padraic/mockery/zipball/adfba47a81584bb486cda9923c95a96edfcfb168",
-                "reference": "adfba47a81584bb486cda9923c95a96edfcfb168",
+                "url": "https://api.github.com/repos/padraic/mockery/zipball/ab2c696982fa47bb21d3bff1cd97b6b657d6f4f4",
+                "reference": "ab2c696982fa47bb21d3bff1cd97b6b657d6f4f4",
                 "shasum": ""
             },
             "require": {
@@ -95,7 +95,7 @@
                 "test double",
                 "testing"
             ],
-            "time": "2014-01-09 14:53:14"
+            "time": "2014-01-13 13:26:51"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -520,8 +520,7 @@
         "mockery/mockery": 20
     },
     "platform": {
-        "php": ">=5.3.2",
-        "ext-gmp": "*"
+        "php": ">=5.3.2"
     },
     "platform-dev": [
 
