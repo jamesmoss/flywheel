@@ -167,10 +167,11 @@ class Repository
      */
     protected function generateId()
     {
-        //openssl_random_pseudo_bytes
-        $num = str_replace(array(' ', '.'), '', microtime());
-        $id  = gmp_strval(gmp_init($num, 10), 62);
-
+        static $choices = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        $id = '';
+        while (strlen($id) < 9) {
+            $id .= $choices[ mt_rand(0, strlen($choices) - 1) ];
+        }
         return $id;
     }
 
