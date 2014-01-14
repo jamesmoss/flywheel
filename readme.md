@@ -124,15 +124,17 @@ If you write your own formatter it must implement `\JamesMoss\Flywheel\Formatter
 
 ## Todo
 
+- More caching around `Repository::findAll`.
 - Indexing
-- Simple one-to-one and many-to-one joins.
-- Events system.
+- HHVM support.
+- Abstract the filesystem, something like Gaufrette or Symfony's Filesystem component?
 - Atomic updates.
+- Events system.
 - Option to rehydrate dates as datetime objects?
 - More serialisation formats? PHP serialized, PHP raw?
 - More mocks in unit tests.
-- Abstract the filesystem, something like Gaufrette or Symfony's Filesystem component?
-    
+- Simple one-to-one and many-to-one joins.
+
 ## Running tests
 
 There is good test coverage at the moment. If you'd like to run the tests yourself, use the following:
