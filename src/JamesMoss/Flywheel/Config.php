@@ -33,7 +33,7 @@ class Config
 
         // Merge supplied options with the defaults
         $options = array_merge(array(
-            'formatter' => new Formatter\Json,
+            'formatter' => new Formatter\JSON,
         ), $options);
 
         $this->path    = $path;
