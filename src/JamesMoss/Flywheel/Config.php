@@ -31,6 +31,11 @@ class Config
             throw new \RuntimeException(sprintf('`%s` is not writable.', $path));
         }
 
+        // Merge supplied options with the defaults
+        $options = array_merge(array(
+            'formatter' => new Formatter\Json,
+        ), $options);
+
         $this->path    = $path;
         $this->options = $options;
     }

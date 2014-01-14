@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/jamesmoss/flywheel.png?branch=master)](https://travis-ci.org/jamesmoss/flywheel)
 
-A lightweight, flat-file, document database for PHP.
+A lightweight, flat-file, document database for PHP that can store data in JSON, YAML or Markdown formats.
 
 Often MySQL can be overkill for a small site or blog installation. Although it's present by as standard
 on many hosting packages it still requires several manual steps including configuration, user and databases 
@@ -19,6 +19,10 @@ Flywheel hopes to enable a new breed of PHP apps and libraries by giving develop
 to a datastore that acts in a similar way to a traditional database but has no
 external dependencies. Documents (essentially associative arrays), can be saved and retrieved,
 sorted and limited.
+
+Currently Flywheel is in heavy development and is not production ready yet. You might find
+that documents created from one version of Flywheel can't be loaded by another right now.
+As we get closer and closer to a v1 this is less likely to happen.
 
 Flywheel is opinionated software. The following is assumed:
 
@@ -39,8 +43,6 @@ Add the following to your `composer.json` and run `composer update`.
     "require": {
         "jamesmoss/flywheel": "dev-master"
     }
-
-You can use this lib without Composer but you'll need to provide your own PSR-0 compatible autoloader. Really, you should just use Composer.
 
 ## Use
 
@@ -94,6 +96,32 @@ $repo->delete('Czk6SPu4X');
 
 ```
 
+## Formats
+
+By default documents are saved and parsed as JSON as it's fast and encoding/decoding is built into PHP.
+There are two other serialisation formats you can choose too, YAML and Markdown (with YAML front matter).
+
+You can choose the format by passing it into the `Config` when you initialise it.
+
+```php
+$config = new Config('/path/to/writable/directory', array(
+    'formatter' => new \JamesMoss\Flywheel\Formatter\YAML,
+))
+```
+
+The following formatter classes are available.
+
+ - `\JamesMoss\Flywheel\Formatter\JSON` - Will attempt to pretty print output if using PHP 5.4+. File extension is `json`.
+ - `\JamesMoss\Flywheel\Formatter\YAML` - Uses `yaml` file extension, not `yml`. 
+ - `\JamesMoss\Flywheel\Formatter\Markdown` - Takes an optional parameter in the constructor which dictates 
+    the name of the main field in the resulting `Document` (Defaults to `body`). File extension is `md`. Markdown isn't
+    converted into HTML, that's up to you.
+
+**Important** If you use the `YAML` or `Markdown` formatters when using the `--no-dev` flag in Composer you'll need 
+to manually add `symfony\yaml` to your `composer.json`. Flywheel tries to keep it's dependencies to a minimum.
+
+If you write your own formatter it must implement `\JamesMoss\Flywheel\Formatter\Format`.
+
 ## Todo
 
 - Indexing
@@ -101,9 +129,9 @@ $repo->delete('Czk6SPu4X');
 - Events system.
 - Atomic updates.
 - Option to rehydrate dates as datetime objects?
-- More serialisation formats? JSON, YAML, PHP serialized, PHP raw?
+- More serialisation formats? PHP serialized, PHP raw?
 - More mocks in unit tests.
-- Abstract the filesystem, something like Flysystem ?
+- Abstract the filesystem, something like Gaufrette or Symfony's Filesystem component?
     
 ## Running tests
 

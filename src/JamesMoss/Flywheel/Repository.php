@@ -11,6 +11,8 @@ namespace JamesMoss\Flywheel;
 class Repository
 {
     protected $name;
+    protected $path;
+    protected $formatter;
 
     /**
      * Constructor
@@ -21,8 +23,9 @@ class Repository
     public function __construct($name, Config $config)
     {
         // Setup class properties
-        $this->name = $name;
-        $this->path = $config->getPath() . DIRECTORY_SEPARATOR . $name;
+        $this->name      = $name;
+        $this->path      = $config->getPath() . DIRECTORY_SEPARATOR . $name;
+        $this->formatter = $config->getOption('formatter');
 
         // Ensure the repo name is valid
         $this->validateName($this->name);
@@ -71,11 +74,12 @@ class Repository
      */
     public function findAll()
     {
-        $files     = glob($this->path . DIRECTORY_SEPARATOR . '*.json');
+        $ext       = $this->formatter->getFileExtension();
+        $files     = glob($this->path . DIRECTORY_SEPARATOR . '*.' . $ext);
         $documents = array();
 
         foreach ($files as $file) {
-            $data = json_decode(file_get_contents($file));
+            $data = $this->formatter->decode(file_get_contents($file));
             if (null !== $data) {
                 $documents[] = new Document((array) $data);
             }
@@ -115,8 +119,7 @@ class Repository
         }
 
         $path    = $this->getPathForDocument($document->id);
-        $options = defined('JSON_PRETTY_PRINT') ? JSON_PRETTY_PRINT : null;
-        $data    = json_encode((array) $document, $options);
+        $data    = $this->formatter->encode((array) $document);
 
         return file_put_contents($path, $data);
     }
@@ -156,7 +159,7 @@ class Repository
      */
     public function getFilename($id)
     {
-        return $id . '_' . sha1($id) . '.json';
+        return $id . '_' . sha1($id) . '.' . $this->formatter->getFileExtension();
     }
 
     /**
