@@ -41,7 +41,7 @@ Use [Composer](http://getcomposer.org/) to install the flywheel package. Package
 Add the following to your `composer.json` and run `composer update`.
 
     "require": {
-        "jamesmoss/flywheel": "dev-master"
+        "jamesmoss/flywheel": "0.1.*"
     }
 
 ## Use
@@ -125,7 +125,7 @@ If you write your own formatter it must implement `\JamesMoss\Flywheel\Formatter
 ## Todo
 
 - More caching around `Repository::findAll`.
-- Indexing
+- Indexing.
 - HHVM support.
 - Abstract the filesystem, something like Gaufrette or Symfony's Filesystem component?
 - Atomic updates.
