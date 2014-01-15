@@ -9,7 +9,7 @@ class ConfigTest extends \PHPUnit_Framework_TestCase
      */
     public function testDataLocationExistsCheck()
     {
-        $config = new Config('/this/path/wont/ever/exist/(probably)');
+        new Config('/this/path/wont/ever/exist/(probably)');
     }
 
     /**
@@ -20,7 +20,7 @@ class ConfigTest extends \PHPUnit_Framework_TestCase
     {
         $path   = __DIR__ . '/fixtures/datastore/notwritable';
         chmod($path, 0555);
-        $config = new Config($path);
+        new Config($path);
     }
 
     public function testSlashesTidedUp()

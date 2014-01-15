@@ -21,7 +21,7 @@ class RespositoryTest extends \PHPUnit_Framework_TestCase
     public function testInvalidRepoName($name)
     {
         $config = new Config('/tmp');
-        $repo = new Repository($name, $config);
+        new Repository($name, $config);
     }
 
     public function testGettingQueryObject()

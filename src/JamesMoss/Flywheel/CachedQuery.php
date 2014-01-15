@@ -30,7 +30,8 @@ class CachedQuery extends Query
 
         // Try and fetch a cached result object from APC
         $funcName = $apcPrefix . '_fetch';
-        $result = $funcName($key, $success);
+        $success  = false;
+        $result   = $funcName($key, $success);
 
         // If the result isn't in the cache then we run the real query
         if (!$success) {
