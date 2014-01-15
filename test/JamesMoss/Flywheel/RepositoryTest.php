@@ -62,7 +62,7 @@ class RespositoryTest extends \PHPUnit_Framework_TestCase
         $config = new Config('/tmp/flywheel');
         $repo   = new Repository('_pages', $config);
         $id     = 'delete_test';
-        $name   = $id . '_' . sha1($id) . '.json';
+        $name   = $id . '.json';
         $path   = '/tmp/flywheel/_pages/' . $name;
 
         file_put_contents($path, '');

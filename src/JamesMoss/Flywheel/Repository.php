@@ -198,7 +198,7 @@ class Repository
      */
     public function getFilename($id)
     {
-        return $id . '_' . sha1($id) . '.' . $this->formatter->getFileExtension();
+        return $id . '.' . $this->formatter->getFileExtension();
     }
 
     /**
