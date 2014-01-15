@@ -52,7 +52,7 @@ class RespositoryTest extends \PHPUnit_Framework_TestCase
 
             $repo->store($document);
 
-            $name = $i . '_' . sha1($i) . '.json';
+            $name = $i . '.json';
             $this->assertSame($data, (array) json_decode(file_get_contents('/tmp/flywheel/_pages/' . $name)));
         }
     }
