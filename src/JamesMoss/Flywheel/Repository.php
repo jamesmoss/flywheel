@@ -85,7 +85,10 @@ class Repository
         foreach ($files as $file) {
             $data = $this->formatter->decode(file_get_contents($file));
             if (null !== $data) {
-                $documents[] = new Document((array) $data);
+                $doc = new Document((array) $data);
+                $doc->setId(basename($file, '.' . $ext));
+
+                $documents[] = $doc;
             }
         }
 
@@ -118,16 +121,20 @@ class Repository
      */
     public function store(Document $document)
     {
-        if (!isset($document->id)) {
-            $document->id = $this->generateId();
+        $id = $document->getId();
+
+        // Generate an id if none has been defined
+        if (!$id) {
+            $document->setId($this->generateId());
         }
 
-        if(!$this->validateId($document->id)) {
-            throw new \Exception(sprintf('`%s` is not a valid document ID.', $document->id));
+        if (!$this->validateId($id)) {
+            throw new \Exception(sprintf('`%s` is not a valid document ID.', $id));
         }
 
-        $path    = $this->getPathForDocument($document->id);
-        $data    = $this->formatter->encode((array) $document);
+        $path = $this->getPathForDocument($id);
+        $data = get_object_vars($document);
+        $data = $this->formatter->encode($data);
 
         return file_put_contents($path, $data);
     }
@@ -142,11 +149,11 @@ class Repository
      */
     public function update(Document $document)
     {
-        if(!$document->id) {
+        if (!$document->getId()) {
             return false;
         }
 
-        $path = $this->getPathForDocument($document->id);
+        $path = $this->getPathForDocument($document->getId());
 
         if(!file_exists($path)) {
             return false;
@@ -164,8 +171,8 @@ class Repository
      */
     public function delete($id)
     {
-        if($id instanceof Document) {
-            $id = $id->id;
+        if ($id instanceof Document) {
+            $id = $id->getId();
         }
 
         $path = $this->getPathForDocument($id);

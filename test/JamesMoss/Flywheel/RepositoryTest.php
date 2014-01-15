@@ -41,14 +41,13 @@ class RespositoryTest extends \PHPUnit_Framework_TestCase
         $repo   = new Repository('_pages', $config);
 
         for ($i = 0; $i < 5; $i++) {
-
             $data = array(
-                'id'   => $i,
                 'slug' => '123',
                 'body' => 'THIS IS BODY TEXT'
             );
 
             $document = new Document($data);
+            $document->setId($i);
 
             $repo->store($document);
 
