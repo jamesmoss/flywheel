@@ -2,7 +2,7 @@
 
 namespace JamesMoss\Flywheel\Formatter;
 
-interface Format
+interface FormatInterface
 {
     public function getFileExtension();
     public function encode(array $data);

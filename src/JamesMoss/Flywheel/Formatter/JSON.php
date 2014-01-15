@@ -2,7 +2,7 @@
 
 namespace JamesMoss\Flywheel\Formatter;
 
-class JSON implements Format
+class JSON implements FormatInterface
 {
     public function getFileExtension()
     {
