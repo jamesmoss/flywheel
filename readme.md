@@ -34,6 +34,10 @@ Flywheel is opinionated software. The following is assumed:
 - PHP 5.3+
 - Composer
 
+**Optionally**
+
+- APC / APCu - caches documents and queries in memory for huge performance gains. 
+
 ## Installation
 
 Use [Composer](http://getcomposer.org/) to install the flywheel package. Package details [can be found on Packagist.org](https://packagist.org/packages/jamesmoss/flywheel).
@@ -63,6 +67,8 @@ echo $post->wordCount; // 7
 
 $id = $repo->store($post);
 
+// A unique ID is automatically generated for you if you don't specify your own when saving
+// If you set your own then it cannot contain the following characters: / ? * : ; { } \ or newline
 echo $id; // Czk6SPu4X
 echo $post->id; // Czk6SPu4X
 
@@ -93,6 +99,13 @@ $repo->delete($post);
 $repo->delete('Czk6SPu4X');
 
 ```
+
+## Config options
+
+ - `formatter`. See [Formats](https://github.com/jamesmoss/flywheel#formats) section of this readme. Defaults to an 
+   instance of `JamesMoss\Flywheel\Formatter\JSON`.
+ - `query_class`. The name of the class that gets returned from `Repository::query()`. By default, Flywheel detects 
+    if you have APC or APCu installed and uses `CachedQuery` class if applicable, otherwise it just uses `Query`.
 
 ## Formats
 

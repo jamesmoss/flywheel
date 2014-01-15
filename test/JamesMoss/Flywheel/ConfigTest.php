@@ -49,4 +49,26 @@ class ConfigTest extends \PHPUnit_Framework_TestCase
 
         $this->assertInstanceOf('JamesMoss\\Flywheel\\Formatter\\YAML', $config->getOption('formatter'));
     }
+
+    public function testSettingQueryClass()
+    {
+        $path   = __DIR__ . '/fixtures/datastore/writable';
+        $config = new Config($path . '/', array(
+            'query_class' => '\\stdClass',
+        ));
+
+        $this->assertSame('\\stdClass', $config->getOption('query_class'));
+    }
+
+    public function testSettingAutomaticQueryClass()
+    {
+        $path   = __DIR__ . '/fixtures/datastore/writable';
+        $config = new Config($path . '/');
+
+        // This isnt great testing but will do for now.
+        $className = '\\JamesMoss\\Flywheel\\';
+        $className.= function_exists('apcu_fetch') || function_exists('apc_fetch') ? 'CachedQuery' : 'Query';
+
+        $this->assertSame($className, $config->getOption('query_class'));
+    }
 }

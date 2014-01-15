@@ -33,7 +33,8 @@ class Config
 
         // Merge supplied options with the defaults
         $options = array_merge(array(
-            'formatter' => new Formatter\JSON,
+            'formatter'   => new Formatter\JSON,
+            'query_class' => $this->hasAPC() ? '\\JamesMoss\\Flywheel\\CachedQuery' : '\\JamesMoss\\Flywheel\\Query',
         ), $options);
 
         $this->path    = $path;
@@ -60,5 +61,10 @@ class Config
     public function getOption($name)
     {
         return isset($this->options[$name]) ? $this->options[$name] : null;
+    }
+
+    public function hasAPC()
+    {
+        return function_exists('apcu_fetch') || function_exists('apc_fetch');
     }
 }

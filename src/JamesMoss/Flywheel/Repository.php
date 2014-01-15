@@ -13,6 +13,7 @@ class Repository
     protected $name;
     protected $path;
     protected $formatter;
+    protected $queryClass;
 
     /**
      * Constructor
@@ -23,9 +24,10 @@ class Repository
     public function __construct($name, Config $config)
     {
         // Setup class properties
-        $this->name      = $name;
-        $this->path      = $config->getPath() . DIRECTORY_SEPARATOR . $name;
-        $this->formatter = $config->getOption('formatter');
+        $this->name       = $name;
+        $this->path       = $config->getPath() . DIRECTORY_SEPARATOR . $name;
+        $this->formatter  = $config->getOption('formatter');
+        $this->queryClass = $config->getOption('query_class');
 
         // Ensure the repo name is valid
         $this->validateName($this->name);
@@ -64,7 +66,9 @@ class Repository
      */
     public function query()
     {
-        return new Query($this);
+        $className = $this->queryClass;
+
+        return new $className($this);
     }
 
     /**
@@ -116,6 +120,10 @@ class Repository
     {
         if (!isset($document->id)) {
             $document->id = $this->generateId();
+        }
+
+        if(!$this->validateId($document->id)) {
+            throw new \Exception(sprintf('`%s` is not a valid document ID.', $document->id));
         }
 
         $path    = $this->getPathForDocument($document->id);
@@ -174,6 +182,10 @@ class Repository
      */
     public function getPathForDocument($id)
     {
+        if(!$this->validateId($id)) {
+            throw new \Exception(sprintf('`%s` is not a valid ID.', $id));
+        }
+
         return $this->path . DIRECTORY_SEPARATOR . $this->getFilename($id);
     }
 
@@ -187,6 +199,18 @@ class Repository
     public function getFilename($id)
     {
         return $id . '_' . sha1($id) . '.' . $this->formatter->getFileExtension();
+    }
+
+    /**
+     * Checks to see if a document ID is valid
+     *
+     * @param  string $id The ID to check
+     *
+     * @return bool     True if valid, otherwise false
+     */
+    protected function validateId($id)
+    {
+        return (boolean)preg_match('/^[^\\/\\?\\*:;{}\\\\\\n]+$/us', $id);
     }
 
     /**
