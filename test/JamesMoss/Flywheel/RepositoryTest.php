@@ -73,6 +73,32 @@ class RespositoryTest extends \PHPUnit_Framework_TestCase
         $this->assertFalse(is_file($path));
     }
 
+    public function testRenamingDocumentChangesDocumentID()
+    {
+        if (!is_dir('/tmp/flywheel')) {
+            mkdir('/tmp/flywheel');
+        }
+        $config = new Config('/tmp/flywheel');
+        $repo   = new Repository('_pages', $config);
+        $doc    = new Document(array(
+            'test' => '123',
+        ));
+
+        $doc->setId('test1234');
+
+        $repo->store($doc);
+
+        rename('/tmp/flywheel/_pages/test1234.json', '/tmp/flywheel/_pages/newname.json');
+
+        foreach ($repo->findAll() as $document) {
+            if ('newname' === $document->getId()) {
+                return true;
+            }
+        }
+
+        $this->fail('No file found with the new ID');
+    }
+
     public function validNameProvider()
     {
         return array(
