@@ -19,17 +19,24 @@ class CachedQuery extends Query
      */
     public function execute()
     {
+        static $apcPrefix = null;
+        if($apcPrefix === null) {
+            $apcPrefix = function_exists('apcu_fetch') ? 'apcu' : 'apc';
+        }
+
         // Generate a cache key by comparing our parameters to see if we've
         // made this query before
         $key = $this->getParameterHash() . $this->getFileHash();
 
         // Try and fetch a cached result object from APC
-        $result = apc_fetch($key, $success);
+        $funcName = $apcPrefix . '_fetch';
+        $result = $funcName($key, $success);
 
         // If the result isn't in the cache then we run the real query
-        if(!$success) {
+        if (!$success) {
             $result = parent::execute();
-            apc_store($key, $result);
+            $funcName = $apcPrefix . '_store';
+            $funcName($key, $result);
         }
 
         return $result;
@@ -39,7 +46,7 @@ class CachedQuery extends Query
      * Gets a hash based on the files in the repo directory. If the contents
      * of a file changes, or other files are added/deleted the hash will change.
      * Uses filematime() for speed when checking for file changes (rather than
-     * using crc32 or md5 etc) 
+     * using crc32 or md5 etc)
      *
      * @return string A 128bit hash in hexadecimal format.
      */
@@ -49,13 +56,13 @@ class CachedQuery extends Query
         $files = scandir($path);
         $hash  = '';
 
-        foreach($files as $file) {
-            if($file == '..' || $file == '.') {
+        foreach ($files as $file) {
+            if ($file == '..' || $file == '.') {
                 continue;
             }
 
             $hash.= $file . '|';
-            $hash.= (string)filemtime($path . '/' . $file) . '|';
+            $hash.= (string) filemtime($path . '/' . $file) . '|';
         }
 
         $hash = md5($hash);
@@ -72,9 +79,9 @@ class CachedQuery extends Query
     {
         $parts = array(
             $this->repo->getName(),
-            serialize((array)$this->limit),
-            serialize((array)$this->orderBy),
-            serialize((array)$this->where),
+            serialize((array) $this->limit),
+            serialize((array) $this->orderBy),
+            serialize((array) $this->where),
         );
 
         return md5(implode('|', $parts));

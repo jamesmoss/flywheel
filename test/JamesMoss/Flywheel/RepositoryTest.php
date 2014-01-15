@@ -34,13 +34,13 @@ class RespositoryTest extends \PHPUnit_Framework_TestCase
 
     public function testStoringDocuments()
     {
-        if(!is_dir('/tmp/flywheel')) {
-            mkdir('/tmp/flywheel');  
+        if (!is_dir('/tmp/flywheel')) {
+            mkdir('/tmp/flywheel');
         }
         $config = new Config('/tmp/flywheel');
         $repo   = new Repository('_pages', $config);
 
-        for($i = 0; $i < 5; $i++) {
+        for ($i = 0; $i < 5; $i++) {
 
             $data = array(
                 'id'   => $i,
@@ -52,9 +52,9 @@ class RespositoryTest extends \PHPUnit_Framework_TestCase
 
             $repo->store($document);
 
-            $name = $i . '_' . sha1($i) . '.json';
-            $this->assertSame($data, (array)json_decode(file_get_contents('/tmp/flywheel/_pages/' . $name)));
-        } 
+            $name = $i . '.json';
+            $this->assertSame($data, (array) json_decode(file_get_contents('/tmp/flywheel/_pages/' . $name)));
+        }
     }
 
     public function testDeletingDocuments()
@@ -62,7 +62,7 @@ class RespositoryTest extends \PHPUnit_Framework_TestCase
         $config = new Config('/tmp/flywheel');
         $repo   = new Repository('_pages', $config);
         $id     = 'delete_test';
-        $name   = $id . '_' . sha1($id) . '.json';
+        $name   = $id . '.json';
         $path   = '/tmp/flywheel/_pages/' . $name;
 
         file_put_contents($path, '');

@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/jamesmoss/flywheel.png?branch=master)](https://travis-ci.org/jamesmoss/flywheel)
 
-A lightweight, flat-file, document database for PHP.
+A lightweight, flat-file, document database for PHP that can store data in JSON, YAML or Markdown formats.
 
 Often MySQL can be overkill for a small site or blog installation. Although it's present by as standard
 on many hosting packages it still requires several manual steps including configuration, user and databases 
@@ -20,6 +20,10 @@ to a datastore that acts in a similar way to a traditional database but has no
 external dependencies. Documents (essentially associative arrays), can be saved and retrieved,
 sorted and limited.
 
+Currently Flywheel is in heavy development and is not production ready yet. You might find
+that documents created from one version of Flywheel can't be loaded by another right now.
+As we get closer and closer to a v1 this is less likely to happen.
+
 Flywheel is opinionated software. The following is assumed:
 
 - Simple data structures are best.
@@ -30,6 +34,10 @@ Flywheel is opinionated software. The following is assumed:
 - PHP 5.3+
 - Composer
 
+**Optionally**
+
+- APC / APCu - caches documents and queries in memory for huge performance gains. 
+
 ## Installation
 
 Use [Composer](http://getcomposer.org/) to install the flywheel package. Package details [can be found on Packagist.org](https://packagist.org/packages/jamesmoss/flywheel).
@@ -37,10 +45,8 @@ Use [Composer](http://getcomposer.org/) to install the flywheel package. Package
 Add the following to your `composer.json` and run `composer update`.
 
     "require": {
-        "jamesmoss/flywheel": "dev-master"
+        "jamesmoss/flywheel": "0.1.*"
     }
-
-You can use this lib without Composer but you'll need to provide your own PSR-0 compatible autoloader. Really, you should just use Composer.
 
 ## Use
 
@@ -61,6 +67,8 @@ echo $post->wordCount; // 7
 
 $id = $repo->store($post);
 
+// A unique ID is automatically generated for you if you don't specify your own when saving
+// If you set your own then it cannot contain the following characters: / ? * : ; { } \ or newline
 echo $id; // Czk6SPu4X
 echo $post->id; // Czk6SPu4X
 
@@ -82,33 +90,67 @@ foreach($posts as $post) {
 $post->title = 'How to update documents';
 
 // Updates the document (only if it already exists)
-$repo->update($post); 
-
-// Updates the document (if it doesnt exist, it gets inserted)
-$repo->replace($post); 
+$repo->update($post);
 
 
 // Deleting documents - you can pass a document or it's ID.
 $repo->delete($post);
+// or you can do the following
 $repo->delete('Czk6SPu4X');
 
 ```
 
+## Config options
+
+ - `formatter`. See [Formats](https://github.com/jamesmoss/flywheel#formats) section of this readme. Defaults to an 
+   instance of `JamesMoss\Flywheel\Formatter\JSON`.
+ - `query_class`. The name of the class that gets returned from `Repository::query()`. By default, Flywheel detects 
+    if you have APC or APCu installed and uses `CachedQuery` class if applicable, otherwise it just uses `Query`.
+
+## Formats
+
+By default documents are saved and parsed as JSON as it's fast and encoding/decoding is built into PHP.
+There are two other serialisation formats you can choose too, YAML and Markdown (with YAML front matter).
+
+You can choose the format by passing it into the `Config` when you initialise it.
+
+```php
+$config = new Config('/path/to/writable/directory', array(
+    'formatter' => new \JamesMoss\Flywheel\Formatter\YAML,
+))
+```
+
+The following formatter classes are available.
+
+ - `\JamesMoss\Flywheel\Formatter\JSON` - Will attempt to pretty print output if using PHP 5.4+. File extension is `json`.
+ - `\JamesMoss\Flywheel\Formatter\YAML` - Uses `yaml` file extension, not `yml`. 
+ - `\JamesMoss\Flywheel\Formatter\Markdown` - Takes an optional parameter in the constructor which dictates 
+    the name of the main field in the resulting `Document` (Defaults to `body`). File extension is `md`. Markdown isn't
+    converted into HTML, that's up to you.
+
+**Important** If you use the `YAML` or `Markdown` formatters when using the `--no-dev` flag in Composer you'll need 
+to manually add `symfony\yaml` to your `composer.json`. Flywheel tries to keep it's dependencies to a minimum.
+
+If you write your own formatter it must implement `\JamesMoss\Flywheel\Formatter\Format`.
+
 ## Todo
 
-- Indexing
-- Simple one-to-one and many-to-one joins.
-- Events system.
+- More caching around `Repository::findAll`.
+- Indexing.
+- HHVM support.
+- Abstract the filesystem, something like Gaufrette or Symfony's Filesystem component?
 - Atomic updates.
+- Events system.
 - Option to rehydrate dates as datetime objects?
-- More serialisation formats? JSON, YAML, PHP serialized, PHP raw?
+- More serialisation formats? PHP serialized, PHP raw?
 - More mocks in unit tests.
-    
+- Simple one-to-one and many-to-one joins.
+
 ## Running tests
 
 There is good test coverage at the moment. If you'd like to run the tests yourself, use the following:
 
-    $ composer update
+    $ composer install
     $ phpunit
 
 ## Contributing

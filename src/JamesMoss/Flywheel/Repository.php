@@ -6,11 +6,14 @@ namespace JamesMoss\Flywheel;
  * Repository
  *
  * Analageous to a table in a traditional RDBMS, a repository is a siloed
- * collection where documents live. 
+ * collection where documents live.
  */
 class Repository
 {
     protected $name;
+    protected $path;
+    protected $formatter;
+    protected $queryClass;
 
     /**
      * Constructor
@@ -21,19 +24,20 @@ class Repository
     public function __construct($name, Config $config)
     {
         // Setup class properties
-        $this->name = $name;
-        $this->path = $config->getPath() . '/' . $name;
+        $this->name       = $name;
+        $this->path       = $config->getPath() . DIRECTORY_SEPARATOR . $name;
+        $this->formatter  = $config->getOption('formatter');
+        $this->queryClass = $config->getOption('query_class');
 
         // Ensure the repo name is valid
         $this->validateName($this->name);
 
         // Ensure directory exists and we can write there
-        if(!file_exists($this->path)) {
+        if (!file_exists($this->path)) {
             mkdir($this->path);
             chmod($this->path, 0777);
         }
     }
-
 
     /**
      * Returns the name of this repository
@@ -55,16 +59,14 @@ class Repository
         return $this->path;
     }
 
-
     /**
-     * A factory method that initialises and returns an instance of a Query
-     * object (or a class that extends it such as CachedQuery).
+     * A factory method that initialises and returns an instance of a Query object.
      *
      * @return Query A new Query class for this repo.
      */
     public function query()
     {
-        $className = '\\JamesMoss\\Flywheel\\Query';
+        $className = $this->queryClass;
 
         return new $className($this);
     }
@@ -76,17 +78,19 @@ class Repository
      */
     public function findAll()
     {
-        $files     = glob($this->path . '/*.json') or array();
+        $ext       = $this->formatter->getFileExtension();
+        $files     = glob($this->path . DIRECTORY_SEPARATOR . '*.' . $ext);
         $documents = array();
-        
+
         foreach ($files as $file) {
-            $fp   = fopen($file, 'r');
-            $json = fread($fp, filesize($file));
+            $fp       = fopen($file, 'r');
+            $contents = fread($fp, filesize($file));
             fclose($fp);
-            $data = json_decode($json);
+            
+            $data = $this->formatter->decode($contents);
 
             if (null !== $data) {
-                $documents[] = new Document((array)$data);
+                $documents[] = new Document((array) $data);
             }
         }
 
@@ -97,13 +101,13 @@ class Repository
      * Validates the name of the repo to ensure it can be stored in the
      * filesystem.
      *
-     * @param  string $name The name to validate against
+     * @param string $name The name to validate against
      *
-     * @return bool       Returns true if valid. Throws an exception if not.
+     * @return bool Returns true if valid. Throws an exception if not.
      */
     protected function validateName($name)
     {
-        if(!preg_match('/^[0-9A-Za-z\_\-]{1,63}$/', $name)) {
+        if (!preg_match('/^[0-9A-Za-z\_\-]{1,63}$/', $name)) {
             throw new \Exception(sprintf('`%s` is not a valid repository name.', $name));
         }
 
@@ -113,19 +117,22 @@ class Repository
     /**
      * Store a Document in the repository.
      *
-     * @param  Document $document The document to store
+     * @param Document $document The document to store
      *
-     * @return bool             True if stored, otherwise false
+     * @return bool True if stored, otherwise false
      */
     public function store(Document $document)
     {
-        if(!isset($document->id)) {
+        if (!isset($document->id)) {
             $document->id = $this->generateId();
         }
 
+        if(!$this->validateId($document->id)) {
+            throw new \Exception(sprintf('`%s` is not a valid document ID.', $document->id));
+        }
+
         $path    = $this->getPathForDocument($document->id);
-        $options = defined('JSON_PRETTY_PRINT') ? JSON_PRETTY_PRINT : null;
-        $data    = json_encode((array)$document, $options);
+        $data    = $this->formatter->encode((array) $document);
 
         $fp = fopen($path, 'w');
         if(!flock($fp, LOCK_EX)) {
@@ -139,14 +146,41 @@ class Repository
     }
 
     /**
+     * Store a Document in the repository, but only if it already
+     * exists. The document must have an ID.
+     *
+     * @param Document $document The document to store
+     *
+     * @return bool True if stored, otherwise false
+     */
+    public function update(Document $document)
+    {
+        if(!$document->id) {
+            return false;
+        }
+
+        $path = $this->getPathForDocument($document->id);
+
+        if(!file_exists($path)) {
+            return false;
+        }
+
+        return $this->store($document);
+    }
+
+    /**
      * Delete a document from the repository using its ID.
      *
-     * @param  string $id The ID of the document to delete
+     * @param mixed $id The ID of the document (or the document itself) to delete
      *
-     * @return boolean     True or deleted, false if not.
+     * @return boolean True if deleted, false if not.
      */
     public function delete($id)
     {
+        if($id instanceof Document) {
+            $id = $id->id;
+        }
+
         $path = $this->getPathForDocument($id);
 
         return unlink($path);
@@ -155,25 +189,41 @@ class Repository
     /**
      * Get the filesystem path for a document based on it's ID.
      *
-     * @param  string $id The ID of the document.
+     * @param string $id The ID of the document.
      *
-     * @return string     The full filesystem path of the document.
+     * @return string The full filesystem path of the document.
      */
     public function getPathForDocument($id)
     {
-        return $this->path . '/' . $this->getFilename($id);
+        if(!$this->validateId($id)) {
+            throw new \Exception(sprintf('`%s` is not a valid ID.', $id));
+        }
+
+        return $this->path . DIRECTORY_SEPARATOR . $this->getFilename($id);
     }
 
     /**
      * Gets just the filename for a document based on it's ID.
      *
-     * @param  string $id The ID of the document.
+     * @param string $id The ID of the document.
      *
-     * @return string     The filename of the document, including extension.
+     * @return string The filename of the document, including extension.
      */
     public function getFilename($id)
     {
-        return $id . '_' . sha1($id) . '.json';
+        return $id . '.' . $this->formatter->getFileExtension();
+    }
+
+    /**
+     * Checks to see if a document ID is valid
+     *
+     * @param  string $id The ID to check
+     *
+     * @return bool     True if valid, otherwise false
+     */
+    protected function validateId($id)
+    {
+        return (boolean)preg_match('/^[^\\/\\?\\*:;{}\\\\\\n]+$/us', $id);
     }
 
     /**
@@ -184,12 +234,12 @@ class Repository
      */
     protected function generateId()
     {
-        //openssl_random_pseudo_bytes
-        $num = str_replace(array(' ', '.'), '', microtime());
-        $id  = gmp_strval(gmp_init($num, 10), 62);
-
+        static $choices = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        $id = '';
+        while (strlen($id) < 9) {
+            $id .= $choices[ mt_rand(0, strlen($choices) - 1) ];
+        }
         return $id;
     }
-
 
 }

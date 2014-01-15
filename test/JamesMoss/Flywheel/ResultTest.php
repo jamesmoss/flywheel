@@ -16,7 +16,7 @@ class ResultTest extends \PHPUnit_Framework_TestCase
         $result = $this->getTestResult();
 
         $i = 0;
-        foreach($result as $v) {
+        foreach ($result as $v) {
             $i += $v->id;
         }
         $this->assertSame(26, $i);
@@ -68,6 +68,16 @@ class ResultTest extends \PHPUnit_Framework_TestCase
         $testDoc = new Document(array('id' => 6, 'name' => 'Bob Jones', 'age' => 35));
 
         $this->assertEquals($testDoc, $doc);
+    }
+
+    public function testLast()
+    {
+        $result = $this->getTestResult();
+        $doc    = $result->last();
+        $testDoc = new Document(array('id' => 1, 'name' => 'Katie Smith', 'age' => 21));
+
+        $this->assertEquals($testDoc, $doc);
+
     }
 
     public function testFirstNoResults()

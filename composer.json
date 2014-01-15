@@ -12,13 +12,16 @@
 		}
 	],
 	"require": {
-		"php": ">=5.3.2",
-		"ext-gmp": "*"
+		"php": ">=5.3.2"
 	},
 	"require-dev": {
 	    "mikey179/vfsStream": "1.2.0",
 	    "mockery/mockery": "dev-master@dev",
-	    "phpunit/phpunit": "3.7.*"
+	    "phpunit/phpunit": "3.7.*",
+	    "symfony/yaml": "2.4.*"
+	},
+	"suggest": {
+		"symfony/yaml": "You must install this if you're using the YAML or Markdown formatters."
 	},
 	"autoload": {
 		"psr-0": {
