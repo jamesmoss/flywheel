@@ -41,14 +41,13 @@ class RespositoryTest extends \PHPUnit_Framework_TestCase
         $repo   = new Repository('_pages', $config);
 
         for ($i = 0; $i < 5; $i++) {
-
             $data = array(
-                'id'   => $i,
                 'slug' => '123',
                 'body' => 'THIS IS BODY TEXT'
             );
 
             $document = new Document($data);
+            $document->setId($i);
 
             $repo->store($document);
 
@@ -72,6 +71,32 @@ class RespositoryTest extends \PHPUnit_Framework_TestCase
         $repo->delete($id);
 
         $this->assertFalse(is_file($path));
+    }
+
+    public function testRenamingDocumentChangesDocumentID()
+    {
+        if (!is_dir('/tmp/flywheel')) {
+            mkdir('/tmp/flywheel');
+        }
+        $config = new Config('/tmp/flywheel');
+        $repo   = new Repository('_pages', $config);
+        $doc    = new Document(array(
+            'test' => '123',
+        ));
+
+        $doc->setId('test1234');
+
+        $repo->store($doc);
+
+        rename('/tmp/flywheel/_pages/test1234.json', '/tmp/flywheel/_pages/newname.json');
+
+        foreach ($repo->findAll() as $document) {
+            if ('newname' === $document->getId()) {
+                return true;
+            }
+        }
+
+        $this->fail('No file found with the new ID');
     }
 
     public function testLockingOnWrite()
