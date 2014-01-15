@@ -74,6 +74,11 @@ class RespositoryTest extends \PHPUnit_Framework_TestCase
         $this->assertFalse(is_file($path));
     }
 
+    public function testLockingOnWrite()
+    {
+        $this->markTestIncomplete();
+    }
+
     public function validNameProvider()
     {
         return array(

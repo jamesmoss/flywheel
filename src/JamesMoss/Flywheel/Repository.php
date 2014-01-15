@@ -83,7 +83,12 @@ class Repository
         $documents = array();
 
         foreach ($files as $file) {
-            $data = $this->formatter->decode(file_get_contents($file));
+            $fp       = fopen($file, 'r');
+            $contents = fread($fp, filesize($file));
+            fclose($fp);
+            
+            $data = $this->formatter->decode($contents);
+
             if (null !== $data) {
                 $documents[] = new Document((array) $data);
             }
@@ -129,7 +134,15 @@ class Repository
         $path    = $this->getPathForDocument($document->id);
         $data    = $this->formatter->encode((array) $document);
 
-        return file_put_contents($path, $data);
+        $fp = fopen($path, 'w');
+        if(!flock($fp, LOCK_EX)) {
+            return false;
+        }
+        $result = fwrite($fp, $data);
+        flock($fp, LOCK_UN);
+        fclose($fp);
+
+        return $result;
     }
 
     /**
