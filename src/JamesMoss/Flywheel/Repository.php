@@ -125,14 +125,41 @@ class Repository
     }
 
     /**
+     * Store a Document in the repository, but only if it already
+     * exists. The document must have an ID.
+     *
+     * @param Document $document The document to store
+     *
+     * @return bool True if stored, otherwise false
+     */
+    public function update(Document $document)
+    {
+        if(!$document->id) {
+            return false;
+        }
+
+        $path = $this->getPathForDocument($document->id);
+
+        if(!file_exists($path)) {
+            return false;
+        }
+
+        return $this->store($document);
+    }
+
+    /**
      * Delete a document from the repository using its ID.
      *
-     * @param string $id The ID of the document to delete
+     * @param mixed $id The ID of the document (or the document itself) to delete
      *
-     * @return boolean True or deleted, false if not.
+     * @return boolean True if deleted, false if not.
      */
     public function delete($id)
     {
+        if($id instanceof Document) {
+            $id = $id->id;
+        }
+
         $path = $this->getPathForDocument($id);
 
         return unlink($path);

@@ -84,14 +84,12 @@ foreach($posts as $post) {
 $post->title = 'How to update documents';
 
 // Updates the document (only if it already exists)
-$repo->update($post); 
-
-// Updates the document (if it doesnt exist, it gets inserted)
-$repo->replace($post); 
+$repo->update($post);
 
 
 // Deleting documents - you can pass a document or it's ID.
 $repo->delete($post);
+// or you can do the following
 $repo->delete('Czk6SPu4X');
 
 ```
