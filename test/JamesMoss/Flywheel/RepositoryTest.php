@@ -21,7 +21,7 @@ class RespositoryTest extends \PHPUnit_Framework_TestCase
     public function testInvalidRepoName($name)
     {
         $config = new Config('/tmp');
-        $repo = new Repository($name, $config);
+        new Repository($name, $config);
     }
 
     public function testGettingQueryObject()
@@ -97,6 +97,11 @@ class RespositoryTest extends \PHPUnit_Framework_TestCase
         }
 
         $this->fail('No file found with the new ID');
+    }
+
+    public function testLockingOnWrite()
+    {
+        $this->markTestIncomplete();
     }
 
     public function validNameProvider()

@@ -4,7 +4,7 @@ namespace JamesMoss\Flywheel\Formatter;
 
 use Symfony\Component\Yaml\Yaml as SymfonyYAML;
 
-class YAML implements Format
+class YAML implements FormatInterface
 {
     public function getFileExtension()
     {

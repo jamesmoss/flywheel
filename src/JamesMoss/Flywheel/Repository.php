@@ -83,7 +83,12 @@ class Repository
         $documents = array();
 
         foreach ($files as $file) {
-            $data = $this->formatter->decode(file_get_contents($file));
+            $fp       = fopen($file, 'r');
+            $contents = fread($fp, filesize($file));
+            fclose($fp);
+            
+            $data = $this->formatter->decode($contents);
+
             if (null !== $data) {
                 $doc = new Document((array) $data);
                 $doc->setId(basename($file, '.' . $ext));
@@ -136,7 +141,15 @@ class Repository
         $data = get_object_vars($document);
         $data = $this->formatter->encode($data);
 
-        return file_put_contents($path, $data);
+        $fp = fopen($path, 'w');
+        if(!flock($fp, LOCK_EX)) {
+            return false;
+        }
+        $result = fwrite($fp, $data);
+        flock($fp, LOCK_UN);
+        fclose($fp);
+
+        return $result;
     }
 
     /**
