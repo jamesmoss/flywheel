@@ -149,7 +149,11 @@ class Repository
         flock($fp, LOCK_UN);
         fclose($fp);
 
-        return $result;
+        if(!$result) {
+            return false;
+        }
+
+        return $document->getId();
     }
 
     /**

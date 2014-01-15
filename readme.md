@@ -68,9 +68,11 @@ echo $post->wordCount; // 7
 $id = $repo->store($post);
 
 // A unique ID is automatically generated for you if you don't specify your own when saving
-// If you set your own then it cannot contain the following characters: / ? * : ; { } \ or newline
 echo $id; // Czk6SPu4X
-echo $post->id; // Czk6SPu4X
+echo $post->getId(); // Czk6SPu4X
+
+// If you set your own then it cannot contain the following characters: / ? * : ; { } \ or newline
+$post->setId('a-review-of-2013');
 
 // Retrieving documents
 $posts = $repo->query()
