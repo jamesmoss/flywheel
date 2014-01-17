@@ -1,6 +1,6 @@
 # Flywheel
 
-[![Build Status](https://travis-ci.org/jamesmoss/flywheel.png?branch=master)](https://travis-ci.org/jamesmoss/flywheel) [![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/jamesmoss/flywheel/badges/quality-score.png?s=a446767a189b05b7eea08f639a3843dd85419f55)](https://scrutinizer-ci.com/g/jamesmoss/flywheel/)
+[![Build Status](https://travis-ci.org/jamesmoss/flywheel.png?branch=master)](https://travis-ci.org/jamesmoss/flywheel) [![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/jamesmoss/flywheel/badges/quality-score.png?s=a446767a189b05b7eea08f639a3843dd85419f55)](https://scrutinizer-ci.com/g/jamesmoss/flywheel/) [![Code Coverage](https://scrutinizer-ci.com/g/jamesmoss/flywheel/badges/coverage.png?s=98540d0552a411c4e2fbcc5405e09e7be886e370)](https://scrutinizer-ci.com/g/jamesmoss/flywheel/)
 
 A lightweight, flat-file, document database for PHP that can store data in JSON, YAML or Markdown formats.
 
