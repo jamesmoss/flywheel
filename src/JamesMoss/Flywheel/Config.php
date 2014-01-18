@@ -23,14 +23,6 @@ class Config
     {
         $path = rtrim($path, DIRECTORY_SEPARATOR);
 
-        if (!is_dir($path)) {
-            throw new \RuntimeException(sprintf('`%s` is not a directory.', $path));
-        }
-
-        if (!is_writable($path)) {
-            throw new \RuntimeException(sprintf('`%s` is not writable.', $path));
-        }
-
         // Merge supplied options with the defaults
         $options = array_merge(array(
             'formatter'   => new Formatter\JSON,

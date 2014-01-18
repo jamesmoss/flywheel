@@ -33,9 +33,13 @@ class Repository
         $this->validateName($this->name);
 
         // Ensure directory exists and we can write there
-        if (!file_exists($this->path)) {
-            mkdir($this->path);
+        if (!is_dir($this->path)) {
+            if(!@mkdir($this->path)) {                
+                throw new \RuntimeException(sprintf('`%s` doesn\'t exist and can\'t be created.', $this->path));
+            }
             chmod($this->path, 0777);
+        } else if (!is_writable($this->path)) {
+            throw new \RuntimeException(sprintf('`%s` is not writable.', $this->path));
         }
     }
 
@@ -98,6 +102,35 @@ class Repository
         }
 
         return $documents;
+    }
+
+    /**
+     * Returns a single document based on it's ID
+     *
+     * @param  string $id The ID of the document to find
+     *
+     * @return Document|boolean  The document if it exists, false if not.
+     */
+    public function findById($id)
+    {
+        if(!file_exists($path = $this->getPathForDocument($id))) {
+            return false;
+        }
+
+        $fp       = fopen($path, 'r');
+        $contents = fread($fp, filesize($path));
+        fclose($fp);
+        
+        $data = $this->formatter->decode($contents);
+
+        if($data === null) {
+            return false;
+        }
+
+        $doc = new Document((array) $data);
+        $doc->setId(basename($path, '.' . $this->formatter->getFileExtension()));
+
+        return $doc;
     }
 
     /**

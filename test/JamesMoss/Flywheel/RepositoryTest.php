@@ -4,6 +4,7 @@ namespace JamesMoss\Flywheel;
 
 class RespositoryTest extends \PHPUnit_Framework_TestCase
 {
+
     /**
      * @dataProvider validNameProvider
      */
@@ -22,6 +23,28 @@ class RespositoryTest extends \PHPUnit_Framework_TestCase
     {
         $config = new Config('/tmp');
         new Repository($name, $config);
+    }
+
+    /**
+     * @expectedException RuntimeException
+     */
+    public function testDataLocationExistsCheck()
+    {
+        $config = new Config('/this/path/wont/ever/exist/(probably)');
+        new Repository('test', $config);
+    }
+
+    /**
+     * @expectedException RuntimeException
+     * @expectedExceptionMessage not writable
+     */
+    public function testDataLocationWritableCheck()
+    {
+        $path   = __DIR__ . '/fixtures/datastore';
+        chmod($path . '/notwritable', 0555);
+        $config = new Config($path);
+
+        new Repository('notwritable', $config);
     }
 
     public function testGettingQueryObject()
