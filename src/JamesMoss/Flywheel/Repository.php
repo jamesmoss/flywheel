@@ -83,7 +83,7 @@ class Repository
     public function findAll()
     {
         $ext       = $this->formatter->getFileExtension();
-        $files     = glob($this->path . DIRECTORY_SEPARATOR . '*.' . $ext);
+        $files     = $this->getAllFiles();
         $documents = array();
 
         foreach ($files as $file) {
@@ -95,7 +95,7 @@ class Repository
 
             if (null !== $data) {
                 $doc = new Document((array) $data);
-                $doc->setId(basename($file, '.' . $ext));
+                $doc->setId($this->getIdFromPath($file, $ext));
 
                 $documents[] = $doc;
             }
@@ -127,27 +127,12 @@ class Repository
             return false;
         }
 
+        $ext = $this->formatter->getFileExtension();
+
         $doc = new Document((array) $data);
-        $doc->setId(basename($path, '.' . $this->formatter->getFileExtension()));
+        $doc->setId($this->getIdFromPath($path, $ext));
 
         return $doc;
-    }
-
-    /**
-     * Validates the name of the repo to ensure it can be stored in the
-     * filesystem.
-     *
-     * @param string $name The name to validate against
-     *
-     * @return bool Returns true if valid. Throws an exception if not.
-     */
-    protected function validateName($name)
-    {
-        if (!preg_match('/^[0-9A-Za-z\_\-]{1,63}$/', $name)) {
-            throw new \Exception(sprintf('`%s` is not a valid repository name.', $name));
-        }
-
-        return true;
     }
 
     /**
@@ -259,6 +244,23 @@ class Repository
     }
 
     /**
+     * Validates the name of the repo to ensure it can be stored in the
+     * filesystem.
+     *
+     * @param string $name The name to validate against
+     *
+     * @return bool Returns true if valid. Throws an exception if not.
+     */
+    protected function validateName($name)
+    {
+        if (!preg_match('/^[0-9A-Za-z\_\-]{1,63}$/', $name)) {
+            throw new \Exception(sprintf('`%s` is not a valid repository name.', $name));
+        }
+
+        return true;
+    }
+
+    /**
      * Checks to see if a document ID is valid
      *
      * @param  string $id The ID to check
@@ -268,6 +270,19 @@ class Repository
     protected function validateId($id)
     {
         return (boolean)preg_match('/^[^\\/\\?\\*:;{}\\\\\\n]+$/us', $id);
+    }
+
+    /**
+     * Get an array containing the path of all files in this repository
+     *
+     * @return array An array, item is a file
+     */
+    protected function getAllFiles()
+    {
+        $ext       = $this->formatter->getFileExtension();
+        $files     = glob($this->path . DIRECTORY_SEPARATOR . '*.' . $ext);
+
+        return $files;
     }
 
     /**
@@ -284,6 +299,19 @@ class Repository
             $id .= $choices[ mt_rand(0, strlen($choices) - 1) ];
         }
         return $id;
+    }
+
+    /**
+     * Get a document's ID base on its filesystem path
+     *
+     * @param  string $path The full path to the file (including file extension)
+     * @param  string $ext  The file extension (without the period)
+     *
+     * @return string       The ID of the document
+     */
+    protected function getIdFromPath($path, $ext)
+    {
+        return basename($path, '.' . $ext);
     }
 
 }
