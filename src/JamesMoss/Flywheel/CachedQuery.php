@@ -53,17 +53,12 @@ class CachedQuery extends Query
      */
     protected function getFileHash()
     {
-        $path  = $this->repo->getPath();
-        $files = scandir($path);
+        $files = $this->repo->getAllFiles();
         $hash  = '';
 
         foreach ($files as $file) {
-            if ($file == '..' || $file == '.') {
-                continue;
-            }
-
             $hash.= $file . '|';
-            $hash.= (string) filemtime($path . '/' . $file) . '|';
+            $hash.= (string) filemtime($file) . '|';
         }
 
         $hash = md5($hash);

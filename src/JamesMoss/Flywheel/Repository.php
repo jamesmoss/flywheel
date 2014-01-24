@@ -244,6 +244,19 @@ class Repository
     }
 
     /**
+     * Get an array containing the path of all files in this repository
+     *
+     * @return array An array, item is a file
+     */
+    public function getAllFiles()
+    {
+        $ext       = $this->formatter->getFileExtension();
+        $files     = glob($this->path . DIRECTORY_SEPARATOR . '*.' . $ext);
+
+        return $files;
+    }
+
+    /**
      * Validates the name of the repo to ensure it can be stored in the
      * filesystem.
      *
@@ -270,19 +283,6 @@ class Repository
     protected function validateId($id)
     {
         return (boolean)preg_match('/^[^\\/\\?\\*:;{}\\\\\\n]+$/us', $id);
-    }
-
-    /**
-     * Get an array containing the path of all files in this repository
-     *
-     * @return array An array, item is a file
-     */
-    protected function getAllFiles()
-    {
-        $ext       = $this->formatter->getFileExtension();
-        $files     = glob($this->path . DIRECTORY_SEPARATOR . '*.' . $ext);
-
-        return $files;
     }
 
     /**

@@ -52,6 +52,21 @@ class NestedRepository extends Repository
     }
 
     /**
+     * Get an array containing the path of all files in this repository
+     *
+     * @return array An array, item is a file path.
+     */
+    public function getAllFiles()
+    {
+        $ext       = $this->formatter->getFileExtension();
+        
+        $files = array();
+        $this->getFilesRecursive($this->path, $files, $ext);
+
+        return $files;
+    }
+
+    /**
      * Checks to see if a document ID is valid
      *
      * @param  string $id The ID to check
@@ -63,21 +78,6 @@ class NestedRepository extends Repository
         // Similar regex to the one in the parent method, this allows forward slashes
         // in the key name, except for at the start or end.
         return (boolean)preg_match('/^[^\\/]?[^\\?\\*:;{}\\\\\\n]+[^\\/]$/us', $id);
-    }
-
-    /**
-     * Get an array containing the path of all files in this repository
-     *
-     * @return array An array, item is a file path.
-     */
-    protected function getAllFiles()
-    {
-        $ext       = $this->formatter->getFileExtension();
-        
-        $files = array();
-        $this->getFilesRecursive($this->path, $files, $ext);
-
-        return $files;
     }
 
     protected function getFilesRecursive($dir, array &$result, $ext) 
