@@ -145,15 +145,21 @@ class Query
             $i   = 0;
             $cmp = 0;
             while ($cmp == 0 && $i < $c) {
-                $valueA = $a->{$args[$i][0]};
-                $valueB = $b->{$args[$i][0]};
+                $keyName = $args[$i][0];
+                if($keyName == 'id') {
+                    $valueA = $a->getId();
+                    $valueB = $b->getId();
+                } else {
+                    $valueA = isset($a->{$keyName}) ? $a->{$keyName} : null;
+                    $valueB = isset($b->{$keyName}) ? $b->{$keyName} : null; 
+                }
 
                 if (is_string($valueA)) {
                     $cmp = strcmp($valueA, $valueB);
                 } elseif (is_bool($valueA)) {
                     $cmp = $valueA - $valueB;
                 } else {
-                    $cmp = ($valueA == $valueB) ? 0 : ($valueA > $valueB) ? -1 : 1;
+                    $cmp = ($valueA == $valueB) ? 0 : (($valueA > $valueB) ? -1 : 1);
                 }
 
                 if ($args[$i][1] === SORT_DESC) {
