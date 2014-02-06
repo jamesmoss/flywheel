@@ -122,6 +122,28 @@ class RespositoryTest extends \PHPUnit_Framework_TestCase
         $this->fail('No file found with the new ID');
     }
 
+    public function testChangingDocumentIDChangesFilename()
+    {
+        if (!is_dir('/tmp/flywheel')) {
+            mkdir('/tmp/flywheel');
+        }
+        $config = new Config('/tmp/flywheel');
+        $repo   = new Repository('_pages', $config);
+        $doc    = new Document(array(
+            'test' => '123',
+        ));
+
+        $doc->setId('test1234');
+        $repo->store($doc);
+
+        $this->assertTrue(file_exists('/tmp/flywheel/_pages/test1234.json'));
+
+        $doc->setId('9876test');
+        $repo->update($doc);
+
+        $this->assertFalse(file_exists('/tmp/flywheel/_pages/test1234.json'));
+    }
+
     public function testLockingOnWrite()
     {
         $this->markTestIncomplete();

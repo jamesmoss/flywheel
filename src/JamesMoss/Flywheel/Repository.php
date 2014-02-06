@@ -188,17 +188,16 @@ class Repository
             return false;
         }
 
-        $path = $this->getPathForDocument($document->getId());
+        $oldPath = $this->getPathForDocument($document->getInitialId());
 
-        if(!file_exists($path)) {
+        if(!file_exists($oldPath)) {
             return false;
         }
 
         // If the ID has changed we need to delete the old document.
         if($document->getId() !== $document->getInitialId()) {
-            $path = $this->getPathForDocument($document->getInitialId());
-            if(file_exists($path)) {
-                unlink($path);
+            if(file_exists($oldPath)) {
+                unlink($oldPath);
             }
         }
 
