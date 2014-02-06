@@ -34,7 +34,7 @@ class Repository
 
         // Ensure directory exists and we can write there
         if (!is_dir($this->path)) {
-            if(!@mkdir($this->path)) {                
+            if(!@mkdir($this->path)) {
                 throw new \RuntimeException(sprintf('`%s` doesn\'t exist and can\'t be created.', $this->path));
             }
             chmod($this->path, 0777);
@@ -90,7 +90,7 @@ class Repository
             $fp       = fopen($file, 'r');
             $contents = fread($fp, filesize($file));
             fclose($fp);
-            
+
             $data = $this->formatter->decode($contents);
 
             if (null !== $data) {
@@ -120,7 +120,7 @@ class Repository
         $fp       = fopen($path, 'r');
         $contents = fread($fp, filesize($path));
         fclose($fp);
-        
+
         $data = $this->formatter->decode($contents);
 
         if($data === null) {
@@ -192,6 +192,14 @@ class Repository
 
         if(!file_exists($path)) {
             return false;
+        }
+
+        // If the ID has changed we need to delete the old document.
+        if($document->getId() !== $document->getInitialId()) {
+            $path = $this->getPathForDocument($document->getInitialId());
+            if(file_exists($path)) {
+                unlink($path);
+            }
         }
 
         return $this->store($document);

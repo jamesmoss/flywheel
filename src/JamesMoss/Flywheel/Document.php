@@ -15,6 +15,7 @@ namespace JamesMoss\Flywheel;
 class Document
 {
     protected $__flywheelDocId;
+    protected $__flywheelInitialId;
 
     /**
      * Constructor
@@ -36,6 +37,10 @@ class Document
      */
     public function setId($id)
     {
+        if(!isset($this->__flywheelInitialId)) {
+            $this->__flywheelInitialId = $id;
+        }
+
         $this->__flywheelDocId = $id;
     }
 
@@ -47,5 +52,15 @@ class Document
     public function getId()
     {
         return $this->__flywheelDocId;
+    }
+
+    /**
+     * Get the initial document ID.
+     *
+     * @return string
+     */
+    public function getInitialId()
+    {
+        return $this->__flywheelInitialId;
     }
 }
