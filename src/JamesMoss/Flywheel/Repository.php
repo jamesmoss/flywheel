@@ -14,6 +14,7 @@ class Repository
     protected $path;
     protected $formatter;
     protected $queryClass;
+    protected $documentClass;
 
     /**
      * Constructor
@@ -24,10 +25,11 @@ class Repository
     public function __construct($name, Config $config)
     {
         // Setup class properties
-        $this->name       = $name;
-        $this->path       = $config->getPath() . DIRECTORY_SEPARATOR . $name;
-        $this->formatter  = $config->getOption('formatter');
-        $this->queryClass = $config->getOption('query_class');
+        $this->name          = $name;
+        $this->path          = $config->getPath() . DIRECTORY_SEPARATOR . $name;
+        $this->formatter     = $config->getOption('formatter');
+        $this->queryClass    = $config->getOption('query_class');
+        $this->documentClass = $config->getOption('document_class');
 
         // Ensure the repo name is valid
         $this->validateName($this->name);
@@ -94,7 +96,7 @@ class Repository
             $data = $this->formatter->decode($contents);
 
             if (null !== $data) {
-                $doc = new Document((array) $data);
+                $doc = new $this->documentClass((array) $data);
                 $doc->setId($this->getIdFromPath($file, $ext));
 
                 $documents[] = $doc;
@@ -129,7 +131,7 @@ class Repository
 
         $ext = $this->formatter->getFileExtension();
 
-        $doc = new Document((array) $data);
+        $doc = new $this->documentClass((array) $data);
         $doc->setId($this->getIdFromPath($path, $ext));
 
         return $doc;
@@ -142,7 +144,7 @@ class Repository
      *
      * @return bool True if stored, otherwise false
      */
-    public function store(Document $document)
+    public function store(DocumentInterface $document)
     {
         $id = $document->getId();
 
@@ -182,7 +184,7 @@ class Repository
      *
      * @return bool True if stored, otherwise false
      */
-    public function update(Document $document)
+    public function update(DocumentInterface $document)
     {
         if (!$document->getId()) {
             return false;
@@ -213,7 +215,7 @@ class Repository
      */
     public function delete($id)
     {
-        if ($id instanceof Document) {
+        if ($id instanceof DocumentInterface) {
             $id = $id->getId();
         }
 

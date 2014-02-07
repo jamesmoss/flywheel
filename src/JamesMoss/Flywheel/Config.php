@@ -25,8 +25,9 @@ class Config
 
         // Merge supplied options with the defaults
         $options = array_merge(array(
-            'formatter'   => new Formatter\JSON,
-            'query_class' => $this->hasAPC() ? '\\JamesMoss\\Flywheel\\CachedQuery' : '\\JamesMoss\\Flywheel\\Query',
+            'formatter'      => new Formatter\JSON,
+            'query_class'    => $this->hasAPC() ? '\\JamesMoss\\Flywheel\\CachedQuery' : '\\JamesMoss\\Flywheel\\Query',
+            'document_class' => '\\JamesMoss\\Flywheel\\Document',
         ), $options);
 
         $this->path    = $path;

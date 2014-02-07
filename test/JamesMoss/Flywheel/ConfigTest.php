@@ -41,6 +41,17 @@ class ConfigTest extends \PHPUnit_Framework_TestCase
         $this->assertSame('\\stdClass', $config->getOption('query_class'));
     }
 
+    public function testSettingDocumentClass()
+    {
+        $path   = __DIR__ . '/fixtures/datastore/writable';
+        $config = new Config($path . '/', array(
+            'document_class' => '\\stdClass',
+        ));
+
+        $this->assertSame('\\stdClass', $config->getOption('document_class'));
+    }
+
+
     public function testSettingAutomaticQueryClass()
     {
         $path   = __DIR__ . '/fixtures/datastore/writable';
