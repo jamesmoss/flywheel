@@ -4,7 +4,7 @@ namespace JamesMoss\Flywheel\Formatter;
 
 use Symfony\Component\Yaml\Yaml as SymfonyYAML;
 
-class Markdown implements FormatInterface
+class Markdown extends YAML
 {
     protected $contentFieldName;
 
@@ -24,7 +24,7 @@ class Markdown implements FormatInterface
         unset($data[$this->contentFieldName]);
 
         $str = "---\n";
-        $str.= SymfonyYAML::dump($data);
+        $str.= parent::encode($data);
         $str.= "---\n";
         $str.= $body;
 
@@ -35,7 +35,7 @@ class Markdown implements FormatInterface
     {
         $parts = preg_split('/[\n]*[-]{3}[\n]/', $data, 3);
 
-        $yaml = SymfonyYAML::parse($parts[1]);
+        $yaml = parent::decode($parts[1]);
         $yaml[$this->contentFieldName] = $parts[2];
 
         return $yaml;

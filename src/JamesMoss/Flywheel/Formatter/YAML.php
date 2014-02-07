@@ -2,7 +2,7 @@
 
 namespace JamesMoss\Flywheel\Formatter;
 
-use Symfony\Component\Yaml\Yaml as SymfonyYAML;
+use \Spyc;
 
 class YAML implements FormatInterface
 {
@@ -13,11 +13,11 @@ class YAML implements FormatInterface
 
     public function encode(array $data)
     {
-        return SymfonyYAML::dump($data);
+        return Spyc::YAMLDump($data, false, false, true);
     }
 
     public function decode($data)
     {
-        return SymfonyYAML::parse($data);
+        return Spyc::YAMLLoadString($data);
     }
 }
