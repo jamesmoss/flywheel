@@ -18,10 +18,10 @@
 	    "mikey179/vfsStream": "1.2.0",
 	    "mockery/mockery": "dev-master@dev",
 	    "phpunit/phpunit": "3.7.*",
-	    "symfony/yaml": "2.4.*"
+	    "mustangostang/spyc": "0.5.*@dev"
 	},
 	"suggest": {
-		"symfony/yaml": "You must install this if you're using the YAML or Markdown formatters."
+		"mustangostang/spyc": "You must install this if you're using the YAML or Markdown formatters."
 	},
 	"autoload": {
 		"psr-0": {
