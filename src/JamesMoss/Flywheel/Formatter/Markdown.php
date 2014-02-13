@@ -20,7 +20,7 @@ class Markdown extends YAML
 
     public function encode(array $data)
     {
-        $body = $data[$this->contentFieldName];
+        $body = isset($data[$this->contentFieldName]) ? $data[$this->contentFieldName] : '';
         unset($data[$this->contentFieldName]);
 
         $str = "---\n";
