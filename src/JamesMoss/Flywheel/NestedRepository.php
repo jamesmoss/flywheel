@@ -19,24 +19,26 @@ class NestedRepository extends Repository
     public function getPathForDocument($id)
     {
         if(!$this->validateId($id)) {
-            throw new \Exception(sprintf('`%s` is not a valid ID.', $id));
+            throw new \Exception(sprintf('`%s` is not a valid document ID.', $id));
         }
 
-        // This is hacky and bad but we make the directory at this point.
-        // This means that checks for missing documents can cause a directory
-        // to be created, but this way requires less code modification in
-        // Repository. Once we refactor the file stuff this should be fixed.
-        // Todo - remove
         if(strpos($id, self::SEPERATOR) !== false) {
             $path = DIRECTORY_SEPARATOR . str_replace(self::SEPERATOR, DIRECTORY_SEPARATOR, dirname($id));
-            if(!file_exists($this->path . $path)) {
-                mkdir($this->path . $path, 0777, true);
-            }
         } else {
             $path = '';
         }
 
         return  $this->path . $path . DIRECTORY_SEPARATOR . $this->getFilename($id);
+    }
+
+    public function write($path, $contents)
+    {
+        // ensure path exists by making directories beforehand
+        if(!file_exists(dirname($path))) {
+            mkdir(dirname($path), 0777, true);
+        }
+
+        return parent::write($path, $contents);
     }
 
     /**
@@ -58,8 +60,7 @@ class NestedRepository extends Repository
      */
     public function getAllFiles()
     {
-        $ext       = $this->formatter->getFileExtension();
-        
+        $ext   = $this->formatter->getFileExtension();
         $files = array();
         $this->getFilesRecursive($this->path, $files, $ext);
 
@@ -80,10 +81,10 @@ class NestedRepository extends Repository
         return (boolean)preg_match('/^[^\\/]?[^\\?\\*:;{}\\\\\\n]+[^\\/]$/us', $id);
     }
 
-    protected function getFilesRecursive($dir, array &$result, $ext) 
+    protected function getFilesRecursive($dir, array &$result, $ext)
     {
         $extensionLength = strlen($ext) + 1; // one is for the dot!
-        $files           = scandir($dir); 
+        $files           = scandir($dir);
         foreach($files as $file) {
             if($file === '.' || $file === '..') {
                 continue;
@@ -101,7 +102,7 @@ class NestedRepository extends Repository
             $result[] = $dir . DIRECTORY_SEPARATOR . $file;
         }
 
-        return $result; 
+        return $result;
     }
 
     /**

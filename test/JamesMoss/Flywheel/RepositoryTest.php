@@ -107,11 +107,11 @@ class RespositoryTest extends \PHPUnit_Framework_TestCase
             'test' => '123',
         ));
 
-        $doc->setId('test1234');
+        $doc->setId('testdoc123');
 
         $repo->store($doc);
 
-        rename('/tmp/flywheel/_pages/test1234.json', '/tmp/flywheel/_pages/newname.json');
+        rename('/tmp/flywheel/_pages/testdoc123.json', '/tmp/flywheel/_pages/newname.json');
 
         foreach ($repo->findAll() as $document) {
             if ('newname' === $document->getId()) {
@@ -127,6 +127,7 @@ class RespositoryTest extends \PHPUnit_Framework_TestCase
         if (!is_dir('/tmp/flywheel')) {
             mkdir('/tmp/flywheel');
         }
+
         $config = new Config('/tmp/flywheel');
         $repo   = new Repository('_pages', $config);
         $doc    = new Document(array(

@@ -149,8 +149,8 @@ class Repository
         $id = $document->getId();
 
         // Generate an id if none has been defined
-        if (!$id) {
-            $document->setId($this->generateId());
+        if (is_null($id)) {
+            $id = $document->setId($this->generateId());
         }
 
         if (!$this->validateId($id)) {
@@ -161,19 +161,11 @@ class Repository
         $data = get_object_vars($document);
         $data = $this->formatter->encode($data);
 
-        $fp = fopen($path, 'w');
-        if(!flock($fp, LOCK_EX)) {
-            return false;
-        }
-        $result = fwrite($fp, $data);
-        flock($fp, LOCK_UN);
-        fclose($fp);
-
-        if(!$result) {
+        if(!$this->write($path, $data)) {
             return false;
         }
 
-        return $document->getId();
+        return $id;
     }
 
     /**
@@ -234,7 +226,7 @@ class Repository
     public function getPathForDocument($id)
     {
         if(!$this->validateId($id)) {
-            throw new \Exception(sprintf('`%s` is not a valid ID.', $id));
+            throw new \Exception(sprintf('`%s` is not a valid document ID.', $id));
         }
 
         return $this->path . DIRECTORY_SEPARATOR . $this->getFilename($id);
@@ -263,6 +255,29 @@ class Repository
         $files     = glob($this->path . DIRECTORY_SEPARATOR . '*.' . $ext);
 
         return $files;
+    }
+
+    /**
+     * Writes data to the filesystem.
+     *
+     * @todo  Abstract this into a filesystem layer.
+     *
+     * @param  string $path     The absolute file path to write to
+     * @param  string $contents The contents of the file to write
+     *
+     * @return boolean          Returns true if write was successful, false if not.
+     */
+    protected function write($path, $contents)
+    {
+        $fp = fopen($path, 'w');
+        if(!flock($fp, LOCK_EX)) {
+            return false;
+        }
+        $result = fwrite($fp, $contents);
+        flock($fp, LOCK_UN);
+        fclose($fp);
+
+        return $result !== false;
     }
 
     /**

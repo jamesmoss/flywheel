@@ -37,11 +37,15 @@ class Document implements DocumentInterface
      */
     public function setId($id)
     {
+        $id = (string)$id;
+
         if(!isset($this->__flywheelInitialId)) {
             $this->__flywheelInitialId = $id;
         }
 
         $this->__flywheelDocId = $id;
+
+        return $id;
     }
 
     /**

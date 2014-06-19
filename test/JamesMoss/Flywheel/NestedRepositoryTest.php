@@ -67,7 +67,7 @@ class NestedRespositoryTest extends \PHPUnit_Framework_TestCase
             if(!is_dir(dirname($path . $id))) {
                 mkdir(dirname($path . $id), 0777, true);
             }
-            
+
             file_put_contents($path . $id . '.json', json_encode(array('name' => 'Joe Bloggs')));
         }
 
