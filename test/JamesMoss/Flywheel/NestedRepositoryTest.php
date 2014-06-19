@@ -48,6 +48,28 @@ class NestedRespositoryTest extends \PHPUnit_Framework_TestCase
         $this->assertFalse(is_file($path));
     }
 
+    public function testDeletingDocumentsAndEmptyDirs()
+    {
+        exec('rm -rf /tmp/flywheel/_pages');
+        $config = new Config('/tmp/flywheel', array(
+            'delete_empty_dirs' => true,
+        ));
+        $repo   = new NestedRepository('_pages', $config);
+        $id     = 'delete_test/within/a/nested/directory';
+        $name   = $id . '.json';
+        $path   = '/tmp/flywheel/_pages/' . $name;
+
+        mkdir(dirname($path), 0777, true);
+        file_put_contents($path, '');
+
+        $this->assertTrue(is_file($path));
+
+        $repo->delete($id);
+
+        $this->assertFalse(is_file($path));
+        $this->assertFalse(file_exists(dirname($path)));
+    }
+
     public function testGettingNestedDocuments()
     {
         exec('rm -rf /tmp/flywheel/_dummy');

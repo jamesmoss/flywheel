@@ -10,6 +10,16 @@ class NestedRepository extends Repository
     const SEPERATOR = '/';
 
     /**
+     * @inherit
+     */
+    public function __construct($name, Config $config)
+    {
+        parent::__construct($name, $config);
+
+        $this->deleteEmptyDirs = $config->getOption('delete_empty_dirs') === true;
+    }
+
+    /**
      * Get the filesystem path for a document based on it's ID.
      *
      * @param string $id The ID of the document.
@@ -22,7 +32,7 @@ class NestedRepository extends Repository
             throw new \Exception(sprintf('`%s` is not a valid document ID.', $id));
         }
 
-        if(strpos($id, self::SEPERATOR) !== false) {
+        if($this->isNestedId($id)) {
             $path = DIRECTORY_SEPARATOR . str_replace(self::SEPERATOR, DIRECTORY_SEPARATOR, dirname($id));
         } else {
             $path = '';
@@ -31,7 +41,35 @@ class NestedRepository extends Repository
         return  $this->path . $path . DIRECTORY_SEPARATOR . $this->getFilename($id);
     }
 
-    public function write($path, $contents)
+    /**
+     * @inherit
+     */
+    public function delete($id)
+    {
+        $result = parent::delete($id);
+
+        if ($id instanceof DocumentInterface) {
+            $id = $id->getId();
+        }
+
+        if(!$result || !$this->deleteEmptyDirs || !$this->isNestedId($id)) {
+            return $result;
+        }
+
+        $path = $this->getPathForDocument($id);
+        $dir  = dirname($path);
+
+        if(file_exists($dir) && count(glob($dir . '/*')) === 0) {
+            rmdir($dir);
+        }
+
+        return $result;
+    }
+
+    /**
+     * @inherit
+     */
+    protected function write($path, $contents)
     {
         // ensure path exists by making directories beforehand
         if(!file_exists(dirname($path))) {
@@ -65,6 +103,11 @@ class NestedRepository extends Repository
         $this->getFilesRecursive($this->path, $files, $ext);
 
         return $files;
+    }
+
+    protected function isNestedId($id)
+    {
+        return strpos($id, self::SEPERATOR) !== false;
     }
 
     /**
