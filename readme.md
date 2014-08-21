@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/jamesmoss/flywheel.png?branch=master)](https://travis-ci.org/jamesmoss/flywheel) [![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/jamesmoss/flywheel/badges/quality-score.png?s=a446767a189b05b7eea08f639a3843dd85419f55)](https://scrutinizer-ci.com/g/jamesmoss/flywheel/) [![Code Coverage](https://scrutinizer-ci.com/g/jamesmoss/flywheel/badges/coverage.png?s=98540d0552a411c4e2fbcc5405e09e7be886e370)](https://scrutinizer-ci.com/g/jamesmoss/flywheel/)
 
-A lightweight, flat-file, document database for PHP that can store data in JSON, YAML or Markdown formats.
+A flat-file, serverless, document database for PHP that can store data in JSON, YAML or Markdown formats.
 
 Often MySQL can be overkill for a small site or blog installation. Although it's present by as standard
 on many hosting packages it still requires several manual steps including configuration, user and databases
@@ -16,7 +16,7 @@ and changes that users make must be reflected in a developer's local copy.
 You've probably come up against this issue in the past and it's all a bit of a mess.
 
 Flywheel hopes to enable a new breed of PHP apps and libraries by giving developers access
-to a datastore that acts in a similar way to a traditional database but has no
+to a datastore that acts in a similar way to a NoSQL database but has zero
 external dependencies. Documents (essentially associative arrays), can be saved and retrieved,
 sorted and limited.
 
@@ -67,7 +67,8 @@ echo $post->wordCount; // 7
 
 $id = $repo->store($post);
 
-// A unique ID is automatically generated for you if you don't specify your own when saving
+// A unique ID is automatically generated for you if you don't specify your own when storing.
+// The generated ID consists of upper/lowercase letters and numbers so is URL safe.
 echo $id; // Czk6SPu4X
 echo $post->getId(); // Czk6SPu4X
 
