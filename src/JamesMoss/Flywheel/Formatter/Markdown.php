@@ -2,8 +2,6 @@
 
 namespace JamesMoss\Flywheel\Formatter;
 
-use Symfony\Component\Yaml\Yaml as SymfonyYAML;
-
 class Markdown extends YAML
 {
     protected $contentFieldName;
