@@ -2,7 +2,9 @@
 
 namespace JamesMoss\Flywheel;
 
-class QueryTest extends \PHPUnit_Framework_TestCase
+use \JamesMoss\Flywheel\TestBase;
+
+class QueryTest extends TestBase
 {
     public function testWhere()
     {

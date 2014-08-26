@@ -2,7 +2,9 @@
 
 namespace JamesMoss\Flywheel;
 
-class NestedRespositoryTest extends \PHPUnit_Framework_TestCase
+use \JamesMoss\Flywheel\TestBase;
+
+class NestedRespositoryTest extends TestBase
 {
     public function testStoringDocuments()
     {
