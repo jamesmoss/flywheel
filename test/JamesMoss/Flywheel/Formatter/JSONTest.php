@@ -2,7 +2,9 @@
 
 namespace JamesMoss\Flywheel\Formatter;
 
-class JSONTest extends \PHPUnit_Framework_TestCase
+use \JamesMoss\Flywheel\TestBase;
+
+class JSONTest extends TestBase
 {
     public function testFileExtension()
     {

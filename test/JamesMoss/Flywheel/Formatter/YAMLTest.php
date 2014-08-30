@@ -2,7 +2,9 @@
 
 namespace JamesMoss\Flywheel\Formatter;
 
-class YAMLTest extends \PHPUnit_Framework_TestCase
+use \JamesMoss\Flywheel\TestBase;
+
+class YAMLTest extends TestBase
 {
     public function testFileExtension()
     {
@@ -18,8 +20,8 @@ class YAMLTest extends \PHPUnit_Framework_TestCase
             'age'      => 21,
             'employed' => true,
         );
-
-        $this->assertSame(file_get_contents(__DIR__ . '/fixtures/joe.yaml'), $formatter->encode($data));
+        $content = $this->normalizeLineendings(file_get_contents(__DIR__ . '/fixtures/joe.yaml'));
+        $this->assertSame($content, $formatter->encode($data));
     }
 
     public function testDecoding()

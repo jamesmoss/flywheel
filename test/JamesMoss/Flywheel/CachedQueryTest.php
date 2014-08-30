@@ -2,7 +2,9 @@
 
 namespace JamesMoss\Flywheel;
 
-class CachedQueryTest extends \PHPUnit_Framework_TestCase
+use \JamesMoss\Flywheel\TestBase;
+
+class CachedQueryTest extends TestBase
 {
     public function testCache()
     {

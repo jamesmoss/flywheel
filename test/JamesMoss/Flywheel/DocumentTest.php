@@ -2,7 +2,9 @@
 
 namespace JamesMoss\Flywheel;
 
-class DocumentTest extends \PHPUnit_Framework_TestCase
+use \JamesMoss\Flywheel\TestBase;
+
+class DocumentTest extends TestBase
 {
     public function testGettingId()
     {

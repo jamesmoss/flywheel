@@ -2,7 +2,9 @@
 
 namespace JamesMoss\Flywheel;
 
-class RespositoryTest extends \PHPUnit_Framework_TestCase
+use \JamesMoss\Flywheel\TestBase;
+
+class RespositoryTest extends TestBase
 {
 
     /**

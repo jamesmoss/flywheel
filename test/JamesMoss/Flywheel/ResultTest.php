@@ -2,7 +2,9 @@
 
 namespace JamesMoss\Flywheel;
 
-class ResultTest extends \PHPUnit_Framework_TestCase
+use \JamesMoss\Flywheel\TestBase;
+
+class ResultTest extends TestBase
 {
     public function testCountable()
     {

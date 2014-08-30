@@ -2,12 +2,14 @@
 
 namespace JamesMoss\Flywheel;
 
-class ConfigTest extends \PHPUnit_Framework_TestCase
+use \JamesMoss\Flywheel\TestBase;
+
+class ConfigTest extends TestBase
 {
     public function testSlashesTidedUp()
     {
-        $path   = __DIR__ . '/fixtures/datastore/writable';
-        $config = new Config($path . '/');
+        $path   = __DIR__ . DIRECTORY_SEPARATOR . 'fixtures' . DIRECTORY_SEPARATOR . 'datastore' . DIRECTORY_SEPARATOR . 'writable';
+        $config = new Config($path . DIRECTORY_SEPARATOR);
 
         $this->assertSame($path, $config->getPath());
     }

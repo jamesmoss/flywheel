@@ -2,7 +2,9 @@
 
 namespace JamesMoss\Flywheel\Formatter;
 
-class MarkdownTest extends \PHPUnit_Framework_TestCase
+use \JamesMoss\Flywheel\TestBase;
+
+class MarkdownTest extends TestBase
 {
     public function testFileExtension()
     {
@@ -19,8 +21,8 @@ class MarkdownTest extends \PHPUnit_Framework_TestCase
             'employed' => true,
             'body'     => "Lorem ipsum dolor\nsit amet",
         );
-
-        $this->assertSame(file_get_contents(__DIR__ . '/fixtures/joe.md'), $formatter->encode($data));
+        $content = $this->normalizeLineendings(file_get_contents(__DIR__ . '/fixtures/joe.md'));
+        $this->assertSame($content, $formatter->encode($data));
     }
 
     public function testDecoding()
