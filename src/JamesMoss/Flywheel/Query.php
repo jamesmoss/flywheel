@@ -90,7 +90,26 @@ class Query
         if ($this->where) {
             list($field, $operator, $predicate) = $this->where;
             $documents = array_filter($documents, function ($doc) use ($field, $operator, $predicate) {
-                $value = $doc->{$field};
+                if (false === strpos($field, '.')) {
+                    $value = $doc->{$field};
+                } else {
+                    //multi-dimensional process
+                    $field = explode('.', $field);
+                    $value = $doc;
+                    foreach ($field as $fieldPart) {
+                        if ((string)(int)$fieldPart === $fieldPart) {
+                            if (!isset($value[$fieldPart])) {
+                                return false;
+                            }
+                            $value = $value[$fieldPart];
+                        } else {
+                            if (!isset($value->{$fieldPart})) {
+                                return false;
+                            }
+                            $value = $value->{$fieldPart};
+                        }
+                    }
+                }
 
                 switch (true) {
                     case ($operator === '==' && $value == $predicate): return true;

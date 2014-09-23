@@ -20,6 +20,34 @@ class QueryTest extends TestBase
         $this->assertEquals(1, $result->total());
     }
 
+    public function testWhereMultiDimensionalKey()
+    {
+        $path   = __DIR__ . '/fixtures/datastore/querytest';
+        $config = new Config($path . '/');
+        $repo   = new Repository('multidimensionalkey', $config);
+        $query  = new Query($repo);
+
+        $query->where('name.title.first', '==', 'Afghanistan');
+        $result = $query->execute();
+        $this->assertInstanceOf('\\JamesMoss\\Flywheel\\Result', $result);
+        $this->assertEquals(1, count($result));
+        $this->assertEquals(1, $result->total());
+    }
+
+    public function testWhereMultiDimensionalIndex()
+    {
+        $path   = __DIR__ . '/fixtures/datastore/querytest';
+        $config = new Config($path . '/');
+        $repo   = new Repository('multidimensionalindex', $config);
+        $query  = new Query($repo);
+
+        $query->where('Tags.0.Key', '==', 'aws:autoscaling:groupName');
+        $result = $query->execute();
+        $this->assertInstanceOf('\\JamesMoss\\Flywheel\\Result', $result);
+        $this->assertEquals(1, count($result));
+        $this->assertEquals(1, $result->total());
+    }
+
     public function testOrdering()
     {
         $path   = __DIR__ . '/fixtures/datastore/querytest';
