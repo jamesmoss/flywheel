@@ -1,0 +1,13 @@
+{
+    "id": "Afghanistan",
+    "Tags": [
+        {
+            "Key": "aws:autoscaling:groupName",
+            "Value": "elasticsearch-logstash-com"
+        },
+        {
+            "Key": "Name",
+            "Value": "elasticsearch.logstash.com"
+        }
+    ]
+}
