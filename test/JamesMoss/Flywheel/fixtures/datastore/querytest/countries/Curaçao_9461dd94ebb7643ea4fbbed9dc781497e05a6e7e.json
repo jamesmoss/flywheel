@@ -1,0 +1,46 @@
+{
+    "name": "Cura\u00e7ao",
+    "nativeName": "Cura\u00e7ao",
+    "tld": [
+        ".cw"
+    ],
+    "cca2": "CW",
+    "ccn3": "531",
+    "cca3": "CUW",
+    "currency": [
+        "ANG"
+    ],
+    "callingCode": [
+        "5999"
+    ],
+    "capital": "Willemstad",
+    "altSpellings": [
+        "CW",
+        "Curacao",
+        "K\u00f2rsou",
+        "Country of Cura\u00e7ao",
+        "Land Cura\u00e7ao",
+        "Pais K\u00f2rsou"
+    ],
+    "relevance": "0",
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "language": [
+        "Dutch",
+        "Papiamentu",
+        "English"
+    ],
+    "languagesCodes": [
+
+    ],
+    "translations": [
+
+    ],
+    "population": 150563,
+    "latlng": [
+        12.116667,
+        -68.933333
+    ],
+    "demonym": "Dutch",
+    "id": "Cura\u00e7ao"
+}

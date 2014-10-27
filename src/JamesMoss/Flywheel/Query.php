@@ -13,11 +13,9 @@ class Query
     protected $repo;
     protected $limit   = false;
     protected $orderBy = false;
-    protected $where   = false;
 
-    protected $operators = array(
-        '>', '>=', '<', '<=', '==', '===',
-    );
+    /** @var QueryWhere */
+    protected $where;
 
     /**
      * Constructor
@@ -27,6 +25,7 @@ class Query
     public function __construct(Repository $repository)
     {
         $this->repo = $repository;
+        $this->where = new QueryWhere;
     }
 
     /**
@@ -70,11 +69,39 @@ class Query
      *
      * @return Query The same instance of this class.
      */
-    public function where($field, $operator, $value)
+    public function where($field, $operator = null, $value = null)
     {
-        // todo, validate these args
-        $this->where = array($field, $operator, $value);
+        $this->where->whereAnd($field, $operator, $value);
+        return $this;
+    }
 
+    /**
+     * Add the predicates for this query,
+     *
+     * @param string $field    The name of the field to match.
+     * @param string $operator An operator from the allowed list.
+     * @param string $value    The value to compare against.
+     *
+     * @return Query The same instance of this class.
+     */
+    public function whereAnd($field, $operator, $value)
+    {
+        $this->where($field, $operator, $value);
+        return $this;
+    }
+
+    /**
+     * Add the predicates for this query,
+     *
+     * @param string $field    The name of the field to match.
+     * @param string $operator An operator from the allowed list.
+     * @param string $value    The value to compare against.
+     *
+     * @return Query The same instance of this class.
+     */
+    public function whereOr($field, $operator, $value)
+    {
+        $this->where->whereOr($field, $operator, $value);
         return $this;
     }
 
@@ -87,42 +114,7 @@ class Query
     {
         $documents = $this->repo->findAll();
 
-        if ($this->where) {
-            list($field, $operator, $predicate) = $this->where;
-            $documents = array_filter($documents, function ($doc) use ($field, $operator, $predicate) {
-                if (false === strpos($field, '.')) {
-                    $value = $doc->{$field};
-                } else {
-                    //multi-dimensional process
-                    $field = explode('.', $field);
-                    $value = $doc;
-                    foreach ($field as $fieldPart) {
-                        if ((string)(int)$fieldPart === $fieldPart) {
-                            if (!isset($value[$fieldPart])) {
-                                return false;
-                            }
-                            $value = $value[$fieldPart];
-                        } else {
-                            if (!isset($value->{$fieldPart})) {
-                                return false;
-                            }
-                            $value = $value->{$fieldPart};
-                        }
-                    }
-                }
-
-                switch (true) {
-                    case ($operator === '==' && $value == $predicate): return true;
-                    case ($operator === '===' && $value === $predicate): return true;
-                    case ($operator === '>'  && $value >  $predicate): return true;
-                    case ($operator === '>=' && $value >= $predicate): return true;
-                    case ($operator === '<'  && $value <  $predicate): return true;
-                    case ($operator === '>=' && $value >= $predicate): return true;
-                }
-
-                return false;
-            });
-        }
+        $documents = array_filter($documents, array(new QueryFilter($this->where), 'filter'));
 
         if ($this->orderBy) {
             $sorts = array();

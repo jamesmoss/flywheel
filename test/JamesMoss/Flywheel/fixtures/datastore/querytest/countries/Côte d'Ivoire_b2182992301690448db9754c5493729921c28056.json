@@ -1,0 +1,48 @@
+{
+    "name": "C\u00f4te d'Ivoire",
+    "nativeName": "C\u00f4te d'Ivoire",
+    "tld": [
+        ".ci"
+    ],
+    "cca2": "CI",
+    "ccn3": "384",
+    "cca3": "CIV",
+    "currency": [
+        "XOF"
+    ],
+    "callingCode": [
+        "225"
+    ],
+    "capital": "Yamoussoukro",
+    "altSpellings": [
+        "CI",
+        "Ivory Coast",
+        "Republic of C\u00f4te d'Ivoire",
+        "R\u00e9publique de C\u00f4te d'Ivoire"
+    ],
+    "relevance": "0",
+    "region": "Africa",
+    "subregion": "Western Africa",
+    "language": [
+        "French"
+    ],
+    "languagesCodes": [
+        "fr"
+    ],
+    "translations": {
+        "de": "Elfenbeink\u00fcste",
+        "en": "C\u00f4te D'Ivoire",
+        "es": "Costa de Marfil",
+        "fr": "C\u00f4te D'Ivoire",
+        "it": "Costa D'Avorio",
+        "ja": "\u30b3\u30fc\u30c8\u30b8\u30dc\u30ef\u30fc\u30eb",
+        "nl": "Ivoorkust"
+    },
+    "population": -1,
+    "latlng": [
+        8,
+        -5
+    ],
+    "demonym": "Ivorian",
+    "id": "C\u00f4te d'Ivoire"
+}

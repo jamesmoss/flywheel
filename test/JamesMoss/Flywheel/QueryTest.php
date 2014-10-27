@@ -48,6 +48,36 @@ class QueryTest extends TestBase
         $this->assertEquals(1, $result->total());
     }
 
+    public function testWhereAnd()
+    {
+        $path   = __DIR__ . '/fixtures/datastore/querytest';
+        $config = new Config($path . '/');
+        $repo   = new Repository('whereand', $config);
+        $query  = new Query($repo);
+
+        $query->where('key', '==', 1);
+        $query->whereAnd('name', '==', 'b');
+        $result = $query->execute();
+        $this->assertInstanceOf('\\JamesMoss\\Flywheel\\Result', $result);
+        $this->assertEquals(1, count($result));
+        $this->assertEquals(1, $result->total());
+    }
+
+    public function testWhereOr()
+    {
+        $path   = __DIR__ . '/fixtures/datastore/querytest';
+        $config = new Config($path . '/');
+        $repo   = new Repository('whereor', $config);
+        $query  = new Query($repo);
+
+        $query->where('key', '===', 1);
+        $query->whereOr('key', '===', 2);
+        $result = $query->execute();
+        $this->assertInstanceOf('\\JamesMoss\\Flywheel\\Result', $result);
+        $this->assertEquals(2, count($result));
+        $this->assertEquals(2, $result->total());
+    }
+
     public function testOrdering()
     {
         $path   = __DIR__ . '/fixtures/datastore/querytest';

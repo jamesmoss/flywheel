@@ -1,0 +1,47 @@
+{
+    "name": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+    "nativeName": "S\u00e3o Tom\u00e9 e Pr\u00edncipe",
+    "tld": [
+        ".st"
+    ],
+    "cca2": "ST",
+    "ccn3": "678",
+    "cca3": "STP",
+    "currency": [
+        "STD"
+    ],
+    "callingCode": [
+        "239"
+    ],
+    "capital": "S\u00e3o Tom\u00e9",
+    "altSpellings": [
+        "ST",
+        "Democratic Republic of S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+        "Rep\u00fablica Democr\u00e1tica de S\u00e3o Tom\u00e9 e Pr\u00edncipe"
+    ],
+    "relevance": "0",
+    "region": "Africa",
+    "subregion": "Middle Africa",
+    "language": [
+        "Portuguese"
+    ],
+    "languagesCodes": [
+        "pt"
+    ],
+    "translations": {
+        "de": "S\u00e3o Tom\u00e9 und Pr\u00edncipe",
+        "en": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+        "es": "Santo Tom\u00e9 y Pr\u00edncipe",
+        "fr": "Sao Tom\u00e9-et-Principe",
+        "it": "S\u00e3o Tom\u00e9 e Pr\u00edncipe",
+        "ja": "\u30b5\u30f3\u30c8\u30e1\u30fb\u30d7\u30ea\u30f3\u30b7\u30da",
+        "nl": "Sao Tom\u00e9 en Principe"
+    },
+    "population": 187356,
+    "latlng": [
+        1,
+        7
+    ],
+    "demonym": "Sao Tomean",
+    "id": "S\u00e3o Tom\u00e9 and Pr\u00edncipe"
+}
