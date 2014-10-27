@@ -11,15 +11,6 @@ class QueryWhere
 
     protected $where = array();
 
-    protected $operators = array(
-        '>',
-        '>=',
-        '<',
-        '<=',
-        '==',
-        '===',
-    );
-
     /**
      * Sets the predicates for this query,
      *

@@ -17,10 +17,6 @@ class Query
     /** @var QueryWhere */
     protected $where;
 
-    protected $operators = array(
-        '>', '>=', '<', '<=', '==', '===',
-    );
-
     /**
      * Constructor
      *
