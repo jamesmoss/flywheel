@@ -84,6 +84,6 @@ class QueryTest extends TestBase
         $this->assertInstanceOf('\\JamesMoss\\Flywheel\\Result', $result);
         $this->assertEquals(1, count($result));
         $this->assertEquals(1, $result->total());
-		$this->assertEquals('Italy_ad79ef0f076d3a686ab9738925f4dd2c7e69d7d1', $result->first()->getId());
+        $this->assertEquals('Italy_ad79ef0f076d3a686ab9738925f4dd2c7e69d7d1', $result->first()->getId());
     }
 }
