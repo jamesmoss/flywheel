@@ -79,7 +79,7 @@ class QueryTest extends TestBase
         $repo   = new Repository('countries', $config);
         $query  = new Query($repo);
 
-        $query->where('id', '==', 'Italy_ad79ef0f076d3a686ab9738925f4dd2c7e69d7d1');
+        $query->where('ID', '==', 'Italy_ad79ef0f076d3a686ab9738925f4dd2c7e69d7d1');
         $result = $query->execute();
         $this->assertInstanceOf('\\JamesMoss\\Flywheel\\Result', $result);
         $this->assertEquals(1, count($result));
