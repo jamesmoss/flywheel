@@ -90,7 +90,10 @@ class Query
         if ($this->where) {
             list($field, $operator, $predicate) = $this->where;
             $documents = array_filter($documents, function ($doc) use ($field, $operator, $predicate) {
-                if (false === strpos($field, '.')) {
+                if ($field == 'id') {
+					$value = $doc->getId();
+				}
+				else if (false === strpos($field, '.')) {
                     $value = $doc->{$field};
                 } else {
                     //multi-dimensional process
