@@ -89,7 +89,7 @@ class Query
 
         if ($this->where) {
             list($field, $operator, $predicate) = $this->where;
-            $documents = array_filter($documents, function ($doc) use ($field, $operator, $predicate) {
+            $documents = array_values(array_filter($documents, function ($doc) use ($field, $operator, $predicate) {
                 if (false === strpos($field, '.')) {
                     $value = $doc->{$field};
                 } else {
@@ -121,7 +121,7 @@ class Query
                 }
 
                 return false;
-            });
+            }));
         }
 
         if ($this->orderBy) {
