@@ -42,11 +42,7 @@ Flywheel is opinionated software. The following is assumed:
 
 Use [Composer](http://getcomposer.org/) to install the flywheel package. Package details [can be found on Packagist.org](https://packagist.org/packages/jamesmoss/flywheel).
 
-Add the following to your `composer.json` and run `composer update`.
-
-    "require": {
-        "jamesmoss/flywheel": "0.1.*"
-    }
+Run `composer require jamesmoss/flywheel` in your project directory to install the Flywheel package.
 
 ## Use
 
