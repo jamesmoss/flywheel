@@ -91,7 +91,7 @@ class Query
             list($field, $operator, $predicate) = $this->where;
             $documents = array_values(array_filter($documents, function ($doc) use ($field, $operator, $predicate) {
                 if (false === strpos($field, '.')) {
-                    $value = $doc->{$field};
+                    $value = isset($doc->{$field}) ? $doc->{$field} : null;
                 } else {
                     //multi-dimensional process
                     $field = explode('.', $field);
@@ -170,7 +170,7 @@ class Query
                     $valueB = $b->getId();
                 } else {
                     $valueA = isset($a->{$keyName}) ? $a->{$keyName} : null;
-                    $valueB = isset($b->{$keyName}) ? $b->{$keyName} : null; 
+                    $valueB = isset($b->{$keyName}) ? $b->{$keyName} : null;
                 }
 
                 if (is_string($valueA)) {

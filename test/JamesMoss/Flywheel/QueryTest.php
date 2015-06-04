@@ -20,6 +20,20 @@ class QueryTest extends TestBase
         $this->assertEquals(1, $result->total());
     }
 
+    public function testWhereWithNonExistantField()
+    {
+        $path   = __DIR__ . '/fixtures/datastore/querytest';
+        $config = new Config($path . '/');
+        $repo   = new Repository('countries', $config);
+        $query  = new Query($repo);
+
+        $query->where('this_doesnt_exist', '==', 'GB');
+        $result = $query->execute();
+        $this->assertInstanceOf('\\JamesMoss\\Flywheel\\Result', $result);
+        $this->assertEquals(0, count($result));
+        $this->assertEquals(0, $result->total());
+    }
+
     public function testWhereMultiDimensionalKey()
     {
         $path   = __DIR__ . '/fixtures/datastore/querytest';
