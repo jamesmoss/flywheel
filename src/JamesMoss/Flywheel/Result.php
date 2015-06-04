@@ -25,7 +25,7 @@ class Result implements \IteratorAggregate, \ArrayAccess, \Countable
      */
     public function __construct($documents, $total)
     {
-        $this->documents = $documents;
+        $this->documents = array_values($documents);
         $this->total     = $total;
     }
 

@@ -129,11 +129,11 @@ class ResultTest extends TestBase
     protected function getTestResult()
     {
         return new Result(array(
-            new Document(array('id' => 6, 'name' => 'Bob Jones',      'age' => 35)),
-            new Document(array('id' => 7, 'name' => 'Fred Smith',     'age' => 19)),
-            new Document(array('id' => 3, 'name' => 'John Appleseed', 'age' => 43)),
-            new Document(array('id' => 9, 'name' => 'Mary Jones',     'age' => 37)),
-            new Document(array('id' => 1, 'name' => 'Katie Smith',    'age' => 21)),
+            1 => new Document(array('id' => 6, 'name' => 'Bob Jones',      'age' => 35)),
+            4 => new Document(array('id' => 7, 'name' => 'Fred Smith',     'age' => 19)),
+            6 => new Document(array('id' => 3, 'name' => 'John Appleseed', 'age' => 43)),
+            7 => new Document(array('id' => 9, 'name' => 'Mary Jones',     'age' => 37)),
+            8 => new Document(array('id' => 1, 'name' => 'Katie Smith',    'age' => 21)),
         ), 5);
     }
 
