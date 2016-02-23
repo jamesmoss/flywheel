@@ -36,10 +36,9 @@ class Repository
 
         // Ensure directory exists and we can write there
         if (!is_dir($this->path)) {
-            if(!@mkdir($this->path)) {
+            if (!@mkdir($this->path, 0777, true)) {
                 throw new \RuntimeException(sprintf('`%s` doesn\'t exist and can\'t be created.', $this->path));
             }
-            chmod($this->path, 0777);
         } else if (!is_writable($this->path)) {
             throw new \RuntimeException(sprintf('`%s` is not writable.', $this->path));
         }
