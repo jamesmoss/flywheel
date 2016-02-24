@@ -76,6 +76,28 @@ class QueryTest extends TestBase
         $this->assertEquals('Heard Island and McDonald Islands', $result[$result->count() -1]->id);
     }
 
+    public function testOrderingWithInteger()
+    {
+        $path   = __DIR__ . '/fixtures/datastore/querytest';
+        $config = new Config($path . '/');
+        $repo   = new Repository('countries', $config);
+        $query  = new Query($repo);
+
+        $query->orderBy('population DESC');
+
+        $result = $query->execute();
+
+        $this->assertEquals('China', $result->first()->id);
+        $this->assertEquals('India', $result[1]->id);
+
+        $query  = new Query($repo);
+        $query->orderBy('population')->where('population', '>', 0);
+        $result = $query->execute();
+
+        $this->assertEquals('Pitcairn Islands', $result->first()->name);
+        $this->assertEquals('Cocos (Keeling) Islands', $result[1]->name);
+    }
+
     public function testBadData()
     {
         $path   = __DIR__ . '/fixtures/datastore/querytest';

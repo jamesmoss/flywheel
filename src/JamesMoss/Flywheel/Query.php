@@ -178,7 +178,7 @@ class Query
                 } elseif (is_bool($valueA)) {
                     $cmp = $valueA - $valueB;
                 } else {
-                    $cmp = ($valueA == $valueB) ? 0 : (($valueA > $valueB) ? -1 : 1);
+                    $cmp = ($valueA == $valueB) ? 0 : (($valueA < $valueB) ? -1 : 1);
                 }
 
                 if ($args[$i][1] === SORT_DESC) {
