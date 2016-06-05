@@ -123,6 +123,7 @@ $posts = $repo->query()
     ->andWhere('author', '==', 'James')
     ->execute();
 
+// The special __id field name can be used to query by the document's ID.
 // Find all posts where the ID is either 1 or 7 or 8.
 $posts = $repo->query()
     ->where('__id', '==', 1)
@@ -134,11 +135,17 @@ $posts = $repo->query()
 $posts = $repo->query()
     ->where('__id', 'IN' array(1, 7, 8))
     ->execute();
+
+// You can query by sub keys within a document too. The following finds all
+// documents which have a German translation
+$posts = $repo->query()
+    ->where('translations.de', '!=', false)
+    ->execute();
 ```
 
 You can pass in an anonymous function to the `where`, `andWhere`
 and `orWhere` methods to group predicates together. The anonymous function takes
-one parameter which is an instance of `JamesMoss\Flywheel\Predicate` which has
+one parameter which is an instance of `JamesMoss\Flywheel\Predicate` and has
 the same methods. You can nest as many times you as like.
 
 ```php

@@ -50,6 +50,52 @@ class QueryExecuterTest extends TestBase
         $this->assertEquals(1, $result->total());
     }
 
+    public function testMultipleAndPredicates()
+    {
+        $pred = $this->getPredicate()
+            ->where('language.0', '==', 'English')
+            ->andWhere('population', '>', 300000)
+            ->andWhere('region', '==', 'Americas');
+        $qe = new QueryExecuter($this->getRepo('countries'), $pred, array(), array());
+
+        $result = $qe->run();
+
+        $this->assertEquals(5, $result->total());
+    }
+
+    public function testMultipleOrPredicates()
+    {
+        $pred = $this->getPredicate()
+            ->where('subregion', '==', 'Micronesia')
+            ->orWhere('subregion', '==', 'Eastern Africa');
+        $qe = new QueryExecuter($this->getRepo('countries'), $pred, array(), array());
+
+        $result = $qe->run();
+
+        $this->assertEquals(27, $result->total());
+    }
+
+    public function testSubPredicates()
+    {
+        $pred = $this->getPredicate()
+            ->where('region', '==', 'Europe')
+            ->andWhere('population', '<', 40000)
+            ->andWhere(function($query){
+                $query->where('language.0', '==', 'Italian')
+                  ->orWhere('language.0', '==', 'English');
+            });
+
+        $qe = new QueryExecuter($this->getRepo('countries'), $pred, array(), array());
+
+        $result = $qe->run();
+
+        $this->assertEquals(3, $result->total());
+
+        $this->assertEquals('San Marino', $result->first()->name);
+        $this->assertEquals('Vatican City', $result[1]->name);
+        $this->assertEquals('Gibraltar', $result[2]->name);
+    }
+
     public function testSimpleOrdering()
     {
         $qe = new QueryExecuter($this->getRepo('countries'), $this->getPredicate(), array(), array('capital DESC'));

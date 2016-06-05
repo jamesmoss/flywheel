@@ -39,14 +39,9 @@ class QueryExecuter
     public function run()
     {
         $documents = $this->repo->findAll();
-        $pred = $this->predicate->getAll();
 
-        if ($pred) {
-            list($discard, $field, $operator, $value) = $pred[0];
-
-            $documents = array_filter($documents, function ($doc) use ($field, $operator, $value) {
-                return $this->matchDocument($doc, $field, $operator, $value);
-            });
+        if ($predicates = $this->predicate->getAll()) {
+            $documents = $this->filter($documents, $predicates);
         }
 
         if ($this->orderBy) {
@@ -117,6 +112,50 @@ class QueryExecuter
         }
 
         return false;
+    }
+
+    protected function filter($documents, $predicates)
+    {
+        $result = [];
+        $originalDocs = $documents;
+
+        $andPredicates = array_filter($predicates, function($pred) {
+            return $pred[0] !== Predicate::LOGICAL_OR;
+        });
+
+        $orPredicates = array_filter($predicates, function($pred) {
+            return $pred[0] === Predicate::LOGICAL_OR;
+        });
+
+        foreach($andPredicates as $predicate) {
+            if (is_array($predicate[1])) {
+                $documents = $this->filter($documents, $predicate[1]);
+            } else {
+                list($type, $field, $operator, $value) = $predicate;
+
+                $documents = array_values(array_filter($documents, function ($doc) use ($field, $operator, $value) {
+                    return $this->matchDocument($doc, $field, $operator, $value);
+                }));
+            }
+
+            $result = $documents;
+        }
+
+        foreach($orPredicates as $predicate) {
+            if (is_array($predicate[1])) {
+                $documents = $this->filter($originalDocs, $predicate[1]);
+            } else {
+                list($type, $field, $operator, $value) = $predicate;
+
+                $documents = array_values(array_filter($originalDocs, function ($doc) use ($field, $operator, $value) {
+                    return $this->matchDocument($doc, $field, $operator, $value);
+                }));
+            }
+
+            $result = array_unique(array_merge($result, $documents), SORT_REGULAR);
+        }
+
+        return $result;
     }
 
     /**
