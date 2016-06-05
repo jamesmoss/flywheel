@@ -138,7 +138,7 @@ class QueryExecuter
 
 
                 $documents = array_values(array_filter($documents, function ($doc) use ($self, $field, $operator, $value) {
-                    return $this->matchDocument($doc, $field, $operator, $value);
+                    return $self->matchDocument($doc, $field, $operator, $value);
                 }));
             }
 
@@ -152,7 +152,7 @@ class QueryExecuter
                 list($type, $field, $operator, $value) = $predicate;
 
                 $documents = array_values(array_filter($originalDocs, function ($doc) use ($self, $field, $operator, $value) {
-                    return $this->matchDocument($doc, $field, $operator, $value);
+                    return $self->matchDocument($doc, $field, $operator, $value);
                 }));
             }
 
