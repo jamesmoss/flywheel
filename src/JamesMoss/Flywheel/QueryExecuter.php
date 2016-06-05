@@ -91,7 +91,7 @@ class QueryExecuter
         return $doc->{$field};
     }
 
-    protected function matchDocument($doc, $field, $operator, $value)
+    public function matchDocument($doc, $field, $operator, $value)
     {
         $docVal = $this->getFieldValue($doc, $field, $found);
 
@@ -127,13 +127,17 @@ class QueryExecuter
             return $pred[0] === Predicate::LOGICAL_OR;
         });
 
+        // 5.3 hack for accessing $this inside closure.
+        $self = $this;
+
         foreach($andPredicates as $predicate) {
             if (is_array($predicate[1])) {
                 $documents = $this->filter($documents, $predicate[1]);
             } else {
                 list($type, $field, $operator, $value) = $predicate;
 
-                $documents = array_values(array_filter($documents, function ($doc) use ($field, $operator, $value) {
+
+                $documents = array_values(array_filter($documents, function ($doc) use ($self, $field, $operator, $value) {
                     return $this->matchDocument($doc, $field, $operator, $value);
                 }));
             }
@@ -147,7 +151,7 @@ class QueryExecuter
             } else {
                 list($type, $field, $operator, $value) = $predicate;
 
-                $documents = array_values(array_filter($originalDocs, function ($doc) use ($field, $operator, $value) {
+                $documents = array_values(array_filter($originalDocs, function ($doc) use ($self, $field, $operator, $value) {
                     return $this->matchDocument($doc, $field, $operator, $value);
                 }));
             }
