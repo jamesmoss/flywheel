@@ -98,11 +98,11 @@ class QueryExecuterTest extends TestBase
 
     public function testSimpleOrdering()
     {
-        $qe = new QueryExecuter($this->getRepo('countries'), $this->getPredicate(), array(), array('capital DESC'));
+        $qe = new QueryExecuter($this->getRepo('countries'), $this->getPredicate(), array(), array('capital DESC', 'name ASC'));
 
         $result = $qe->run();
         $this->assertEquals('Croatia', $result->first()->id);
-        $this->assertEquals('Heard Island and McDonald Islands', $result[$result->count() -1]->id);
+        $this->assertEquals('United States Minor Outlying Islands', $result[$result->count() -1]->id);
     }
 
     public function testOrderingBySubKey()
