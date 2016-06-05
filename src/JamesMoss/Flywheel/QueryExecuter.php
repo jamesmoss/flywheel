@@ -116,7 +116,7 @@ class QueryExecuter
 
     protected function filter($documents, $predicates)
     {
-        $result = [];
+        $result = array();
         $originalDocs = $documents;
 
         $andPredicates = array_filter($predicates, function($pred) {
