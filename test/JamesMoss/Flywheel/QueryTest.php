@@ -14,10 +14,10 @@ class QueryTest extends TestBase
         $query  = new Query($repo);
         $query->where('cca2', '==', 'GB');
 
-        $predicate = (new Predicate())->where('cca2', '==', 'GB');
+        $predicate = new Predicate();
+        $predicate->where('cca2', '==', 'GB');
 
         $this->assertAttributeEquals($predicate, 'predicate', $query);
-
     }
 
     public function testLimit()
