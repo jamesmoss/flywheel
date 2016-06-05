@@ -68,7 +68,7 @@ class QueryExecuter
         return new Result(array_values($documents), $totalCount);
     }
 
-    protected function getFieldValue($doc, $field, &$found = false)
+    public function getFieldValue($doc, $field, &$found = false)
     {
         $found = false;
 
@@ -174,7 +174,10 @@ class QueryExecuter
     {
         $c = count($args);
 
-        usort($array, function ($a, $b) use ($args, $c) {
+        // PHP 5.3 hack
+        $self = $this;
+
+        usort($array, function ($a, $b) use ($self, $args, $c) {
             $i   = 0;
             $cmp = 0;
             while ($cmp == 0 && $i < $c) {
@@ -183,11 +186,11 @@ class QueryExecuter
                     $valueA = $a->getId();
                     $valueB = $b->getId();
                 } else {
-                    $valueA = $this->getFieldValue($a, $keyName, $found);
+                    $valueA = $self->getFieldValue($a, $keyName, $found);
                     if ($found === false) {
                         $valueA = null;
                     }
-                    $valueB = $this->getFieldValue($b, $keyName, $found);
+                    $valueB = $self->getFieldValue($b, $keyName, $found);
                     if ($found === false) {
                         $valueB = null;
                     }
