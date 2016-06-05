@@ -67,4 +67,34 @@ class Document implements DocumentInterface
     {
         return $this->__flywheelInitialId;
     }
+
+    public function getNestedProperty($field, &$found = false)
+    {
+        $found = false;
+        $parts = explode('.', $field);
+        $context = $this;
+        foreach ($parts as $part) {
+            if (trim($part) == '') {
+                return false;
+            }
+
+            if (is_object($context)) {
+                if(!property_exists($context, $part)) {
+                    return false;
+                }
+
+                $context = $context->{$part};
+            } else if (is_array($context)) {
+                if(!array_key_exists($part, $context)) {
+                    return false;
+                }
+
+                $context = $context[$part];
+            }
+        }
+
+        $found = true;
+
+        return $context;
+    }
 }

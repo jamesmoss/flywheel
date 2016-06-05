@@ -48,6 +48,8 @@ Run `composer require jamesmoss/flywheel` in your project directory to install t
 
 ```php
 $config = new \JamesMoss\Flywheel\Config('path/to/writable/directory');
+
+// The repository is responsible for storing, updating and deleting documents.
 $repo = new \JamesMoss\Flywheel\Repository('posts', $config);
 
 // Storing a new document
@@ -56,6 +58,12 @@ $post = new \JamesMoss\Flywheel\Document(array(
     'dateAdded' => new \DateTime('2013-10-10'),
     'body'      => 'A lightweight, flat-file, document database for PHP...',
     'wordCount' => 7,
+    'author'    => 'James',
+    'published' => true,
+    'translations' => array(
+    	'de' => 'Eine Einführung in Flywheel',
+    	'it' => 'Una introduzione a Flywheel',
+    ),
 ));
 
 echo $post->title; // An introduction to Flywheel
@@ -74,6 +82,7 @@ $post->setId('a-review-of-2013');
 // Retrieving documents
 $posts = $repo->query()
     ->where('dateAdded', '>', new \DateTime('2013-11-18'))
+    ->andWhere('published', '==', true)
     ->orderBy('wordCount DESC')
     ->limit(10, 5)
     ->execute();
@@ -84,6 +93,9 @@ echo $posts->total() // 33 the number of documents if no limit was applied. Usef
 foreach($posts as $post) {
     echo $post->title;
 }
+
+// Pull one document out of the repo by ID
+$post = $repo->findById('a-quick-guide-to-flywheel');
 
 // Updating documents
 $post->title = 'How to update documents';
@@ -97,6 +109,102 @@ $repo->delete($post);
 // or you can do the following
 $repo->delete('Czk6SPu4X');
 
+```
+
+## Querying
+
+You can filter down the number of documents returned by using the `where`, `andWhere`
+and `orWhere` methods on a query.
+
+```php
+// Find posts with more than 100 words written by James
+$posts = $repo->query()
+    ->where('wordCount', '>', 100)
+    ->andWhere('author', '==', 'James')
+    ->execute();
+
+// Find all posts where the ID is either 1 or 7 or 8.
+$posts = $repo->query()
+    ->where('__id', '==', 1)
+    ->orWhere('__id', '==', 7)
+    ->orWhere('__id', '==', 8)
+    ->execute();
+
+// A neater, alternative way of doing the above query
+$posts = $repo->query()
+    ->where('__id', 'IN' array(1, 7, 8))
+    ->execute();
+```
+
+You can pass in an anonymous function to the `where`, `andWhere`
+and `orWhere` methods to group predicates together. The anonymous function takes
+one parameter which is an instance of `JamesMoss\Flywheel\Predicate` which has
+the same methods. You can nest as many times you as like.
+
+```php
+$posts = $repo->query()
+    ->where('wordCount', '>', 100)
+    ->andWhere(function($query) {
+    	$query->where('author', '==', 'Hugo')
+    	$query->orWhere('dateAdded', '>', new \DateTime('2014-05-04'))
+    })
+    ->execute();
+```
+
+**Important** Traditional logical operator precedence is not implemented yet.
+If you have a mix of `AND` and `OR`s then you might not see the behaviour you expect.
+Currently `AND` predicates are processed before `OR`, regardless of the order
+they were defined in. Always use anonymous function to group your predicates
+together explictly if you have a mix of `AND` and `OR`s.
+
+The list of available comparison operators are:
+
+- `==` Equality
+- `===` Strict equality
+- `!=` Not equals
+- `!==` Strict not equals
+- `>` Greater than
+- `>=`  Greater than or equal to
+- `<` Less than
+- `<=` Less than or equal to
+- `IN` Check if value is in the set. Equality checks are not strict.
+
+It's possible to order the returned result using `orderBy`.
+
+```php
+// A simple example
+$posts = $repo->query()
+    ->orderBy('wordCount ASC')
+    ->execute();
+
+// You can use sub keys too
+$posts = $repo->query()
+    ->orderBy('translations.de DESC')
+    ->execute();
+
+// Use the special __id field name to sort by the document's ID
+$posts = $repo->query()
+    ->orderBy('__id')
+    ->execute();
+```
+
+You can limit how many documents get returned from the repo using `limit`. Offsets
+are also supported much like a traditional database.
+
+```php
+// Get the last 5 blog posts
+$posts = $repo->query()
+	->where('published', '==', 'true')
+    ->orderBy('dateAdded DESC')
+    ->limit(5)
+    ->execute();
+
+ // Get 25 blog posts offset by 100 from the start.
+ $posts = $repo->query()
+ 	->where('published', '==', 'true')
+    ->orderBy('dateAdded DESC')
+    ->limit(25, 100)
+    ->execute();
 ```
 
 ## Config options
@@ -145,6 +253,8 @@ If you write your own formatter it must implement `JamesMoss\Flywheel\Formatter\
 - More serialisation formats? PHP serialized, PHP raw?
 - More mocks in unit tests.
 - Simple one-to-one and many-to-one joins.
+- Implement proper logical operator precedence in queries
+- Add ability to register own comparison operators
 
 ## Running tests
 

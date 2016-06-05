@@ -77,7 +77,7 @@ class CachedQuery extends Query
             $this->repo->getName(),
             serialize((array) $this->limit),
             serialize((array) $this->orderBy),
-            serialize((array) $this->where),
+            serialize((array) $this->predicate),
         );
 
         return md5(implode('|', $parts));

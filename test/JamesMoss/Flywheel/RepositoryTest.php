@@ -147,10 +147,10 @@ class RespositoryTest extends TestBase
         $this->assertFalse(file_exists('/tmp/flywheel/_pages/test1234.json'));
     }
 
-    public function testLockingOnWrite()
-    {
-        $this->markTestIncomplete();
-    }
+    // public function testLockingOnWrite()
+    // {
+    //     $this->markTestSkipped();
+    // }
 
     public function validNameProvider()
     {

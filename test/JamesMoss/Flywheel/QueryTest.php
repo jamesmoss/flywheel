@@ -6,105 +6,45 @@ use \JamesMoss\Flywheel\TestBase;
 
 class QueryTest extends TestBase
 {
-    public function testWhere()
+    public function testPredicate()
     {
         $path   = __DIR__ . '/fixtures/datastore/querytest';
         $config = new Config($path . '/');
         $repo   = new Repository('countries', $config);
         $query  = new Query($repo);
-
         $query->where('cca2', '==', 'GB');
-        $result = $query->execute();
-        $this->assertInstanceOf('\\JamesMoss\\Flywheel\\Result', $result);
-        $this->assertEquals(1, count($result));
-        $this->assertEquals(1, $result->total());
+
+        $predicate = (new Predicate())->where('cca2', '==', 'GB');
+
+        $this->assertAttributeEquals($predicate, 'predicate', $query);
+
     }
 
-    public function testWhereWithNonExistantField()
+    public function testLimit()
     {
         $path   = __DIR__ . '/fixtures/datastore/querytest';
         $config = new Config($path . '/');
         $repo   = new Repository('countries', $config);
         $query  = new Query($repo);
+        $query->limit('10');
+        $this->assertAttributeEquals(array(10, 0), 'limit', $query);
+        $query->limit(5, 10);
+        $this->assertAttributeEquals(array(5, 10), 'limit', $query);
+        $query->limit(9, '11');
+        $this->assertAttributeEquals(array(9, 11), 'limit', $query);
 
-        $query->where('this_doesnt_exist', '==', 'GB');
-        $result = $query->execute();
-        $this->assertInstanceOf('\\JamesMoss\\Flywheel\\Result', $result);
-        $this->assertEquals(0, count($result));
-        $this->assertEquals(0, $result->total());
     }
 
-    public function testWhereMultiDimensionalKey()
-    {
-        $path   = __DIR__ . '/fixtures/datastore/querytest';
-        $config = new Config($path . '/');
-        $repo   = new Repository('multidimensionalkey', $config);
-        $query  = new Query($repo);
-
-        $query->where('name.title.first', '==', 'Afghanistan');
-        $result = $query->execute();
-        $this->assertInstanceOf('\\JamesMoss\\Flywheel\\Result', $result);
-        $this->assertEquals(1, count($result));
-        $this->assertEquals(1, $result->total());
-    }
-
-    public function testWhereMultiDimensionalIndex()
-    {
-        $path   = __DIR__ . '/fixtures/datastore/querytest';
-        $config = new Config($path . '/');
-        $repo   = new Repository('multidimensionalindex', $config);
-        $query  = new Query($repo);
-
-        $query->where('Tags.0.Key', '==', 'aws:autoscaling:groupName');
-        $result = $query->execute();
-        $this->assertInstanceOf('\\JamesMoss\\Flywheel\\Result', $result);
-        $this->assertEquals(1, count($result));
-        $this->assertEquals(1, $result->total());
-    }
-
-    public function testOrdering()
+    public function testOrderBy()
     {
         $path   = __DIR__ . '/fixtures/datastore/querytest';
         $config = new Config($path . '/');
         $repo   = new Repository('countries', $config);
         $query  = new Query($repo);
+        $query->orderBy('age ASC');
+        $this->assertAttributeEquals(array('age ASC'), 'orderBy', $query);
+        $query->orderBy(array('surname DESC', 'age DESC'));
+        $this->assertAttributeEquals(array('surname DESC', 'age DESC'), 'orderBy', $query);
 
-        $query->orderBy('capital DESC');
-
-        $result = $query->execute();
-        $this->assertEquals('Croatia', $result->first()->id);
-        $this->assertEquals('Heard Island and McDonald Islands', $result[$result->count() -1]->id);
-    }
-
-    public function testOrderingWithInteger()
-    {
-        $path   = __DIR__ . '/fixtures/datastore/querytest';
-        $config = new Config($path . '/');
-        $repo   = new Repository('countries', $config);
-        $query  = new Query($repo);
-
-        $query->orderBy('population DESC');
-
-        $result = $query->execute();
-
-        $this->assertEquals('China', $result->first()->id);
-        $this->assertEquals('India', $result[1]->id);
-
-        $query  = new Query($repo);
-        $query->orderBy('population')->where('population', '>', 0);
-        $result = $query->execute();
-
-        $this->assertEquals('Pitcairn Islands', $result->first()->name);
-        $this->assertEquals('Cocos (Keeling) Islands', $result[1]->name);
-    }
-
-    public function testBadData()
-    {
-        $path   = __DIR__ . '/fixtures/datastore/querytest';
-        $config = new Config($path . '/');
-        $repo   = new Repository('baddata', $config);
-        $query  = new Query($repo);
-        $result = $query->execute();
-        $this->assertEquals(1, count($result));
     }
 }
