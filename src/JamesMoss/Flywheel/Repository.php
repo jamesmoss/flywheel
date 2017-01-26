@@ -251,7 +251,8 @@ class Repository
     public function getAllFiles()
     {
         $ext       = $this->formatter->getFileExtension();
-        $files     = glob($this->path . DIRECTORY_SEPARATOR . '*.' . $ext);
+        $filesystemIterator = new \FilesystemIterator($this->path, \FilesystemIterator::SKIP_DOTS);
+        $files = new \RegexIterator($filesystemIterator, "/\\.{$ext}$/");
 
         return $files;
     }
