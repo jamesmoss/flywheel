@@ -188,6 +188,11 @@ $posts = $repo->query()
 $posts = $repo->query()
     ->orderBy('translations.de DESC')
     ->execute();
+    
+// It's possible to sort on multiple fields by passing in an array to orderBy
+$posts = $repo->query()
+    ->orderBy(['name ASC', 'age DESC'])
+    ->execute();
 
 // Use the special __id field name to sort by the document's ID
 $posts = $repo->query()
