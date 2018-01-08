@@ -89,7 +89,12 @@ class Repository
 
         foreach ($files as $file) {
             $fp       = fopen($file, 'r');
-            $contents = fread($fp, filesize($file));
+            
+            $contents = null;
+            if(($filesize = filesize($file)) > 0) {
+                $contents = fread($fp, $filesize);
+            }
+            
             fclose($fp);
 
             $data = $this->formatter->decode($contents);
