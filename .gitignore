@@ -1,3 +1,6 @@
 /vendor/
 /test-perf
+
+# IDEs
 .idea
+.vscode

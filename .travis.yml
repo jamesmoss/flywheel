@@ -1,14 +1,19 @@
 language: php
 
-php:
-  - 7.1
-  - 7.0
-  - 5.6
-  - 5.5
-  - 5.4
-  - 5.3
+jobs:
+  include:
+    - php: 7.3
+    - php: 7.2
+    - php: 7.1
+    - php: 7.0
+    - php: 5.6
+    - php: 5.5
+      dist: trusty
+    - php: 5.4
+      dist: trusty
 
-before_script:
+install:
+  - if [[ ${TRAVIS_PHP_VERSION:0:3} < "7.1" ]]; then rm composer.lock; fi
   - composer install
 
 script:

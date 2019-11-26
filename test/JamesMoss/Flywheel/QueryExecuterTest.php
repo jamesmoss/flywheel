@@ -91,8 +91,8 @@ class QueryExecuterTest extends TestBase
 
         $this->assertEquals(3, $result->total());
 
-        $this->assertEquals('San Marino', $result->first()->name);
-        $this->assertEquals('Vatican City', $result[1]->name);
+        $this->assertEquals('Vatican City', $result->first()->name);
+        $this->assertEquals('San Marino', $result[1]->name);
         $this->assertEquals('Gibraltar', $result[2]->name);
     }
 

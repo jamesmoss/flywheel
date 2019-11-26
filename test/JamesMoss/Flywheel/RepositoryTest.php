@@ -117,6 +117,7 @@ class RespositoryTest extends TestBase
 
         foreach ($repo->findAll() as $document) {
             if ('newname' === $document->getId()) {
+                $this->assertEquals('123', $document->test);
                 return true;
             }
         }
