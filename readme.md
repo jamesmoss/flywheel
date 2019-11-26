@@ -133,7 +133,7 @@ $posts = $repo->query()
 
 // A neater, alternative way of doing the above query
 $posts = $repo->query()
-    ->where('__id', 'IN' array(1, 7, 8))
+    ->where('__id', 'IN', array(1, 7, 8))
     ->execute();
 
 // You can query by sub keys within a document too. The following finds all
