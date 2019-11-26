@@ -1,5 +1,10 @@
+# Dependencies
 /vendor/
+
+# Build
 /test-perf
+/build
+phpunit.xml
 
 # IDEs
 .idea
