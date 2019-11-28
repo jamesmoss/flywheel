@@ -48,12 +48,13 @@ class Config
      * Gets a specific option from the config
      *
      * @param string $name The name of the option to return.
+     * @param mixed $default The default value to use.
      *
      * @return mixed The value of the option if it exists or null if it doesnt.
      */
-    public function getOption($name)
+    public function getOption($name, $default = null)
     {
-        return isset($this->options[$name]) ? $this->options[$name] : null;
+        return isset($this->options[$name]) ? $this->options[$name] : $default;
     }
 
     public function hasAPC()

@@ -2,6 +2,9 @@
 
 namespace JamesMoss\Flywheel;
 
+use JamesMoss\Flywheel\Formatter\JSON;
+use JamesMoss\Flywheel\Index\IndexInterface;
+
 /**
  * Repository
  *
@@ -15,6 +18,9 @@ class Repository
     protected $formatter;
     protected $queryClass;
     protected $documentClass;
+    protected $indexDir;
+    /** @var array<string,IndexInterface> $indexes */
+    protected $indexes;
 
     /**
      * Constructor
@@ -30,17 +36,28 @@ class Repository
         $this->formatter     = $config->getOption('formatter');
         $this->queryClass    = $config->getOption('query_class');
         $this->documentClass = $config->getOption('document_class');
+        $this->indexes       = $config->getOption('indexes', array());
+        $this->indexDir      = $this->path . DIRECTORY_SEPARATOR . 'index';
+        array_walk($this->indexes, function(&$class, $field) {
+            $class = new $class($field, $this->indexDir, new JSON(), $this);
+        });
 
         // Ensure the repo name is valid
         $this->validateName($this->name);
+        $this->ensureDirectory($this->path);
+        $this->ensureDirectory($this->indexDir);
+    }
 
-        // Ensure directory exists and we can write there
-        if (!is_dir($this->path)) {
-            if (!@mkdir($this->path, 0777, true)) {
-                throw new \RuntimeException(sprintf('`%s` doesn\'t exist and can\'t be created.', $this->path));
+    /**
+     * Ensure directory exists and we can write there
+     */
+    protected function ensureDirectory($path) {
+        if (!is_dir($path)) {
+            if (!@mkdir($path, 0777, true)) {
+                throw new \RuntimeException(sprintf('`%s` doesn\'t exist and can\'t be created.', $path));
             }
-        } else if (!is_writable($this->path)) {
-            throw new \RuntimeException(sprintf('`%s` is not writable.', $this->path));
+        } else if (!is_writable($path)) {
+            throw new \RuntimeException(sprintf('`%s` is not writable.', $path));
         }
     }
 
@@ -79,7 +96,7 @@ class Repository
     /**
      * Returns all the documents within this repo.
      *
-     * @return array An array of Documents.
+     * @return array<int,Document> An array of Documents.
      */
     public function findAll()
     {
@@ -141,7 +158,7 @@ class Repository
      *
      * @param Document $document The document to store
      *
-     * @return bool True if stored, otherwise false
+     * @return string|false True if stored, otherwise false
      */
     public function store(DocumentInterface $document)
     {
@@ -154,6 +171,18 @@ class Repository
 
         if (!$this->validateId($id)) {
             throw new \Exception(sprintf('`%s` is not a valid document ID.', $id));
+        }
+        $previous = $this->findById($id);
+        foreach ($this->indexes as $field => $index) {
+            $setPrev = $previous ? isset($previous->$field) : false;
+            $setActu = isset($document->$field);
+            if (!$setPrev && $setActu) {
+                $index->add($document->getId(), $document->$field);
+            } elseif ($setPrev && !$setActu) {
+                $index->remove($document->getId(), $previous->$field);
+            } elseif ($setPrev && $setActu) {
+                $index->update($document->getId(), $document->$field, $previous->$field);
+            }
         }
 
         $path = $this->getPathForDocument($id);
@@ -189,9 +218,13 @@ class Repository
 
         // If the ID has changed we need to delete the old document.
         if($document->getId() !== $document->getInitialId()) {
-            if(file_exists($oldPath)) {
-                unlink($oldPath);
+            $previous = $this->findById($document->getInitialId());
+            foreach ($this->indexes as $field => $index) {
+                if(isset($previous->$field)) {
+                    $index->remove($previous->getId(), $previous->$field);
+                }
             }
+            unlink($oldPath);
         }
 
         return $this->store($document);
