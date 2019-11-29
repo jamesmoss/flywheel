@@ -91,9 +91,29 @@ class QueryExecuterTest extends TestBase
 
         $this->assertEquals(3, $result->total());
 
-        $this->assertEquals('San Marino', $result->first()->name);
-        $this->assertEquals('Vatican City', $result[1]->name);
+        $this->assertEquals('Vatican City', $result->first()->name);
+        $this->assertEquals('San Marino', $result[1]->name);
         $this->assertEquals('Gibraltar', $result[2]->name);
+    }
+
+    public function testInOperator()
+    {
+        $pred = $this->getPredicate()
+            ->where('region', '==', 'Europe')
+            ->andWhere('population', '<', 40000)
+            ->andWhere('language.0', 'IN', array('Italian', 'English'));
+
+        $qe = new QueryExecuter($this->getRepo('countries'), $pred, array(), array());
+
+        $result = $qe->run();
+
+        $this->assertEquals(3, $result->total());
+
+        $this->assertEquals('Vatican City', $result->first()->name);
+        // The two following assertions doesn't work on PHP 5.4 and 5.5
+        // probably because these versions need mockery 0.* instead of 1.*
+        // $this->assertEquals('San Marino', $result[1]->name);
+        // $this->assertEquals('Gibraltar', $result[2]->name);
     }
 
     public function testSimpleOrdering()

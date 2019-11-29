@@ -2,9 +2,7 @@
 
 namespace JamesMoss\Flywheel;
 
-use \JamesMoss\Flywheel\TestBase;
-
-class TestBase extends \PHPUnit_Framework_TestCase 
+class TestBase extends \PHPUnit\Framework\TestCase
 {
     public function normalizeLineendings($content)
     {

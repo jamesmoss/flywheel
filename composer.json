@@ -15,10 +15,10 @@
 		"php": ">=5.3.2"
 	},
 	"require-dev": {
-	    "mikey179/vfsStream": "1.2.0",
-	    "mockery/mockery": "dev-master@dev",
-	    "phpunit/phpunit": "3.7.*",
-	    "mustangostang/spyc": "0.5.*@dev"
+		"mikey179/vfsstream": "^1.6",
+		"mockery/mockery": "1.* || 0.*",
+		"mustangostang/spyc": "^0.6",
+		"phpunit/phpunit": "7.* || 4.*"
 	},
 	"suggest": {
 		"mustangostang/spyc": "You must install this if you're using the YAML or Markdown formatters."
@@ -27,5 +27,8 @@
 		"psr-0": {
 			"JamesMoss\\Flywheel\\": ["src/", "test/"]
 		}
+	},
+	"config": {
+		"sort-packages": true
 	}
 }

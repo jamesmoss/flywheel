@@ -6,6 +6,20 @@ use \JamesMoss\Flywheel\TestBase;
 
 class RespositoryTest extends TestBase
 {
+    /** @var Repository $repo */
+    private $repo;
+
+
+    protected function setUp()
+    {
+        parent::setUp();
+        
+        if (!is_dir('/tmp/flywheel')) {
+            mkdir('/tmp/flywheel');
+        }
+        $config = new Config('/tmp/flywheel');
+        $this->repo = new Repository('_pages', $config);
+    }
 
     /**
      * @dataProvider validNameProvider
@@ -25,6 +39,27 @@ class RespositoryTest extends TestBase
     {
         $config = new Config('/tmp');
         new Repository($name, $config);
+    }
+
+    /**
+     * @dataProvider validIdProvider
+     */
+    public function testValidId($id)
+    {
+        $document = new Document(array());
+        $document->setId($id);
+        $this->assertEquals($id, $this->repo->store($document));
+    }
+
+    /**
+     * @dataProvider invalidIdProvider
+     * @expectedException Exception
+     */
+    public function testInvalidId($id)
+    {
+        $document = new Document(array());
+        $document->setId($id);
+        $this->repo->store($document);
     }
 
     /**
@@ -51,19 +86,14 @@ class RespositoryTest extends TestBase
 
     public function testGettingQueryObject()
     {
-        $config = new Config('/tmp');
-        $repo   = new Repository('flywheeltest', $config);
+        $repo   = $this->repo;
 
         $this->assertInstanceOf('JamesMoss\\Flywheel\\Query', $repo->query());
     }
 
     public function testStoringDocuments()
     {
-        if (!is_dir('/tmp/flywheel')) {
-            mkdir('/tmp/flywheel');
-        }
-        $config = new Config('/tmp/flywheel');
-        $repo   = new Repository('_pages', $config);
+        $repo = $this->repo;
 
         for ($i = 0; $i < 5; $i++) {
             $data = array(
@@ -83,8 +113,7 @@ class RespositoryTest extends TestBase
 
     public function testDeletingDocuments()
     {
-        $config = new Config('/tmp/flywheel');
-        $repo   = new Repository('_pages', $config);
+        $repo   = $this->repo;
         $id     = 'delete_test';
         $name   = $id . '.json';
         $path   = '/tmp/flywheel/_pages/' . $name;
@@ -100,11 +129,7 @@ class RespositoryTest extends TestBase
 
     public function testRenamingDocumentChangesDocumentID()
     {
-        if (!is_dir('/tmp/flywheel')) {
-            mkdir('/tmp/flywheel');
-        }
-        $config = new Config('/tmp/flywheel');
-        $repo   = new Repository('_pages', $config);
+        $repo   = $this->repo;
         $doc    = new Document(array(
             'test' => '123',
         ));
@@ -117,6 +142,7 @@ class RespositoryTest extends TestBase
 
         foreach ($repo->findAll() as $document) {
             if ('newname' === $document->getId()) {
+                $this->assertEquals('123', $document->test);
                 return true;
             }
         }
@@ -126,12 +152,7 @@ class RespositoryTest extends TestBase
 
     public function testChangingDocumentIDChangesFilename()
     {
-        if (!is_dir('/tmp/flywheel')) {
-            mkdir('/tmp/flywheel');
-        }
-
-        $config = new Config('/tmp/flywheel');
-        $repo   = new Repository('_pages', $config);
+        $repo   = $this->repo;
         $doc    = new Document(array(
             'test' => '123',
         ));
@@ -165,7 +186,31 @@ class RespositoryTest extends TestBase
     {
         return array(
             array(''),
+            array('$'),
             array('This_would_be_a_valid_repository_name_except_for_the_fact_it_is_really_really_long'),
+        );
+    }
+    public function validIdProvider()
+    {
+        return array(
+            array('user1'),
+            array('User 1-_^à@~&'), // this in my opinion should not be a valid id
+        );
+    }
+
+    public function invalidIdProvider()
+    {
+        return array(
+            array("user/1"),
+            array("user\\1"),
+            array("user*"),
+            array("user:1"),
+            array("user?"),
+            array("user;"),
+            array("user{1}"),
+            array("user\n1"),
+            array("user
+            1"),
         );
     }
 }

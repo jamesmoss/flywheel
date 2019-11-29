@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <phpunit bootstrap="vendor/autoload.php" colors="true">
 	<testsuites>
-	  <testsuite name="All">
-	    <directory>test/</directory>
-	  </testsuite>
+		<testsuite name="All">
+			<directory>test/</directory>
+		</testsuite>
 	</testsuites>
-    <listeners>
-        <listener class="\Mockery\Adapter\Phpunit\TestListener"></listener>
-    </listeners>
+	<listeners>
+		<listener class="\Mockery\Adapter\Phpunit\TestListener"></listener>
+	</listeners>
+	<filter>
+		<whitelist>
+			<directory suffix=".php">./src</directory>
+		</whitelist>
+	</filter>
+	<!-- <logging>
+		<log type="coverage-clover" target="build/coverage.xml"/>
+		<log type="coverage-text" target="php://stdout" showUncoveredFiles="false"/>
+	</logging> -->
 </phpunit>
