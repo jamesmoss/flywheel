@@ -5,13 +5,23 @@ namespace JamesMoss\Flywheel\Index;
 interface IndexInterface
 {
     /**
+     * Checks if the given operator is compatible with this index.
+     *
+     * @param string $operator the operator to check.
+     *
+     * @return bool true if it is compatible.
+     */
+    public function isOperatorCompatible($operator);
+
+    /**
      * Get documents from the index.
      *
      * @param mixed $value the value we are looking for.
+     * @param string $operator the operator used for comparision.
      *
      * @return array<int,string> a list of documents ids.
      */
-    public function get($value);
+    public function get($value, $operator);
 
     /**
      * Add a document to the index.

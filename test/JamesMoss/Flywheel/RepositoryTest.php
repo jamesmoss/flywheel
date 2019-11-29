@@ -6,6 +6,10 @@ use \JamesMoss\Flywheel\TestBase;
 
 class RespositoryTest extends TestBase
 {
+    const REPO_DIR  = '/tmp/flywheel';
+    const REPO_NAME = '_pages';
+    const REPO_PATH = '/tmp/flywheel/_pages/';
+
     /** @var Repository $repo */
     private $repo;
 
@@ -13,12 +17,17 @@ class RespositoryTest extends TestBase
     protected function setUp()
     {
         parent::setUp();
-        
-        if (!is_dir('/tmp/flywheel')) {
-            mkdir('/tmp/flywheel');
+        if (!is_dir(self::REPO_DIR)) {
+            mkdir(self::REPO_DIR);
         }
-        $config = new Config('/tmp/flywheel');
-        $this->repo = new Repository('_pages', $config);
+        $config = new Config(self::REPO_DIR);
+        $this->repo = new Repository(self::REPO_NAME, $config);
+    }
+
+    protected function tearDown()
+    {
+        parent::tearDown();
+        $this->recurseRmdir(self::REPO_PATH);
     }
 
     /**
@@ -26,9 +35,10 @@ class RespositoryTest extends TestBase
      */
     public function testValidRepoName($name)
     {
-        $config = new Config('/tmp');
+        $config = new Config(self::REPO_DIR);
         $repo = new Repository($name, $config);
         $this->assertSame($name, $repo->getName());
+        $this->recurseRmdir($repo->getPath());
     }
 
     /**
@@ -37,7 +47,7 @@ class RespositoryTest extends TestBase
      */
     public function testInvalidRepoName($name)
     {
-        $config = new Config('/tmp');
+        $config = new Config(self::REPO_DIR);
         new Repository($name, $config);
     }
 
@@ -107,7 +117,7 @@ class RespositoryTest extends TestBase
             $repo->store($document);
 
             $name = $i . '.json';
-            $this->assertSame($data, (array) json_decode(file_get_contents('/tmp/flywheel/_pages/' . $name)));
+            $this->assertSame($data, (array) json_decode(file_get_contents(self::REPO_PATH . $name)));
         }
     }
 
@@ -116,7 +126,7 @@ class RespositoryTest extends TestBase
         $repo   = $this->repo;
         $id     = 'delete_test';
         $name   = $id . '.json';
-        $path   = '/tmp/flywheel/_pages/' . $name;
+        $path   = self::REPO_PATH . $name;
 
         file_put_contents($path, '');
 
@@ -138,7 +148,7 @@ class RespositoryTest extends TestBase
 
         $repo->store($doc);
 
-        rename('/tmp/flywheel/_pages/testdoc123.json', '/tmp/flywheel/_pages/newname.json');
+        rename(self::REPO_PATH . 'testdoc123.json', self::REPO_PATH . 'newname.json');
 
         foreach ($repo->findAll() as $document) {
             if ('newname' === $document->getId()) {
@@ -160,12 +170,32 @@ class RespositoryTest extends TestBase
         $doc->setId('test1234');
         $repo->store($doc);
 
-        $this->assertTrue(file_exists('/tmp/flywheel/_pages/test1234.json'));
+        $this->assertTrue(file_exists(self::REPO_PATH . 'test1234.json'));
 
         $doc->setId('9876test');
         $repo->update($doc);
 
-        $this->assertFalse(file_exists('/tmp/flywheel/_pages/test1234.json'));
+        $this->assertFalse(file_exists(self::REPO_PATH . 'test1234.json'));
+    }
+
+    public function testFindByIds()
+    {
+        for ($i=0; $i < 10; $i++) {
+            $doc = new Document(array(
+                'test' => $i,
+            ));
+            $doc->setId("doc$i");
+            $this->repo->store($doc);
+        }
+        $docs = $this->repo->findByIds(array('doc1', 'doc3', 'doc4'));
+        $this->assertCount(3, $docs);
+        $this->assertEquals(1, $docs[0]->test);
+        $this->assertEquals(3, $docs[1]->test);
+        $this->assertEquals(4, $docs[2]->test);
+        $docs = $this->repo->findByIds(array('doc1', 'DOC3', 'doc4'));
+        $this->assertFalse($docs);
+        $docs = $this->repo->findByIds(array());
+        $this->assertCount(0, $docs);
     }
 
     // public function testLockingOnWrite()

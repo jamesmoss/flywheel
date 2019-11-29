@@ -14,7 +14,7 @@ class Predicate
     const LOGICAL_OR = 'or';
 
     protected $predicates = array();
-    protected $operators = array(
+    protected static $operators = array(
         '>', '>=', '<', '<=', '==', '===', '!=', '!==', 'IN',
     );
 
@@ -63,7 +63,7 @@ class Predicate
             throw new \InvalidArgumentException('Field name cannot be empty.');
         }
 
-        if (!in_array($operator, $this->operators)) {
+        if (!in_array($operator, self::$operators)) {
             throw new \InvalidArgumentException('Unknown operator `'.$operator.'`.');
         }
 

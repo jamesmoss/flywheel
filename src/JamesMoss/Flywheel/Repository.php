@@ -37,7 +37,7 @@ class Repository
         $this->queryClass    = $config->getOption('query_class');
         $this->documentClass = $config->getOption('document_class');
         $this->indexes       = $config->getOption('indexes', array());
-        $this->indexDir      = $this->path . DIRECTORY_SEPARATOR . 'index';
+        $this->indexDir      = $this->path . DIRECTORY_SEPARATOR . '.indexes';
         array_walk($this->indexes, function(&$class, $field) {
             $class = new $class($field, $this->indexDir, new JSON(), $this);
         });
@@ -79,6 +79,16 @@ class Repository
     public function getPath()
     {
         return $this->path;
+    }
+
+    /**
+     * Returns the list of indexes of this repository.
+     *
+     * @return array<string,IndexInterface> The list of indexes.
+     */
+    public function getIndexes()
+    {
+        return $this->indexes;
     }
 
     /**
@@ -127,7 +137,7 @@ class Repository
      *
      * @param  string $id The ID of the document to find
      *
-     * @return Document|boolean  The document if it exists, false if not.
+     * @return Document|false The document if it exists, false if not.
      */
     public function findById($id)
     {
@@ -151,6 +161,37 @@ class Repository
         $doc->setId($this->getIdFromPath($path, $ext));
 
         return $doc;
+    }
+
+    /**
+     * Returns a list of documents based on their ID.
+     *
+     * @param array<int,string> $ids The IDs array of document to find.
+     *
+     * @return array<int,Document>|false An array of Documents.
+     */
+    public function findByIds($ids)
+    {
+        $ext       = $this->formatter->getFileExtension();
+        $documents = array();
+        foreach ($ids as $id) {
+            if(!file_exists($path = $this->getPathForDocument($id))) {
+                return false;
+            }
+            $fp       = fopen($path, 'r');
+            $contents = fread($fp, filesize($path));
+            fclose($fp);
+
+            $data = $this->formatter->decode($contents);
+
+            if (null !== $data) {
+                $doc = new $this->documentClass((array) $data);
+                $doc->setId($this->getIdFromPath($path, $ext));
+
+                $documents[] = $doc;
+            }
+        }
+        return $documents;
     }
 
     /**

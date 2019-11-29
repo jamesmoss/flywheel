@@ -193,11 +193,28 @@ class QueryExecuterTest extends TestBase
         $this->assertEquals('Djibouti', $result[2]->name);
     }
 
+    public function testFindByIndex()
+    {
+        $pred = $this->getPredicate()
+            ->where('region', '==', 'Europe');
+        $options = array(
+            'indexes' => array(
+                'region' => '\JamesMoss\Flywheel\Index\HashIndex'
+            )
+        );
+        $qe = new QueryExecuter($this->getRepo('countries', $options), $pred, array(), array());
+        $withIndex = $qe->run();
+        $qe = new QueryExecuter($this->getRepo('countries'), $pred, array(), array());
+        $withoutIndex = $qe->run();
+        $this->assertSameSize($withoutIndex, $withIndex);
+        $this->assertEqualsUnordered(get_object_vars($withoutIndex), get_object_vars($withIndex));
+    }
 
-    protected function getRepo($repoName)
+
+    protected function getRepo($repoName, $options = array())
     {
         $path = __DIR__ . '/fixtures/datastore/querytest';
-        $config = new Config($path . '/');
+        $config = new Config($path . '/', $options);
 
         return new Repository($repoName, $config);
     }

@@ -7,16 +7,34 @@ use stdClass;
 
 class HashIndex extends StoredIndex
 {
+    protected static $operators = array(
+        '==', '===', '!=', '!=='
+    );
 
     /**
      * @inheritdoc
      */
-    protected function getEntries($value)
+    public function isOperatorCompatible($operator)
+    {
+        return in_array($operator, self::$operators);
+    }
+
+    /**
+     * @inheritdoc
+     */
+    protected function getEntries($value, $operator)
     {
         if (!isset($this->data->$value)) {
             return array();
         }
-        return array_keys(get_object_vars($this->data->$value));
+        $ids = array_keys(get_object_vars($this->data->$value));
+        switch ($operator) {
+            case '==':
+            case '===': return $ids;
+            case '!=':
+            case '!==': return array_diff(get_object_vars($this->data), $ids);
+            default: throw new \InvalidArgumentException('Incompatible operator `'.$operator.'`.');
+        }
     }
 
     /**
@@ -35,7 +53,7 @@ class HashIndex extends StoredIndex
      */
     protected function removeEntry($id, $value)
     {
-        if(!isset($this->data->$value)) {
+        if (!isset($this->data->$value)) {
             return;
         }
         unset($this->data->$value->$id);
@@ -44,6 +62,9 @@ class HashIndex extends StoredIndex
         }
     }
 
+    /**
+     * @inheritdoc
+     */
     protected function updateEntry($id, $new, $old)
     {
         $this->removeEntry($id, $old);

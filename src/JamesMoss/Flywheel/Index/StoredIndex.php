@@ -4,6 +4,8 @@ namespace JamesMoss\Flywheel\Index;
 
 use JamesMoss\Flywheel\Index\IndexInterface;
 use JamesMoss\Flywheel\Formatter\FormatInterface;
+use JamesMoss\Flywheel\Predicate;
+use JamesMoss\Flywheel\QueryExecuter;
 use JamesMoss\Flywheel\Repository;
 use stdClass;
 
@@ -32,7 +34,8 @@ abstract class StoredIndex implements IndexInterface
      * @param FormatInterface $formatter the formatter used to store the data.
      * @param Repository $repository the repository of this index.
      */
-    public function __construct($field, $path, $formatter, $repository) {
+    public function __construct($field, $path, $formatter, $repository)
+    {
         $this->field = $field;
         $this->formatter = $formatter;
         $this->repository = $repository;
@@ -42,10 +45,15 @@ abstract class StoredIndex implements IndexInterface
     /**
      * @inheritdoc
      */
-    public function get($value)
+    abstract public function isOperatorCompatible($operator);
+
+    /**
+     * @inheritdoc
+     */
+    public function get($value, $operator)
     {
         $this->needsData();
-        return $this->getEntries($value);
+        return $this->getEntries($value, $operator);
     }
 
     /**
@@ -81,6 +89,11 @@ abstract class StoredIndex implements IndexInterface
         $this->flush();
     }
 
+    /**
+     * Lazyloading data initializer.
+     *
+     * @return void
+     */
     protected function needsData()
     {
         if (isset($this->data)) {
@@ -94,21 +107,30 @@ abstract class StoredIndex implements IndexInterface
             $this->data = $this->formatter->decode($contents);
         } else {
             $field = $this->field;
+            $predicate = new Predicate();
+            $qe = new QueryExecuter($this->repository, $predicate->where($field, '=='), array(), array());
             foreach ($this->repository->findAll() as $doc) {
-                if (empty($doc->$field)) {
+                $docVal = $qe->getFieldValue($doc, $field, $found);
+        
+                if (!$found) {
                     continue;
                 }
-                $this->addEntry($doc->getId(), $doc->$field);
+                $this->addEntry($doc->getId(), $docVal);
             }
             $this->flush();
         }
     }
 
+    /**
+     * Write back the data on the filesystem.
+     *
+     * @return bool succeded.
+     */
     protected function flush()
     {
         $contents = $this->formatter->encode(get_object_vars($this->data));
         $fp = fopen($this->path, 'w');
-        if(!flock($fp, LOCK_EX)) {
+        if (!flock($fp, LOCK_EX)) {
             return false;
         }
         $result = fwrite($fp, $contents);
@@ -122,10 +144,11 @@ abstract class StoredIndex implements IndexInterface
      * Get entries from the index
      *
      * @param string $value
+     * @param string $operator
      *
      * @return array<int,string> array of ids
      */
-    abstract protected function getEntries($value);
+    abstract protected function getEntries($value, $operator);
 
     /**
      * Adds an entry in the index
@@ -150,5 +173,4 @@ abstract class StoredIndex implements IndexInterface
      * @param string $value
      */
     abstract protected function updateEntry($id, $new, $old);
-
 }
