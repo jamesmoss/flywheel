@@ -161,11 +161,10 @@ class HashIndexTest extends TestBase
         $this->assertEquals(array($id), $this->index->get('123', '=='));
     }
 
-    public function testDeepKey()
+    public function testMultidimentionalKey()
     {
-        $id = 'testdoc123456';
+        $id = 'testdoc456';
         $doc = new Document(array(
-            'col1' => '123',
             'col2' => array('4', '5', '6'),
         ));
         $doc->setId($id);
@@ -178,18 +177,22 @@ class HashIndexTest extends TestBase
             )
         ));
 
-        $this->assertEquals($id, $this->repo->store($doc));
-        $this->assertEquals($id, $repo2->store($doc));
-
         // test generating index from fs
+        $this->assertEquals($id, $this->repo->store($doc));
         $index1 = new HashIndex('col2.0', self::REPO_PATH . '.indexes', new JSON(), $this->repo);
         $this->assertEquals(array($id), $index1->get('4', '=='));
+        $this->assertTrue($this->repo->delete($doc));
 
         // test generating index on store document
+        $this->assertEquals($id, $repo2->store($doc));
         $index2 = $repo2->getIndexes()['col2.0'];
         $this->assertEquals(array($id), $index2->get('4', '=='));
-
-
+        $id = 'doc456';
+        $doc->setId($id);
+        $this->assertEquals($id, $repo2->update($doc));
+        $this->assertEquals(array($id), $index2->get('4', '=='));
+        $this->assertTrue($repo2->delete($id));
+        $this->assertEquals(array(), $index2->get('4', '=='));
     }
 
 }

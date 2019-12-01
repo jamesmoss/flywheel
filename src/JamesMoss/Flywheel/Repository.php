@@ -116,7 +116,10 @@ class Repository
 
         foreach ($files as $file) {
             $fp       = fopen($file, 'r');
-            $contents = fread($fp, filesize($file));
+            $contents = null;
+            if(($filesize = filesize($file)) > 0) {
+                $contents = fread($fp, $filesize);
+            }
             fclose($fp);
 
             $data = $this->formatter->decode($contents);
@@ -146,7 +149,10 @@ class Repository
         }
 
         $fp       = fopen($path, 'r');
-        $contents = fread($fp, filesize($path));
+        $contents = null;
+        if(($filesize = filesize($path)) > 0) {
+            $contents = fread($fp, $filesize);
+        }
         fclose($fp);
 
         $data = $this->formatter->decode($contents);
@@ -179,7 +185,10 @@ class Repository
                 return false;
             }
             $fp       = fopen($path, 'r');
-            $contents = fread($fp, filesize($path));
+            $contents = null;
+            if(($filesize = filesize($path)) > 0) {
+                $contents = fread($fp, $filesize);
+            }
             fclose($fp);
 
             $data = $this->formatter->decode($contents);
@@ -215,14 +224,16 @@ class Repository
         }
         $previous = $this->findById($id);
         foreach ($this->indexes as $field => $index) {
-            $setPrev = $previous ? isset($previous->$field) : false;
-            $setActu = isset($document->$field);
-            if (!$setPrev && $setActu) {
-                $index->update($document->getId(), $document->$field, null);
-            } elseif ($setPrev && !$setActu) {
-                $index->update($document->getId(), null, $previous->$field);
-            } elseif ($setPrev && $setActu) {
-                $index->update($document->getId(), $document->$field, $previous->$field);
+            $oldFound = false;
+            $newFound = false;
+            $oldVal = $previous ? $previous->getNestedProperty($field, $oldFound) : null;
+            $newVal = $document->getNestedProperty($field, $newFound);
+            if (!$oldFound && $newFound) {
+                $index->update($document->getId(), $newVal, null);
+            } elseif ($oldFound && !$newFound) {
+                $index->update($document->getId(), null, $oldVal);
+            } elseif ($oldFound && $newFound) {
+                $index->update($document->getId(), $newVal, $oldVal);
             }
         }
 
@@ -243,7 +254,7 @@ class Repository
      *
      * @param Document $document The document to store
      *
-     * @return bool True if stored, otherwise false
+     * @return string|false the id if stored, otherwise false
      */
     public function update(DocumentInterface $document)
     {
@@ -261,8 +272,9 @@ class Repository
         if($document->getId() !== $document->getInitialId()) {
             $previous = $this->findById($document->getInitialId());
             foreach ($this->indexes as $field => $index) {
-                if(isset($previous->$field)) {
-                    $index->remove($previous->getId(), $previous->$field);
+                $value = $previous->getNestedProperty($field, $found);
+                if ($found) {
+                    $index->update($previous->getId(), null, $value);
                 }
             }
             unlink($oldPath);
@@ -274,14 +286,24 @@ class Repository
     /**
      * Delete a document from the repository using its ID.
      *
-     * @param mixed $id The ID of the document (or the document itself) to delete
+     * @param mixed $doc The ID of the document (or the document itself) to delete
      *
      * @return boolean True if deleted, false if not.
      */
-    public function delete($id)
+    public function delete($doc)
     {
-        if ($id instanceof DocumentInterface) {
-            $id = $id->getId();
+        if ($doc instanceof DocumentInterface) {
+            $id = $doc->getId();
+        } else {
+            $id = $doc;
+            $doc = $this->findById($id);
+        }
+        foreach ($this->indexes as $field => $index) {
+            $found = false;
+            $value = $doc ? $doc->getNestedProperty($field, $found) : null;
+            if ($found) {
+                $index->update($id, null, $value);
+            }
         }
 
         $path = $this->getPathForDocument($id);
