@@ -4,6 +4,13 @@ namespace JamesMoss\Flywheel\Formatter;
 
 class JSON implements FormatInterface
 {
+    protected $jsonOptions;
+
+    public function __construct($jsonOptions = 0)
+    {
+        $this->jsonOptions = $jsonOptions;
+    }
+
     public function getFileExtension()
     {
         return 'json';
@@ -11,9 +18,7 @@ class JSON implements FormatInterface
 
     public function encode(array $data)
     {
-        $options = defined('JSON_PRETTY_PRINT') ? JSON_PRETTY_PRINT : null;
-
-        return json_encode($data, $options);
+        return json_encode($data, $this->jsonOptions);
     }
 
     public function decode($data)
