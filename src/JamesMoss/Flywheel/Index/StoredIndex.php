@@ -59,26 +59,6 @@ abstract class StoredIndex implements IndexInterface
     /**
      * @inheritdoc
      */
-    public function add($id, $value)
-    {
-        $this->needsData();
-        $this->addEntry($id, $value);
-        $this->flush();
-    }
-
-    /**
-     * @inheritdoc
-     */
-    public function remove($id, $value)
-    {
-        $this->needsData();
-        $this->removeEntry($id, $value);
-        $this->flush();
-    }
-
-    /**
-     * @inheritdoc
-     */
     public function update($id, $new, $old)
     {
         if ($new === $old) {
@@ -149,22 +129,6 @@ abstract class StoredIndex implements IndexInterface
      * @return array<int,string> array of ids
      */
     abstract protected function getEntries($value, $operator);
-
-    /**
-     * Adds an entry in the index
-     *
-     * @param string $id
-     * @param string $value
-     */
-    abstract protected function addEntry($id, $value);
-
-    /**
-     * Removes an entry from the index
-     *
-     * @param string $id
-     * @param string $value
-     */
-    abstract protected function removeEntry($id, $value);
 
     /**
      * Removes an entry from the index

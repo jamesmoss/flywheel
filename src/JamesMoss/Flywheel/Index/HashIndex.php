@@ -38,7 +38,10 @@ class HashIndex extends StoredIndex
     }
 
     /**
-     * @inheritdoc
+     * Adds an entry in the index
+     *
+     * @param string $id
+     * @param string $value
      */
     protected function addEntry($id, $value)
     {
@@ -49,7 +52,10 @@ class HashIndex extends StoredIndex
     }
 
     /**
-     * @inheritdoc
+     * Removes an entry from the index
+     *
+     * @param string $id
+     * @param string $value
      */
     protected function removeEntry($id, $value)
     {
@@ -67,7 +73,11 @@ class HashIndex extends StoredIndex
      */
     protected function updateEntry($id, $new, $old)
     {
-        $this->removeEntry($id, $old);
-        $this->addEntry($id, $new);
+        if (!empty($new)) {
+            $this->addEntry($id, $new);
+        }
+        if (!empty($old)) {
+            $this->removeEntry($id, $old);
+        }
     }
 }

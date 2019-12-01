@@ -24,26 +24,6 @@ interface IndexInterface
     public function get($value, $operator);
 
     /**
-     * Add a document to the index.
-     *
-     * @param string $id the id of this document.
-     * @param mixed $value the value of this document for the indexed field.
-     *
-     * @return void
-     */
-    public function add($id, $value);
-
-    /**
-     * Remove a document from the index.
-     *
-     * @param string $id the id of this document.
-     * @param mixed $value the value of this document for the indexed field.
-     *
-     * @return void
-     */
-    public function remove($id, $value);
-
-    /**
      * Update a document in the index.
      *
      * @param string $id the id of this document.

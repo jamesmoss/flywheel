@@ -45,23 +45,23 @@ class HashIndexTest extends TestBase
     public function testAddEntry()
     {
         $id = 'testdoc123';
-        $this->index->add($id, '123');
+        $this->index->update($id, '123', null);
         $this->assertEquals(array($id), $this->index->get('123', '=='));
     }
 
     public function testRemoveEntry()
     {
         $id = 'testdoc123';
-        $this->index->add($id, '123');
+        $this->index->update($id, '123', null);
         $this->assertEquals(array($id), $this->index->get('123', '=='));
-        $this->index->remove($id, '123');
+        $this->index->update($id, null, '123');
         $this->assertEquals(array(), $this->index->get('123', '=='));
     }
 
     public function testUpdateEntry()
     {
         $id = 'testdoc123';
-        $this->index->add($id, '123');
+        $this->index->update($id, '123', null);
         $this->assertEquals(array($id), $this->index->get('123', '=='));
         $this->index->update($id, '456', '123');
         $this->assertEquals(array(), $this->index->get('123', '=='));

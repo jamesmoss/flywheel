@@ -218,9 +218,9 @@ class Repository
             $setPrev = $previous ? isset($previous->$field) : false;
             $setActu = isset($document->$field);
             if (!$setPrev && $setActu) {
-                $index->add($document->getId(), $document->$field);
+                $index->update($document->getId(), $document->$field, null);
             } elseif ($setPrev && !$setActu) {
-                $index->remove($document->getId(), $previous->$field);
+                $index->update($document->getId(), null, $previous->$field);
             } elseif ($setPrev && $setActu) {
                 $index->update($document->getId(), $document->$field, $previous->$field);
             }
