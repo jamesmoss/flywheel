@@ -15,7 +15,7 @@ class Predicate
 
     protected $predicates = array();
     protected $operators = array(
-        '>', '>=', '<', '<=', '==', '===', '!=', '!==', 'IN',
+        '>', '>=', '<', '<=', '==', '===', '!=', '!==', 'IN', 'CONTAINS',
     );
 
     public function getAll()

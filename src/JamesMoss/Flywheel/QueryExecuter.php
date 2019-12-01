@@ -109,6 +109,9 @@ class QueryExecuter
             case ($operator === '<'  && $docVal <  $value): return true;
             case ($operator === '>=' && $docVal >= $value): return true;
             case ($operator === 'IN' && in_array($docVal, (array)$value)): return true;
+            case ($operator === 'CONTAINS'):
+                if (is_array($docVal)) return in_array($value, $docVal);
+                if (is_string($docVal)) return preg_match("#\b$value\b#", $docVal) === 1;
         }
 
         return false;
