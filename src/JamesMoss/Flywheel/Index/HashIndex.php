@@ -27,12 +27,11 @@ class HashIndex extends StoredIndex
         if (!isset($this->data->$value)) {
             return array();
         }
-        $ids = array_keys(get_object_vars($this->data->$value));
         switch ($operator) {
             case '==':
-            case '===': return $ids;
+            case '===': return array_keys(get_object_vars($this->data->$value));
             case '!=':
-            case '!==': return array_diff(get_object_vars($this->data), $ids);
+            case '!==': return $this->idsExcept($value);
             default: throw new \InvalidArgumentException('Incompatible operator `'.$operator.'`.');
         }
     }
@@ -79,5 +78,13 @@ class HashIndex extends StoredIndex
         if (!empty($old)) {
             $this->removeEntry($id, $old);
         }
+    }
+
+    protected function idsExcept($value) {
+        $data = get_object_vars($this->data);
+        unset($data[$value]);
+        return array_keys(array_reduce($data, function($prev, $val) {
+            return array_merge($prev, get_object_vars($val));
+        }, array()));
     }
 }

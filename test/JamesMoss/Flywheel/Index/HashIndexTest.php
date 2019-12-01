@@ -68,6 +68,19 @@ class HashIndexTest extends TestBase
         $this->assertEquals(array($id), $this->index->get('456', '=='));
     }
 
+    public function testGet()
+    {
+        $n = 4;
+        for ($i=1; $i <= $n; $i++) {
+            $id = "doc$i";
+            $this->index->update($id, "val$i", null);
+        }
+        $this->assertEquals(array('doc1'), $this->index->get('val1', '=='));
+        $this->assertEquals(array('doc2'), $this->index->get('val2', '==='));
+        $this->assertEquals(array('doc1', 'doc2', 'doc4'), $this->index->get('val3', '!='));
+        $this->assertEquals(array('doc1', 'doc2', 'doc3'), $this->index->get('val4', '!=='));
+    }
+
     public function testStoreDocument()
     {
         $doc = new Document(array(

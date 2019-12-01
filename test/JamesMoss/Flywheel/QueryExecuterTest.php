@@ -195,32 +195,34 @@ class QueryExecuterTest extends TestBase
 
     public function testFindByIndex()
     {
-        $pred = $this->getPredicate()
-            ->where('region', '==', 'Europe');
-        $options = array(
-            'indexes' => array(
-                'region' => '\JamesMoss\Flywheel\Index\HashIndex'
-            )
-        );
-        $n = 5;
+        foreach(array('==', '===', '!=', '!==') as $operator) {
+            $pred = $this->getPredicate()
+                ->where('region', $operator, 'Europe');
+            $options = array(
+                'indexes' => array(
+                    'region' => '\JamesMoss\Flywheel\Index\HashIndex'
+                )
+            );
+            $n = 5;
 
-        $qe = new QueryExecuter($this->getRepo('countries', $options), $pred, array(), array());
-        $start = microtime(true);
-        for ($i=0; $i < $n; $i++) {
-            $withIndex = $qe->run();
+            $qe = new QueryExecuter($this->getRepo('countries', $options), $pred, array(), array());
+            $start = microtime(true);
+            for ($i=0; $i < $n; $i++) {
+                $withIndex = $qe->run();
+            }
+            $timeWithIndex = microtime(true) - $start;
+
+            $qe = new QueryExecuter($this->getRepo('countries'), $pred, array(), array());
+            $start = microtime(true);
+            for ($i=0; $i < $n; $i++) {
+                $withoutIndex = $qe->run();
+            }
+            $timeWithoutIndex = microtime(true) - $start;
+
+            $this->assertSameSize($withoutIndex, $withIndex);
+            $this->assertEqualsUnordered(get_object_vars($withoutIndex), get_object_vars($withIndex));
+            $this->assertLessThan($timeWithoutIndex, $timeWithIndex);
         }
-        $timeWithIndex = microtime(true) - $start;
-
-        $qe = new QueryExecuter($this->getRepo('countries'), $pred, array(), array());
-        $start = microtime(true);
-        for ($i=0; $i < $n; $i++) {
-            $withoutIndex = $qe->run();
-        }
-        $timeWithoutIndex = microtime(true) - $start;
-
-        $this->assertSameSize($withoutIndex, $withIndex);
-        $this->assertEqualsUnordered(get_object_vars($withoutIndex), get_object_vars($withIndex));
-        $this->assertLessThan($timeWithoutIndex, $timeWithIndex);
     }
 
 
