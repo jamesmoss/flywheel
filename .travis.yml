@@ -12,8 +12,10 @@ jobs:
     - php: 5.4
       dist: trusty
 
-install:
+before_install:
   - if [[ ${TRAVIS_PHP_VERSION:0:3} < "7.1" ]]; then rm composer.lock; fi
+
+install:
   - composer install
 
 script:
@@ -22,3 +24,7 @@ script:
 after_script:
   - wget https://scrutinizer-ci.com/ocular.phar
   - php ocular.phar code-coverage:upload --format=php-clover coverage.clover
+
+cache:
+  directories:
+    - $HOME/.composer/cache
