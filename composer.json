@@ -17,7 +17,7 @@
 	"require-dev": {
 		"mikey179/vfsstream": "^1.6",
 		"mockery/mockery": "1.* || 0.*",
-		"mustangostang/spyc": "^0.6",
+		"mustangostang/spyc": "dev-master#eba310c",
 		"phpunit/phpunit": "7.* || 4.*"
 	},
 	"suggest": {
