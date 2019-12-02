@@ -2,7 +2,6 @@
 
 namespace JamesMoss\Flywheel;
 
-use JamesMoss\Flywheel\Formatter\JSON;
 use JamesMoss\Flywheel\Index\IndexInterface;
 
 /**
@@ -18,7 +17,6 @@ class Repository
     protected $formatter;
     protected $queryClass;
     protected $documentClass;
-    protected $indexDir;
     /** @var array<string,IndexInterface> $indexes */
     protected $indexes;
 
@@ -37,15 +35,16 @@ class Repository
         $this->queryClass    = $config->getOption('query_class');
         $this->documentClass = $config->getOption('document_class');
         $this->indexes       = $config->getOption('indexes', array());
-        $this->indexDir      = $this->path . DIRECTORY_SEPARATOR . '.indexes';
         array_walk($this->indexes, function(&$class, $field) {
-            $class = new $class($field, $this->indexDir, new JSON(), $this);
+            if (!is_subclass_of($class, '\JamesMoss\Flywheel\Index\IndexInterface')) {
+                throw new \RuntimeException(sprintf('`%s` does not implement IndexInterface.', $class));
+            }
+            $class = new $class($field, $this);
         });
 
         // Ensure the repo name is valid
         $this->validateName($this->name);
         $this->ensureDirectory($this->path);
-        $this->ensureDirectory($this->indexDir);
     }
 
     /**
@@ -59,6 +58,20 @@ class Repository
         } else if (!is_writable($path)) {
             throw new \RuntimeException(sprintf('`%s` is not writable.', $path));
         }
+    }
+
+    /**
+     * Adds a directory in the repository.
+     *
+     * @param string $name The name of the new directory.
+     *
+     * @return string The path of the directory.
+     */
+    public function addDirectory($name)
+    {
+        $path = $this->path . DIRECTORY_SEPARATOR . $name;
+        $this->ensureDirectory($path);
+        return $path;
     }
 
     /**

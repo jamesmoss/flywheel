@@ -2,6 +2,7 @@
 
 namespace JamesMoss\Flywheel\Index;
 
+use JamesMoss\Flywheel\Formatter\JSON;
 use JamesMoss\Flywheel\Index\StoredIndex;
 use stdClass;
 
@@ -14,9 +15,24 @@ class HashIndex extends StoredIndex
     /**
      * @inheritdoc
      */
+    public function __construct($field, $repository) {
+        $this->construct($field, $repository);
+    }
+
+    /**
+     * @inheritdoc
+     */
     public function isOperatorCompatible($operator)
     {
         return in_array($operator, self::$operators);
+    }
+
+    /**
+     * @inheritdoc
+     */
+    protected function initData()
+    {
+        $this->data = new stdClass();
     }
 
     /**

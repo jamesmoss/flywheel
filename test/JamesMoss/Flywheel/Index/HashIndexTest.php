@@ -33,7 +33,7 @@ class HashIndexTest extends TestBase
             )
         ));
         $this->repo = new Repository(self::REPO_NAME, $config);
-        $this->index = new HashIndex('col1', self::REPO_PATH . '.indexes', new JSON(), $this->repo);
+        $this->index = new HashIndex('col1', $this->repo);
     }
 
     protected function tearDown()
@@ -192,7 +192,7 @@ class HashIndexTest extends TestBase
 
         // test generating index from fs
         $this->assertEquals($id, $this->repo->store($doc));
-        $index1 = new HashIndex('col2.0', self::REPO_PATH . '.indexes', new JSON(), $this->repo);
+        $index1 = new HashIndex('col2.0', $this->repo);
         $this->assertEquals(array($id), $index1->get('4', '=='));
         $this->assertTrue($this->repo->delete($doc));
 

@@ -5,6 +5,14 @@ namespace JamesMoss\Flywheel\Index;
 interface IndexInterface
 {
     /**
+     * Constructor
+     *
+     * @param string $field the field to index.
+     * @param Repository $repository the repository of this index.
+     */
+    public function __construct($field, $repository);
+
+    /**
      * Checks if the given operator is compatible with this index.
      *
      * @param string $operator the operator to check.

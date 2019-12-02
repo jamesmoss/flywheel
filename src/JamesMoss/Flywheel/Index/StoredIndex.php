@@ -4,10 +4,10 @@ namespace JamesMoss\Flywheel\Index;
 
 use JamesMoss\Flywheel\Index\IndexInterface;
 use JamesMoss\Flywheel\Formatter\FormatInterface;
+use JamesMoss\Flywheel\Formatter\JSON;
 use JamesMoss\Flywheel\Predicate;
 use JamesMoss\Flywheel\QueryExecuter;
 use JamesMoss\Flywheel\Repository;
-use stdClass;
 
 abstract class StoredIndex implements IndexInterface
 {
@@ -27,20 +27,24 @@ abstract class StoredIndex implements IndexInterface
     protected $path;
 
     /**
-     * Constructor
+     * Protected constructor
      *
      * @param string $field the field to index.
-     * @param string $path the directory where to store the index file.
-     * @param FormatInterface $formatter the formatter used to store the data.
      * @param Repository $repository the repository of this index.
+     * @param FormatInterface $formatter the formatter used to store the data.
      */
-    public function __construct($field, $path, $formatter, $repository)
+    protected function construct($field, $repository, $formatter = null)
     {
         $this->field = $field;
-        $this->formatter = $formatter;
+        $this->formatter = $formatter == null ? new JSON() : $formatter;
         $this->repository = $repository;
-        $this->path = $path . DIRECTORY_SEPARATOR . "$field." . $formatter->getFileExtension();
+        $this->path = $repository->addDirectory('.indexes') . DIRECTORY_SEPARATOR . "$field." . $this->formatter->getFileExtension();
     }
+
+    /**
+     * @inheritdoc
+     */
+    abstract public function __construct($field, $repository);
 
     /**
      * @inheritdoc
@@ -79,7 +83,7 @@ abstract class StoredIndex implements IndexInterface
         if (isset($this->data)) {
             return;
         }
-        $this->data = new stdClass();
+        $this->initData();
         if (file_exists($this->path)) {
             $fp       = fopen($this->path, 'r');
             $contents = fread($fp, filesize($this->path));
@@ -91,11 +95,10 @@ abstract class StoredIndex implements IndexInterface
             $qe = new QueryExecuter($this->repository, $predicate->where($field, '=='), array(), array());
             foreach ($this->repository->findAll() as $doc) {
                 $docVal = $qe->getFieldValue($doc, $field, $found);
-        
                 if (!$found) {
                     continue;
                 }
-                $this->addEntry($doc->getId(), $docVal);
+                $this->updateEntry($doc->getId(), $docVal, null);
             }
             $this->flush();
         }
@@ -119,6 +122,13 @@ abstract class StoredIndex implements IndexInterface
 
         return $result !== false;
     }
+
+    /**
+     * Init the data object
+     *
+     * @return void
+     */
+    abstract protected function initData();
 
     /**
      * Get entries from the index
