@@ -35,11 +35,12 @@ class Repository
         $this->queryClass    = $config->getOption('query_class');
         $this->documentClass = $config->getOption('document_class');
         $this->indexes       = $config->getOption('indexes', array());
-        array_walk($this->indexes, function(&$class, $field) {
+        $self = $this;
+        array_walk($this->indexes, function(&$class, $field) use ($self) {
             if (!is_subclass_of($class, '\JamesMoss\Flywheel\Index\IndexInterface')) {
                 throw new \RuntimeException(sprintf('`%s` does not implement IndexInterface.', $class));
             }
-            $class = new $class($field, $this);
+            $class = new $class($field, $self);
         });
 
         // Ensure the repo name is valid

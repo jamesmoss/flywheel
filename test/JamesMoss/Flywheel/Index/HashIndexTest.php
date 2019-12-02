@@ -196,7 +196,8 @@ class HashIndexTest extends TestBase
 
         // test generating index on store document
         $this->assertEquals($id, $repo2->store($doc));
-        $index2 = $repo2->getIndexes()['col2.0'];
+        $indexes = $repo2->getIndexes();
+        $index2 = $indexes['col2.0'];
         $this->assertEquals(array($id), $index2->get('4', '=='));
         $id = 'doc456';
         $doc->setId($id);

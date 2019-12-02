@@ -2,6 +2,9 @@
 
 namespace JamesMoss\Flywheel\Formatter;
 
+defined('JSON_OBJECT_AS_ARRAY') or define('JSON_OBJECT_AS_ARRAY', 1);
+defined('JSON_PRETTY_PRINT') or define('JSON_PRETTY_PRINT', 128);
+
 class JSON implements FormatInterface
 {
     protected $jsonOptions;
