@@ -16,7 +16,7 @@ class HashIndex extends StoredIndex
      * @inheritdoc
      */
     public function __construct($field, $repository) {
-        $this->construct($field, $repository);
+        $this->construct($field, $repository, new JSON(JSON_OBJECT_AS_ARRAY));
     }
 
     /**
@@ -32,7 +32,7 @@ class HashIndex extends StoredIndex
      */
     protected function initData()
     {
-        $this->data = new stdClass();
+        $this->data = array();
     }
 
     /**
@@ -40,11 +40,11 @@ class HashIndex extends StoredIndex
      */
     protected function getEntries($value, $operator)
     {
-        if (!isset($this->data->$value)) {
+        if (!isset($this->data[$value])) {
             return array();
         }
         switch ($operator) {
-            case '==': return array_keys(get_object_vars($this->data->$value));
+            case '==': return array_keys($this->data[$value]);
             case '!=': return $this->idsExcept($value);
             default: throw new \InvalidArgumentException('Incompatible operator `'.$operator.'`.');
         }
@@ -58,10 +58,10 @@ class HashIndex extends StoredIndex
      */
     protected function addEntry($id, $value)
     {
-        if (!isset($this->data->$value)) {
-            $this->data->$value = new stdClass();
+        if (!isset($this->data[$value])) {
+            $this->data[$value] = array();
         }
-        $this->data->$value->$id = 1;
+        $this->data[$value][$id] = 1;
     }
 
     /**
@@ -72,12 +72,12 @@ class HashIndex extends StoredIndex
      */
     protected function removeEntry($id, $value)
     {
-        if (!isset($this->data->$value)) {
+        if (!isset($this->data[$value])) {
             return;
         }
-        unset($this->data->$value->$id);
-        if (count(get_object_vars($this->data->$value)) === 0) {
-            unset($this->data->$value);
+        unset($this->data[$value][$id]);
+        if (count($this->data[$value]) === 0) {
+            unset($this->data[$value]);
         }
     }
 
@@ -95,10 +95,10 @@ class HashIndex extends StoredIndex
     }
 
     protected function idsExcept($value) {
-        $data = get_object_vars($this->data);
+        $data = $this->data;
         unset($data[$value]);
         return array_keys(array_reduce($data, function($prev, $val) {
-            return array_merge($prev, get_object_vars($val));
+            return array_merge($prev, $val);
         }, array()));
     }
 }

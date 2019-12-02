@@ -106,7 +106,7 @@ abstract class StoredIndex implements IndexInterface
      */
     protected function flush()
     {
-        $contents = $this->formatter->encode(get_object_vars($this->data));
+        $contents = $this->formatter->encode($this->data);
         $fp = fopen($this->path, 'w');
         if (!flock($fp, LOCK_EX)) {
             return false;

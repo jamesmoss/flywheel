@@ -23,6 +23,6 @@ class JSON implements FormatInterface
 
     public function decode($data)
     {
-        return json_decode($data);
+        return json_decode($data, $this->jsonOptions&JSON_OBJECT_AS_ARRAY);
     }
 }
