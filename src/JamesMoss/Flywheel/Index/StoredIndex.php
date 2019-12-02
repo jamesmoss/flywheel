@@ -5,8 +5,6 @@ namespace JamesMoss\Flywheel\Index;
 use JamesMoss\Flywheel\Index\IndexInterface;
 use JamesMoss\Flywheel\Formatter\FormatInterface;
 use JamesMoss\Flywheel\Formatter\JSON;
-use JamesMoss\Flywheel\Predicate;
-use JamesMoss\Flywheel\QueryExecuter;
 use JamesMoss\Flywheel\Repository;
 
 abstract class StoredIndex implements IndexInterface
@@ -90,11 +88,8 @@ abstract class StoredIndex implements IndexInterface
             fclose($fp);
             $this->data = $this->formatter->decode($contents);
         } else {
-            $field = $this->field;
-            $predicate = new Predicate();
-            $qe = new QueryExecuter($this->repository, $predicate->where($field, '=='), array(), array());
             foreach ($this->repository->findAll() as $doc) {
-                $docVal = $qe->getFieldValue($doc, $field, $found);
+                $docVal = $doc->getNestedProperty($this->field, $found);
                 if (!$found) {
                     continue;
                 }

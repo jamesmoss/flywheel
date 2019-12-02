@@ -195,7 +195,7 @@ class QueryExecuterTest extends TestBase
 
     public function testFindByIndex()
     {
-        foreach(array('==', '===', '!=', '!==') as $operator) {
+        foreach(array('==', '!=') as $operator) {
             $pred = $this->getPredicate()
                 ->where('region', $operator, 'Europe');
             $options = array(

@@ -9,7 +9,7 @@ use stdClass;
 class HashIndex extends StoredIndex
 {
     protected static $operators = array(
-        '==', '===', '!=', '!=='
+        '==', '!='
     );
 
     /**
@@ -44,10 +44,8 @@ class HashIndex extends StoredIndex
             return array();
         }
         switch ($operator) {
-            case '==':
-            case '===': return array_keys(get_object_vars($this->data->$value));
-            case '!=':
-            case '!==': return $this->idsExcept($value);
+            case '==': return array_keys(get_object_vars($this->data->$value));
+            case '!=': return $this->idsExcept($value);
             default: throw new \InvalidArgumentException('Incompatible operator `'.$operator.'`.');
         }
     }
@@ -88,10 +86,10 @@ class HashIndex extends StoredIndex
      */
     protected function updateEntry($id, $new, $old)
     {
-        if (!empty($new)) {
+        if ($new !== null) {
             $this->addEntry($id, $new);
         }
-        if (!empty($old)) {
+        if ($old !== null) {
             $this->removeEntry($id, $old);
         }
     }

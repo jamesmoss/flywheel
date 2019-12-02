@@ -76,9 +76,7 @@ class HashIndexTest extends TestBase
             $this->index->update($id, "val$i", null);
         }
         $this->assertEquals(array('doc1'), $this->index->get('val1', '=='));
-        $this->assertEquals(array('doc2'), $this->index->get('val2', '==='));
         $this->assertEquals(array('doc1', 'doc2', 'doc4'), $this->index->get('val3', '!='));
-        $this->assertEquals(array('doc1', 'doc2', 'doc3'), $this->index->get('val4', '!=='));
     }
 
     public function testStoreDocument()
@@ -206,6 +204,41 @@ class HashIndexTest extends TestBase
         $this->assertEquals(array($id), $index2->get('4', '=='));
         $this->assertTrue($repo2->delete($id));
         $this->assertEquals(array(), $index2->get('4', '=='));
+    }
+
+    public function testInconsitentData()
+    {
+        $doc1 = new Document(array('col1' => '1'));
+        $doc1->setId('doc1');
+        $doc2 = new Document(array('col2' => '2'));
+        $doc2->setId('doc2');
+        $doc3 = new Document(array('col1' => ''));
+        $doc3->setId('doc3');
+        $doc4 = new Document(array('col2' => '4'));
+        $doc4->setId('doc4');
+        $doc5 = new Document(array('col1' => ''));
+        $doc5->setId('doc5');
+
+        $repo2 = new Repository(self::REPO_NAME, new Config(self::REPO_DIR, array()));
+        $query11 = $this->repo->query()->where('col1', '==', 1)->orderBy('__id');
+        $query12 = $this->repo->query()->where('col1', '!=', 1)->orderBy('__id');
+        $query21 = $repo2->query()->where('col1', '==', 1)->orderBy('__id');
+        $query22 = $repo2->query()->where('col1', '!=', 1)->orderBy('__id');
+
+        // test generating index from document files
+        $this->assertEquals('doc1', $repo2->store($doc1));
+        $this->assertEquals('doc2', $repo2->store($doc2));
+        $this->assertEquals('doc3', $repo2->store($doc3));
+        $this->assertEquals($query21->execute(), $query11->execute());
+        $this->assertEquals($query22->execute(), $query12->execute());
+
+        // test generating index on store document
+        $this->assertEquals('doc4', $this->repo->store($doc4));
+        $this->assertEquals('doc4', $repo2->store($doc4));
+        $this->assertEquals('doc5', $this->repo->store($doc5));
+        $this->assertEquals('doc5', $repo2->store($doc5));
+        $this->assertEquals($query21->execute(), $query11->execute());
+        $this->assertEquals($query22->execute(), $query12->execute());
     }
 
 }
