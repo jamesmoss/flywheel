@@ -81,22 +81,30 @@ abstract class StoredIndex implements IndexInterface
         if (isset($this->data)) {
             return;
         }
-        $this->initData();
         if (file_exists($this->path)) {
             $fp       = fopen($this->path, 'r');
             $contents = fread($fp, filesize($this->path));
             fclose($fp);
             $this->data = $this->formatter->decode($contents);
         } else {
-            foreach ($this->repository->findAll() as $doc) {
-                $docVal = $doc->getNestedProperty($this->field, $found);
-                if (!$found) {
-                    continue;
-                }
-                $this->updateEntry($doc->getId(), $docVal, null);
-            }
-            $this->flush();
+            $this->regenerate();
         }
+    }
+
+    /**
+     * @inheritdoc
+     */
+    public function regenerate()
+    {
+        $this->initData();
+        foreach ($this->repository->findAll() as $doc) {
+            $docVal = $doc->getNestedProperty($this->field, $found);
+            if (!$found) {
+                continue;
+            }
+            $this->updateEntry($doc->getId(), $docVal, null);
+        }
+        $this->flush();
     }
 
     /**

@@ -242,4 +242,18 @@ class HashIndexTest extends TestBase
         $this->assertEquals($query22->execute(), $query12->execute());
     }
 
+    public function testRegenerate()
+    {
+        $id = 'doc1';
+        $doc = new Document(array('col1' => 'val1'));
+        $doc->setId($id);
+        $this->repo->store($doc);
+        $this->assertEquals(array($id), $this->index->get('val1', '=='));
+        $formatter = new JSON();
+        file_put_contents($this->repo->getPathForDocument($id), $formatter->encode(array('col1' => 'val2')));
+        $this->index->regenerate();
+        $this->assertEquals(array(), $this->index->get('val1', '=='));
+        $this->assertEquals(array($id), $this->index->get('val2', '=='));
+    }
+
 }

@@ -41,4 +41,11 @@ interface IndexInterface
      * @return void
      */
     public function update($id, $new, $old);
+
+    /**
+     * Regenerate the index from the repository's documents.
+     *
+     * @return void;
+     */
+    public function regenerate();
 }

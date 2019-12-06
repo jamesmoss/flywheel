@@ -448,4 +448,11 @@ class Repository
         return basename($path, '.' . $ext);
     }
 
+    public function regenerateIndexes()
+    {
+        foreach ($this->indexes as $index) {
+            $index->regenerate();
+        }
+    }
+
 }
