@@ -2,6 +2,8 @@
 
 namespace JamesMoss\Flywheel;
 
+use JamesMoss\Flywheel\Index\IndexInterface;
+
 /**
  * Repository
  *
@@ -15,6 +17,8 @@ class Repository
     protected $formatter;
     protected $queryClass;
     protected $documentClass;
+    /** @var array<string,IndexInterface> $indexes */
+    protected $indexes;
 
     /**
      * Constructor
@@ -30,18 +34,45 @@ class Repository
         $this->formatter     = $config->getOption('formatter');
         $this->queryClass    = $config->getOption('query_class');
         $this->documentClass = $config->getOption('document_class');
+        $this->indexes       = $config->getOption('indexes', array());
+        $self = $this;
+        array_walk($this->indexes, function(&$class, $field) use ($self) {
+            if (!is_subclass_of($class, '\JamesMoss\Flywheel\Index\IndexInterface')) {
+                throw new \RuntimeException(sprintf('`%s` does not implement IndexInterface.', $class));
+            }
+            $class = new $class($field, $self);
+        });
 
         // Ensure the repo name is valid
         $this->validateName($this->name);
+        $this->ensureDirectory($this->path);
+    }
 
-        // Ensure directory exists and we can write there
-        if (!is_dir($this->path)) {
-            if (!@mkdir($this->path, 0777, true)) {
-                throw new \RuntimeException(sprintf('`%s` doesn\'t exist and can\'t be created.', $this->path));
+    /**
+     * Ensure directory exists and we can write there
+     */
+    protected function ensureDirectory($path) {
+        if (!is_dir($path)) {
+            if (!@mkdir($path, 0777, true)) {
+                throw new \RuntimeException(sprintf('`%s` doesn\'t exist and can\'t be created.', $path));
             }
-        } else if (!is_writable($this->path)) {
-            throw new \RuntimeException(sprintf('`%s` is not writable.', $this->path));
+        } else if (!is_writable($path)) {
+            throw new \RuntimeException(sprintf('`%s` is not writable.', $path));
         }
+    }
+
+    /**
+     * Adds a directory in the repository.
+     *
+     * @param string $name The name of the new directory.
+     *
+     * @return string The path of the directory.
+     */
+    public function addDirectory($name)
+    {
+        $path = $this->path . DIRECTORY_SEPARATOR . $name;
+        $this->ensureDirectory($path);
+        return $path;
     }
 
     /**
@@ -65,6 +96,16 @@ class Repository
     }
 
     /**
+     * Returns the list of indexes of this repository.
+     *
+     * @return array<string,IndexInterface> The list of indexes.
+     */
+    public function getIndexes()
+    {
+        return $this->indexes;
+    }
+
+    /**
      * A factory method that initialises and returns an instance of a Query object.
      *
      * @return Query A new Query class for this repo.
@@ -79,7 +120,7 @@ class Repository
     /**
      * Returns all the documents within this repo.
      *
-     * @return array An array of Documents.
+     * @return array<int,Document> An array of Documents.
      */
     public function findAll()
     {
@@ -89,7 +130,10 @@ class Repository
 
         foreach ($files as $file) {
             $fp       = fopen($file, 'r');
-            $contents = fread($fp, filesize($file));
+            $contents = null;
+            if(($filesize = filesize($file)) > 0) {
+                $contents = fread($fp, $filesize);
+            }
             fclose($fp);
 
             $data = $this->formatter->decode($contents);
@@ -110,7 +154,7 @@ class Repository
      *
      * @param  string $id The ID of the document to find
      *
-     * @return Document|boolean  The document if it exists, false if not.
+     * @return Document|false The document if it exists, false if not.
      */
     public function findById($id)
     {
@@ -119,7 +163,10 @@ class Repository
         }
 
         $fp       = fopen($path, 'r');
-        $contents = fread($fp, filesize($path));
+        $contents = null;
+        if(($filesize = filesize($path)) > 0) {
+            $contents = fread($fp, $filesize);
+        }
         fclose($fp);
 
         $data = $this->formatter->decode($contents);
@@ -137,11 +184,45 @@ class Repository
     }
 
     /**
+     * Returns a list of documents based on their ID.
+     *
+     * @param array<int,string> $ids The IDs array of document to find.
+     *
+     * @return array<int,Document>|false An array of Documents.
+     */
+    public function findByIds($ids)
+    {
+        $ext       = $this->formatter->getFileExtension();
+        $documents = array();
+        foreach ($ids as $id) {
+            if(!file_exists($path = $this->getPathForDocument($id))) {
+                return false;
+            }
+            $fp       = fopen($path, 'r');
+            $contents = null;
+            if(($filesize = filesize($path)) > 0) {
+                $contents = fread($fp, $filesize);
+            }
+            fclose($fp);
+
+            $data = $this->formatter->decode($contents);
+
+            if (null !== $data) {
+                $doc = new $this->documentClass((array) $data);
+                $doc->setId($this->getIdFromPath($path, $ext));
+
+                $documents[] = $doc;
+            }
+        }
+        return $documents;
+    }
+
+    /**
      * Store a Document in the repository.
      *
      * @param Document $document The document to store
      *
-     * @return bool True if stored, otherwise false
+     * @return string|false True if stored, otherwise false
      */
     public function store(DocumentInterface $document)
     {
@@ -154,6 +235,20 @@ class Repository
 
         if (!$this->validateId($id)) {
             throw new \Exception(sprintf('`%s` is not a valid document ID.', $id));
+        }
+        $previous = $this->findById($id);
+        foreach ($this->indexes as $field => $index) {
+            $oldFound = false;
+            $newFound = false;
+            $oldVal = $previous ? $previous->getNestedProperty($field, $oldFound) : null;
+            $newVal = $document->getNestedProperty($field, $newFound);
+            if (!$oldFound && $newFound) {
+                $index->update($document->getId(), $newVal, null);
+            } elseif ($oldFound && !$newFound) {
+                $index->update($document->getId(), null, $oldVal);
+            } elseif ($oldFound && $newFound) {
+                $index->update($document->getId(), $newVal, $oldVal);
+            }
         }
 
         $path = $this->getPathForDocument($id);
@@ -173,7 +268,7 @@ class Repository
      *
      * @param Document $document The document to store
      *
-     * @return bool True if stored, otherwise false
+     * @return string|false the id if stored, otherwise false
      */
     public function update(DocumentInterface $document)
     {
@@ -189,9 +284,14 @@ class Repository
 
         // If the ID has changed we need to delete the old document.
         if($document->getId() !== $document->getInitialId()) {
-            if(file_exists($oldPath)) {
-                unlink($oldPath);
+            $previous = $this->findById($document->getInitialId());
+            foreach ($this->indexes as $field => $index) {
+                $value = $previous->getNestedProperty($field, $found);
+                if ($found) {
+                    $index->update($previous->getId(), null, $value);
+                }
             }
+            unlink($oldPath);
         }
 
         return $this->store($document);
@@ -200,14 +300,24 @@ class Repository
     /**
      * Delete a document from the repository using its ID.
      *
-     * @param mixed $id The ID of the document (or the document itself) to delete
+     * @param mixed $doc The ID of the document (or the document itself) to delete
      *
      * @return boolean True if deleted, false if not.
      */
-    public function delete($id)
+    public function delete($doc)
     {
-        if ($id instanceof DocumentInterface) {
-            $id = $id->getId();
+        if ($doc instanceof DocumentInterface) {
+            $id = $doc->getId();
+        } else {
+            $id = $doc;
+            $doc = $this->findById($id);
+        }
+        foreach ($this->indexes as $field => $index) {
+            $found = false;
+            $value = $doc ? $doc->getNestedProperty($field, $found) : null;
+            if ($found) {
+                $index->update($id, null, $value);
+            }
         }
 
         $path = $this->getPathForDocument($id);
@@ -336,6 +446,13 @@ class Repository
     protected function getIdFromPath($path, $ext)
     {
         return basename($path, '.' . $ext);
+    }
+
+    public function regenerateIndexes()
+    {
+        foreach ($this->indexes as $index) {
+            $index->regenerate();
+        }
     }
 
 }

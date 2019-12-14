@@ -221,11 +221,13 @@ $posts = $repo->query()
 
 ## Config options
 
- - `formatter`. See [Formats](https://github.com/jamesmoss/flywheel#formats) section of this readme. Defaults to an
+ - `formatter`. See [Formats](#formats) section of this readme. Defaults to an
    instance of `JamesMoss\Flywheel\Formatter\JSON`.
  - `query_class`. The name of the class that gets returned from `Repository::query()`. By default, Flywheel detects
     if you have APC or APCu installed and uses `CachedQuery` class if applicable, otherwise it just uses `Query`.
  - `document_class`. The name of the class to use when hydrating documenst from the filesystem. Must implement `JamesMoss\Flywheel\DocumentInterface`. Defaults to `JamesMoss\Flywheel\Document`.
+ - `indexes`. See [Indexes](#indexes) section of this readme. Defaults to an
+   instance of `JamesMoss\Flywheel\Formatter\JSON`.
 
 
 ## Formats
@@ -252,12 +254,35 @@ The following formatter classes are available.
 **Important** If you use the `YAML` or `Markdown` formatters when using the `--no-dev` flag in Composer you'll need
 to manually add `mustangostang\spyc` to your `composer.json`. Flywheel tries to keep it's dependencies to a minimum.
 
-If you write your own formatter it must implement `JamesMoss\Flywheel\Formatter\Format`.
+If you write your own formatter it must implement `JamesMoss\Flywheel\Formatter\FormatInterface`.
+
+## Indexes
+
+To speed up the queries on some specific fields you can add indexes on these fields.
+There are different types of index, each specialized on certain queries:
+
+- `HashIndex` - supports only `==` and `!=` operators.
+
+If a query cannot be executed only on indexes it will fallback to the default behaviour, which is opening all the files of the repository.
+
+**Important** Indexes maintain their own copy of the data so you won't be able to manually edit the files while keeping the consistency of the database anymore.
+
+```php
+use JamesMoss\Flywheel\Index\HashIndex;
+
+$config = new Config('/path/to/writable/directory', array(
+    'indexes' => {
+        'fieldname' => HashIndex::class
+    },
+))
+```
+
+If you write your own index it must implement `JamesMoss\Flywheel\Index\IndexInterface`.
 
 ## Todo
 
 - More caching around `Repository::findAll`.
-- Indexing.
+- More Indexes.
 - HHVM support.
 - Abstract the filesystem, something like Gaufrette or Symfony's Filesystem component?
 - Events system.

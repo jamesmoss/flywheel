@@ -85,15 +85,15 @@ class QueryExecuterTest extends TestBase
                   ->orWhere('language.0', '==', 'English');
             });
 
-        $qe = new QueryExecuter($this->getRepo('countries'), $pred, array(), array());
+        $qe = new QueryExecuter($this->getRepo('countries'), $pred, array(), array('name ASC'));
 
         $result = $qe->run();
 
         $this->assertEquals(3, $result->total());
 
-        $this->assertEquals('Vatican City', $result->first()->name);
+        $this->assertEquals('Gibraltar', $result->first()->name);
         $this->assertEquals('San Marino', $result[1]->name);
-        $this->assertEquals('Gibraltar', $result[2]->name);
+        $this->assertEquals('Vatican City', $result[2]->name);
     }
 
     public function testInOperator()
@@ -103,17 +103,15 @@ class QueryExecuterTest extends TestBase
             ->andWhere('population', '<', 40000)
             ->andWhere('language.0', 'IN', array('Italian', 'English'));
 
-        $qe = new QueryExecuter($this->getRepo('countries'), $pred, array(), array());
+        $qe = new QueryExecuter($this->getRepo('countries'), $pred, array(), array('name ASC'));
 
         $result = $qe->run();
 
         $this->assertEquals(3, $result->total());
 
-        $this->assertEquals('Vatican City', $result->first()->name);
-        // The two following assertions doesn't work on PHP 5.4 and 5.5
-        // probably because these versions need mockery 0.* instead of 1.*
-        // $this->assertEquals('San Marino', $result[1]->name);
-        // $this->assertEquals('Gibraltar', $result[2]->name);
+        $this->assertEquals('Gibraltar', $result->first()->name);
+        $this->assertEquals('San Marino', $result[1]->name);
+        $this->assertEquals('Vatican City', $result[2]->name);
     }
 
     public function testSimpleOrdering()
@@ -193,11 +191,44 @@ class QueryExecuterTest extends TestBase
         $this->assertEquals('Djibouti', $result[2]->name);
     }
 
+    /**
+     * @dataProvider hashIndexOperatorsProvider
+     */
+    public function testFindByIndex($operator)
+    {
+        $pred = $this->getPredicate()
+            ->where('region', $operator, 'Europe');
+        $options = array(
+            'indexes' => array(
+                'region' => '\JamesMoss\Flywheel\Index\HashIndex'
+            )
+        );
+        $n = 5;
 
-    protected function getRepo($repoName)
+        $qe = new QueryExecuter($this->getRepo('countries', $options), $pred, array(), array());
+        $start = microtime(true);
+        for ($i=0; $i < $n; $i++) {
+            $withIndex = $qe->run();
+        }
+        $timeWithIndex = microtime(true) - $start;
+
+        $qe = new QueryExecuter($this->getRepo('countries'), $pred, array(), array());
+        $start = microtime(true);
+        for ($i=0; $i < $n; $i++) {
+            $withoutIndex = $qe->run();
+        }
+        $timeWithoutIndex = microtime(true) - $start;
+
+        $this->assertSameSize($withoutIndex, $withIndex);
+        $this->assertEqualsUnordered(get_object_vars($withoutIndex), get_object_vars($withIndex));
+        $this->assertLessThan($timeWithoutIndex, $timeWithIndex);
+    }
+
+
+    protected function getRepo($repoName, $options = array())
     {
         $path = __DIR__ . '/fixtures/datastore/querytest';
-        $config = new Config($path . '/');
+        $config = new Config($path . '/', $options);
 
         return new Repository($repoName, $config);
     }
@@ -205,5 +236,13 @@ class QueryExecuterTest extends TestBase
     protected function getPredicate()
     {
         return new Predicate();
+    }
+
+    public function hashIndexOperatorsProvider()
+    {
+        return array(
+            array('=='),
+            array('!='),
+        );
     }
 }

@@ -11,6 +11,8 @@ jobs:
       dist: trusty
     - php: 5.4
       dist: trusty
+    - php: 5.3.29
+      dist: precise
 
 install:
   - if [[ ${TRAVIS_PHP_VERSION:0:3} < "7.1" ]]; then rm composer.lock; fi

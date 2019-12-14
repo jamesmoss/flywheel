@@ -14,16 +14,16 @@ class JSONTest extends TestBase
 
     public function testEncoding()
     {
-        $formatter = new JSON;
+        $formatter = new JSON();
+        $formatterPretty = new JSON(JSON_PRETTY_PRINT);
         $data = array(
             'name'     => 'Joe',
             'age'      => 21,
             'employed' => true,
         );
 
-        $options = defined('JSON_PRETTY_PRINT') ? JSON_PRETTY_PRINT : null;
-
-        $this->assertSame(json_encode($data, $options), $formatter->encode($data));
+        $this->assertSame(json_encode($data), $formatter->encode($data));
+        $this->assertSame(json_encode($data, JSON_PRETTY_PRINT), $formatterPretty->encode($data));
     }
 
     public function testDecoding()

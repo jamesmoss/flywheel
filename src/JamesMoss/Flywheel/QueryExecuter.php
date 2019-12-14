@@ -14,6 +14,7 @@ class QueryExecuter
     protected $predicate;
     protected $limit;
     protected $orderBy;
+    protected $indexes;
 
     /**
      * Constructor
@@ -29,6 +30,7 @@ class QueryExecuter
         $this->predicate = $pred;
         $this->limit = $limit;
         $this->orderBy = $orderBy;
+        $this->indexes = $repo->getIndexes();
     }
 
     /**
@@ -38,10 +40,17 @@ class QueryExecuter
      */
     public function run()
     {
-        $documents = $this->repo->findAll();
-
+        /** @var array<int,Document> $documents */
+        $documents;
         if ($predicates = $this->predicate->getAll()) {
-            $documents = $this->filter($documents, $predicates);
+            if ($this->isFullIndex($predicates)) {
+                $documents = $this->findByIndex($predicates);
+            } else {
+                $documents = $this->repo->findAll();
+                $documents = $this->filter($documents, $predicates);
+            }
+        } else {
+            $documents = $this->repo->findAll();
         }
 
         if ($this->orderBy) {
@@ -114,6 +123,32 @@ class QueryExecuter
         return false;
     }
 
+    /**
+     * Checks if the query can be executed with indexes only.
+     *
+     * @param array<int,array> $predicates the array of predicates.
+     *
+     * @return bool true if it can.
+     */
+    protected function isFullIndex($predicates)
+    {
+        foreach ($predicates as $p) {
+            list($type, $field, $operator) = $p;
+            if (!isset($this->indexes[$field]) || !$this->indexes[$field]->isOperatorCompatible($operator)) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    /**
+     * Filters an array of documents by the predicates.
+     *
+     * @param array<int,Document> $documents the array to filter.
+     * @param array<int,array> $predicates the array of predicates.
+     *
+     * @return array<int,Document> the filtered array of documents.
+     */
     protected function filter($documents, $predicates)
     {
         $result = array();
@@ -160,6 +195,50 @@ class QueryExecuter
         }
 
         return $result;
+    }
+
+    /**
+     * Find an array of documents from the predicates using the indexes.
+     *
+     * @param array<int,array> $predicates the array of predicates.
+     *
+     * @return array<int,Document> the filtered array of documents.
+     */
+    protected function findByIndex($predicates) {
+        $result = array();
+        $ids = array();
+
+        $andPredicates = array_filter($predicates, function($pred) {
+            return $pred[0] !== Predicate::LOGICAL_OR;
+        });
+
+        $orPredicates = array_filter($predicates, function($pred) {
+            return $pred[0] === Predicate::LOGICAL_OR;
+        });
+
+        foreach($andPredicates as $predicate) {
+            if (is_array($predicate[1])) {
+                $ids = $this->findByIndex($predicate[1]);
+            } else {
+                list($type, $field, $operator, $value) = $predicate;
+                $ids = $this->indexes[$field]->get($value, $operator);
+            }
+
+            $result = $ids;
+        }
+
+        foreach($orPredicates as $predicate) {
+            if (is_array($predicate[1])) {
+                $ids = $this->findByIndex($predicate[1]);
+            } else {
+                list($type, $field, $operator, $value) = $predicate;
+                $ids = $this->indexes['$field']->get($value, $operator);
+            }
+
+            $result = array_unique(array_merge($result, $ids), SORT_REGULAR);
+        }
+
+        return $this->repo->findByIds($result);
     }
 
     /**
