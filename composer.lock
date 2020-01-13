@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "ac5e07039672da7f040f0ff8506869f6",
+    "content-hash": "857529a9f504739efe6a1d43c40bdb5d",
     "packages": [],
     "packages-dev": [
         {
@@ -225,7 +225,7 @@
         },
         {
             "name": "mustangostang/spyc",
-            "version": "0.6.3",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "git@github.com:mustangostang/spyc.git",
@@ -1540,7 +1540,7 @@
         },
         {
             "name": "symfony/polyfill-ctype",
-            "version": "v1.13.0",
+            "version": "v1.13.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-ctype.git",
@@ -1687,7 +1687,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "mustangostang/spyc": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
