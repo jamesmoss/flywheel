@@ -116,6 +116,35 @@ class QueryExecuterTest extends TestBase
         // $this->assertEquals('Gibraltar', $result[2]->name);
     }
 
+    public function testContainsOperator()
+    {
+        $pred = $this->getPredicate()
+            ->where('subregion', 'CONTAINS', 'Northern')
+            ->andWhere('currency', 'CONTAINS', 'EUR');
+        $qe = new QueryExecuter($this->getRepo('countries'), $pred, array(), array('name ASC'));
+        $result = $qe->run();
+
+        $this->assertEquals(5, $result->total());
+        $this->assertEquals('Estonia', $result[0]->name);
+        $this->assertEquals('Finland', $result[1]->name);
+        $this->assertEquals('Ireland', $result[2]->name);
+        $this->assertEquals('Saint Pierre and Miquelon', $result[3]->name);
+        $this->assertEquals('Åland Islands', $result[4]->name);
+
+        $pred = $this->getPredicate()
+            ->where('translations', 'CONTAINS', 'France');
+        $qe = new QueryExecuter($this->getRepo('countries'), $pred, array(), array());
+        $result = $qe->run();
+        $this->assertCount(0, $result);
+
+        $pred = $this->getPredicate()
+            ->where('latlng', 'CONTAINS', 41);
+        $qe = new QueryExecuter($this->getRepo('countries'), $pred, array(), array());
+        $result = $qe->run();
+        $this->assertCount(3, $result);
+
+    }
+
     public function testSimpleOrdering()
     {
         $qe = new QueryExecuter($this->getRepo('countries'), $this->getPredicate(), array(), array('capital DESC', 'name ASC'));
